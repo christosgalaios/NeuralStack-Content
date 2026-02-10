@@ -7,6 +7,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>{{BASE_URL}}/articles/example-technical-article-template.html</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>{{BASE_URL}}/articles/test.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>daily</changefreq>

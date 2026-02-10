@@ -11,3 +11,8 @@ NameError: name 'POSTS_DIR' is not defined
 2026-02-10 16:05:06,056 [INFO] Starting ValidationAgent.
 2026-02-10 16:05:06,056 [INFO] Starting DistributionAgent.
 2026-02-10 16:05:06,057 [INFO] Pipeline completed successfully.
+2026-02-10 16:37:42,429 [INFO] Starting DiscoveryAgent.
+2026-02-10 16:37:42,430 [INFO] Starting ContentAgent.
+2026-02-10 16:37:42,430 [INFO] Starting ValidationAgent.
+2026-02-10 16:37:42,430 [INFO] Starting DistributionAgent.
+2026-02-10 16:37:42,433 [INFO] Pipeline completed successfully.
