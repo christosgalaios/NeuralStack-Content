@@ -1,7 +1,19 @@
 {
-  "runs": [],
+  "runs": [
+    {
+      "timestamp": "2026-02-10T16:04:11.600339Z",
+      "status": "failed",
+      "generated_topics": 5,
+      "generated_articles": 0,
+      "published_articles": 0,
+      "errors": [
+        "name 'POSTS_DIR' is not defined"
+      ]
+    }
+  ],
   "articles_published": 0,
-  "last_run": null,
-  "errors": []
+  "last_run": "2026-02-10T16:04:11.600339Z",
+  "errors": [
+    "name 'POSTS_DIR' is not defined"
+  ]
 }
-

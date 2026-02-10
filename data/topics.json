@@ -1,2 +1,402 @@
-[]
-
+[
+  {
+    "id": "devtools-vscode-jetbrainsfleet",
+    "keyword": "VS Code vs JetBrains Fleet for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-vscode-neovim",
+    "keyword": "VS Code vs Neovim for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-vscode-cursoride",
+    "keyword": "VS Code vs Cursor IDE for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-vscode-zededitor",
+    "keyword": "VS Code vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-vscode-githubcopilotcli",
+    "keyword": "VS Code vs GitHub Copilot CLI for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-vscode",
+    "keyword": "JetBrains Fleet vs VS Code for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-neovim",
+    "keyword": "JetBrains Fleet vs Neovim for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-cursoride",
+    "keyword": "JetBrains Fleet vs Cursor IDE for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-zededitor",
+    "keyword": "JetBrains Fleet vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-githubcopilotcli",
+    "keyword": "JetBrains Fleet vs GitHub Copilot CLI for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-vscode",
+    "keyword": "Neovim vs VS Code for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-jetbrainsfleet",
+    "keyword": "Neovim vs JetBrains Fleet for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-cursoride",
+    "keyword": "Neovim vs Cursor IDE for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-zededitor",
+    "keyword": "Neovim vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-githubcopilotcli",
+    "keyword": "Neovim vs GitHub Copilot CLI for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-vscode",
+    "keyword": "Cursor IDE vs VS Code for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-jetbrainsfleet",
+    "keyword": "Cursor IDE vs JetBrains Fleet for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-neovim",
+    "keyword": "Cursor IDE vs Neovim for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-zededitor",
+    "keyword": "Cursor IDE vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-githubcopilotcli",
+    "keyword": "Cursor IDE vs GitHub Copilot CLI for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-zededitor-vscode",
+    "keyword": "Zed editor vs VS Code for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-zededitor-jetbrainsfleet",
+    "keyword": "Zed editor vs JetBrains Fleet for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-zededitor-neovim",
+    "keyword": "Zed editor vs Neovim for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-zededitor-cursoride",
+    "keyword": "Zed editor vs Cursor IDE for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-zededitor-githubcopilotcli",
+    "keyword": "Zed editor vs GitHub Copilot CLI for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-vscode",
+    "keyword": "GitHub Copilot CLI vs VS Code for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-jetbrainsfleet",
+    "keyword": "GitHub Copilot CLI vs JetBrains Fleet for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-neovim",
+    "keyword": "GitHub Copilot CLI vs Neovim for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-cursoride",
+    "keyword": "GitHub Copilot CLI vs Cursor IDE for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-zededitor",
+    "keyword": "GitHub Copilot CLI vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-dockeronwindows11arm",
+    "keyword": "Docker on Windows 11 ARM detailed compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "selected"
+  },
+  {
+    "id": "compat-wsl2gpupassthrough",
+    "keyword": "WSL2 GPU passthrough detailed compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "selected"
+  },
+  {
+    "id": "compat-pytorchwithrocm",
+    "keyword": "PyTorch with ROCm detailed compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "selected"
+  },
+  {
+    "id": "compat-tensorrtwithonnx",
+    "keyword": "TensorRT with ONNX detailed compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "selected"
+  },
+  {
+    "id": "compat-postgresqlwithprisma",
+    "keyword": "PostgreSQL with Prisma detailed compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "selected"
+  },
+  {
+    "id": "news-japandevcommunityreaction",
+    "keyword": "Japan dev community reaction for global engineers (translated summary)",
+    "category": "foreign_news",
+    "intent": "Learn what is happening in JP/CN tech ecosystems.",
+    "difficulty_score": 0.32,
+    "source": "heuristic-foreign-news",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "news-chineseopensourceecosystem",
+    "keyword": "Chinese open source ecosystem for global engineers (translated summary)",
+    "category": "foreign_news",
+    "intent": "Learn what is happening in JP/CN tech ecosystems.",
+    "difficulty_score": 0.32,
+    "source": "heuristic-foreign-news",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "news-tokyostartupsusing",
+    "keyword": "Tokyo startups using for global engineers (translated summary)",
+    "category": "foreign_news",
+    "intent": "Learn what is happening in JP/CN tech ecosystems.",
+    "difficulty_score": 0.32,
+    "source": "heuristic-foreign-news",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "news-shanghaiailabstesting",
+    "keyword": "Shanghai AI labs testing for global engineers (translated summary)",
+    "category": "foreign_news",
+    "intent": "Learn what is happening in JP/CN tech ecosystems.",
+    "difficulty_score": 0.32,
+    "source": "heuristic-foreign-news",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  },
+  {
+    "id": "news-cncloudproviderpartnership",
+    "keyword": "CN cloud provider partnership for global engineers (translated summary)",
+    "category": "foreign_news",
+    "intent": "Learn what is happening in JP/CN tech ecosystems.",
+    "difficulty_score": 0.32,
+    "source": "heuristic-foreign-news",
+    "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "new"
+  }
+]

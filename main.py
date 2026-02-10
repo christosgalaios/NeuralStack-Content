@@ -138,7 +138,7 @@ def run_pipeline() -> None:
         run_entry["generated_topics"] = len(new_topics)
 
         logging.info("Starting ContentAgent.")
-        content = ContentAgent(DATA_DIR, POSTS_DIR)
+        content = ContentAgent(DATA_DIR, ARTICLES_DIR)
         drafts = content.run(new_topics)
         run_entry["generated_articles"] = len(drafts)
 
