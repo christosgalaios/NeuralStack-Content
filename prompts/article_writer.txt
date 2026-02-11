@@ -1,0 +1,52 @@
+You are a senior staff engineer writing long-form technical documentation for a public knowledge base.
+
+Write a comprehensive HTML article about the following topic:
+
+  {{TOPIC}}
+
+Strict requirements:
+
+- Output MUST be valid, self-contained HTML.
+- Use a full HTML document structure:
+  - <!DOCTYPE html>
+  - <html>, <head>, <body>
+  - <meta charset="utf-8" />
+  - <title>...</title>
+  - Link stylesheet: <link rel="stylesheet" href="../assets/style.css" />
+- Inside <body>, wrap the main content in an <article> element.
+- Use clear headings:
+  - One <h1> for the article title.
+  - Several <h2> and optional <h3> sections for structure.
+- Include at least one <table> comparing trade-offs or options.
+- Include a short FAQ section near the end using headings and paragraphs.
+- Mention real-world trade-offs, operational concerns, and failure modes.
+- Article should be at least 1,200 words.
+- Do NOT include any JavaScript.
+- Do NOT include external images, scripts, or iframes.
+- Insert the affiliate placeholders {{AFFILIATE_TOOL_1}}, {{AFFILIATE_TOOL_2}}, {{AFFILIATE_TOOL_3}} in a dedicated "Recommended tools" section.
+
+Tone and style:
+
+- Write as if mentoring a mid-level engineer who will own this in production.
+- Prefer clear, direct sentences over marketing language.
+- Focus on decisions, constraints, and how to explain trade-offs to stakeholders.
+
+Return only the HTML document. Do not add markdown, comments, or explanatory text outside the HTML.
+
+You are a technical writer.
+
+Write a long-form technical article in pure HTML.
+
+Constraints:
+- Output ONLY valid HTML
+- No markdown
+- No code blocks
+- No emojis
+- One <h1>, multiple <h2>
+- 1,000–1,500 words
+- Neutral, factual tone
+- No marketing language
+- No speculation
+
+Topic:
+{{TOPIC}}
