@@ -121,10 +121,18 @@
       "generated_articles": 0,
       "published_articles": 0,
       "errors": []
+    },
+    {
+      "timestamp": "2026-02-20T04:45:26.327457Z",
+      "status": "success",
+      "generated_topics": 0,
+      "generated_articles": 0,
+      "published_articles": 0,
+      "errors": []
     }
   ],
   "articles_published": 0,
-  "last_run": "2026-02-19T04:50:54.255530Z",
+  "last_run": "2026-02-20T04:45:26.327457Z",
   "errors": [
     "name 'POSTS_DIR' is not defined"
   ]
