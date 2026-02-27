@@ -1,9 +1,17 @@
 import json
+import os
 from datetime import datetime
 from pathlib import Path
 from typing import List
 
 from .content import DraftArticle
+
+# Resolve base URL once at import time.  Set NEURALSTACK_BASE_URL in your
+# environment or GitHub Actions secrets; falls back to a sensible default.
+BASE_URL = os.getenv(
+    "NEURALSTACK_BASE_URL",
+    "https://christosgalaios.github.io/NeuralStack-Content",
+)
 
 
 class DistributionAgent:
@@ -96,8 +104,7 @@ class DistributionAgent:
 
     def _update_sitemap(self, posts: List[dict]) -> None:
         sitemap = self.root_dir / "sitemap.xml"
-        # URL structure assumes GitHub Pages with project site at /.
-        base_url = "{{BASE_URL}}"
+        base_url = BASE_URL
         urls = [f"{base_url}/"]
         urls += [f"{base_url}/{p['path']}" for p in posts]
 
@@ -122,7 +129,7 @@ class DistributionAgent:
 
     def _update_rss(self, posts: List[dict]) -> None:
         feed = self.root_dir / "feed.xml"
-        base_url = "{{BASE_URL}}"
+        base_url = BASE_URL
         items = []
         for post in sorted(posts, key=lambda p: p["date"], reverse=True):
             items.append(
