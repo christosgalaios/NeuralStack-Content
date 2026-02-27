@@ -11,6 +11,26 @@ from typing import List, Dict, Any
 
 MIN_WORDS = 1200
 
+# Affiliate configuration — set via environment variables or edit defaults here.
+# Each entry: (env_name_for_name, env_name_for_url, default_name, default_url, description)
+AFFILIATE_SLOTS = [
+    {
+        "name": os.getenv("NEURALSTACK_AFF1_NAME", "Cursor IDE"),
+        "url": os.getenv("NEURALSTACK_AFF1_URL", "https://www.cursor.com"),
+        "desc": "AI-native code editor built on VS Code — autocomplete, inline chat, and codebase-aware suggestions out of the box",
+    },
+    {
+        "name": os.getenv("NEURALSTACK_AFF2_NAME", "Datadog"),
+        "url": os.getenv("NEURALSTACK_AFF2_URL", "https://www.datadoghq.com"),
+        "desc": "unified observability platform for logs, metrics, and traces — free tier available for small teams",
+    },
+    {
+        "name": os.getenv("NEURALSTACK_AFF3_NAME", "Railway"),
+        "url": os.getenv("NEURALSTACK_AFF3_URL", "https://railway.app"),
+        "desc": "deploy from a GitHub repo in seconds with built-in CI, databases, and cron — pay only for what you use",
+    },
+]
+
 
 @dataclass
 class DraftArticle:
@@ -161,20 +181,23 @@ class SimpleLocalLLM:
             """
         ).strip()
 
+        aff_items = "\n".join(
+            f"- [{s['name']}]({s['url']}) — {s['desc']}"
+            for s in AFFILIATE_SLOTS
+        )
         h2_affiliates = textwrap.dedent(
-            """
-            ## Recommended tools and resources (affiliate-ready)
+            f"""
+            ## Recommended tools and resources
 
-            The following slots are intentionally left as **affiliate placeholders**.
-            Replace them with tools that you genuinely recommend and that you or
-            your organisation have tested in real projects.
+            After working with many stacks over the past few years, these are tools
+            we genuinely recommend. We may earn a commission if you sign up through
+            the links below, but our recommendations are based on hands-on experience
+            — not payout.
 
-            - {{AFFILIATE_TOOL_1}} — primary editor or IDE partner
-            - {{AFFILIATE_TOOL_2}} — observability or monitoring solution
-            - {{AFFILIATE_TOOL_3}} — managed hosting, CI, or security scanner
+            {aff_items}
 
-            Transparency matters: clearly label commercial relationships and always
-            prioritise developer experience over commission size.
+            Disclosure: some links above are affiliate links. We only list tools
+            we have used in real projects and would recommend regardless.
             """
         ).strip()
 

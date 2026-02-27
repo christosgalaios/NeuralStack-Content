@@ -1,0 +1,64 @@
+{
+  "id": "3f02c5d619c4",
+  "topic": "why senior devs hate unnecessary meetings",
+  "format_name": "hot_take",
+  "hook": "Nobody talks about the dark side of why senior devs hate unnecessary meetings.",
+  "script_segments": [
+    {
+      "timing": "0-3s",
+      "role": "hook",
+      "text": "Nobody talks about the dark side of why senior devs hate unnecessary meetings.",
+      "visual_direction": "Face close to camera. Bold text overlay."
+    },
+    {
+      "timing": "3-10s",
+      "role": "setup",
+      "text": "Everyone on this app keeps saying why senior devs hate unnecessary meetings is amazing, that it's the future, that you absolutely need it. But let me tell you what actually happens when you use it in the real world.",
+      "visual_direction": "Step back. Explain the mainstream take you disagree with."
+    },
+    {
+      "timing": "10-25s",
+      "role": "argument",
+      "text": "First \u2014 the learning curve for why senior devs hate unnecessary meetings is way steeper than people admit. Second \u2014 the ecosystem is fragmented and the docs assume you already know everything. Third \u2014 the alternatives that nobody talks about are genuinely competitive now.",
+      "visual_direction": "Walk and talk or use B-roll. 2-3 punchy reasons."
+    },
+    {
+      "timing": "25-35s",
+      "role": "proof",
+      "text": "Look at this \u2014 [show screen recording or stat]. When you actually benchmark why senior devs hate unnecessary meetings against the alternatives, the gap is nowhere near as big as the influencers claim.",
+      "visual_direction": "Show evidence: screen recording, stat, or side-by-side."
+    },
+    {
+      "timing": "35-45s",
+      "role": "flip",
+      "text": "Now, to be fair \u2014 why senior devs hate unnecessary meetings does have genuine strengths. If you're in a specific niche where it shines, absolutely use it. But for the majority of people watching this? There are better options.",
+      "visual_direction": "Acknowledge the counter-argument briefly \u2014 builds trust."
+    },
+    {
+      "timing": "45-55s",
+      "role": "cta",
+      "text": "Comment your hottest why senior devs hate unnecessary meetings take \u2014 let's debate.",
+      "visual_direction": "Direct to camera. Ask for comments. Controversial question."
+    }
+  ],
+  "caption": "The honest truth about why senior devs hate unnecessary meetings that nobody is telling you.",
+  "hashtags": [
+    "#programming",
+    "#techtok",
+    "#webdev",
+    "#viral",
+    "#foryoupage",
+    "#edutok",
+    "#learnontiktok",
+    "#linux",
+    "#ai"
+  ],
+  "sound_suggestion": "intense / dramatic buildup",
+  "cta": "Comment your hottest why senior devs hate unnecessary meetings take \u2014 let's debate.",
+  "estimated_duration_sec": 55,
+  "created_at": "2026-02-27T21:41:01.494492Z",
+  "metadata": {
+    "format_label": "Hot Take / Unpopular Opinion",
+    "word_count": 181
+  }
+}
