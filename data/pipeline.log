@@ -78,8 +78,44 @@
 2026-02-27 04:44:26,490 [INFO] Starting ValidationAgent.
 2026-02-27 04:44:26,490 [INFO] Starting DistributionAgent.
 2026-02-27 04:44:26,491 [INFO] Pipeline completed successfully.
+2026-02-27 19:48:07,853 [INFO] Starting DiscoveryAgent.
+2026-02-27 19:48:07,856 [INFO] Starting ContentAgent.
+2026-02-27 19:48:07,856 [INFO] Starting ValidationAgent.
+2026-02-27 19:48:07,856 [INFO] Starting DistributionAgent.
+2026-02-27 19:48:07,859 [INFO] Starting TikTokAgent.
+2026-02-27 19:48:07,861 [INFO] TikTok discovery found 5 new topics.
+2026-02-27 19:48:07,861 [INFO] Generated TikTok script via template: developer salary negotiation secrets
+2026-02-27 19:48:07,862 [INFO] Published TikTok script: developer salary negotiation secrets [tutorial] (score=100)
+2026-02-27 19:48:07,862 [INFO] Generated TikTok script via template: developer burnout and how to actually fix it
+2026-02-27 19:48:07,863 [INFO] Published TikTok script: developer burnout and how to actually fix it [tutorial] (score=100)
+2026-02-27 19:48:07,863 [INFO] Generated TikTok script via template: the one skill that separates junior from senior developers
+2026-02-27 19:48:07,864 [INFO] Published TikTok script: the one skill that separates junior from senior developers [tutorial] (score=100)
+2026-02-27 19:48:07,864 [INFO] Generated TikTok script via template: why senior devs hate unnecessary meetings
+2026-02-27 19:48:07,865 [INFO] Published TikTok script: why senior devs hate unnecessary meetings [tutorial] (score=100)
+2026-02-27 19:48:07,865 [INFO] Generated TikTok script via template: AI coding assistants and whether they actually help
+2026-02-27 19:48:07,866 [INFO] Published TikTok script: AI coding assistants and whether they actually help [tutorial] (score=100)
+2026-02-27 19:48:07,866 [INFO] TikTok pipeline complete: 5 scripts published.
+2026-02-27 19:48:07,866 [INFO] Pipeline completed successfully.
 2026-02-27 20:00:59,413 [INFO] Starting DiscoveryAgent.
 2026-02-27 20:00:59,414 [INFO] Starting ContentAgent.
 2026-02-27 20:00:59,418 [INFO] Starting ValidationAgent.
 2026-02-27 20:00:59,419 [INFO] Starting DistributionAgent.
 2026-02-27 20:00:59,428 [INFO] Pipeline completed successfully.
+2026-02-27 21:19:31,083 [INFO] Starting DiscoveryAgent.
+2026-02-27 21:19:31,085 [INFO] Starting ContentAgent.
+2026-02-27 21:19:31,089 [INFO] Starting ValidationAgent.
+2026-02-27 21:19:31,091 [INFO] Starting DistributionAgent.
+2026-02-27 21:19:31,107 [INFO] Starting TikTokAgent.
+2026-02-27 21:19:31,108 [INFO] TikTok discovery found 5 new topics.
+2026-02-27 21:19:31,109 [INFO] Generated TikTok script via template: developer salary negotiation secrets
+2026-02-27 21:19:31,110 [INFO] Published TikTok script: developer salary negotiation secrets [myth_bust] (score=100)
+2026-02-27 21:19:31,110 [INFO] Generated TikTok script via template: developer burnout and how to actually fix it
+2026-02-27 21:19:31,111 [INFO] Published TikTok script: developer burnout and how to actually fix it [myth_bust] (score=100)
+2026-02-27 21:19:31,111 [INFO] Generated TikTok script via template: the one skill that separates junior from senior developers
+2026-02-27 21:19:31,112 [INFO] Published TikTok script: the one skill that separates junior from senior developers [myth_bust] (score=100)
+2026-02-27 21:19:31,112 [INFO] Generated TikTok script via template: why senior devs hate unnecessary meetings
+2026-02-27 21:19:31,113 [INFO] Published TikTok script: why senior devs hate unnecessary meetings [myth_bust] (score=100)
+2026-02-27 21:19:31,113 [INFO] Generated TikTok script via template: AI coding assistants and whether they actually help
+2026-02-27 21:19:31,114 [INFO] Published TikTok script: AI coding assistants and whether they actually help [myth_bust] (score=100)
+2026-02-27 21:19:31,115 [INFO] TikTok pipeline complete: 5 scripts published.
+2026-02-27 21:19:31,115 [INFO] Pipeline completed successfully.
