@@ -1,0 +1,63 @@
+{
+  "id": "e445875f2cf8",
+  "topic": "AI coding assistants and whether they actually help",
+  "format_name": "hot_take",
+  "hook": "Nobody talks about the dark side of AI coding assistants and whether they actually help.",
+  "script_segments": [
+    {
+      "timing": "0-3s",
+      "role": "hook",
+      "text": "Nobody talks about the dark side of AI coding assistants and whether they actually help.",
+      "visual_direction": "Face close to camera. Bold text overlay."
+    },
+    {
+      "timing": "3-10s",
+      "role": "setup",
+      "text": "Everyone on this app keeps saying AI coding assistants and whether they actually help is amazing, that it's the future, that you absolutely need it. But let me tell you what actually happens when you use it in the real world.",
+      "visual_direction": "Step back. Explain the mainstream take you disagree with."
+    },
+    {
+      "timing": "10-25s",
+      "role": "argument",
+      "text": "First \u2014 the learning curve for AI coding assistants and whether they actually help is way steeper than people admit. Second \u2014 the ecosystem is fragmented and the docs assume you already know everything. Third \u2014 the alternatives that nobody talks about are genuinely competitive now.",
+      "visual_direction": "Walk and talk or use B-roll. 2-3 punchy reasons."
+    },
+    {
+      "timing": "25-35s",
+      "role": "proof",
+      "text": "Look at this \u2014 [show screen recording or stat]. When you actually benchmark AI coding assistants and whether they actually help against the alternatives, the gap is nowhere near as big as the influencers claim.",
+      "visual_direction": "Show evidence: screen recording, stat, or side-by-side."
+    },
+    {
+      "timing": "35-45s",
+      "role": "flip",
+      "text": "Now, to be fair \u2014 AI coding assistants and whether they actually help does have genuine strengths. If you're in a specific niche where it shines, absolutely use it. But for the majority of people watching this? There are better options.",
+      "visual_direction": "Acknowledge the counter-argument briefly \u2014 builds trust."
+    },
+    {
+      "timing": "45-55s",
+      "role": "cta",
+      "text": "Am I wrong? Drop your opinion below.",
+      "visual_direction": "Direct to camera. Ask for comments. Controversial question."
+    }
+  ],
+  "caption": "The honest truth about AI coding assistants and whether they actually help that nobody is telling you.",
+  "hashtags": [
+    "#developer",
+    "#tech",
+    "#learntocode",
+    "#viral",
+    "#xyzbca",
+    "#howto",
+    "#tutorial",
+    "#ai"
+  ],
+  "sound_suggestion": "intense / dramatic buildup",
+  "cta": "Am I wrong? Drop your opinion below.",
+  "estimated_duration_sec": 55,
+  "created_at": "2026-02-27T21:41:01.495885Z",
+  "metadata": {
+    "format_label": "Hot Take / Unpopular Opinion",
+    "word_count": 185
+  }
+}

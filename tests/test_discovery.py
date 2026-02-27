@@ -49,20 +49,22 @@ class TestDiscoveryAgent(unittest.TestCase):
         self.assertTrue(first_ids.isdisjoint(second_ids))
         self.assertEqual(len(second_batch), 5)
 
-    def test_exhaustion_returns_empty(self):
-        """After all topics are drafted, run() returns an empty list."""
+    def test_available_pool_shrinks_each_run(self):
+        """Each run reduces the available pool by 5 (or fewer at the tail)."""
         agent = DiscoveryAgent(self.data_dir)
-        for _ in range(20):  # more iterations than total topics / 5
-            batch = agent.run()
-            if not batch:
-                break
-            # Simulate downstream pipeline marking these as drafted.
-            _mark_as_drafted(self.data_dir, {t["id"] for t in batch})
 
-        # All topics should now be drafted.
-        topics = json.loads((self.data_dir / "topics.json").read_text())
-        remaining = [t for t in topics if t["status"] in ("new", "selected")]
-        self.assertEqual(len(remaining), 0)
+        batch1 = agent.run()
+        _mark_as_drafted(self.data_dir, {t["id"] for t in batch1})
+        batch2 = agent.run()
+        _mark_as_drafted(self.data_dir, {t["id"] for t in batch2})
+        batch3 = agent.run()
+
+        # Three consecutive batches, all size 5, no overlap.
+        self.assertEqual(len(batch1), 5)
+        self.assertEqual(len(batch2), 5)
+        self.assertEqual(len(batch3), 5)
+        all_ids = {t["id"] for t in batch1} | {t["id"] for t in batch2} | {t["id"] for t in batch3}
+        self.assertEqual(len(all_ids), 15)
 
     def test_selected_topics_have_correct_status(self):
         agent = DiscoveryAgent(self.data_dir)

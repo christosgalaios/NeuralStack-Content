@@ -19,7 +19,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://christosgalaios.github.io/NeuralStack-Content/articles/docker-on-apple-silicon-m3-compatibility-guide.html</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://christosgalaios.github.io/NeuralStack-Content/articles/docker-on-windows-11-arm-compatibility-guide.html</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://christosgalaios.github.io/NeuralStack-Content/articles/docker-on-windows-11-arm-detailed-compatibility-guide.html</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://christosgalaios.github.io/NeuralStack-Content/articles/docker-with-cuda-12-4-compatibility-guide.html</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://christosgalaios.github.io/NeuralStack-Content/articles/docker-with-rocm-on-amd-gpus-compatibility-guide.html</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://christosgalaios.github.io/NeuralStack-Content/articles/docker-with-wsl2-gpu-passthrough-compatibility-guide.html</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>

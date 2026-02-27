@@ -28,7 +28,10 @@ class TestSimpleLocalLLM(unittest.TestCase):
         self.assertIn("## ", text)
         self.assertIn("## Frequently asked questions", text)
         self.assertIn("|", text)  # table
-        self.assertIn("{{AFFILIATE_TOOL_1}}", text)
+        # Affiliate section should contain real tool links, not raw placeholders.
+        self.assertNotIn("{{AFFILIATE_TOOL_1}}", text)
+        self.assertIn("Recommended tools and resources", text)
+        self.assertIn("https://", text)
 
     def test_template_includes_keyword(self):
         llm = SimpleLocalLLM()
