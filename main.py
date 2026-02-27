@@ -8,6 +8,7 @@ from agents.discovery import DiscoveryAgent
 from agents.content import ContentAgent
 from agents.validation import ValidationAgent
 from agents.distribution import DistributionAgent
+from agents.tiktok import TikTokAgent
 
 
 BASE_DIR = Path(__file__).parent
@@ -150,6 +151,11 @@ def run_pipeline() -> None:
         distribution = DistributionAgent(DATA_DIR, BASE_DIR, ARTICLES_DIR)
         published_files = distribution.run(approved_drafts)
         run_entry["published_articles"] = len(published_files)
+
+        logging.info("Starting TikTokAgent.")
+        tiktok = TikTokAgent(DATA_DIR)
+        tiktok_results = tiktok.run(max_scripts=5)
+        run_entry["tiktok_scripts_published"] = len(tiktok_results)
 
         run_entry["status"] = "success"
         logging.info("Pipeline completed successfully.")
