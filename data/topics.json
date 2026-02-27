@@ -307,7 +307,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "selected"
+    "status": "published"
   },
   {
     "id": "compat-wsl2gpupassthrough",
@@ -317,7 +317,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "selected"
+    "status": "published"
   },
   {
     "id": "compat-pytorchwithrocm",
@@ -327,7 +327,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "selected"
+    "status": "published"
   },
   {
     "id": "compat-tensorrtwithonnx",
@@ -337,7 +337,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "selected"
+    "status": "published"
   },
   {
     "id": "compat-postgresqlwithprisma",
@@ -347,7 +347,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "selected"
+    "status": "published"
   },
   {
     "id": "news-japandevcommunityreaction",
@@ -357,7 +357,7 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "news-chineseopensourceecosystem",
@@ -367,7 +367,7 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "news-tokyostartupsusing",
@@ -377,7 +377,7 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "news-shanghaiailabstesting",
@@ -387,7 +387,7 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "news-cncloudproviderpartnership",
@@ -397,6 +397,6 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   }
 ]

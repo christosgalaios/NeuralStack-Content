@@ -194,10 +194,27 @@
       "published_articles": 0,
       "errors": [],
       "tiktok_scripts_published": 5
+    },
+    {
+      "timestamp": "2026-02-27T20:00:59.413012Z",
+      "status": "success",
+      "generated_topics": 5,
+      "generated_articles": 5,
+      "published_articles": 5,
+      "errors": []
+    },
+    {
+      "timestamp": "2026-02-27T21:19:31.083827Z",
+      "status": "success",
+      "generated_topics": 5,
+      "generated_articles": 5,
+      "published_articles": 5,
+      "errors": [],
+      "tiktok_scripts_published": 5
     }
   ],
-  "articles_published": 0,
-  "last_run": "2026-02-27T19:48:07.853742Z",
+  "articles_published": 10,
+  "last_run": "2026-02-27T21:19:31.083827Z",
   "errors": [
     "name 'POSTS_DIR' is not defined"
   ]

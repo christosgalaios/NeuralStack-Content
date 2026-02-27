@@ -140,23 +140,24 @@ class DiscoveryAgent:
 
         candidates = self._generate_candidates()
 
-        new_topics: List[Dict[str, Any]] = []
+        # Add any brand-new candidates to the pool (first run seeds all topics).
         for topic in candidates:
-            if topic.id in existing_ids:
-                continue
-            new_topics.append(asdict(topic))
-            existing.append(asdict(topic))
+            if topic.id not in existing_ids:
+                existing.append(asdict(topic))
+                existing_ids.add(topic.id)
 
-        # Heuristic filter for "low competition" style:
-        # keep only a small number of new topics per run to avoid explosion.
-        new_topics = sorted(new_topics, key=lambda t: t["difficulty_score"])[:5]
-        # Update status for the selected ones only (rest remain in backlog for future runs).
+        # Select from unprocessed topics in the pool.
+        # "new" = never touched; "selected" = picked previously but never drafted.
+        available = [t for t in existing if t.get("status") in ("new", "selected")]
+        selected = sorted(available, key=lambda t: t["difficulty_score"])[:5]
+
+        selected_ids = {t["id"] for t in selected}
         for t in existing:
-            if t["id"] in {nt["id"] for nt in new_topics}:
+            if t["id"] in selected_ids:
                 t["status"] = "selected"
 
         self._save_topics(existing)
-        return new_topics
+        return selected
 
 
 __all__ = ["DiscoveryAgent", "Topic"]
