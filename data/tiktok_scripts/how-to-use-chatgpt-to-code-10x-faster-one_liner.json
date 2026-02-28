@@ -1,0 +1,46 @@
+{
+  "id": "bbdf15bbccf7",
+  "topic": "how to use ChatGPT to code 10x faster",
+  "format_name": "one_liner",
+  "hook": "Say it louder: how to use ChatGPT to code 10x faster.",
+  "script_segments": [
+    {
+      "timing": "0-2s",
+      "role": "hook_text",
+      "text": "Say it louder: how to use ChatGPT to code 10x faster.",
+      "visual_direction": "Black screen or face close-up. Big bold text fades in."
+    },
+    {
+      "timing": "2-5s",
+      "role": "punchline",
+      "text": "The secret to how to use ChatGPT to code 10x faster? Start. That's literally it.",
+      "visual_direction": "Text reveal with dramatic zoom or shake. Let the line breathe."
+    },
+    {
+      "timing": "5-7s",
+      "role": "end_card",
+      "text": "[LOOP POINT \u2014 handle/logo flash, seamless restart]",
+      "visual_direction": "Quick logo/handle flash. Loop-friendly \u2014 cuts back to start cleanly."
+    }
+  ],
+  "caption": "I wish someone told me this about how to use ChatGPT to code 10x faster sooner.",
+  "hashtags": [
+    "#webdev",
+    "#techtok",
+    "#tech",
+    "#fyp",
+    "#foryou",
+    "#edutok",
+    "#howto",
+    "#machinelearning",
+    "#rust"
+  ],
+  "sound_suggestion": "bass drop / vinyl scratch / single dramatic hit",
+  "cta": "Tag someone who needs this.",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-02-28T00:17:05.917363Z",
+  "metadata": {
+    "format_label": "One-Liner Drop (6s)",
+    "word_count": 33
+  }
+}

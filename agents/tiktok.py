@@ -216,6 +216,193 @@ VIRAL_FORMATS = {
 
 
 # ---------------------------------------------------------------------------
+# Ultra-short formats (6-7 seconds) — maximum scroll-stopping impact
+# ---------------------------------------------------------------------------
+
+SHORT_FORMATS = {
+    "one_liner": {
+        "label": "One-Liner Drop (6s)",
+        "short": True,
+        "hook_templates": [
+            "{topic} in one sentence.",
+            "The truth about {topic}.",
+            "{topic}. That's it. That's the tip.",
+            "Remember this about {topic}.",
+            "Say it louder: {topic}.",
+        ],
+        "structure": [
+            {"timing": "0-2s", "role": "hook_text", "direction": "Black screen or face close-up. Big bold text fades in."},
+            {"timing": "2-5s", "role": "punchline", "direction": "Text reveal with dramatic zoom or shake. Let the line breathe."},
+            {"timing": "5-7s", "role": "end_card", "direction": "Quick logo/handle flash. Loop-friendly — cuts back to start cleanly."},
+        ],
+        "sound_mood": "bass drop / vinyl scratch / single dramatic hit",
+        "cta_templates": [
+            "Follow if you agree.",
+            "Save this.",
+            "Tag someone who needs this.",
+        ],
+    },
+    "quick_fact": {
+        "label": "Quick Fact / Did You Know (7s)",
+        "short": True,
+        "hook_templates": [
+            "Did you know this about {topic}?",
+            "One {topic} fact that changes everything.",
+            "Bet you didn't know this about {topic}.",
+            "{topic} fact check.",
+            "The {topic} fact nobody talks about.",
+        ],
+        "structure": [
+            {"timing": "0-2s", "role": "hook_text", "direction": "Bold text: 'DID YOU KNOW?' Zoom into face or screen."},
+            {"timing": "2-5s", "role": "fact_drop", "direction": "Deliver the fact. Text overlay reinforces it. Keep eye contact."},
+            {"timing": "5-7s", "role": "reaction_beat", "direction": "Eyebrow raise or mic-drop gesture. Text: 'Follow for more'. Loop point."},
+        ],
+        "sound_mood": "suspense sting then revelation chime",
+        "cta_templates": [
+            "Did you know? Follow for more.",
+            "Mind blown? Same.",
+            "Share this with a dev who needs it.",
+        ],
+    },
+    "hot_take_snap": {
+        "label": "Hot Take Snap (6s)",
+        "short": True,
+        "hook_templates": [
+            "{topic} is overrated. I said it.",
+            "Controversial: {topic}.",
+            "Nobody wants to hear this about {topic}.",
+            "Unpopular opinion about {topic}.",
+            "{topic}? Nah.",
+        ],
+        "structure": [
+            {"timing": "0-2s", "role": "hook_text", "direction": "Lean in close. Text: 'HOT TAKE'. Intense eye contact."},
+            {"timing": "2-5s", "role": "take_drop", "direction": "Deliver the take in one breath. Bold text overlay matches."},
+            {"timing": "5-6s", "role": "stare_out", "direction": "Hold eye contact. No blink. Let it land. Text: 'Fight me'."},
+        ],
+        "sound_mood": "dramatic sting / record scratch",
+        "cta_templates": [
+            "Fight me in the comments.",
+            "Agree or disagree? Comment.",
+            "Follow for takes that hit different.",
+        ],
+    },
+    "code_flash": {
+        "label": "Code Flash / Quick Tip (7s)",
+        "short": True,
+        "hook_templates": [
+            "One {topic} trick in 7 seconds.",
+            "Copy this {topic} shortcut.",
+            "{topic} hack you're sleeping on.",
+            "The {topic} one-liner that saves hours.",
+            "Stop. Use this {topic} trick.",
+        ],
+        "structure": [
+            {"timing": "0-2s", "role": "hook_text", "direction": "Screen recording ready. Text overlay: 'COPY THIS'."},
+            {"timing": "2-5s", "role": "demo_flash", "direction": "Show the trick: type the command/shortcut/code. Fast but readable."},
+            {"timing": "5-7s", "role": "result_flash", "direction": "Show the result instantly. Satisfying output. Text: 'Follow for more'."},
+        ],
+        "sound_mood": "keyboard clack + success chime / satisfying pop",
+        "cta_templates": [
+            "Save this. You'll need it.",
+            "Follow for daily dev tricks.",
+            "What trick should I show next?",
+        ],
+    },
+    "this_or_that": {
+        "label": "This or That (7s)",
+        "short": True,
+        "hook_templates": [
+            "{topic} — which side are you on?",
+            "Choose: {topic}.",
+            "{topic} debate in 7 seconds.",
+            "Pick one: {topic}.",
+            "The {topic} dilemma.",
+        ],
+        "structure": [
+            {"timing": "0-2s", "role": "hook_text", "direction": "Split screen. Two options. Text: 'PICK ONE'."},
+            {"timing": "2-5s", "role": "versus_reveal", "direction": "Quick pros of each side flash as text. Point left, then right."},
+            {"timing": "5-7s", "role": "your_pick", "direction": "Point to your pick. Wink or nod. Text: 'Comment yours'. Loop-friendly."},
+        ],
+        "sound_mood": "game show buzzer / choice sound effect",
+        "cta_templates": [
+            "Comment your pick.",
+            "Left or right? Go.",
+            "Duet this with your answer.",
+        ],
+    },
+    "wait_for_it": {
+        "label": "Wait For It / Reveal (7s)",
+        "short": True,
+        "hook_templates": [
+            "Wait for the {topic} reveal...",
+            "You won't believe this {topic} result.",
+            "Watch what happens with {topic}...",
+            "{topic} before and after in 7 seconds.",
+            "The {topic} glow-up you didn't expect.",
+        ],
+        "structure": [
+            {"timing": "0-2s", "role": "hook_text", "direction": "Text: 'WAIT FOR IT'. Show the messy/broken state."},
+            {"timing": "2-4s", "role": "tension_build", "direction": "Quick cuts or zoom. Build anticipation. Maybe a countdown."},
+            {"timing": "4-7s", "role": "reveal", "direction": "Hard cut to the satisfying result. Let it breathe. Text: 'Follow'."},
+        ],
+        "sound_mood": "tension buildup then satisfying bass drop / oh-no-oh-yes audio",
+        "cta_templates": [
+            "Worth the wait? Follow for more.",
+            "Like if that was satisfying.",
+            "Save and share this.",
+        ],
+    },
+    "ratio_bait": {
+        "label": "Ratio Bait / Engagement Bomb (6s)",
+        "short": True,
+        "hook_templates": [
+            "{topic} fans are gonna hate me for this.",
+            "If you use {topic}, unfollow me now.",
+            "{topic} is mid. Prove me wrong.",
+            "I will die on this {topic} hill.",
+            "Saying what everyone thinks about {topic}.",
+        ],
+        "structure": [
+            {"timing": "0-3s", "role": "bomb_drop", "direction": "Dead stare into camera. Drop the statement. Bold text overlay."},
+            {"timing": "3-5s", "role": "hold", "direction": "Hold the stare. Don't flinch. Let the tension sit."},
+            {"timing": "5-6s", "role": "smirk_out", "direction": "Slight smirk. Shrug. Text: 'Comment if I'm wrong'. Loop point."},
+        ],
+        "sound_mood": "villain arc audio / 'oh no' trending sound",
+        "cta_templates": [
+            "Prove me wrong in the comments.",
+            "Ratio this if you can.",
+            "Like if I'm right. Comment if I'm wrong.",
+        ],
+    },
+    "text_story": {
+        "label": "Text Story / No-Face (7s)",
+        "short": True,
+        "hook_templates": [
+            "Things about {topic} that keep me up at night.",
+            "The {topic} realization that hit me like a truck.",
+            "When {topic} finally made sense...",
+            "The moment I understood {topic}.",
+            "{topic}: the part they don't tell beginners.",
+        ],
+        "structure": [
+            {"timing": "0-3s", "role": "text_hook", "direction": "Text on screen over b-roll or dark background. No face needed."},
+            {"timing": "3-5s", "role": "text_punch", "direction": "Second text slide with the punchline. Bigger font. Center screen."},
+            {"timing": "5-7s", "role": "text_cta", "direction": "Final text: 'Follow for more' or '...Part 2?'. Clean loop."},
+        ],
+        "sound_mood": "lo-fi ambient / emotional piano / trending voiceless audio",
+        "cta_templates": [
+            "Part 2? Follow.",
+            "Relatable? Like and save.",
+            "Comment if this was you.",
+        ],
+    },
+}
+
+# Merge short formats into the main format registry
+VIRAL_FORMATS.update(SHORT_FORMATS)
+
+
+# ---------------------------------------------------------------------------
 # Topic seeds specifically optimised for TikTok tech content
 # ---------------------------------------------------------------------------
 
@@ -322,7 +509,7 @@ class TikTokDiscoveryAgent:
         raw = f"tiktok-{fmt}-{topic}"
         return hashlib.md5(raw.encode()).hexdigest()[:12]
 
-    def run(self, max_new: int = 10) -> List[Dict[str, Any]]:
+    def run(self, max_new: int = 10, prefer_short: bool = True) -> List[Dict[str, Any]]:
         existing = self._load_existing()
         existing_ids = {t.get("id") for t in existing}
 
@@ -330,11 +517,23 @@ class TikTokDiscoveryAgent:
         day_seed = int(datetime.utcnow().strftime("%Y%m%d"))
         rng = random.Random(day_seed)
 
-        # Shuffle topics and formats to get variety each day
+        # Separate short (6-7s) and standard formats
+        short_format_keys = [k for k, v in VIRAL_FORMATS.items() if v.get("short")]
+        standard_format_keys = [k for k, v in VIRAL_FORMATS.items() if not v.get("short")]
+        rng.shuffle(short_format_keys)
+        rng.shuffle(standard_format_keys)
+
+        # When prefer_short is True, front-load short formats so roughly
+        # 60-70% of output is ultra-short clips (the sweet spot for growth)
+        if prefer_short:
+            formats_pool = short_format_keys + standard_format_keys
+        else:
+            all_formats = short_format_keys + standard_format_keys
+            rng.shuffle(all_formats)
+            formats_pool = all_formats
+
         topics_pool = list(TIKTOK_TOPIC_SEEDS)
-        formats_pool = list(VIRAL_FORMATS.keys())
         rng.shuffle(topics_pool)
-        rng.shuffle(formats_pool)
 
         new_topics: List[Dict[str, Any]] = []
         for topic_seed in topics_pool:
@@ -348,6 +547,7 @@ class TikTokDiscoveryAgent:
                     "id": topic_id,
                     "topic": topic_seed,
                     "format": fmt,
+                    "short": VIRAL_FORMATS[fmt].get("short", False),
                     "status": "new",
                     "created_at": datetime.utcnow().isoformat() + "Z",
                 }
@@ -444,6 +644,45 @@ class TikTokScriptGenerator:
                 text = self._generate_after(topic)
             elif role == "breakdown":
                 text = self._generate_breakdown(topic)
+            # --- Ultra-short format roles (6-7s clips) ---
+            elif role == "hook_text":
+                text = hook  # Reuse the hook as on-screen text
+            elif role == "punchline":
+                text = self._generate_punchline(topic)
+            elif role == "end_card":
+                text = "[LOOP POINT — handle/logo flash, seamless restart]"
+            elif role == "fact_drop":
+                text = self._generate_fact_drop(topic)
+            elif role == "reaction_beat":
+                text = "[Beat. Eyebrow raise. Let it land.]"
+            elif role == "take_drop":
+                text = self._generate_take_drop(topic)
+            elif role == "stare_out":
+                text = "[Hold eye contact. Don't blink. Let the silence do the work.]"
+            elif role == "demo_flash":
+                text = self._generate_demo_flash(topic)
+            elif role == "result_flash":
+                text = self._generate_result_flash(topic)
+            elif role == "versus_reveal":
+                text = self._generate_versus_reveal(topic)
+            elif role == "your_pick":
+                text = self._generate_your_pick(topic)
+            elif role == "tension_build":
+                text = "[Quick cuts. Zoom. Countdown 3... 2... 1...]"
+            elif role == "reveal":
+                text = self._generate_reveal(topic)
+            elif role == "bomb_drop":
+                text = hook
+            elif role == "hold":
+                text = "[Dead silence. Hold the stare. 2 full seconds.]"
+            elif role == "smirk_out":
+                text = "[Slight smirk. Shrug. You said what you said.]"
+            elif role == "text_hook":
+                text = hook
+            elif role == "text_punch":
+                text = self._generate_text_punch(topic)
+            elif role == "text_cta":
+                text = cta
             else:
                 text = f"[{role}: talk about {topic}]"
 
@@ -608,6 +847,89 @@ class TikTokScriptGenerator:
             f"I stopped copying tutorials without understanding them, "
             f"and I built real projects instead of toy examples."
         )
+
+    # --- Ultra-short format generators (6-7s clips) ---
+
+    def _generate_punchline(self, topic: str) -> str:
+        punchlines = [
+            f"The best thing about {topic}? It's simpler than everyone makes it.",
+            f"{topic} doesn't need to be complicated. Stop overengineering it.",
+            f"One year of {topic} taught me more than four years of tutorials.",
+            f"The secret to {topic}? Start. That's literally it.",
+            f"{topic}: the people who talk the most about it do it the least.",
+        ]
+        rng = random.Random(hash(topic + "punchline"))
+        return rng.choice(punchlines)
+
+    def _generate_fact_drop(self, topic: str) -> str:
+        facts = [
+            f"Most people who claim expertise in {topic} learned it in under 3 months.",
+            f"The top 1% of {topic} practitioners all share one habit: they build in public.",
+            f"90% of {topic} problems are solved by reading the error message. Seriously.",
+            f"{topic} has been around longer than most people on this app.",
+            f"The highest-paid people in {topic} aren't the smartest — they're the most consistent.",
+        ]
+        rng = random.Random(hash(topic + "fact"))
+        return rng.choice(facts)
+
+    def _generate_take_drop(self, topic: str) -> str:
+        takes = [
+            f"{topic} is only hard because people skip the basics and chase advanced tricks.",
+            f"Half the content about {topic} online is wrong. And the other half is outdated.",
+            f"You don't need a degree for {topic}. You need 30 days of focused work.",
+            f"{topic} influencers are selling you the dream but hiding the grind.",
+            f"The best {topic} tool is the one you actually use. Stop switching.",
+        ]
+        rng = random.Random(hash(topic + "take"))
+        return rng.choice(takes)
+
+    def _generate_demo_flash(self, topic: str) -> str:
+        demos = [
+            f"[TYPE ON SCREEN] The {topic} command/shortcut that saves 2 hours a week.",
+            f"[SCREEN RECORDING] Watch: one {topic} trick, 3 seconds, done.",
+            f"[LIVE DEMO] Here's the {topic} shortcut. Copy it. Use it. Thank me later.",
+            f"[SCREEN] Type this. Hit enter. {topic} just got 10x easier.",
+        ]
+        rng = random.Random(hash(topic + "demo"))
+        return rng.choice(demos)
+
+    def _generate_result_flash(self, topic: str) -> str:
+        return f"[RESULT ON SCREEN] Done. That's {topic} in 3 seconds flat."
+
+    def _generate_versus_reveal(self, topic: str) -> str:
+        return (
+            f"Left: the old way of doing {topic}. Slow. Painful. "
+            f"Right: the new way. Clean. Fast. Choose wisely."
+        )
+
+    def _generate_your_pick(self, topic: str) -> str:
+        picks = [
+            f"I'm going right. Every time. But that's just me — comment yours.",
+            f"If you're still on the left... we need to talk. Comment your pick.",
+            f"The answer is obvious. Or is it? Comment which side you're on.",
+        ]
+        rng = random.Random(hash(topic + "pick"))
+        return rng.choice(picks)
+
+    def _generate_reveal(self, topic: str) -> str:
+        reveals = [
+            f"[HARD CUT] And that's {topic} done right. Clean. Satisfying. You're welcome.",
+            f"[REVEAL] From chaos to perfection. {topic} glow-up complete.",
+            f"[CUT TO RESULT] See the difference? That's what {topic} mastery looks like.",
+        ]
+        rng = random.Random(hash(topic + "reveal"))
+        return rng.choice(reveals)
+
+    def _generate_text_punch(self, topic: str) -> str:
+        punches = [
+            f"The moment you realise {topic} was never the hard part — you were.",
+            f"Nobody talks about how lonely the {topic} grind actually is.",
+            f"The gap between knowing {topic} and doing {topic} is where everyone quits.",
+            f"{topic} isn't about talent. It's about showing up when it's boring.",
+            f"They told me {topic} was a waste of time. It's now my entire career.",
+        ]
+        rng = random.Random(hash(topic + "textpunch"))
+        return rng.choice(punches)
 
     def _select_hashtags(self, topic: str, fmt_key: str, rng: random.Random) -> List[str]:
         """Pick a natural-looking mix of hashtags (8-12 total)."""
@@ -780,6 +1102,7 @@ class TikTokValidator:
     def validate(self, script: TikTokScript) -> Dict[str, Any]:
         issues: List[str] = []
         score = 100  # Start perfect, deduct for issues
+        is_short_format = VIRAL_FORMATS.get(script.format_name, {}).get("short", False)
 
         # 1. Hook must exist and be punchy (under 15 words)
         if not script.hook:
@@ -794,13 +1117,21 @@ class TikTokValidator:
             issues.append("too few segments — needs at least 3 for proper pacing")
             score -= 20
 
-        # 3. Duration should be 15-90 seconds (TikTok sweet spot)
-        if script.estimated_duration_sec < 15:
-            issues.append("too short — under 15 seconds won't perform well")
-            score -= 15
-        elif script.estimated_duration_sec > 90:
-            issues.append("too long — over 90 seconds loses retention")
-            score -= 10
+        # 3. Duration check — short formats (6-7s) and standard (15-90s) both valid
+        if is_short_format:
+            if script.estimated_duration_sec < 5:
+                issues.append("too short — even micro-clips need at least 5 seconds")
+                score -= 15
+            elif script.estimated_duration_sec > 10:
+                issues.append("short format should stay under 10 seconds for maximum impact")
+                score -= 10
+        else:
+            if script.estimated_duration_sec < 15:
+                issues.append("too short — under 15 seconds won't perform well")
+                score -= 15
+            elif script.estimated_duration_sec > 90:
+                issues.append("too long — over 90 seconds loses retention")
+                score -= 10
 
         # 4. Must have hashtags
         if len(script.hashtags) < 3:

@@ -1,0 +1,46 @@
+{
+  "id": "aee2100e5013",
+  "topic": "keyboard shortcuts that 10x your coding speed",
+  "format_name": "one_liner",
+  "hook": "keyboard shortcuts that 10x your coding speed. That's it. That's the tip.",
+  "script_segments": [
+    {
+      "timing": "0-2s",
+      "role": "hook_text",
+      "text": "keyboard shortcuts that 10x your coding speed. That's it. That's the tip.",
+      "visual_direction": "Black screen or face close-up. Big bold text fades in."
+    },
+    {
+      "timing": "2-5s",
+      "role": "punchline",
+      "text": "keyboard shortcuts that 10x your coding speed: the people who talk the most about it do it the least.",
+      "visual_direction": "Text reveal with dramatic zoom or shake. Let the line breathe."
+    },
+    {
+      "timing": "5-7s",
+      "role": "end_card",
+      "text": "[LOOP POINT \u2014 handle/logo flash, seamless restart]",
+      "visual_direction": "Quick logo/handle flash. Loop-friendly \u2014 cuts back to start cleanly."
+    }
+  ],
+  "caption": "The honest truth about keyboard shortcuts that 10x your coding speed that nobody is telling you.",
+  "hashtags": [
+    "#devlife",
+    "#programming",
+    "#tech",
+    "#blowthisup",
+    "#fyp",
+    "#tutorial",
+    "#todayilearned",
+    "#cybersecurity",
+    "#golang"
+  ],
+  "sound_suggestion": "bass drop / vinyl scratch / single dramatic hit",
+  "cta": "Follow if you agree.",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-02-28T00:17:05.916757Z",
+  "metadata": {
+    "format_label": "One-Liner Drop (6s)",
+    "word_count": 38
+  }
+}

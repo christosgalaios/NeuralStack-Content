@@ -1,37 +1,42 @@
 [
   {
-    "id": "0e708bc8bf22",
-    "topic": "developer salary negotiation secrets",
-    "format": "tutorial",
+    "id": "494a1c66b080",
+    "topic": "the programming language that pays the most in 2026",
+    "format": "one_liner",
+    "short": true,
     "status": "published",
-    "created_at": "2026-02-27T19:48:07.860873Z"
+    "created_at": "2026-02-28T00:17:05.914428Z"
   },
   {
-    "id": "38d397342e15",
-    "topic": "developer burnout and how to actually fix it",
-    "format": "tutorial",
+    "id": "6cf9e60308bf",
+    "topic": "Docker explained so simply your manager could understand",
+    "format": "one_liner",
+    "short": true,
     "status": "published",
-    "created_at": "2026-02-27T19:48:07.860882Z"
+    "created_at": "2026-02-28T00:17:05.914433Z"
   },
   {
-    "id": "02754b330107",
-    "topic": "the one skill that separates junior from senior developers",
-    "format": "tutorial",
+    "id": "aee2100e5013",
+    "topic": "keyboard shortcuts that 10x your coding speed",
+    "format": "one_liner",
+    "short": true,
     "status": "published",
-    "created_at": "2026-02-27T19:48:07.860885Z"
+    "created_at": "2026-02-28T00:17:05.914435Z"
   },
   {
-    "id": "0f1e8cbeb31c",
-    "topic": "why senior devs hate unnecessary meetings",
-    "format": "tutorial",
+    "id": "bbdf15bbccf7",
+    "topic": "how to use ChatGPT to code 10x faster",
+    "format": "one_liner",
+    "short": true,
     "status": "published",
-    "created_at": "2026-02-27T19:48:07.860887Z"
+    "created_at": "2026-02-28T00:17:05.914437Z"
   },
   {
-    "id": "112cadf32d08",
-    "topic": "AI coding assistants and whether they actually help",
-    "format": "tutorial",
+    "id": "1884426d5c09",
+    "topic": "TypeScript tricks that feel illegal",
+    "format": "one_liner",
+    "short": true,
     "status": "published",
-    "created_at": "2026-02-27T19:48:07.860889Z"
+    "created_at": "2026-02-28T00:17:05.914439Z"
   }
 ]
