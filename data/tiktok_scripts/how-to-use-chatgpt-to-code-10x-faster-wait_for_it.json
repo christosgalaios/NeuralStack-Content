@@ -1,0 +1,46 @@
+{
+  "id": "b7dd91f572f3",
+  "topic": "how to use ChatGPT to code 10x faster",
+  "format_name": "wait_for_it",
+  "hook": "how to use ChatGPT to code 10x faster before and after in 7 seconds.",
+  "script_segments": [
+    {
+      "timing": "0-2s",
+      "role": "hook_text",
+      "text": "how to use ChatGPT to code 10x faster before and after in 7 seconds.",
+      "visual_direction": "Text: 'WAIT FOR IT'. Show the messy/broken state."
+    },
+    {
+      "timing": "2-4s",
+      "role": "tension_build",
+      "text": "[Quick cuts. Zoom. Countdown 3... 2... 1...]",
+      "visual_direction": "Quick cuts or zoom. Build anticipation. Maybe a countdown."
+    },
+    {
+      "timing": "4-7s",
+      "role": "reveal",
+      "text": "[REVEAL] From chaos to perfection. how to use ChatGPT to code 10x faster glow-up complete.",
+      "visual_direction": "Hard cut to the satisfying result. Let it breathe. Text: 'Follow'."
+    }
+  ],
+  "caption": "how to use ChatGPT to code 10x faster \u2014 explained in a way that actually makes sense.",
+  "hashtags": [
+    "#developer",
+    "#webdev",
+    "#learntocode",
+    "#blowthisup",
+    "#fyp",
+    "#learnontiktok",
+    "#lifehack",
+    "#git",
+    "#javascript"
+  ],
+  "sound_suggestion": "tension buildup then satisfying bass drop / oh-no-oh-yes audio",
+  "cta": "Like if that was satisfying.",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-02-28T04:14:43.069874Z",
+  "metadata": {
+    "format_label": "Wait For It / Reveal (7s)",
+    "word_count": 36
+  }
+}

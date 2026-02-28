@@ -183,3 +183,31 @@
 2026-02-28 00:33:38,613 [INFO] Published TikTok script: TypeScript tricks that feel illegal [one_liner] (score=100) + video
 2026-02-28 00:33:38,614 [INFO] TikTok pipeline complete: 5 scripts published.
 2026-02-28 00:33:38,614 [INFO] Pipeline completed successfully.
+2026-02-28 04:14:43,037 [INFO] Starting DiscoveryAgent.
+2026-02-28 04:14:43,041 [INFO] Starting ContentAgent.
+2026-02-28 04:14:43,046 [INFO] Starting ValidationAgent.
+2026-02-28 04:14:43,048 [INFO] Starting DistributionAgent.
+2026-02-28 04:14:43,054 [INFO] Starting TikTokAgent.
+2026-02-28 04:14:43,054 [INFO] TikTok discovery found 5 new topics.
+2026-02-28 04:14:43,055 [INFO] Generated TikTok script via template: the programming language that pays the most in 2026
+2026-02-28 04:14:43,067 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-02-28 04:14:43,067 [WARNING] Video production failed for: the programming language that pays the most in 2026
+2026-02-28 04:14:43,067 [INFO] Published TikTok script: the programming language that pays the most in 2026 [wait_for_it] (score=95)
+2026-02-28 04:14:43,068 [INFO] Generated TikTok script via template: Docker explained so simply your manager could understand
+2026-02-28 04:14:43,068 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-02-28 04:14:43,068 [WARNING] Video production failed for: Docker explained so simply your manager could understand
+2026-02-28 04:14:43,068 [INFO] Published TikTok script: Docker explained so simply your manager could understand [wait_for_it] (score=95)
+2026-02-28 04:14:43,068 [INFO] Generated TikTok script via template: keyboard shortcuts that 10x your coding speed
+2026-02-28 04:14:43,069 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-02-28 04:14:43,069 [WARNING] Video production failed for: keyboard shortcuts that 10x your coding speed
+2026-02-28 04:14:43,069 [INFO] Published TikTok script: keyboard shortcuts that 10x your coding speed [wait_for_it] (score=95)
+2026-02-28 04:14:43,069 [INFO] Generated TikTok script via template: how to use ChatGPT to code 10x faster
+2026-02-28 04:14:43,070 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-02-28 04:14:43,070 [WARNING] Video production failed for: how to use ChatGPT to code 10x faster
+2026-02-28 04:14:43,070 [INFO] Published TikTok script: how to use ChatGPT to code 10x faster [wait_for_it] (score=95)
+2026-02-28 04:14:43,070 [INFO] Generated TikTok script via template: TypeScript tricks that feel illegal
+2026-02-28 04:14:43,071 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-02-28 04:14:43,071 [WARNING] Video production failed for: TypeScript tricks that feel illegal
+2026-02-28 04:14:43,071 [INFO] Published TikTok script: TypeScript tricks that feel illegal [wait_for_it] (score=95)
+2026-02-28 04:14:43,072 [INFO] TikTok pipeline complete: 5 scripts published.
+2026-02-28 04:14:43,072 [INFO] Pipeline completed successfully.

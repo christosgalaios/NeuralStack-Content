@@ -108,5 +108,45 @@
     "format": "hot_take",
     "status": "published",
     "created_at": "2026-02-27T21:41:01.489375Z"
+  },
+  {
+    "id": "c2a65234b0db",
+    "topic": "the programming language that pays the most in 2026",
+    "format": "wait_for_it",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-02-28T04:14:43.054727Z"
+  },
+  {
+    "id": "709b22a74a8b",
+    "topic": "Docker explained so simply your manager could understand",
+    "format": "wait_for_it",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-02-28T04:14:43.054738Z"
+  },
+  {
+    "id": "046d8b3c7284",
+    "topic": "keyboard shortcuts that 10x your coding speed",
+    "format": "wait_for_it",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-02-28T04:14:43.054746Z"
+  },
+  {
+    "id": "b7dd91f572f3",
+    "topic": "how to use ChatGPT to code 10x faster",
+    "format": "wait_for_it",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-02-28T04:14:43.054751Z"
+  },
+  {
+    "id": "3f1c03894c08",
+    "topic": "TypeScript tricks that feel illegal",
+    "format": "wait_for_it",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-02-28T04:14:43.054757Z"
   }
 ]
