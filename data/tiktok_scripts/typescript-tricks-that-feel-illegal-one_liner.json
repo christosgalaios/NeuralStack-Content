@@ -2,12 +2,12 @@
   "id": "1884426d5c09",
   "topic": "TypeScript tricks that feel illegal",
   "format_name": "one_liner",
-  "hook": "Remember this about TypeScript tricks that feel illegal.",
+  "hook": "Say it louder: TypeScript tricks that feel illegal.",
   "script_segments": [
     {
       "timing": "0-2s",
       "role": "hook_text",
-      "text": "Remember this about TypeScript tricks that feel illegal.",
+      "text": "Say it louder: TypeScript tricks that feel illegal.",
       "visual_direction": "Black screen or face close-up. Big bold text fades in."
     },
     {
@@ -23,22 +23,22 @@
       "visual_direction": "Quick logo/handle flash. Loop-friendly \u2014 cuts back to start cleanly."
     }
   ],
-  "caption": "TypeScript tricks that feel illegal \u2014 explained in a way that actually makes sense.",
+  "caption": "I wish someone told me this about TypeScript tricks that feel illegal sooner.",
   "hashtags": [
-    "#programming",
+    "#coding",
     "#developer",
-    "#devlife",
-    "#viral",
-    "#foryoupage",
-    "#lifehack",
+    "#webdev",
+    "#trending",
+    "#foryou",
     "#didyouknow",
-    "#linux",
-    "#ai"
+    "#learnontiktok",
+    "#startup",
+    "#webdevelopment"
   ],
   "sound_suggestion": "bass drop / vinyl scratch / single dramatic hit",
   "cta": "Follow if you agree.",
   "estimated_duration_sec": 7,
-  "created_at": "2026-02-28T00:17:05.917948Z",
+  "created_at": "2026-02-28T00:33:30.290480Z",
   "metadata": {
     "format_label": "One-Liner Drop (6s)",
     "word_count": 27

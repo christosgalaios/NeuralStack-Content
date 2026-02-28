@@ -7,7 +7,7 @@
 
 ## HOOK (first 3 seconds — this is EVERYTHING)
 
-> Say it louder: the programming language that pays the most in 2026.
+> The truth about the programming language that pays the most in 2026.
 
 ---
 
@@ -15,13 +15,13 @@
 
 ### [0-2s] — HOOK_TEXT
 
-**Say:** Say it louder: the programming language that pays the most in 2026.
+**Say:** The truth about the programming language that pays the most in 2026.
 
 *Camera/Visual:* Black screen or face close-up. Big bold text fades in.
 
 ### [2-5s] — PUNCHLINE
 
-**Say:** the programming language that pays the most in 2026: the people who talk the most about it do it the least.
+**Say:** The secret to the programming language that pays the most in 2026? Start. That's literally it.
 
 *Camera/Visual:* Text reveal with dramatic zoom or shake. Let the line breathe.
 
@@ -35,8 +35,8 @@
 
 ## POST DETAILS
 
-**Caption:** I wish someone told me this about the programming language that pays the most in 2026 sooner.
+**Caption:** Talking about the programming language that pays the most in 2026 because someone needed to say it. Agree or disagree?
 
-**Hashtags:** #developer #devlife #software #viral #trending #edutok #didyouknow #ai #cybersecurity
+**Hashtags:** #coding #webdev #developer #xyzbca #trending #didyouknow #howto #docker #git
 
-**CTA:** Save this.
+**CTA:** Follow if you agree.

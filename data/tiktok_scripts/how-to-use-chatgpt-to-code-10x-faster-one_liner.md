@@ -7,7 +7,7 @@
 
 ## HOOK (first 3 seconds — this is EVERYTHING)
 
-> Say it louder: how to use ChatGPT to code 10x faster.
+> Remember this about how to use ChatGPT to code 10x faster.
 
 ---
 
@@ -15,13 +15,13 @@
 
 ### [0-2s] — HOOK_TEXT
 
-**Say:** Say it louder: how to use ChatGPT to code 10x faster.
+**Say:** Remember this about how to use ChatGPT to code 10x faster.
 
 *Camera/Visual:* Black screen or face close-up. Big bold text fades in.
 
 ### [2-5s] — PUNCHLINE
 
-**Say:** The secret to how to use ChatGPT to code 10x faster? Start. That's literally it.
+**Say:** how to use ChatGPT to code 10x faster doesn't need to be complicated. Stop overengineering it.
 
 *Camera/Visual:* Text reveal with dramatic zoom or shake. Let the line breathe.
 
@@ -35,8 +35,8 @@
 
 ## POST DETAILS
 
-**Caption:** I wish someone told me this about how to use ChatGPT to code 10x faster sooner.
+**Caption:** how to use ChatGPT to code 10x faster — explained in a way that actually makes sense.
 
-**Hashtags:** #webdev #techtok #tech #fyp #foryou #edutok #howto #machinelearning #rust
+**Hashtags:** #coding #tech #webdev #foryou #trending #todayilearned #edutok #docker #vscode
 
-**CTA:** Tag someone who needs this.
+**CTA:** Save this.

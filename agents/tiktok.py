@@ -1243,24 +1243,37 @@ class TikTokOutputWriter:
 class TikTokAgent:
     """
     Top-level agent that discovers topics, generates scripts, validates them,
-    and writes output. Plug this into the main pipeline.
+    produces videos, and writes output. Plug this into the main pipeline.
     """
 
     def __init__(self, data_dir: Path) -> None:
         self.data_dir = Path(data_dir)
         self.output_dir = self.data_dir / "tiktok_scripts"
+        self.video_dir = self.data_dir / "tiktok_videos"
         self.discovery = TikTokDiscoveryAgent(data_dir)
         self.generator = TikTokScriptGenerator()
         self.validator = TikTokValidator()
         self.writer = TikTokOutputWriter(self.output_dir)
+        self._producer = None  # lazy-loaded
 
-    def run(self, max_scripts: int = 5) -> List[Dict[str, Any]]:
+    def _get_producer(self):
+        """Lazy-load the video producer to avoid import errors when deps are missing."""
+        if self._producer is None:
+            try:
+                from agents.tiktok_producer import TikTokProducer
+                self._producer = TikTokProducer(self.video_dir)
+            except ImportError:
+                self._producer = False  # Mark as unavailable
+        return self._producer if self._producer is not False else None
+
+    def run(self, max_scripts: int = 5, produce_videos: bool = True) -> List[Dict[str, Any]]:
         """
         Full autonomous run:
         1. Discover topics
         2. Generate scripts (Ollama if available, else templates)
         3. Validate
         4. Write approved scripts to disk
+        5. Produce videos (if FFmpeg + Pillow are available)
         Returns metadata about published scripts.
         """
         import logging
@@ -1302,11 +1315,22 @@ class TikTokAgent:
                 )
                 continue
 
-            # 4. Write
+            # 4. Write script files
             json_path = self.writer.write_json(script)
             md_path = self.writer.write_markdown(script)
 
-            results.append({
+            # 5. Produce video
+            video_path = None
+            if produce_videos:
+                producer = self._get_producer()
+                if producer:
+                    video_path = producer.produce(script, add_captions=True)
+                    if video_path:
+                        logger.info("Produced video: %s", video_path.name)
+                    else:
+                        logger.warning("Video production failed for: %s", topic)
+
+            result_entry = {
                 "id": topic_id,
                 "topic": topic,
                 "format": fmt_key,
@@ -1316,11 +1340,15 @@ class TikTokAgent:
                 "hook": script.hook,
                 "hashtags": script.hashtags,
                 "duration_sec": script.estimated_duration_sec,
-            })
+            }
+            if video_path:
+                result_entry["video_path"] = str(video_path)
+            results.append(result_entry)
 
             logger.info(
-                "Published TikTok script: %s [%s] (score=%d)",
+                "Published TikTok script: %s [%s] (score=%d)%s",
                 topic, fmt_key, validation["score"],
+                " + video" if video_path else "",
             )
 
         # Update discovery file statuses

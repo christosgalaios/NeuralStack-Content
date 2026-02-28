@@ -7,7 +7,7 @@
 
 ## HOOK (first 3 seconds — this is EVERYTHING)
 
-> Say it louder: Docker explained so simply your manager could understand.
+> Docker explained so simply your manager could understand in one sentence.
 
 ---
 
@@ -15,13 +15,13 @@
 
 ### [0-2s] — HOOK_TEXT
 
-**Say:** Say it louder: Docker explained so simply your manager could understand.
+**Say:** Docker explained so simply your manager could understand in one sentence.
 
 *Camera/Visual:* Black screen or face close-up. Big bold text fades in.
 
 ### [2-5s] — PUNCHLINE
 
-**Say:** Docker explained so simply your manager could understand: the people who talk the most about it do it the least.
+**Say:** The secret to Docker explained so simply your manager could understand? Start. That's literally it.
 
 *Camera/Visual:* Text reveal with dramatic zoom or shake. Let the line breathe.
 
@@ -35,8 +35,8 @@
 
 ## POST DETAILS
 
-**Caption:** I wish someone told me this about Docker explained so simply your manager could understand sooner.
+**Caption:** Docker explained so simply your manager could understand in one sentence. Full breakdown in this video. Save for later.
 
-**Hashtags:** #programming #developer #coder #foryoupage #fyp #learnontiktok #lifehack #ai #docker
+**Hashtags:** #developer #techtok #learntocode #viral #foryou #lifehack #howto #ai #docker
 
 **CTA:** Follow if you agree.

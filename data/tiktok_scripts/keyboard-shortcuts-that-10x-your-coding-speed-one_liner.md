@@ -7,7 +7,7 @@
 
 ## HOOK (first 3 seconds — this is EVERYTHING)
 
-> keyboard shortcuts that 10x your coding speed. That's it. That's the tip.
+> Say it louder: keyboard shortcuts that 10x your coding speed.
 
 ---
 
@@ -15,13 +15,13 @@
 
 ### [0-2s] — HOOK_TEXT
 
-**Say:** keyboard shortcuts that 10x your coding speed. That's it. That's the tip.
+**Say:** Say it louder: keyboard shortcuts that 10x your coding speed.
 
 *Camera/Visual:* Black screen or face close-up. Big bold text fades in.
 
 ### [2-5s] — PUNCHLINE
 
-**Say:** keyboard shortcuts that 10x your coding speed: the people who talk the most about it do it the least.
+**Say:** keyboard shortcuts that 10x your coding speed doesn't need to be complicated. Stop overengineering it.
 
 *Camera/Visual:* Text reveal with dramatic zoom or shake. Let the line breathe.
 
@@ -35,8 +35,8 @@
 
 ## POST DETAILS
 
-**Caption:** The honest truth about keyboard shortcuts that 10x your coding speed that nobody is telling you.
+**Caption:** I wish someone told me this about keyboard shortcuts that 10x your coding speed sooner.
 
-**Hashtags:** #devlife #programming #tech #blowthisup #fyp #tutorial #todayilearned #cybersecurity #golang
+**Hashtags:** #learntocode #software #devlife #viral #fyp #howto #lifehack #opensource #docker
 
-**CTA:** Follow if you agree.
+**CTA:** Tag someone who needs this.

@@ -7,7 +7,7 @@
 
 ## HOOK (first 3 seconds — this is EVERYTHING)
 
-> Remember this about TypeScript tricks that feel illegal.
+> Say it louder: TypeScript tricks that feel illegal.
 
 ---
 
@@ -15,7 +15,7 @@
 
 ### [0-2s] — HOOK_TEXT
 
-**Say:** Remember this about TypeScript tricks that feel illegal.
+**Say:** Say it louder: TypeScript tricks that feel illegal.
 
 *Camera/Visual:* Black screen or face close-up. Big bold text fades in.
 
@@ -35,8 +35,8 @@
 
 ## POST DETAILS
 
-**Caption:** TypeScript tricks that feel illegal — explained in a way that actually makes sense.
+**Caption:** I wish someone told me this about TypeScript tricks that feel illegal sooner.
 
-**Hashtags:** #programming #developer #devlife #viral #foryoupage #lifehack #didyouknow #linux #ai
+**Hashtags:** #coding #developer #webdev #trending #foryou #didyouknow #learnontiktok #startup #webdevelopment
 
 **CTA:** Follow if you agree.
