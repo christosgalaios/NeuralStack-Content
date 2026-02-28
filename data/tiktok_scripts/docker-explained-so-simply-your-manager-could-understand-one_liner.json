@@ -1,0 +1,46 @@
+{
+  "id": "6cf9e60308bf",
+  "topic": "Docker explained so simply your manager could understand",
+  "format_name": "one_liner",
+  "hook": "Docker explained so simply your manager could understand in one sentence.",
+  "script_segments": [
+    {
+      "timing": "0-2s",
+      "role": "hook_text",
+      "text": "Docker explained so simply your manager could understand in one sentence.",
+      "visual_direction": "Black screen or face close-up. Big bold text fades in."
+    },
+    {
+      "timing": "2-5s",
+      "role": "punchline",
+      "text": "The secret to Docker explained so simply your manager could understand? Start. That's literally it.",
+      "visual_direction": "Text reveal with dramatic zoom or shake. Let the line breathe."
+    },
+    {
+      "timing": "5-7s",
+      "role": "end_card",
+      "text": "[LOOP POINT \u2014 handle/logo flash, seamless restart]",
+      "visual_direction": "Quick logo/handle flash. Loop-friendly \u2014 cuts back to start cleanly."
+    }
+  ],
+  "caption": "Docker explained so simply your manager could understand in one sentence. Full breakdown in this video. Save for later.",
+  "hashtags": [
+    "#developer",
+    "#techtok",
+    "#learntocode",
+    "#viral",
+    "#foryou",
+    "#lifehack",
+    "#howto",
+    "#ai",
+    "#docker"
+  ],
+  "sound_suggestion": "bass drop / vinyl scratch / single dramatic hit",
+  "cta": "Follow if you agree.",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-02-28T00:33:05.000560Z",
+  "metadata": {
+    "format_label": "One-Liner Drop (6s)",
+    "word_count": 33
+  }
+}
