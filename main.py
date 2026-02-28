@@ -1,6 +1,5 @@
 import json
 import logging
-import os
 from datetime import datetime
 from pathlib import Path
 
@@ -118,6 +117,20 @@ def save_performance(data: dict) -> None:
     PERFORMANCE_FILE.write_text(json.dumps(data, indent=2), encoding="utf-8")
 
 
+def _update_topic_statuses(topic_ids: set, status: str) -> None:
+    """Update the status of topics in topics.json by their IDs."""
+    if not topic_ids or not TOPICS_FILE.exists():
+        return
+    try:
+        topics = json.loads(TOPICS_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return
+    for t in topics:
+        if t.get("id") in topic_ids:
+            t["status"] = status
+    TOPICS_FILE.write_text(json.dumps(topics, indent=2), encoding="utf-8")
+
+
 def run_pipeline() -> None:
     setup_logging()
     ensure_initial_files()
@@ -143,6 +156,11 @@ def run_pipeline() -> None:
         drafts = content.run(new_topics)
         run_entry["generated_articles"] = len(drafts)
 
+        # Mark drafted topics so they are not re-selected on next run.
+        _update_topic_statuses(
+            {d.topic_id for d in drafts}, "drafted"
+        )
+
         logging.info("Starting ValidationAgent.")
         validator = ValidationAgent(DATA_DIR, ARTICLES_DIR)
         approved_drafts = validator.run(drafts)
@@ -151,6 +169,11 @@ def run_pipeline() -> None:
         distribution = DistributionAgent(DATA_DIR, BASE_DIR, ARTICLES_DIR)
         published_files = distribution.run(approved_drafts)
         run_entry["published_articles"] = len(published_files)
+
+        # Mark published topics so they are never re-processed.
+        _update_topic_statuses(
+            {d.topic_id for d in approved_drafts}, "published"
+        )
 
         logging.info("Starting TikTokAgent.")
         tiktok = TikTokAgent(DATA_DIR)

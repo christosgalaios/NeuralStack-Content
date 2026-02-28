@@ -1,0 +1,58 @@
+{
+  "id": "02cfdc1924c3",
+  "topic": "the one skill that separates junior from senior developers",
+  "format_name": "myth_bust",
+  "hook": "Everyone gets the one skill that separates junior from senior developers wrong \u2014 here's proof.",
+  "script_segments": [
+    {
+      "timing": "0-3s",
+      "role": "hook",
+      "text": "Everyone gets the one skill that separates junior from senior developers wrong \u2014 here's proof.",
+      "visual_direction": "Big text: 'MYTH vs REALITY'. Dramatic zoom."
+    },
+    {
+      "timing": "3-12s",
+      "role": "myth_statement",
+      "text": "Myth number one: you need years of experience for the one skill that separates junior from senior developers. Myth number two: the one skill that separates junior from senior developers is only for big companies. Myth number three: the expensive option is always the best for the one skill that separates junior from senior developers.",
+      "visual_direction": "State the myth clearly. Use finger-count or list."
+    },
+    {
+      "timing": "12-30s",
+      "role": "debunk",
+      "text": "Let's break these down. The experience myth? Most people overestimate the barrier to entry for the one skill that separates junior from senior developers. The fundamentals take weeks, not years. The 'big companies only' myth? Some of the best the one skill that separates junior from senior developers implementations come from solo developers and small teams.",
+      "visual_direction": "Break it down with evidence. Screen share or whiteboard."
+    },
+    {
+      "timing": "30-40s",
+      "role": "reality",
+      "text": "The reality is \u2014 the one skill that separates junior from senior developers is accessible to anyone willing to put in focused practice. Start small, build projects, and you'll outperform 90% of people who just watch tutorials without doing the work.",
+      "visual_direction": "Show what actually works. Quick demo if possible."
+    },
+    {
+      "timing": "40-50s",
+      "role": "cta",
+      "text": "Part 2? Follow so you don't miss it.",
+      "visual_direction": "Ask: which myth surprised you most? Follow for part 2."
+    }
+  ],
+  "caption": "The honest truth about the one skill that separates junior from senior developers that nobody is telling you.",
+  "hashtags": [
+    "#coder",
+    "#developer",
+    "#webdev",
+    "#trending",
+    "#foryoupage",
+    "#howto",
+    "#edutok",
+    "#git",
+    "#javascript"
+  ],
+  "sound_suggestion": "revelation / suspenseful then upbeat",
+  "cta": "Part 2? Follow so you don't miss it.",
+  "estimated_duration_sec": 50,
+  "created_at": "2026-02-27T21:19:31.111436Z",
+  "metadata": {
+    "format_label": "Myth Busting",
+    "word_count": 175
+  }
+}

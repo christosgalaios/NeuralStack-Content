@@ -1,0 +1,58 @@
+{
+  "id": "02aee6b1f97d",
+  "topic": "why senior devs hate unnecessary meetings",
+  "format_name": "myth_bust",
+  "hook": "The biggest lie about why senior devs hate unnecessary meetings, debunked.",
+  "script_segments": [
+    {
+      "timing": "0-3s",
+      "role": "hook",
+      "text": "The biggest lie about why senior devs hate unnecessary meetings, debunked.",
+      "visual_direction": "Big text: 'MYTH vs REALITY'. Dramatic zoom."
+    },
+    {
+      "timing": "3-12s",
+      "role": "myth_statement",
+      "text": "Myth number one: you need years of experience for why senior devs hate unnecessary meetings. Myth number two: why senior devs hate unnecessary meetings is only for big companies. Myth number three: the expensive option is always the best for why senior devs hate unnecessary meetings.",
+      "visual_direction": "State the myth clearly. Use finger-count or list."
+    },
+    {
+      "timing": "12-30s",
+      "role": "debunk",
+      "text": "Let's break these down. The experience myth? Most people overestimate the barrier to entry for why senior devs hate unnecessary meetings. The fundamentals take weeks, not years. The 'big companies only' myth? Some of the best why senior devs hate unnecessary meetings implementations come from solo developers and small teams.",
+      "visual_direction": "Break it down with evidence. Screen share or whiteboard."
+    },
+    {
+      "timing": "30-40s",
+      "role": "reality",
+      "text": "The reality is \u2014 why senior devs hate unnecessary meetings is accessible to anyone willing to put in focused practice. Start small, build projects, and you'll outperform 90% of people who just watch tutorials without doing the work.",
+      "visual_direction": "Show what actually works. Quick demo if possible."
+    },
+    {
+      "timing": "40-50s",
+      "role": "cta",
+      "text": "Which myth surprised you? Comment below.",
+      "visual_direction": "Ask: which myth surprised you most? Follow for part 2."
+    }
+  ],
+  "caption": "I wish someone told me this about why senior devs hate unnecessary meetings sooner.",
+  "hashtags": [
+    "#developer",
+    "#coding",
+    "#learntocode",
+    "#fyp",
+    "#viral",
+    "#tutorial",
+    "#lifehack",
+    "#vscode",
+    "#docker"
+  ],
+  "sound_suggestion": "revelation / suspenseful then upbeat",
+  "cta": "Which myth surprised you? Comment below.",
+  "estimated_duration_sec": 50,
+  "created_at": "2026-02-27T21:19:31.112476Z",
+  "metadata": {
+    "format_label": "Myth Busting",
+    "word_count": 151
+  }
+}

@@ -1,9 +1,22 @@
 import json
+import os
+import re
 from datetime import datetime
 from pathlib import Path
 from typing import List
 
 from .content import DraftArticle
+
+# Resolve base URL once at import time.  Set NEURALSTACK_BASE_URL in your
+# environment or GitHub Actions secrets; falls back to a sensible default.
+BASE_URL = os.getenv(
+    "NEURALSTACK_BASE_URL",
+    "https://christosgalaios.github.io/NeuralStack-Content",
+)
+
+# Optional: set NEURALSTACK_ADSENSE_ID to inject AdSense auto-ads.
+# Leave unset to skip ad injection entirely.
+ADSENSE_ID = os.getenv("NEURALSTACK_ADSENSE_ID", "")
 
 
 class DistributionAgent:
@@ -17,19 +30,42 @@ class DistributionAgent:
         self.root_dir = Path(root_dir)
         self.articles_dir = Path(articles_dir)
 
+    @staticmethod
+    def _md_links_to_html(text: str) -> str:
+        """Convert markdown-style [text](url) links to <a> tags with rel=noopener."""
+        return re.sub(
+            r'\[([^\]]+)\]\((https?://[^\)]+)\)',
+            r'<a href="\2" target="_blank" rel="noopener sponsored">\1</a>',
+            text,
+        )
+
     def _publish_article(self, draft: DraftArticle) -> Path:
         self.articles_dir.mkdir(parents=True, exist_ok=True)
         filename = f"{draft.slug}.html"
         path = self.articles_dir / filename
 
-        body = draft.content
+        body = self._md_links_to_html(draft.content)
+        canonical = f"{BASE_URL}/articles/{filename}"
+
+        adsense_tag = ""
+        if ADSENSE_ID:
+            adsense_tag = (
+                f'  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_ID}"'
+                f' crossorigin="anonymous"></script>\n'
+            )
+
         html = (
             "<!DOCTYPE html>\n"
-            "<html>\n"
+            '<html lang="en">\n'
             "<head>\n"
-            "  <meta charset=\"utf-8\" />\n"
+            '  <meta charset="utf-8" />\n'
+            '  <meta name="viewport" content="width=device-width, initial-scale=1" />\n'
             f"  <title>{draft.title}</title>\n"
-            "  <link rel=\"stylesheet\" href=\"../assets/style.css\" />\n"
+            f'  <meta name="description" content="In-depth technical guide: {draft.title}. Practical trade-offs, implementation patterns, and recommendations for production engineers." />\n'
+            f'  <link rel="canonical" href="{canonical}" />\n'
+            '  <meta name="robots" content="index, follow" />\n'
+            '  <link rel="stylesheet" href="../assets/style.css" />\n'
+            f"{adsense_tag}"
             "</head>\n"
             "<body>\n"
             f"<article>\n{body}\n</article>\n"
@@ -96,8 +132,7 @@ class DistributionAgent:
 
     def _update_sitemap(self, posts: List[dict]) -> None:
         sitemap = self.root_dir / "sitemap.xml"
-        # URL structure assumes GitHub Pages with project site at /.
-        base_url = "{{BASE_URL}}"
+        base_url = BASE_URL
         urls = [f"{base_url}/"]
         urls += [f"{base_url}/{p['path']}" for p in posts]
 
@@ -122,7 +157,7 @@ class DistributionAgent:
 
     def _update_rss(self, posts: List[dict]) -> None:
         feed = self.root_dir / "feed.xml"
-        base_url = "{{BASE_URL}}"
+        base_url = BASE_URL
         items = []
         for post in sorted(posts, key=lambda p: p["date"], reverse=True):
             items.append(

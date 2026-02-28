@@ -307,7 +307,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "selected"
+    "status": "published"
   },
   {
     "id": "compat-wsl2gpupassthrough",
@@ -317,7 +317,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "selected"
+    "status": "published"
   },
   {
     "id": "compat-pytorchwithrocm",
@@ -327,7 +327,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "selected"
+    "status": "published"
   },
   {
     "id": "compat-tensorrtwithonnx",
@@ -337,7 +337,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "selected"
+    "status": "published"
   },
   {
     "id": "compat-postgresqlwithprisma",
@@ -347,7 +347,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "selected"
+    "status": "published"
   },
   {
     "id": "news-japandevcommunityreaction",
@@ -357,7 +357,7 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "news-chineseopensourceecosystem",
@@ -367,7 +367,7 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "news-tokyostartupsusing",
@@ -377,7 +377,7 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "news-shanghaiailabstesting",
@@ -387,7 +387,7 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "news-cncloudproviderpartnership",
@@ -397,6 +397,4896 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-10T16:04:11.601341Z",
+    "status": "published"
+  },
+  {
+    "id": "devtools-vscode-zededitor-full-stackdevelopers",
+    "keyword": "VS Code vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-vscode-zededitor-pythonbackendengineers",
+    "keyword": "VS Code vs Zed editor for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-vscode-zededitor-rustdevelopers",
+    "keyword": "VS Code vs Zed editor for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-vscode-zededitor-datascientists",
+    "keyword": "VS Code vs Zed editor for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-vscode-zededitor-devopsengineers",
+    "keyword": "VS Code vs Zed editor for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-vscode-zededitor-mobiledevelopers",
+    "keyword": "VS Code vs Zed editor for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-vscode-zededitor-frontendreactdevelopers",
+    "keyword": "VS Code vs Zed editor for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-vscode-full-stackdevelopers",
+    "keyword": "JetBrains Fleet vs VS Code for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-vscode-pythonbackendengineers",
+    "keyword": "JetBrains Fleet vs VS Code for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-vscode-rustdevelopers",
+    "keyword": "JetBrains Fleet vs VS Code for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-vscode-datascientists",
+    "keyword": "JetBrains Fleet vs VS Code for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-vscode-devopsengineers",
+    "keyword": "JetBrains Fleet vs VS Code for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-vscode-mobiledevelopers",
+    "keyword": "JetBrains Fleet vs VS Code for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-vscode-frontendreactdevelopers",
+    "keyword": "JetBrains Fleet vs VS Code for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-neovim-full-stackdevelopers",
+    "keyword": "JetBrains Fleet vs Neovim for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-neovim-pythonbackendengineers",
+    "keyword": "JetBrains Fleet vs Neovim for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-neovim-rustdevelopers",
+    "keyword": "JetBrains Fleet vs Neovim for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-neovim-datascientists",
+    "keyword": "JetBrains Fleet vs Neovim for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-neovim-devopsengineers",
+    "keyword": "JetBrains Fleet vs Neovim for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-neovim-mobiledevelopers",
+    "keyword": "JetBrains Fleet vs Neovim for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-neovim-frontendreactdevelopers",
+    "keyword": "JetBrains Fleet vs Neovim for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-zededitor-full-stackdevelopers",
+    "keyword": "JetBrains Fleet vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-zededitor-pythonbackendengineers",
+    "keyword": "JetBrains Fleet vs Zed editor for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-zededitor-rustdevelopers",
+    "keyword": "JetBrains Fleet vs Zed editor for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-zededitor-datascientists",
+    "keyword": "JetBrains Fleet vs Zed editor for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-zededitor-devopsengineers",
+    "keyword": "JetBrains Fleet vs Zed editor for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-zededitor-mobiledevelopers",
+    "keyword": "JetBrains Fleet vs Zed editor for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-zededitor-frontendreactdevelopers",
+    "keyword": "JetBrains Fleet vs Zed editor for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-sublimetext-full-stackdevelopers",
+    "keyword": "JetBrains Fleet vs Sublime Text for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-sublimetext-pythonbackendengineers",
+    "keyword": "JetBrains Fleet vs Sublime Text for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-sublimetext-rustdevelopers",
+    "keyword": "JetBrains Fleet vs Sublime Text for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-sublimetext-datascientists",
+    "keyword": "JetBrains Fleet vs Sublime Text for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-sublimetext-devopsengineers",
+    "keyword": "JetBrains Fleet vs Sublime Text for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-sublimetext-mobiledevelopers",
+    "keyword": "JetBrains Fleet vs Sublime Text for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-sublimetext-frontendreactdevelopers",
+    "keyword": "JetBrains Fleet vs Sublime Text for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-lapce-full-stackdevelopers",
+    "keyword": "JetBrains Fleet vs Lapce for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-lapce-pythonbackendengineers",
+    "keyword": "JetBrains Fleet vs Lapce for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-lapce-rustdevelopers",
+    "keyword": "JetBrains Fleet vs Lapce for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-lapce-datascientists",
+    "keyword": "JetBrains Fleet vs Lapce for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-lapce-devopsengineers",
+    "keyword": "JetBrains Fleet vs Lapce for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-lapce-mobiledevelopers",
+    "keyword": "JetBrains Fleet vs Lapce for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-lapce-frontendreactdevelopers",
+    "keyword": "JetBrains Fleet vs Lapce for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-novabypanic-full-stackdevelopers",
+    "keyword": "JetBrains Fleet vs Nova by Panic for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-novabypanic-pythonbackendengineers",
+    "keyword": "JetBrains Fleet vs Nova by Panic for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-novabypanic-rustdevelopers",
+    "keyword": "JetBrains Fleet vs Nova by Panic for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-novabypanic-datascientists",
+    "keyword": "JetBrains Fleet vs Nova by Panic for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-novabypanic-devopsengineers",
+    "keyword": "JetBrains Fleet vs Nova by Panic for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-novabypanic-mobiledevelopers",
+    "keyword": "JetBrains Fleet vs Nova by Panic for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-jetbrainsfleet-novabypanic-frontendreactdevelopers",
+    "keyword": "JetBrains Fleet vs Nova by Panic for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-vscode-full-stackdevelopers",
+    "keyword": "Neovim vs VS Code for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-vscode-pythonbackendengineers",
+    "keyword": "Neovim vs VS Code for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-vscode-rustdevelopers",
+    "keyword": "Neovim vs VS Code for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-vscode-datascientists",
+    "keyword": "Neovim vs VS Code for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-vscode-devopsengineers",
+    "keyword": "Neovim vs VS Code for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-vscode-mobiledevelopers",
+    "keyword": "Neovim vs VS Code for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-vscode-frontendreactdevelopers",
+    "keyword": "Neovim vs VS Code for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-zededitor-full-stackdevelopers",
+    "keyword": "Neovim vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-zededitor-pythonbackendengineers",
+    "keyword": "Neovim vs Zed editor for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-zededitor-rustdevelopers",
+    "keyword": "Neovim vs Zed editor for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-zededitor-datascientists",
+    "keyword": "Neovim vs Zed editor for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-zededitor-devopsengineers",
+    "keyword": "Neovim vs Zed editor for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-zededitor-mobiledevelopers",
+    "keyword": "Neovim vs Zed editor for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-zededitor-frontendreactdevelopers",
+    "keyword": "Neovim vs Zed editor for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-sublimetext-full-stackdevelopers",
+    "keyword": "Neovim vs Sublime Text for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-sublimetext-pythonbackendengineers",
+    "keyword": "Neovim vs Sublime Text for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-sublimetext-rustdevelopers",
+    "keyword": "Neovim vs Sublime Text for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-sublimetext-datascientists",
+    "keyword": "Neovim vs Sublime Text for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-sublimetext-devopsengineers",
+    "keyword": "Neovim vs Sublime Text for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-sublimetext-mobiledevelopers",
+    "keyword": "Neovim vs Sublime Text for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-sublimetext-frontendreactdevelopers",
+    "keyword": "Neovim vs Sublime Text for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-novabypanic-full-stackdevelopers",
+    "keyword": "Neovim vs Nova by Panic for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-novabypanic-pythonbackendengineers",
+    "keyword": "Neovim vs Nova by Panic for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-novabypanic-rustdevelopers",
+    "keyword": "Neovim vs Nova by Panic for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-novabypanic-datascientists",
+    "keyword": "Neovim vs Nova by Panic for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-novabypanic-devopsengineers",
+    "keyword": "Neovim vs Nova by Panic for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-novabypanic-mobiledevelopers",
+    "keyword": "Neovim vs Nova by Panic for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-neovim-novabypanic-frontendreactdevelopers",
+    "keyword": "Neovim vs Nova by Panic for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-vscode-full-stackdevelopers",
+    "keyword": "Cursor IDE vs VS Code for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-vscode-pythonbackendengineers",
+    "keyword": "Cursor IDE vs VS Code for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-vscode-rustdevelopers",
+    "keyword": "Cursor IDE vs VS Code for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-vscode-datascientists",
+    "keyword": "Cursor IDE vs VS Code for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-vscode-devopsengineers",
+    "keyword": "Cursor IDE vs VS Code for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-vscode-mobiledevelopers",
+    "keyword": "Cursor IDE vs VS Code for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-vscode-frontendreactdevelopers",
+    "keyword": "Cursor IDE vs VS Code for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-jetbrainsfleet-full-stackdevelopers",
+    "keyword": "Cursor IDE vs JetBrains Fleet for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-jetbrainsfleet-pythonbackendengineers",
+    "keyword": "Cursor IDE vs JetBrains Fleet for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-jetbrainsfleet-rustdevelopers",
+    "keyword": "Cursor IDE vs JetBrains Fleet for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-jetbrainsfleet-datascientists",
+    "keyword": "Cursor IDE vs JetBrains Fleet for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-jetbrainsfleet-devopsengineers",
+    "keyword": "Cursor IDE vs JetBrains Fleet for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-jetbrainsfleet-mobiledevelopers",
+    "keyword": "Cursor IDE vs JetBrains Fleet for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-jetbrainsfleet-frontendreactdevelopers",
+    "keyword": "Cursor IDE vs JetBrains Fleet for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-neovim-full-stackdevelopers",
+    "keyword": "Cursor IDE vs Neovim for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-neovim-pythonbackendengineers",
+    "keyword": "Cursor IDE vs Neovim for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-neovim-rustdevelopers",
+    "keyword": "Cursor IDE vs Neovim for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-neovim-datascientists",
+    "keyword": "Cursor IDE vs Neovim for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-neovim-devopsengineers",
+    "keyword": "Cursor IDE vs Neovim for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-neovim-mobiledevelopers",
+    "keyword": "Cursor IDE vs Neovim for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-neovim-frontendreactdevelopers",
+    "keyword": "Cursor IDE vs Neovim for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-zededitor-full-stackdevelopers",
+    "keyword": "Cursor IDE vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-zededitor-pythonbackendengineers",
+    "keyword": "Cursor IDE vs Zed editor for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-zededitor-rustdevelopers",
+    "keyword": "Cursor IDE vs Zed editor for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-zededitor-datascientists",
+    "keyword": "Cursor IDE vs Zed editor for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-zededitor-devopsengineers",
+    "keyword": "Cursor IDE vs Zed editor for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-zededitor-mobiledevelopers",
+    "keyword": "Cursor IDE vs Zed editor for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-zededitor-frontendreactdevelopers",
+    "keyword": "Cursor IDE vs Zed editor for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-githubcopilotcli-full-stackdevelopers",
+    "keyword": "Cursor IDE vs GitHub Copilot CLI for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-githubcopilotcli-pythonbackendengineers",
+    "keyword": "Cursor IDE vs GitHub Copilot CLI for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-githubcopilotcli-rustdevelopers",
+    "keyword": "Cursor IDE vs GitHub Copilot CLI for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-githubcopilotcli-datascientists",
+    "keyword": "Cursor IDE vs GitHub Copilot CLI for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-githubcopilotcli-devopsengineers",
+    "keyword": "Cursor IDE vs GitHub Copilot CLI for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-githubcopilotcli-mobiledevelopers",
+    "keyword": "Cursor IDE vs GitHub Copilot CLI for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-githubcopilotcli-frontendreactdevelopers",
+    "keyword": "Cursor IDE vs GitHub Copilot CLI for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-sublimetext-full-stackdevelopers",
+    "keyword": "Cursor IDE vs Sublime Text for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-sublimetext-pythonbackendengineers",
+    "keyword": "Cursor IDE vs Sublime Text for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-sublimetext-rustdevelopers",
+    "keyword": "Cursor IDE vs Sublime Text for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-sublimetext-datascientists",
+    "keyword": "Cursor IDE vs Sublime Text for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-sublimetext-devopsengineers",
+    "keyword": "Cursor IDE vs Sublime Text for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-sublimetext-mobiledevelopers",
+    "keyword": "Cursor IDE vs Sublime Text for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-sublimetext-frontendreactdevelopers",
+    "keyword": "Cursor IDE vs Sublime Text for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-helixeditor-full-stackdevelopers",
+    "keyword": "Cursor IDE vs Helix editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-helixeditor-pythonbackendengineers",
+    "keyword": "Cursor IDE vs Helix editor for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-helixeditor-rustdevelopers",
+    "keyword": "Cursor IDE vs Helix editor for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-helixeditor-datascientists",
+    "keyword": "Cursor IDE vs Helix editor for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-helixeditor-devopsengineers",
+    "keyword": "Cursor IDE vs Helix editor for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-helixeditor-mobiledevelopers",
+    "keyword": "Cursor IDE vs Helix editor for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-helixeditor-frontendreactdevelopers",
+    "keyword": "Cursor IDE vs Helix editor for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-lapce-full-stackdevelopers",
+    "keyword": "Cursor IDE vs Lapce for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-lapce-pythonbackendengineers",
+    "keyword": "Cursor IDE vs Lapce for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-lapce-rustdevelopers",
+    "keyword": "Cursor IDE vs Lapce for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-lapce-datascientists",
+    "keyword": "Cursor IDE vs Lapce for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-lapce-devopsengineers",
+    "keyword": "Cursor IDE vs Lapce for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-lapce-mobiledevelopers",
+    "keyword": "Cursor IDE vs Lapce for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-lapce-frontendreactdevelopers",
+    "keyword": "Cursor IDE vs Lapce for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-novabypanic-full-stackdevelopers",
+    "keyword": "Cursor IDE vs Nova by Panic for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-novabypanic-pythonbackendengineers",
+    "keyword": "Cursor IDE vs Nova by Panic for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-novabypanic-rustdevelopers",
+    "keyword": "Cursor IDE vs Nova by Panic for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-novabypanic-datascientists",
+    "keyword": "Cursor IDE vs Nova by Panic for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-novabypanic-devopsengineers",
+    "keyword": "Cursor IDE vs Nova by Panic for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-novabypanic-mobiledevelopers",
+    "keyword": "Cursor IDE vs Nova by Panic for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-cursoride-novabypanic-frontendreactdevelopers",
+    "keyword": "Cursor IDE vs Nova by Panic for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-vscode-full-stackdevelopers",
+    "keyword": "GitHub Copilot CLI vs VS Code for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-vscode-pythonbackendengineers",
+    "keyword": "GitHub Copilot CLI vs VS Code for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-vscode-rustdevelopers",
+    "keyword": "GitHub Copilot CLI vs VS Code for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-vscode-datascientists",
+    "keyword": "GitHub Copilot CLI vs VS Code for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-vscode-devopsengineers",
+    "keyword": "GitHub Copilot CLI vs VS Code for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-vscode-mobiledevelopers",
+    "keyword": "GitHub Copilot CLI vs VS Code for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-vscode-frontendreactdevelopers",
+    "keyword": "GitHub Copilot CLI vs VS Code for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-jetbrainsfleet-full-stackdevelopers",
+    "keyword": "GitHub Copilot CLI vs JetBrains Fleet for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-jetbrainsfleet-pythonbackendengineers",
+    "keyword": "GitHub Copilot CLI vs JetBrains Fleet for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-jetbrainsfleet-rustdevelopers",
+    "keyword": "GitHub Copilot CLI vs JetBrains Fleet for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-jetbrainsfleet-datascientists",
+    "keyword": "GitHub Copilot CLI vs JetBrains Fleet for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-jetbrainsfleet-devopsengineers",
+    "keyword": "GitHub Copilot CLI vs JetBrains Fleet for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-jetbrainsfleet-mobiledevelopers",
+    "keyword": "GitHub Copilot CLI vs JetBrains Fleet for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-jetbrainsfleet-frontendreactdevelopers",
+    "keyword": "GitHub Copilot CLI vs JetBrains Fleet for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-neovim-full-stackdevelopers",
+    "keyword": "GitHub Copilot CLI vs Neovim for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-neovim-pythonbackendengineers",
+    "keyword": "GitHub Copilot CLI vs Neovim for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-neovim-rustdevelopers",
+    "keyword": "GitHub Copilot CLI vs Neovim for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-neovim-datascientists",
+    "keyword": "GitHub Copilot CLI vs Neovim for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-neovim-devopsengineers",
+    "keyword": "GitHub Copilot CLI vs Neovim for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-neovim-mobiledevelopers",
+    "keyword": "GitHub Copilot CLI vs Neovim for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-neovim-frontendreactdevelopers",
+    "keyword": "GitHub Copilot CLI vs Neovim for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-zededitor-full-stackdevelopers",
+    "keyword": "GitHub Copilot CLI vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-zededitor-pythonbackendengineers",
+    "keyword": "GitHub Copilot CLI vs Zed editor for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-zededitor-rustdevelopers",
+    "keyword": "GitHub Copilot CLI vs Zed editor for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-zededitor-datascientists",
+    "keyword": "GitHub Copilot CLI vs Zed editor for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-zededitor-devopsengineers",
+    "keyword": "GitHub Copilot CLI vs Zed editor for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-zededitor-mobiledevelopers",
+    "keyword": "GitHub Copilot CLI vs Zed editor for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-zededitor-frontendreactdevelopers",
+    "keyword": "GitHub Copilot CLI vs Zed editor for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-sublimetext-full-stackdevelopers",
+    "keyword": "GitHub Copilot CLI vs Sublime Text for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-sublimetext-pythonbackendengineers",
+    "keyword": "GitHub Copilot CLI vs Sublime Text for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-sublimetext-rustdevelopers",
+    "keyword": "GitHub Copilot CLI vs Sublime Text for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-sublimetext-datascientists",
+    "keyword": "GitHub Copilot CLI vs Sublime Text for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-sublimetext-devopsengineers",
+    "keyword": "GitHub Copilot CLI vs Sublime Text for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-sublimetext-mobiledevelopers",
+    "keyword": "GitHub Copilot CLI vs Sublime Text for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-sublimetext-frontendreactdevelopers",
+    "keyword": "GitHub Copilot CLI vs Sublime Text for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-helixeditor-full-stackdevelopers",
+    "keyword": "GitHub Copilot CLI vs Helix editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-helixeditor-pythonbackendengineers",
+    "keyword": "GitHub Copilot CLI vs Helix editor for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-helixeditor-rustdevelopers",
+    "keyword": "GitHub Copilot CLI vs Helix editor for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-helixeditor-datascientists",
+    "keyword": "GitHub Copilot CLI vs Helix editor for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-helixeditor-devopsengineers",
+    "keyword": "GitHub Copilot CLI vs Helix editor for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-helixeditor-mobiledevelopers",
+    "keyword": "GitHub Copilot CLI vs Helix editor for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-helixeditor-frontendreactdevelopers",
+    "keyword": "GitHub Copilot CLI vs Helix editor for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-lapce-full-stackdevelopers",
+    "keyword": "GitHub Copilot CLI vs Lapce for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-lapce-pythonbackendengineers",
+    "keyword": "GitHub Copilot CLI vs Lapce for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-lapce-rustdevelopers",
+    "keyword": "GitHub Copilot CLI vs Lapce for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-lapce-datascientists",
+    "keyword": "GitHub Copilot CLI vs Lapce for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-lapce-devopsengineers",
+    "keyword": "GitHub Copilot CLI vs Lapce for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-lapce-mobiledevelopers",
+    "keyword": "GitHub Copilot CLI vs Lapce for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-lapce-frontendreactdevelopers",
+    "keyword": "GitHub Copilot CLI vs Lapce for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-novabypanic-full-stackdevelopers",
+    "keyword": "GitHub Copilot CLI vs Nova by Panic for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-novabypanic-pythonbackendengineers",
+    "keyword": "GitHub Copilot CLI vs Nova by Panic for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-novabypanic-rustdevelopers",
+    "keyword": "GitHub Copilot CLI vs Nova by Panic for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-novabypanic-datascientists",
+    "keyword": "GitHub Copilot CLI vs Nova by Panic for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-novabypanic-devopsengineers",
+    "keyword": "GitHub Copilot CLI vs Nova by Panic for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-novabypanic-mobiledevelopers",
+    "keyword": "GitHub Copilot CLI vs Nova by Panic for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-githubcopilotcli-novabypanic-frontendreactdevelopers",
+    "keyword": "GitHub Copilot CLI vs Nova by Panic for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-vscode-full-stackdevelopers",
+    "keyword": "Sublime Text vs VS Code for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-vscode-pythonbackendengineers",
+    "keyword": "Sublime Text vs VS Code for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-vscode-rustdevelopers",
+    "keyword": "Sublime Text vs VS Code for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-vscode-datascientists",
+    "keyword": "Sublime Text vs VS Code for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-vscode-devopsengineers",
+    "keyword": "Sublime Text vs VS Code for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-vscode-mobiledevelopers",
+    "keyword": "Sublime Text vs VS Code for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-vscode-frontendreactdevelopers",
+    "keyword": "Sublime Text vs VS Code for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-zededitor-full-stackdevelopers",
+    "keyword": "Sublime Text vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-zededitor-pythonbackendengineers",
+    "keyword": "Sublime Text vs Zed editor for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-zededitor-rustdevelopers",
+    "keyword": "Sublime Text vs Zed editor for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-zededitor-datascientists",
+    "keyword": "Sublime Text vs Zed editor for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-zededitor-devopsengineers",
+    "keyword": "Sublime Text vs Zed editor for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-zededitor-mobiledevelopers",
+    "keyword": "Sublime Text vs Zed editor for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-sublimetext-zededitor-frontendreactdevelopers",
+    "keyword": "Sublime Text vs Zed editor for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-vscode-full-stackdevelopers",
+    "keyword": "Helix editor vs VS Code for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-vscode-pythonbackendengineers",
+    "keyword": "Helix editor vs VS Code for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-vscode-rustdevelopers",
+    "keyword": "Helix editor vs VS Code for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-vscode-datascientists",
+    "keyword": "Helix editor vs VS Code for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-vscode-devopsengineers",
+    "keyword": "Helix editor vs VS Code for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-vscode-mobiledevelopers",
+    "keyword": "Helix editor vs VS Code for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-vscode-frontendreactdevelopers",
+    "keyword": "Helix editor vs VS Code for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-jetbrainsfleet-full-stackdevelopers",
+    "keyword": "Helix editor vs JetBrains Fleet for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-jetbrainsfleet-pythonbackendengineers",
+    "keyword": "Helix editor vs JetBrains Fleet for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-jetbrainsfleet-rustdevelopers",
+    "keyword": "Helix editor vs JetBrains Fleet for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-jetbrainsfleet-datascientists",
+    "keyword": "Helix editor vs JetBrains Fleet for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-jetbrainsfleet-devopsengineers",
+    "keyword": "Helix editor vs JetBrains Fleet for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-jetbrainsfleet-mobiledevelopers",
+    "keyword": "Helix editor vs JetBrains Fleet for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-jetbrainsfleet-frontendreactdevelopers",
+    "keyword": "Helix editor vs JetBrains Fleet for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-neovim-full-stackdevelopers",
+    "keyword": "Helix editor vs Neovim for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-neovim-pythonbackendengineers",
+    "keyword": "Helix editor vs Neovim for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-neovim-rustdevelopers",
+    "keyword": "Helix editor vs Neovim for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-neovim-datascientists",
+    "keyword": "Helix editor vs Neovim for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-neovim-devopsengineers",
+    "keyword": "Helix editor vs Neovim for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-neovim-mobiledevelopers",
+    "keyword": "Helix editor vs Neovim for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-neovim-frontendreactdevelopers",
+    "keyword": "Helix editor vs Neovim for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-zededitor-full-stackdevelopers",
+    "keyword": "Helix editor vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-zededitor-pythonbackendengineers",
+    "keyword": "Helix editor vs Zed editor for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-zededitor-rustdevelopers",
+    "keyword": "Helix editor vs Zed editor for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-zededitor-datascientists",
+    "keyword": "Helix editor vs Zed editor for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-zededitor-devopsengineers",
+    "keyword": "Helix editor vs Zed editor for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-zededitor-mobiledevelopers",
+    "keyword": "Helix editor vs Zed editor for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-zededitor-frontendreactdevelopers",
+    "keyword": "Helix editor vs Zed editor for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-sublimetext-full-stackdevelopers",
+    "keyword": "Helix editor vs Sublime Text for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-sublimetext-pythonbackendengineers",
+    "keyword": "Helix editor vs Sublime Text for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-sublimetext-rustdevelopers",
+    "keyword": "Helix editor vs Sublime Text for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-sublimetext-datascientists",
+    "keyword": "Helix editor vs Sublime Text for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-sublimetext-devopsengineers",
+    "keyword": "Helix editor vs Sublime Text for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-sublimetext-mobiledevelopers",
+    "keyword": "Helix editor vs Sublime Text for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-sublimetext-frontendreactdevelopers",
+    "keyword": "Helix editor vs Sublime Text for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-lapce-full-stackdevelopers",
+    "keyword": "Helix editor vs Lapce for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-lapce-pythonbackendengineers",
+    "keyword": "Helix editor vs Lapce for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-lapce-rustdevelopers",
+    "keyword": "Helix editor vs Lapce for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-lapce-datascientists",
+    "keyword": "Helix editor vs Lapce for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-lapce-devopsengineers",
+    "keyword": "Helix editor vs Lapce for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-lapce-mobiledevelopers",
+    "keyword": "Helix editor vs Lapce for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-lapce-frontendreactdevelopers",
+    "keyword": "Helix editor vs Lapce for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-novabypanic-full-stackdevelopers",
+    "keyword": "Helix editor vs Nova by Panic for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-novabypanic-pythonbackendengineers",
+    "keyword": "Helix editor vs Nova by Panic for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-novabypanic-rustdevelopers",
+    "keyword": "Helix editor vs Nova by Panic for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-novabypanic-datascientists",
+    "keyword": "Helix editor vs Nova by Panic for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-novabypanic-devopsengineers",
+    "keyword": "Helix editor vs Nova by Panic for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-novabypanic-mobiledevelopers",
+    "keyword": "Helix editor vs Nova by Panic for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-helixeditor-novabypanic-frontendreactdevelopers",
+    "keyword": "Helix editor vs Nova by Panic for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-vscode-full-stackdevelopers",
+    "keyword": "Lapce vs VS Code for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-vscode-pythonbackendengineers",
+    "keyword": "Lapce vs VS Code for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-vscode-rustdevelopers",
+    "keyword": "Lapce vs VS Code for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-vscode-datascientists",
+    "keyword": "Lapce vs VS Code for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-vscode-devopsengineers",
+    "keyword": "Lapce vs VS Code for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-vscode-mobiledevelopers",
+    "keyword": "Lapce vs VS Code for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-vscode-frontendreactdevelopers",
+    "keyword": "Lapce vs VS Code for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-neovim-full-stackdevelopers",
+    "keyword": "Lapce vs Neovim for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-neovim-pythonbackendengineers",
+    "keyword": "Lapce vs Neovim for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-neovim-rustdevelopers",
+    "keyword": "Lapce vs Neovim for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-neovim-datascientists",
+    "keyword": "Lapce vs Neovim for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-neovim-devopsengineers",
+    "keyword": "Lapce vs Neovim for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-neovim-mobiledevelopers",
+    "keyword": "Lapce vs Neovim for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-neovim-frontendreactdevelopers",
+    "keyword": "Lapce vs Neovim for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-zededitor-full-stackdevelopers",
+    "keyword": "Lapce vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-zededitor-pythonbackendengineers",
+    "keyword": "Lapce vs Zed editor for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-zededitor-rustdevelopers",
+    "keyword": "Lapce vs Zed editor for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-zededitor-datascientists",
+    "keyword": "Lapce vs Zed editor for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-zededitor-devopsengineers",
+    "keyword": "Lapce vs Zed editor for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-zededitor-mobiledevelopers",
+    "keyword": "Lapce vs Zed editor for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-zededitor-frontendreactdevelopers",
+    "keyword": "Lapce vs Zed editor for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-sublimetext-full-stackdevelopers",
+    "keyword": "Lapce vs Sublime Text for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-sublimetext-pythonbackendengineers",
+    "keyword": "Lapce vs Sublime Text for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-sublimetext-rustdevelopers",
+    "keyword": "Lapce vs Sublime Text for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-sublimetext-datascientists",
+    "keyword": "Lapce vs Sublime Text for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-sublimetext-devopsengineers",
+    "keyword": "Lapce vs Sublime Text for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-sublimetext-mobiledevelopers",
+    "keyword": "Lapce vs Sublime Text for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-sublimetext-frontendreactdevelopers",
+    "keyword": "Lapce vs Sublime Text for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-novabypanic-full-stackdevelopers",
+    "keyword": "Lapce vs Nova by Panic for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-novabypanic-pythonbackendengineers",
+    "keyword": "Lapce vs Nova by Panic for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-novabypanic-rustdevelopers",
+    "keyword": "Lapce vs Nova by Panic for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-novabypanic-datascientists",
+    "keyword": "Lapce vs Nova by Panic for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-novabypanic-devopsengineers",
+    "keyword": "Lapce vs Nova by Panic for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-novabypanic-mobiledevelopers",
+    "keyword": "Lapce vs Nova by Panic for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-lapce-novabypanic-frontendreactdevelopers",
+    "keyword": "Lapce vs Nova by Panic for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-vscode-full-stackdevelopers",
+    "keyword": "Nova by Panic vs VS Code for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-vscode-pythonbackendengineers",
+    "keyword": "Nova by Panic vs VS Code for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-vscode-rustdevelopers",
+    "keyword": "Nova by Panic vs VS Code for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-vscode-datascientists",
+    "keyword": "Nova by Panic vs VS Code for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-vscode-devopsengineers",
+    "keyword": "Nova by Panic vs VS Code for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-vscode-mobiledevelopers",
+    "keyword": "Nova by Panic vs VS Code for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-vscode-frontendreactdevelopers",
+    "keyword": "Nova by Panic vs VS Code for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-zededitor-full-stackdevelopers",
+    "keyword": "Nova by Panic vs Zed editor for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-zededitor-pythonbackendengineers",
+    "keyword": "Nova by Panic vs Zed editor for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-zededitor-rustdevelopers",
+    "keyword": "Nova by Panic vs Zed editor for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-zededitor-datascientists",
+    "keyword": "Nova by Panic vs Zed editor for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-zededitor-devopsengineers",
+    "keyword": "Nova by Panic vs Zed editor for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-zededitor-mobiledevelopers",
+    "keyword": "Nova by Panic vs Zed editor for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-zededitor-frontendreactdevelopers",
+    "keyword": "Nova by Panic vs Zed editor for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-sublimetext-full-stackdevelopers",
+    "keyword": "Nova by Panic vs Sublime Text for full-stack developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-sublimetext-pythonbackendengineers",
+    "keyword": "Nova by Panic vs Sublime Text for Python backend engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-sublimetext-rustdevelopers",
+    "keyword": "Nova by Panic vs Sublime Text for Rust developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-sublimetext-datascientists",
+    "keyword": "Nova by Panic vs Sublime Text for data scientists",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-sublimetext-devopsengineers",
+    "keyword": "Nova by Panic vs Sublime Text for DevOps engineers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-sublimetext-mobiledevelopers",
+    "keyword": "Nova by Panic vs Sublime Text for mobile developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "devtools-novabypanic-sublimetext-frontendreactdevelopers",
+    "keyword": "Nova by Panic vs Sublime Text for frontend React developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.35,
+    "source": "heuristic-devtools",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-docker-onwindows11arm",
+    "keyword": "Docker on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "published"
+  },
+  {
+    "id": "compat-docker-onapplesiliconm3",
+    "keyword": "Docker on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "published"
+  },
+  {
+    "id": "compat-docker-withwsl2gpupassthrough",
+    "keyword": "Docker with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "published"
+  },
+  {
+    "id": "compat-docker-withrocmonamdgpus",
+    "keyword": "Docker with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "published"
+  },
+  {
+    "id": "compat-docker-withcuda124",
+    "keyword": "Docker with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "published"
+  },
+  {
+    "id": "compat-docker-onraspberrypi5",
+    "keyword": "Docker on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-docker-insidegithubcodespaces",
+    "keyword": "Docker inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-docker-onnixos",
+    "keyword": "Docker on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-docker-withprismaorm",
+    "keyword": "Docker with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-docker-withdockercomposev2",
+    "keyword": "Docker with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-docker-withkubernetes130",
+    "keyword": "Docker with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-podman-onwindows11arm",
+    "keyword": "Podman on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-podman-onapplesiliconm3",
+    "keyword": "Podman on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-podman-withwsl2gpupassthrough",
+    "keyword": "Podman with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-podman-withrocmonamdgpus",
+    "keyword": "Podman with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-podman-withcuda124",
+    "keyword": "Podman with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-podman-onraspberrypi5",
+    "keyword": "Podman on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-podman-insidegithubcodespaces",
+    "keyword": "Podman inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-podman-onnixos",
+    "keyword": "Podman on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-podman-withprismaorm",
+    "keyword": "Podman with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-podman-withdockercomposev2",
+    "keyword": "Podman with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-podman-withkubernetes130",
+    "keyword": "Podman with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-pytorch-onwindows11arm",
+    "keyword": "PyTorch on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-pytorch-onapplesiliconm3",
+    "keyword": "PyTorch on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-pytorch-withwsl2gpupassthrough",
+    "keyword": "PyTorch with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-pytorch-withrocmonamdgpus",
+    "keyword": "PyTorch with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-pytorch-withcuda124",
+    "keyword": "PyTorch with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-pytorch-onraspberrypi5",
+    "keyword": "PyTorch on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-pytorch-insidegithubcodespaces",
+    "keyword": "PyTorch inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-pytorch-onnixos",
+    "keyword": "PyTorch on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-pytorch-withprismaorm",
+    "keyword": "PyTorch with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-pytorch-withdockercomposev2",
+    "keyword": "PyTorch with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-pytorch-withkubernetes130",
+    "keyword": "PyTorch with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-tensorflow-onwindows11arm",
+    "keyword": "TensorFlow on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-tensorflow-onapplesiliconm3",
+    "keyword": "TensorFlow on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-tensorflow-withwsl2gpupassthrough",
+    "keyword": "TensorFlow with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-tensorflow-withrocmonamdgpus",
+    "keyword": "TensorFlow with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-tensorflow-withcuda124",
+    "keyword": "TensorFlow with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-tensorflow-onraspberrypi5",
+    "keyword": "TensorFlow on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-tensorflow-insidegithubcodespaces",
+    "keyword": "TensorFlow inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-tensorflow-onnixos",
+    "keyword": "TensorFlow on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-tensorflow-withprismaorm",
+    "keyword": "TensorFlow with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-tensorflow-withdockercomposev2",
+    "keyword": "TensorFlow with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-tensorflow-withkubernetes130",
+    "keyword": "TensorFlow with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-postgresql-onwindows11arm",
+    "keyword": "PostgreSQL on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-postgresql-onapplesiliconm3",
+    "keyword": "PostgreSQL on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-postgresql-withwsl2gpupassthrough",
+    "keyword": "PostgreSQL with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-postgresql-withrocmonamdgpus",
+    "keyword": "PostgreSQL with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-postgresql-withcuda124",
+    "keyword": "PostgreSQL with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-postgresql-onraspberrypi5",
+    "keyword": "PostgreSQL on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-postgresql-insidegithubcodespaces",
+    "keyword": "PostgreSQL inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-postgresql-onnixos",
+    "keyword": "PostgreSQL on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-postgresql-withprismaorm",
+    "keyword": "PostgreSQL with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-postgresql-withdockercomposev2",
+    "keyword": "PostgreSQL with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-postgresql-withkubernetes130",
+    "keyword": "PostgreSQL with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mysql8-onwindows11arm",
+    "keyword": "MySQL 8 on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mysql8-onapplesiliconm3",
+    "keyword": "MySQL 8 on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mysql8-withwsl2gpupassthrough",
+    "keyword": "MySQL 8 with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mysql8-withrocmonamdgpus",
+    "keyword": "MySQL 8 with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mysql8-withcuda124",
+    "keyword": "MySQL 8 with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mysql8-onraspberrypi5",
+    "keyword": "MySQL 8 on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mysql8-insidegithubcodespaces",
+    "keyword": "MySQL 8 inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mysql8-onnixos",
+    "keyword": "MySQL 8 on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mysql8-withprismaorm",
+    "keyword": "MySQL 8 with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mysql8-withdockercomposev2",
+    "keyword": "MySQL 8 with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mysql8-withkubernetes130",
+    "keyword": "MySQL 8 with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-redis7-onwindows11arm",
+    "keyword": "Redis 7 on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-redis7-onapplesiliconm3",
+    "keyword": "Redis 7 on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-redis7-withwsl2gpupassthrough",
+    "keyword": "Redis 7 with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-redis7-withrocmonamdgpus",
+    "keyword": "Redis 7 with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-redis7-withcuda124",
+    "keyword": "Redis 7 with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-redis7-onraspberrypi5",
+    "keyword": "Redis 7 on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-redis7-insidegithubcodespaces",
+    "keyword": "Redis 7 inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-redis7-onnixos",
+    "keyword": "Redis 7 on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-redis7-withprismaorm",
+    "keyword": "Redis 7 with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-redis7-withdockercomposev2",
+    "keyword": "Redis 7 with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-redis7-withkubernetes130",
+    "keyword": "Redis 7 with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mongodb7-onwindows11arm",
+    "keyword": "MongoDB 7 on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mongodb7-onapplesiliconm3",
+    "keyword": "MongoDB 7 on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mongodb7-withwsl2gpupassthrough",
+    "keyword": "MongoDB 7 with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mongodb7-withrocmonamdgpus",
+    "keyword": "MongoDB 7 with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mongodb7-withcuda124",
+    "keyword": "MongoDB 7 with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mongodb7-onraspberrypi5",
+    "keyword": "MongoDB 7 on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mongodb7-insidegithubcodespaces",
+    "keyword": "MongoDB 7 inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mongodb7-onnixos",
+    "keyword": "MongoDB 7 on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mongodb7-withprismaorm",
+    "keyword": "MongoDB 7 with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mongodb7-withdockercomposev2",
+    "keyword": "MongoDB 7 with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-mongodb7-withkubernetes130",
+    "keyword": "MongoDB 7 with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-elasticsearch8-onwindows11arm",
+    "keyword": "Elasticsearch 8 on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-elasticsearch8-onapplesiliconm3",
+    "keyword": "Elasticsearch 8 on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-elasticsearch8-withwsl2gpupassthrough",
+    "keyword": "Elasticsearch 8 with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-elasticsearch8-withrocmonamdgpus",
+    "keyword": "Elasticsearch 8 with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-elasticsearch8-withcuda124",
+    "keyword": "Elasticsearch 8 with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-elasticsearch8-onraspberrypi5",
+    "keyword": "Elasticsearch 8 on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-elasticsearch8-insidegithubcodespaces",
+    "keyword": "Elasticsearch 8 inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-elasticsearch8-onnixos",
+    "keyword": "Elasticsearch 8 on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-elasticsearch8-withprismaorm",
+    "keyword": "Elasticsearch 8 with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-elasticsearch8-withdockercomposev2",
+    "keyword": "Elasticsearch 8 with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-elasticsearch8-withkubernetes130",
+    "keyword": "Elasticsearch 8 with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-nodejs22-onwindows11arm",
+    "keyword": "Node.js 22 on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-nodejs22-onapplesiliconm3",
+    "keyword": "Node.js 22 on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-nodejs22-withwsl2gpupassthrough",
+    "keyword": "Node.js 22 with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-nodejs22-withrocmonamdgpus",
+    "keyword": "Node.js 22 with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-nodejs22-withcuda124",
+    "keyword": "Node.js 22 with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-nodejs22-onraspberrypi5",
+    "keyword": "Node.js 22 on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-nodejs22-insidegithubcodespaces",
+    "keyword": "Node.js 22 inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-nodejs22-onnixos",
+    "keyword": "Node.js 22 on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-nodejs22-withprismaorm",
+    "keyword": "Node.js 22 with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-nodejs22-withdockercomposev2",
+    "keyword": "Node.js 22 with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-nodejs22-withkubernetes130",
+    "keyword": "Node.js 22 with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-bunruntime-onwindows11arm",
+    "keyword": "Bun runtime on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-bunruntime-onapplesiliconm3",
+    "keyword": "Bun runtime on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-bunruntime-withwsl2gpupassthrough",
+    "keyword": "Bun runtime with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-bunruntime-withrocmonamdgpus",
+    "keyword": "Bun runtime with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-bunruntime-withcuda124",
+    "keyword": "Bun runtime with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-bunruntime-onraspberrypi5",
+    "keyword": "Bun runtime on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-bunruntime-insidegithubcodespaces",
+    "keyword": "Bun runtime inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-bunruntime-onnixos",
+    "keyword": "Bun runtime on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-bunruntime-withprismaorm",
+    "keyword": "Bun runtime with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-bunruntime-withdockercomposev2",
+    "keyword": "Bun runtime with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-bunruntime-withkubernetes130",
+    "keyword": "Bun runtime with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-deno2-onwindows11arm",
+    "keyword": "Deno 2 on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-deno2-onapplesiliconm3",
+    "keyword": "Deno 2 on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-deno2-withwsl2gpupassthrough",
+    "keyword": "Deno 2 with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-deno2-withrocmonamdgpus",
+    "keyword": "Deno 2 with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-deno2-withcuda124",
+    "keyword": "Deno 2 with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-deno2-onraspberrypi5",
+    "keyword": "Deno 2 on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-deno2-insidegithubcodespaces",
+    "keyword": "Deno 2 inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-deno2-onnixos",
+    "keyword": "Deno 2 on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-deno2-withprismaorm",
+    "keyword": "Deno 2 with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-deno2-withdockercomposev2",
+    "keyword": "Deno 2 with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-deno2-withkubernetes130",
+    "keyword": "Deno 2 with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-net9-onwindows11arm",
+    "keyword": ".NET 9 on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-net9-onapplesiliconm3",
+    "keyword": ".NET 9 on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-net9-withwsl2gpupassthrough",
+    "keyword": ".NET 9 with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-net9-withrocmonamdgpus",
+    "keyword": ".NET 9 with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-net9-withcuda124",
+    "keyword": ".NET 9 with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-net9-onraspberrypi5",
+    "keyword": ".NET 9 on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-net9-insidegithubcodespaces",
+    "keyword": ".NET 9 inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-net9-onnixos",
+    "keyword": ".NET 9 on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-net9-withprismaorm",
+    "keyword": ".NET 9 with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-net9-withdockercomposev2",
+    "keyword": ".NET 9 with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-net9-withkubernetes130",
+    "keyword": ".NET 9 with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-go123-onwindows11arm",
+    "keyword": "Go 1.23 on Windows 11 ARM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-go123-onapplesiliconm3",
+    "keyword": "Go 1.23 on Apple Silicon M3 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-go123-withwsl2gpupassthrough",
+    "keyword": "Go 1.23 with WSL2 GPU passthrough compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-go123-withrocmonamdgpus",
+    "keyword": "Go 1.23 with ROCm on AMD GPUs compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-go123-withcuda124",
+    "keyword": "Go 1.23 with CUDA 12.4 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-go123-onraspberrypi5",
+    "keyword": "Go 1.23 on Raspberry Pi 5 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-go123-insidegithubcodespaces",
+    "keyword": "Go 1.23 inside GitHub Codespaces compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-go123-onnixos",
+    "keyword": "Go 1.23 on NixOS compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-go123-withprismaorm",
+    "keyword": "Go 1.23 with Prisma ORM compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-go123-withdockercomposev2",
+    "keyword": "Go 1.23 with Docker Compose v2 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "compat-go123-withkubernetes130",
+    "keyword": "Go 1.23 with Kubernetes 1.30 compatibility guide",
+    "category": "compatibility",
+    "intent": "Understand whether a stack combination is safe and supported.",
+    "difficulty_score": 0.28,
+    "source": "heuristic-compatibility",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "news-koreanfintechengineering",
+    "keyword": "Korean fintech engineering for global engineers (translated summary)",
+    "category": "foreign_news",
+    "intent": "Learn what is happening in JP/CN tech ecosystems.",
+    "difficulty_score": 0.32,
+    "source": "heuristic-foreign-news",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "news-shenzhenhardware-softwareintegration",
+    "keyword": "Shenzhen hardware-software integration for global engineers (translated summary)",
+    "category": "foreign_news",
+    "intent": "Learn what is happening in JP/CN tech ecosystems.",
+    "difficulty_score": 0.32,
+    "source": "heuristic-foreign-news",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "news-japaneseenterpriserustadoption",
+    "keyword": "Japanese enterprise Rust adoption for global engineers (translated summary)",
+    "category": "foreign_news",
+    "intent": "Learn what is happening in JP/CN tech ecosystems.",
+    "difficulty_score": 0.32,
+    "source": "heuristic-foreign-news",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "news-alibabacloudopensourcepush",
+    "keyword": "Alibaba Cloud open source push for global engineers (translated summary)",
+    "category": "foreign_news",
+    "intent": "Learn what is happening in JP/CN tech ecosystems.",
+    "difficulty_score": 0.32,
+    "source": "heuristic-foreign-news",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "news-bytedanceinternaltooling",
+    "keyword": "ByteDance internal tooling for global engineers (translated summary)",
+    "category": "foreign_news",
+    "intent": "Learn what is happening in JP/CN tech ecosystems.",
+    "difficulty_score": 0.32,
+    "source": "heuristic-foreign-news",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-set-up-a-ci/cd-pipeline-with-github-actions",
+    "keyword": "How to set up a CI/CD pipeline with GitHub Actions (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-deploy-a-python-app-to-railway-from-scratch",
+    "keyword": "How to deploy a Python app to Railway from scratch (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-configure-nginx-reverse-proxy-with-ssl",
+    "keyword": "How to configure Nginx reverse proxy with SSL (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-set-up-postgresql-replication-for-high-availability",
+    "keyword": "How to set up PostgreSQL replication for high availability (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-migrate-from-heroku-to-self-hosted-docker",
+    "keyword": "How to migrate from Heroku to self-hosted Docker (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-monitor-a-node.js-app-with-prometheus-and-grafana",
+    "keyword": "How to monitor a Node.js app with Prometheus and Grafana (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-set-up-tailscale-vpn-for-a-dev-team",
+    "keyword": "How to set up Tailscale VPN for a dev team (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-containerise-a-legacy-django-app",
+    "keyword": "How to containerise a legacy Django app (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-configure-vs-code-remote-development-over-ssh",
+    "keyword": "How to configure VS Code remote development over SSH (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-automate-database-backups-with-cron-and-s3",
+    "keyword": "How to automate database backups with cron and S3 (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-set-up-a-monorepo-with-turborepo",
+    "keyword": "How to set up a monorepo with Turborepo (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-deploy-a-static-site-with-cloudflare-pages",
+    "keyword": "How to deploy a static site with Cloudflare Pages (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-configure-eslint-and-prettier-for-a-team",
+    "keyword": "How to configure ESLint and Prettier for a team (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-set-up-python-type-checking-with-mypy-in-ci",
+    "keyword": "How to set up Python type checking with mypy in CI (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-build-a-cli-tool-with-python-and-click",
+    "keyword": "How to build a CLI tool with Python and Click (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-02-27T21:41:01.435369Z",
     "status": "new"
   }
 ]
