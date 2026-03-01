@@ -1,0 +1,47 @@
+{
+  "id": "00be2b8d8092",
+  "topic": "the rise of AI agents and what it means for your job",
+  "format_name": "one_liner",
+  "hook": "Remember this about the rise of AI agents and what it means for your job.",
+  "script_segments": [
+    {
+      "timing": "0-2s",
+      "role": "hook_text",
+      "text": "Remember this about the rise of AI agents and what it means for your job.",
+      "visual_direction": "Black screen or face close-up. Big bold text fades in."
+    },
+    {
+      "timing": "2-5s",
+      "role": "punchline",
+      "text": "The secret to the rise of AI agents and what it means for your job? Start. That's literally it.",
+      "visual_direction": "Text reveal with dramatic zoom or shake. Let the line breathe."
+    },
+    {
+      "timing": "5-7s",
+      "role": "end_card",
+      "text": "[LOOP POINT \u2014 handle/logo flash, seamless restart]",
+      "visual_direction": "Quick logo/handle flash. Loop-friendly \u2014 cuts back to start cleanly."
+    }
+  ],
+  "caption": "the rise of AI agents and what it means for your job \u2014 explained in a way that actually makes sense.",
+  "hashtags": [
+    "#devlife",
+    "#tech",
+    "#software",
+    "#trending",
+    "#foryoupage",
+    "#didyouknow",
+    "#edutok",
+    "#ai",
+    "#salarytransparency",
+    "#techjobs"
+  ],
+  "sound_suggestion": "bass drop / vinyl scratch / single dramatic hit",
+  "cta": "Follow if you agree.",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-03-01T04:52:21.463231Z",
+  "metadata": {
+    "format_label": "One-Liner Drop (6s)",
+    "word_count": 41
+  }
+}

@@ -211,3 +211,31 @@
 2026-02-28 04:14:43,071 [INFO] Published TikTok script: TypeScript tricks that feel illegal [wait_for_it] (score=95)
 2026-02-28 04:14:43,072 [INFO] TikTok pipeline complete: 5 scripts published.
 2026-02-28 04:14:43,072 [INFO] Pipeline completed successfully.
+2026-03-01 04:52:21,429 [INFO] Starting DiscoveryAgent.
+2026-03-01 04:52:21,433 [INFO] Starting ContentAgent.
+2026-03-01 04:52:21,438 [INFO] Starting ValidationAgent.
+2026-03-01 04:52:21,440 [INFO] Starting DistributionAgent.
+2026-03-01 04:52:21,447 [INFO] Starting TikTokAgent.
+2026-03-01 04:52:21,447 [INFO] TikTok discovery found 5 new topics.
+2026-03-01 04:52:21,447 [INFO] Generated TikTok script via template: Linux commands that make you look like a hacker
+2026-03-01 04:52:21,461 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-01 04:52:21,461 [WARNING] Video production failed for: Linux commands that make you look like a hacker
+2026-03-01 04:52:21,461 [INFO] Published TikTok script: Linux commands that make you look like a hacker [one_liner] (score=95)
+2026-03-01 04:52:21,461 [INFO] Generated TikTok script via template: why senior devs hate unnecessary meetings
+2026-03-01 04:52:21,462 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-01 04:52:21,462 [WARNING] Video production failed for: why senior devs hate unnecessary meetings
+2026-03-01 04:52:21,462 [INFO] Published TikTok script: why senior devs hate unnecessary meetings [one_liner] (score=95)
+2026-03-01 04:52:21,462 [INFO] Generated TikTok script via template: why Go is quietly winning the backend race
+2026-03-01 04:52:21,462 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-01 04:52:21,463 [WARNING] Video production failed for: why Go is quietly winning the backend race
+2026-03-01 04:52:21,463 [INFO] Published TikTok script: why Go is quietly winning the backend race [one_liner] (score=95)
+2026-03-01 04:52:21,463 [INFO] Generated TikTok script via template: the rise of AI agents and what it means for your job
+2026-03-01 04:52:21,463 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-01 04:52:21,463 [WARNING] Video production failed for: the rise of AI agents and what it means for your job
+2026-03-01 04:52:21,464 [INFO] Published TikTok script: the rise of AI agents and what it means for your job [one_liner] (score=95)
+2026-03-01 04:52:21,464 [INFO] Generated TikTok script via template: AI coding assistants and whether they actually help
+2026-03-01 04:52:21,464 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-01 04:52:21,464 [WARNING] Video production failed for: AI coding assistants and whether they actually help
+2026-03-01 04:52:21,464 [INFO] Published TikTok script: AI coding assistants and whether they actually help [one_liner] (score=95)
+2026-03-01 04:52:21,465 [INFO] TikTok pipeline complete: 5 scripts published.
+2026-03-01 04:52:21,465 [INFO] Pipeline completed successfully.

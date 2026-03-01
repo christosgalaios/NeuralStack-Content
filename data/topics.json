@@ -3657,7 +3657,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compat-podman-onwindows11arm",
@@ -3667,7 +3667,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compat-podman-onapplesiliconm3",
@@ -3677,7 +3677,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compat-podman-withwsl2gpupassthrough",
@@ -3687,7 +3687,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compat-podman-withrocmonamdgpus",
@@ -3697,7 +3697,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compat-podman-withcuda124",

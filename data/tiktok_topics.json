@@ -148,5 +148,45 @@
     "short": true,
     "status": "published",
     "created_at": "2026-02-28T04:14:43.054757Z"
+  },
+  {
+    "id": "b07d0bb8ccf6",
+    "topic": "Linux commands that make you look like a hacker",
+    "format": "one_liner",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-03-01T04:52:21.447523Z"
+  },
+  {
+    "id": "3b8a047c29ac",
+    "topic": "why senior devs hate unnecessary meetings",
+    "format": "one_liner",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-03-01T04:52:21.447536Z"
+  },
+  {
+    "id": "b5e4da69b548",
+    "topic": "why Go is quietly winning the backend race",
+    "format": "one_liner",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-03-01T04:52:21.447542Z"
+  },
+  {
+    "id": "00be2b8d8092",
+    "topic": "the rise of AI agents and what it means for your job",
+    "format": "one_liner",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-03-01T04:52:21.447547Z"
+  },
+  {
+    "id": "d8dd24027340",
+    "topic": "AI coding assistants and whether they actually help",
+    "format": "one_liner",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-03-01T04:52:21.447551Z"
   }
 ]
