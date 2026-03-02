@@ -239,3 +239,31 @@
 2026-03-01 04:52:21,464 [INFO] Published TikTok script: AI coding assistants and whether they actually help [one_liner] (score=95)
 2026-03-01 04:52:21,465 [INFO] TikTok pipeline complete: 5 scripts published.
 2026-03-01 04:52:21,465 [INFO] Pipeline completed successfully.
+2026-03-02 04:46:07,584 [INFO] Starting DiscoveryAgent.
+2026-03-02 04:46:07,588 [INFO] Starting ContentAgent.
+2026-03-02 04:46:07,593 [INFO] Starting ValidationAgent.
+2026-03-02 04:46:07,595 [INFO] Starting DistributionAgent.
+2026-03-02 04:46:07,600 [INFO] Starting TikTokAgent.
+2026-03-02 04:46:07,600 [INFO] TikTok discovery found 5 new topics.
+2026-03-02 04:46:07,601 [INFO] Generated TikTok script via template: why Rust is taking over systems programming
+2026-03-02 04:46:07,613 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-02 04:46:07,613 [WARNING] Video production failed for: why Rust is taking over systems programming
+2026-03-02 04:46:07,613 [INFO] Published TikTok script: why Rust is taking over systems programming [wait_for_it] (score=95)
+2026-03-02 04:46:07,613 [INFO] Generated TikTok script via template: working from home vs return-to-office as a developer
+2026-03-02 04:46:07,614 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-02 04:46:07,614 [WARNING] Video production failed for: working from home vs return-to-office as a developer
+2026-03-02 04:46:07,614 [INFO] Published TikTok script: working from home vs return-to-office as a developer [wait_for_it] (score=95)
+2026-03-02 04:46:07,614 [INFO] Generated TikTok script via template: freelancing as a developer — the truth nobody shares
+2026-03-02 04:46:07,614 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-02 04:46:07,614 [WARNING] Video production failed for: freelancing as a developer — the truth nobody shares
+2026-03-02 04:46:07,614 [INFO] Published TikTok script: freelancing as a developer — the truth nobody shares [wait_for_it] (score=95)
+2026-03-02 04:46:07,615 [INFO] Generated TikTok script via template: why senior devs hate unnecessary meetings
+2026-03-02 04:46:07,615 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-02 04:46:07,615 [WARNING] Video production failed for: why senior devs hate unnecessary meetings
+2026-03-02 04:46:07,615 [INFO] Published TikTok script: why senior devs hate unnecessary meetings [wait_for_it] (score=95)
+2026-03-02 04:46:07,615 [INFO] Generated TikTok script via template: keyboard shortcuts that 10x your coding speed
+2026-03-02 04:46:07,616 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-02 04:46:07,616 [WARNING] Video production failed for: keyboard shortcuts that 10x your coding speed
+2026-03-02 04:46:07,616 [INFO] Published TikTok script: keyboard shortcuts that 10x your coding speed [code_flash] (score=95)
+2026-03-02 04:46:07,616 [INFO] TikTok pipeline complete: 5 scripts published.
+2026-03-02 04:46:07,616 [INFO] Pipeline completed successfully.

@@ -1,0 +1,48 @@
+{
+  "id": "6954deb3fee6",
+  "topic": "freelancing as a developer \u2014 the truth nobody shares",
+  "format_name": "wait_for_it",
+  "hook": "The freelancing as a developer \u2014 the truth nobody shares glow-up you didn't expect.",
+  "script_segments": [
+    {
+      "timing": "0-2s",
+      "role": "hook_text",
+      "text": "The freelancing as a developer \u2014 the truth nobody shares glow-up you didn't expect.",
+      "visual_direction": "Text: 'WAIT FOR IT'. Show the messy/broken state."
+    },
+    {
+      "timing": "2-4s",
+      "role": "tension_build",
+      "text": "[Quick cuts. Zoom. Countdown 3... 2... 1...]",
+      "visual_direction": "Quick cuts or zoom. Build anticipation. Maybe a countdown."
+    },
+    {
+      "timing": "4-7s",
+      "role": "reveal",
+      "text": "[CUT TO RESULT] See the difference? That's what freelancing as a developer \u2014 the truth nobody shares mastery looks like.",
+      "visual_direction": "Hard cut to the satisfying result. Let it breathe. Text: 'Follow'."
+    }
+  ],
+  "caption": "I wish someone told me this about freelancing as a developer \u2014 the truth nobody shares sooner.",
+  "hashtags": [
+    "#tech",
+    "#webdev",
+    "#software",
+    "#foryoupage",
+    "#blowthisup",
+    "#lifehack",
+    "#todayilearned",
+    "#startup",
+    "#golang",
+    "#techjobs",
+    "#sidehustle"
+  ],
+  "sound_suggestion": "tension buildup then satisfying bass drop / oh-no-oh-yes audio",
+  "cta": "Worth the wait? Follow for more.",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-03-02T04:46:07.614315Z",
+  "metadata": {
+    "format_label": "Wait For It / Reveal (7s)",
+    "word_count": 41
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ce0818fdd5b0",
+  "topic": "why Rust is taking over systems programming",
+  "format_name": "wait_for_it",
+  "hook": "Wait for the why Rust is taking over systems programming reveal...",
+  "script_segments": [
+    {
+      "timing": "0-2s",
+      "role": "hook_text",
+      "text": "Wait for the why Rust is taking over systems programming reveal...",
+      "visual_direction": "Text: 'WAIT FOR IT'. Show the messy/broken state."
+    },
+    {
+      "timing": "2-4s",
+      "role": "tension_build",
+      "text": "[Quick cuts. Zoom. Countdown 3... 2... 1...]",
+      "visual_direction": "Quick cuts or zoom. Build anticipation. Maybe a countdown."
+    },
+    {
+      "timing": "4-7s",
+      "role": "reveal",
+      "text": "[HARD CUT] And that's why Rust is taking over systems programming done right. Clean. Satisfying. You're welcome.",
+      "visual_direction": "Hard cut to the satisfying result. Let it breathe. Text: 'Follow'."
+    }
+  ],
+  "caption": "Wait for the why Rust is taking over systems programming reveal... Full breakdown in this video. Save for later.",
+  "hashtags": [
+    "#techtok",
+    "#software",
+    "#webdev",
+    "#fyp",
+    "#foryou",
+    "#edutok",
+    "#didyouknow",
+    "#rust"
+  ],
+  "sound_suggestion": "tension buildup then satisfying bass drop / oh-no-oh-yes audio",
+  "cta": "Save and share this.",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-03-02T04:46:07.601150Z",
+  "metadata": {
+    "format_label": "Wait For It / Reveal (7s)",
+    "word_count": 35
+  }
+}

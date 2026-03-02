@@ -1,0 +1,46 @@
+{
+  "id": "194a19f53fc1",
+  "topic": "keyboard shortcuts that 10x your coding speed",
+  "format_name": "code_flash",
+  "hook": "Stop. Use this keyboard shortcuts that 10x your coding speed trick.",
+  "script_segments": [
+    {
+      "timing": "0-2s",
+      "role": "hook_text",
+      "text": "Stop. Use this keyboard shortcuts that 10x your coding speed trick.",
+      "visual_direction": "Screen recording ready. Text overlay: 'COPY THIS'."
+    },
+    {
+      "timing": "2-5s",
+      "role": "demo_flash",
+      "text": "[SCREEN RECORDING] Watch: one keyboard shortcuts that 10x your coding speed trick, 3 seconds, done.",
+      "visual_direction": "Show the trick: type the command/shortcut/code. Fast but readable."
+    },
+    {
+      "timing": "5-7s",
+      "role": "result_flash",
+      "text": "[RESULT ON SCREEN] Done. That's keyboard shortcuts that 10x your coding speed in 3 seconds flat.",
+      "visual_direction": "Show the result instantly. Satisfying output. Text: 'Follow for more'."
+    }
+  ],
+  "caption": "I wish someone told me this about keyboard shortcuts that 10x your coding speed sooner.",
+  "hashtags": [
+    "#learntocode",
+    "#software",
+    "#techtok",
+    "#foryoupage",
+    "#viral",
+    "#tutorial",
+    "#todayilearned",
+    "#machinelearning",
+    "#javascript"
+  ],
+  "sound_suggestion": "keyboard clack + success chime / satisfying pop",
+  "cta": "What trick should I show next?",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-03-02T04:46:07.615847Z",
+  "metadata": {
+    "format_label": "Code Flash / Quick Tip (7s)",
+    "word_count": 42
+  }
+}
