@@ -267,3 +267,31 @@
 2026-03-02 04:46:07,616 [INFO] Published TikTok script: keyboard shortcuts that 10x your coding speed [code_flash] (score=95)
 2026-03-02 04:46:07,616 [INFO] TikTok pipeline complete: 5 scripts published.
 2026-03-02 04:46:07,616 [INFO] Pipeline completed successfully.
+2026-03-03 04:44:54,455 [INFO] Starting DiscoveryAgent.
+2026-03-03 04:44:54,459 [INFO] Starting ContentAgent.
+2026-03-03 04:44:54,464 [INFO] Starting ValidationAgent.
+2026-03-03 04:44:54,466 [INFO] Starting DistributionAgent.
+2026-03-03 04:44:54,473 [INFO] Starting TikTokAgent.
+2026-03-03 04:44:54,473 [INFO] TikTok discovery found 5 new topics.
+2026-03-03 04:44:54,474 [INFO] Generated TikTok script via template: the tech interview process is broken — here's why
+2026-03-03 04:44:54,486 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-03 04:44:54,486 [WARNING] Video production failed for: the tech interview process is broken — here's why
+2026-03-03 04:44:54,486 [INFO] Published TikTok script: the tech interview process is broken — here's why [this_or_that] (score=95)
+2026-03-03 04:44:54,486 [INFO] Generated TikTok script via template: Docker explained so simply your manager could understand
+2026-03-03 04:44:54,487 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-03 04:44:54,487 [WARNING] Video production failed for: Docker explained so simply your manager could understand
+2026-03-03 04:44:54,487 [INFO] Published TikTok script: Docker explained so simply your manager could understand [this_or_that] (score=95)
+2026-03-03 04:44:54,487 [INFO] Generated TikTok script via template: why Rust is taking over systems programming
+2026-03-03 04:44:54,488 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-03 04:44:54,488 [WARNING] Video production failed for: why Rust is taking over systems programming
+2026-03-03 04:44:54,488 [INFO] Published TikTok script: why Rust is taking over systems programming [this_or_that] (score=95)
+2026-03-03 04:44:54,488 [INFO] Generated TikTok script via template: switching from Windows to Linux as a developer
+2026-03-03 04:44:54,489 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-03 04:44:54,489 [WARNING] Video production failed for: switching from Windows to Linux as a developer
+2026-03-03 04:44:54,489 [INFO] Published TikTok script: switching from Windows to Linux as a developer [this_or_that] (score=95)
+2026-03-03 04:44:54,489 [INFO] Generated TikTok script via template: terminal commands every developer should know
+2026-03-03 04:44:54,490 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-03 04:44:54,490 [WARNING] Video production failed for: terminal commands every developer should know
+2026-03-03 04:44:54,490 [INFO] Published TikTok script: terminal commands every developer should know [this_or_that] (score=95)
+2026-03-03 04:44:54,490 [INFO] TikTok pipeline complete: 5 scripts published.
+2026-03-03 04:44:54,490 [INFO] Pipeline completed successfully.

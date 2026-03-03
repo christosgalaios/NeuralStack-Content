@@ -228,5 +228,45 @@
     "short": true,
     "status": "published",
     "created_at": "2026-03-02T04:46:07.600779Z"
+  },
+  {
+    "id": "9d30ee4ddd3d",
+    "topic": "the tech interview process is broken \u2014 here's why",
+    "format": "this_or_that",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-03-03T04:44:54.473523Z"
+  },
+  {
+    "id": "8a81baa48f3a",
+    "topic": "Docker explained so simply your manager could understand",
+    "format": "this_or_that",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-03-03T04:44:54.473536Z"
+  },
+  {
+    "id": "7d875a48c5da",
+    "topic": "why Rust is taking over systems programming",
+    "format": "this_or_that",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-03-03T04:44:54.473543Z"
+  },
+  {
+    "id": "c07859372553",
+    "topic": "switching from Windows to Linux as a developer",
+    "format": "this_or_that",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-03-03T04:44:54.473548Z"
+  },
+  {
+    "id": "938df9327c93",
+    "topic": "terminal commands every developer should know",
+    "format": "this_or_that",
+    "short": true,
+    "status": "published",
+    "created_at": "2026-03-03T04:44:54.473552Z"
   }
 ]

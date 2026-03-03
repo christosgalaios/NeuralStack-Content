@@ -1,0 +1,46 @@
+{
+  "id": "8a81baa48f3a",
+  "topic": "Docker explained so simply your manager could understand",
+  "format_name": "this_or_that",
+  "hook": "Choose: Docker explained so simply your manager could understand.",
+  "script_segments": [
+    {
+      "timing": "0-2s",
+      "role": "hook_text",
+      "text": "Choose: Docker explained so simply your manager could understand.",
+      "visual_direction": "Split screen. Two options. Text: 'PICK ONE'."
+    },
+    {
+      "timing": "2-5s",
+      "role": "versus_reveal",
+      "text": "Left: the old way of doing Docker explained so simply your manager could understand. Slow. Painful. Right: the new way. Clean. Fast. Choose wisely.",
+      "visual_direction": "Quick pros of each side flash as text. Point left, then right."
+    },
+    {
+      "timing": "5-7s",
+      "role": "your_pick",
+      "text": "The answer is obvious. Or is it? Comment which side you're on.",
+      "visual_direction": "Point to your pick. Wink or nod. Text: 'Comment yours'. Loop-friendly."
+    }
+  ],
+  "caption": "Talking about Docker explained so simply your manager could understand because someone needed to say it. Agree or disagree?",
+  "hashtags": [
+    "#techtok",
+    "#tech",
+    "#programming",
+    "#blowthisup",
+    "#xyzbca",
+    "#howto",
+    "#tutorial",
+    "#ai",
+    "#docker"
+  ],
+  "sound_suggestion": "game show buzzer / choice sound effect",
+  "cta": "Comment your pick.",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-03-03T04:44:54.486945Z",
+  "metadata": {
+    "format_label": "This or That (7s)",
+    "word_count": 45
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "9d30ee4ddd3d",
+  "topic": "the tech interview process is broken \u2014 here's why",
+  "format_name": "this_or_that",
+  "hook": "the tech interview process is broken \u2014 here's why debate in 7 seconds.",
+  "script_segments": [
+    {
+      "timing": "0-2s",
+      "role": "hook_text",
+      "text": "the tech interview process is broken \u2014 here's why debate in 7 seconds.",
+      "visual_direction": "Split screen. Two options. Text: 'PICK ONE'."
+    },
+    {
+      "timing": "2-5s",
+      "role": "versus_reveal",
+      "text": "Left: the old way of doing the tech interview process is broken \u2014 here's why. Slow. Painful. Right: the new way. Clean. Fast. Choose wisely.",
+      "visual_direction": "Quick pros of each side flash as text. Point left, then right."
+    },
+    {
+      "timing": "5-7s",
+      "role": "your_pick",
+      "text": "The answer is obvious. Or is it? Comment which side you're on.",
+      "visual_direction": "Point to your pick. Wink or nod. Text: 'Comment yours'. Loop-friendly."
+    }
+  ],
+  "caption": "The honest truth about the tech interview process is broken \u2014 here's why that nobody is telling you.",
+  "hashtags": [
+    "#software",
+    "#devlife",
+    "#developer",
+    "#trending",
+    "#foryoupage",
+    "#didyouknow",
+    "#howto",
+    "#golang",
+    "#rust",
+    "#freelancer",
+    "#sidehustle"
+  ],
+  "sound_suggestion": "game show buzzer / choice sound effect",
+  "cta": "Comment your pick.",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-03-03T04:44:54.473974Z",
+  "metadata": {
+    "format_label": "This or That (7s)",
+    "word_count": 50
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "938df9327c93",
+  "topic": "terminal commands every developer should know",
+  "format_name": "this_or_that",
+  "hook": "terminal commands every developer should know debate in 7 seconds.",
+  "script_segments": [
+    {
+      "timing": "0-2s",
+      "role": "hook_text",
+      "text": "terminal commands every developer should know debate in 7 seconds.",
+      "visual_direction": "Split screen. Two options. Text: 'PICK ONE'."
+    },
+    {
+      "timing": "2-5s",
+      "role": "versus_reveal",
+      "text": "Left: the old way of doing terminal commands every developer should know. Slow. Painful. Right: the new way. Clean. Fast. Choose wisely.",
+      "visual_direction": "Quick pros of each side flash as text. Point left, then right."
+    },
+    {
+      "timing": "5-7s",
+      "role": "your_pick",
+      "text": "I'm going right. Every time. But that's just me \u2014 comment yours.",
+      "visual_direction": "Point to your pick. Wink or nod. Text: 'Comment yours'. Loop-friendly."
+    }
+  ],
+  "caption": "The honest truth about terminal commands every developer should know that nobody is telling you.",
+  "hashtags": [
+    "#techtok",
+    "#coding",
+    "#software",
+    "#viral",
+    "#foryou",
+    "#edutok",
+    "#learnontiktok",
+    "#cybersecurity",
+    "#docker"
+  ],
+  "sound_suggestion": "game show buzzer / choice sound effect",
+  "cta": "Left or right? Go.",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-03-03T04:44:54.489652Z",
+  "metadata": {
+    "format_label": "This or That (7s)",
+    "word_count": 44
+  }
+}

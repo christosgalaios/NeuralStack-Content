@@ -1,0 +1,45 @@
+{
+  "id": "7d875a48c5da",
+  "topic": "why Rust is taking over systems programming",
+  "format_name": "this_or_that",
+  "hook": "The why Rust is taking over systems programming dilemma.",
+  "script_segments": [
+    {
+      "timing": "0-2s",
+      "role": "hook_text",
+      "text": "The why Rust is taking over systems programming dilemma.",
+      "visual_direction": "Split screen. Two options. Text: 'PICK ONE'."
+    },
+    {
+      "timing": "2-5s",
+      "role": "versus_reveal",
+      "text": "Left: the old way of doing why Rust is taking over systems programming. Slow. Painful. Right: the new way. Clean. Fast. Choose wisely.",
+      "visual_direction": "Quick pros of each side flash as text. Point left, then right."
+    },
+    {
+      "timing": "5-7s",
+      "role": "your_pick",
+      "text": "I'm going right. Every time. But that's just me \u2014 comment yours.",
+      "visual_direction": "Point to your pick. Wink or nod. Text: 'Comment yours'. Loop-friendly."
+    }
+  ],
+  "caption": "I wish someone told me this about why Rust is taking over systems programming sooner.",
+  "hashtags": [
+    "#techtok",
+    "#tech",
+    "#programming",
+    "#foryou",
+    "#blowthisup",
+    "#edutok",
+    "#learnontiktok",
+    "#rust"
+  ],
+  "sound_suggestion": "game show buzzer / choice sound effect",
+  "cta": "Comment your pick.",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-03-03T04:44:54.487820Z",
+  "metadata": {
+    "format_label": "This or That (7s)",
+    "word_count": 44
+  }
+}
