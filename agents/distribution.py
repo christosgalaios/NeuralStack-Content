@@ -272,6 +272,24 @@ class DistributionAgent:
             "mainEntityOfPage": {"@type": "WebPage", "@id": canonical},
         }, indent=2)
 
+        # Estimate reading time (~220 words per minute)
+        word_count = len(body.split())
+        reading_min = max(1, round(word_count / 220))
+
+        progress_script = (
+            "<script>\n"
+            "(function(){\n"
+            "  var bar=document.querySelector('.reading-progress');\n"
+            "  if(!bar)return;\n"
+            "  window.addEventListener('scroll',function(){\n"
+            "    var h=document.documentElement;\n"
+            "    var pct=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;\n"
+            "    bar.style.width=Math.min(pct,100)+'%';\n"
+            "  });\n"
+            "})();\n"
+            "</script>\n"
+        )
+
         html = (
             "<!DOCTYPE html>\n"
             '<html lang="en">\n'
@@ -292,8 +310,18 @@ class DistributionAgent:
             f"{adsense_tag}"
             "</head>\n"
             "<body>\n"
+            '  <div class="reading-progress"></div>\n'
             f'  <nav class="site-nav"><a href="{BASE_URL}/">&#8592; All articles</a></nav>\n'
-            f"<article>\n{body}\n</article>\n"
+            f"<article>\n<h1>{draft.title}</h1>\n"
+            f'<div class="article-meta">\n'
+            f'  <span>NeuralStack</span>\n'
+            f'  <span class="article-meta-dot">&#183;</span>\n'
+            f'  <span>{date_published}</span>\n'
+            f'  <span class="article-meta-dot">&#183;</span>\n'
+            f'  <span>{reading_min} min read</span>\n'
+            f'</div>\n'
+            f"{body}\n</article>\n"
+            f"{progress_script}"
             "</body>\n"
             "</html>\n"
         )
@@ -331,19 +359,29 @@ class DistributionAgent:
         index = self.root_dir / "index.html"
         article_count = len(posts)
 
+        # Count unique categories from topic pool for stats display
+        categories_count = 0
+        topics_file = self.data_dir / "topics.json"
+        if topics_file.exists():
+            try:
+                topics = json.loads(topics_file.read_text(encoding="utf-8"))
+                categories_count = len({t.get("category", "") for t in topics if t.get("category")})
+            except Exception:
+                pass
+
         if posts:
             items = []
             for post in sorted(posts, key=lambda p: p["date"], reverse=True):
                 date_short = post["date"][:10]
                 items.append(
-                    f'    <li class="article-item">'
+                    f'      <li class="article-item">'
                     f'<a href="{post["path"]}">{post["title"]}</a>'
                     f' <span class="article-date">{date_short}</span>'
                     f'</li>'
                 )
             items_html = "\n".join(items)
         else:
-            items_html = '    <li>No articles have been published yet. Check back tomorrow.</li>'
+            items_html = '      <li>No articles have been published yet. Check back tomorrow.</li>'
 
         description = (
             f"Practical technical guides for engineers who ship. "
@@ -370,15 +408,24 @@ class DistributionAgent:
             "</head>\n"
             "<body>\n"
             '  <header class="site-header">\n'
-            '    <h1>NeuralStack</h1>\n'
-            f'    <p class="tagline">Practical technical guides for engineers who ship &mdash; {article_count} articles, updated daily.</p>\n'
+            '    <div class="site-header-inner">\n'
+            '      <h1>Neural<span class="logo-accent">Stack</span></h1>\n'
+            f'      <p class="tagline">Practical technical guides for engineers who ship &mdash; updated daily.</p>\n'
+            '      <div class="header-stats">\n'
+            f'        <div class="stat"><span class="stat-number">{article_count}</span><span class="stat-label">Articles</span></div>\n'
+            f'        <div class="stat"><span class="stat-number">{categories_count}</span><span class="stat-label">Categories</span></div>\n'
+            '        <div class="stat"><span class="stat-number">Daily</span><span class="stat-label">Updates</span></div>\n'
+            '      </div>\n'
+            '    </div>\n'
             '  </header>\n'
-            '  <main>\n'
-            '    <h2>Latest Articles</h2>\n'
-            '    <ul class="article-list">\n'
+            '  <div class="content-wrap">\n'
+            '    <main>\n'
+            '      <h2 class="section-heading">Latest Articles</h2>\n'
+            '      <ul class="article-list">\n'
             f"{items_html}\n"
-            '    </ul>\n'
-            '  </main>\n'
+            '      </ul>\n'
+            '    </main>\n'
+            '  </div>\n'
             '  <footer class="site-footer">\n'
             f'    <p><a href="{BASE_URL}/feed.xml">RSS feed</a> &bull; Updated daily by the autonomous pipeline.</p>\n'
             '  </footer>\n'
