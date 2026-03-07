@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import textwrap
 import urllib.error
 import urllib.request
@@ -92,15 +93,149 @@ class SimpleLocalLLM:
             words = content.split()
         return content
 
+    # Known facts for tools we write about. Used to make comparison tables
+    # specific rather than generic "Option A / Option B" placeholders.
+    _TOOL_FACTS = {
+        "Cursor IDE": {
+            "price": "$0 Hobby (2,000 completions/month) / $20/month Pro (unlimited)",
+            "setup": "Download the app — zero extension configuration needed",
+            "key_feature": "Codebase-aware AI chat, inline diffs, Tab autocomplete, Composer multi-file edits",
+            "open_source": "Closed-source (built on VS Code engine)",
+            "best_for": "Engineers who want AI deeply integrated into every editing action",
+        },
+        "GitHub Copilot": {
+            "price": "$0 (limited) / $10/month Individual / $19/month Business",
+            "setup": "Install VS Code extension, sign in with GitHub account",
+            "key_feature": "Inline autocomplete and basic chat in VS Code, JetBrains, Vim",
+            "open_source": "Closed-source, GitHub/Microsoft cloud",
+            "best_for": "Teams already on GitHub who want autocomplete without switching editors",
+        },
+        "Windsurf": {
+            "price": "$0 free tier / $15/month Pro",
+            "setup": "Download the app — standalone IDE based on VS Code",
+            "key_feature": "Cascade AI agent with multi-step planning and persistent context",
+            "open_source": "Closed-source (Codeium product)",
+            "best_for": "Engineers who prefer an agent-driven workflow over inline suggestions",
+        },
+        "VS Code": {
+            "price": "Free and open source (MIT)",
+            "setup": "Download and install; configure extensions manually",
+            "key_feature": "Largest extension ecosystem, Remote SSH, Dev Containers, 30 k+ extensions",
+            "open_source": "Open source (Microsoft)",
+            "best_for": "Teams that want maximum plugin flexibility and full configuration control",
+        },
+        "JetBrains Fleet": {
+            "price": "$0 preview / part of All Products Pack ($77/month)",
+            "setup": "Download Fleet; select language mode on startup",
+            "key_feature": "Smart mode with JetBrains static analysis, distributed collaboration",
+            "open_source": "Closed-source (JetBrains)",
+            "best_for": "JetBrains users who want a lighter, faster IDE with familiar analysis",
+        },
+        "Neovim": {
+            "price": "Free and open source (Apache 2.0)",
+            "setup": "Install via package manager; configure in Lua",
+            "key_feature": "Extensible via Lua, blazing fast, terminal-native",
+            "open_source": "Open source",
+            "best_for": "Power users who want total control and live in the terminal",
+        },
+        "Railway": {
+            "price": "$0 trial credits / $5/month Hobby / usage-based Pro",
+            "setup": "Connect GitHub repo — first deploy in under 60 seconds",
+            "key_feature": "Git-native deploys, one-click PostgreSQL/MySQL/Redis, cron, zero config",
+            "open_source": "Closed platform",
+            "best_for": "Solo developers and small teams wanting Heroku simplicity at lower cost",
+        },
+        "Heroku": {
+            "price": "Eco dynos from $5/month (free tier removed November 2022)",
+            "setup": "Heroku CLI + Procfile; git push to deploy",
+            "key_feature": "Mature 15-year ecosystem, excellent documentation, wide language support",
+            "open_source": "Closed-source (Salesforce-owned)",
+            "best_for": "Teams with existing Heroku workloads or who value the proven ecosystem",
+        },
+        "Render": {
+            "price": "$0 free tier (750 hrs/month) / $7/month Starter",
+            "setup": "Connect Git repo; select service type from dashboard",
+            "key_feature": "Auto-deploys, free TLS, preview environments, background workers",
+            "open_source": "Closed platform",
+            "best_for": "Developers who want Heroku-like DX with a more generous free tier",
+        },
+        "Fly.io": {
+            "price": "$0 free tier (3 VMs) / usage-based thereafter",
+            "setup": "flyctl deploy — runs your Docker container globally",
+            "key_feature": "Run VMs near your users, Anycast IPs, persistent volumes, WireGuard",
+            "open_source": "Closed platform, open CLI",
+            "best_for": "Teams that need geographic distribution or custom Docker images",
+        },
+        "Vercel": {
+            "price": "$0 Hobby / $20/month Pro per seat",
+            "setup": "Connect Git repo; works with zero config for Next.js",
+            "key_feature": "Edge network, instant preview URLs, serverless functions, Next.js native",
+            "open_source": "Closed platform",
+            "best_for": "Frontend and full-stack Next.js teams who need the best DX on the edge",
+        },
+        "Datadog": {
+            "price": "$0 for up to 5 hosts (infrastructure) / $15+/host/month",
+            "setup": "One-command agent install; UI-driven integration setup",
+            "key_feature": "Unified metrics, logs, APM, RUM, synthetic tests — 750+ integrations",
+            "open_source": "Closed-source SaaS",
+            "best_for": "Teams wanting a single pane of glass for observability with minimal ops overhead",
+        },
+        "Prometheus": {
+            "price": "Free and open source (Apache 2.0); self-hosted infra cost",
+            "setup": "Self-host: config file, scrape targets, alerting rules, Grafana for dashboards",
+            "key_feature": "Pull-based metrics, PromQL, best-in-class Kubernetes integration",
+            "open_source": "Open source (CNCF graduated)",
+            "best_for": "Teams with Kubernetes and the ops capacity to run their own monitoring stack",
+        },
+        "Grafana Cloud": {
+            "price": "$0 free tier / $299/month+ for larger scale",
+            "setup": "Cloud hosted; connect data sources from UI",
+            "key_feature": "Hosted Grafana + Loki + Tempo + Mimir — full OSS stack as a service",
+            "open_source": "Open core (AGPLv3)",
+            "best_for": "Teams who want the open-source Grafana stack without the ops burden",
+        },
+        "New Relic": {
+            "price": "$0 free tier (100 GB/month) / $0.30–$0.50/GB thereafter",
+            "setup": "Agent install; auto-instrumentation for popular frameworks",
+            "key_feature": "Full-stack observability, query via NRQL, strong browser/mobile monitoring",
+            "open_source": "Closed-source (partial open agent)",
+            "best_for": "Teams that want breadth across application, infrastructure, and browser in one tool",
+        },
+    }
+
+    def _extract_tools(self, keyword: str):
+        """Parse 'Tool A vs Tool B: subtitle' → (tool_a, tool_b)."""
+        base = re.split(r'[:(]', keyword)[0].strip()
+        parts = re.split(r'\s+vs\.?\s+', base, maxsplit=1, flags=re.IGNORECASE)
+        tool_a = parts[0].strip() if parts else "Tool A"
+        tool_b = parts[1].strip() if len(parts) > 1 else "Tool B"
+        return tool_a, tool_b
+
     def _template_devtools_comparison(self, keyword: str, intent: str) -> str:
         now = datetime.now().strftime("%B %Y")
+        tool_a, tool_b = self._extract_tools(keyword)
+
+        fa = self._TOOL_FACTS.get(tool_a, {})
+        fb = self._TOOL_FACTS.get(tool_b, {})
+
+        price_a    = fa.get("price",       "Freemium / paid tiers available")
+        price_b    = fb.get("price",       "Freemium / paid tiers available")
+        setup_a    = fa.get("setup",       "Quick — minimal configuration needed")
+        setup_b    = fb.get("setup",       "Moderate — some upfront configuration")
+        feature_a  = fa.get("key_feature", "Strong ecosystem and plugin support")
+        feature_b  = fb.get("key_feature", "Advanced features for power users")
+        oss_a      = fa.get("open_source", "Check vendor licensing page")
+        oss_b      = fb.get("open_source", "Check vendor licensing page")
+        bestfor_a  = fa.get("best_for",    "Teams who value broad ecosystem and ease of use")
+        bestfor_b  = fb.get("best_for",    "Teams who value performance and fine-grained control")
+
         sections = [
             textwrap.dedent(f"""
             # {keyword}
 
-            Choosing between developer tools is rarely a clear-cut decision.
+            Choosing between **{tool_a}** and **{tool_b}** is rarely a clear-cut decision.
             This head-to-head guide cuts through the marketing to give you a
-            practical, opinionated comparison based on real-world usage in {now}.
+            practical, opinionated comparison based on real-world usage as of {now}.
 
             You will come away knowing:
 
@@ -111,55 +246,52 @@ class SimpleLocalLLM:
             """).strip(),
 
             textwrap.dedent(f"""
-            ## Why {keyword} matters right now
+            ## Why the {tool_a} vs {tool_b} decision matters right now
 
             The tooling landscape shifts fast. What felt like the obvious choice
             eighteen months ago may now be a liability. Engineers searching for
-            "{keyword}" are usually at a fork in the road: a greenfield project,
+            this comparison are usually at a fork in the road: a greenfield project,
             a painful migration, or a growing team that has outgrown its current setup.
 
             Getting this decision right saves months of friction. Getting it wrong
             means fighting your tools every single day.
             """).strip(),
 
-            textwrap.dedent("""
-            ## Head-to-head feature comparison
+            textwrap.dedent(f"""
+            ## Head-to-head comparison: {tool_a} vs {tool_b}
 
-            | Criterion                  | Option A                          | Option B                          |
-            |----------------------------|-----------------------------------|-----------------------------------|
-            | Setup time                 | Minutes, minimal config           | Longer, more upfront investment   |
-            | Learning curve             | Gentle — approachable for juniors | Steeper — rewards power users     |
-            | Performance at scale       | Good for most workloads           | Excellent for high-throughput     |
-            | Ecosystem / plugins        | Large, mature, well-documented    | Smaller but highly curated        |
-            | CI/CD integration          | First-class support               | Requires additional glue          |
-            | Vendor lock-in risk        | Low — open standard               | Medium — proprietary extensions   |
-            | Licensing / cost           | Free / open source                | Free tier + paid enterprise       |
+            | Criterion            | {tool_a}             | {tool_b}             |
+            |----------------------|----------------------|----------------------|
+            | Pricing              | {price_a}            | {price_b}            |
+            | Setup                | {setup_a}            | {setup_b}            |
+            | Key differentiator   | {feature_a}          | {feature_b}          |
+            | Open source          | {oss_a}              | {oss_b}              |
+            | Best for             | {bestfor_a}          | {bestfor_b}          |
 
             Read the table as a starting point, not a verdict. Your infrastructure
-            context, team seniority, and existing toolchain will shift the scores
-            considerably.
+            context, team seniority, and existing toolchain will shift the scores.
             """).strip(),
 
-            textwrap.dedent("""
-            ## When to choose Option A
+            textwrap.dedent(f"""
+            ## When to choose {tool_a}
 
-            Option A tends to win when:
+            **{tool_a}** tends to win when:
 
-            - Your team skews junior or is onboarding rapidly.
+            - {bestfor_a}.
             - You need to ship fast and can tolerate some rough edges later.
-            - The ecosystem matters more than raw performance.
+            - The ecosystem and community matter as much as raw features.
             - You want the lowest possible maintenance burden per developer.
 
             Watch out for: hitting hard limits once the project scales. Plan your
             escape hatches early if growth is the goal.
             """).strip(),
 
-            textwrap.dedent("""
-            ## When to choose Option B
+            textwrap.dedent(f"""
+            ## When to choose {tool_b}
 
-            Option B earns its place when:
+            **{tool_b}** earns its place when:
 
-            - You have a senior team that values fine-grained control.
+            - {bestfor_b}.
             - Performance and determinism are non-negotiable requirements.
             - You are building something that will outlast multiple re-architectures.
             - You can absorb the steeper learning curve with documentation and pairing.
@@ -168,10 +300,11 @@ class SimpleLocalLLM:
             Make sure you genuinely need what they offer before committing.
             """).strip(),
 
-            textwrap.dedent("""
+            textwrap.dedent(f"""
             ## Migration considerations
 
-            Switching tools mid-project is expensive. Before you commit to a change:
+            Switching from {tool_b} to {tool_a} (or vice versa) mid-project is expensive.
+            Before you commit to a change:
 
             1. **Audit your current pain points** — are they caused by the tool or by how you use it?
             2. **Run a spike** — spend one sprint solving a real problem with the new tool.
@@ -195,29 +328,36 @@ class SimpleLocalLLM:
             textwrap.dedent(f"""
             ## Frequently asked questions
 
-            ### Which option is better for a startup in {now}?
+            ### Which is better for a startup in {now}: {tool_a} or {tool_b}?
 
             Startups typically benefit from faster onboarding and a larger ecosystem —
-            lean toward the option with lower friction. You can always migrate once you
-            have real usage data and clearer constraints.
+            lean toward whichever has lower friction for your stack. You can always
+            migrate once you have real usage data and clearer constraints.
 
-            ### Can we use both tools in the same codebase?
+            ### Can we use both {tool_a} and {tool_b} at the same time?
 
             Yes, but be deliberate about it. Mixed toolchains add cognitive overhead.
             Only run two tools in parallel during a migration window, and have a clear
             end state in mind from day one.
 
-            ### How do we convince stakeholders to approve a tooling change?
+            ### How do we justify the tooling switch to stakeholders?
 
             Frame it in business terms: reduced onboarding time, lower incident rate,
             faster release cycles. Back it with a measured spike, not a theoretical argument.
+
+            ### Is {tool_a} worth paying for over the free alternative?
+
+            That depends entirely on how much time your team loses to the gap in features.
+            Run the paid tool for one sprint on a real project and measure velocity.
+            If the improvement pays for the subscription twice over, the answer is yes.
             """).strip(),
 
-            textwrap.dedent("""
+            textwrap.dedent(f"""
             ## Conclusion
 
-            There is no universally correct answer in developer tooling — only answers
-            that are correct for your team, your codebase, and your constraints today.
+            There is no universally correct answer in the **{tool_a} vs {tool_b}** debate —
+            only answers that are correct for your team, your codebase, and your
+            constraints today.
 
             Run a structured evaluation, involve the people who will live with the
             decision, and write down why you chose what you chose. Future you will
