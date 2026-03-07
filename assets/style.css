@@ -128,6 +128,24 @@ article { padding-top: 1rem; }
 }
 .site-footer a { color: #777; }
 
+/* ─── Related articles section ──────────────────────────────────────────── */
+.related-articles {
+  margin: 2.5rem 0 1rem;
+  padding: 1.25rem 1.5rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+.related-articles h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+  border: none;
+  padding: 0;
+  color: #2d3748;
+}
+.related-articles ul { margin: 0; padding-left: 1.25rem; }
+.related-articles li { margin-bottom: 0.35rem; font-size: 0.95rem; }
+
 /* ─── Responsive ─────────────────────────────────────────────────────────── */
 @media (max-width: 600px) {
   body { padding: 0 0.9rem 2rem; }

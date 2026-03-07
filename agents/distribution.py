@@ -3,9 +3,17 @@ import os
 import re
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import List
+from typing import List, Dict
 
 from .content import DraftArticle
+
+# Words to ignore when computing keyword overlap for related-article matching.
+_STOP_WORDS = frozenset({
+    "a", "an", "the", "and", "or", "of", "for", "in", "on", "to", "with",
+    "vs", "is", "it", "at", "by", "up", "from", "how", "step", "guide",
+    "detailed", "comparison", "review", "inside", "using", "best", "which",
+    "should", "you", "use", "your", "what", "why", "when", "do",
+})
 
 # Resolve base URL once at import time.  Set NEURALSTACK_BASE_URL in your
 # environment or GitHub Actions secrets; falls back to a sensible default.
@@ -142,6 +150,69 @@ def _md_to_html(text: str) -> str:
     return '\n'.join(output)
 
 
+def _title_tokens(title: str) -> frozenset:
+    """Lower-case, stop-word-filtered word set for a title string."""
+    return frozenset(
+        w for w in re.sub(r"[^a-z0-9 ]", " ", title.lower()).split()
+        if w not in _STOP_WORDS and len(w) > 2
+    )
+
+
+def _related_articles_html(
+    current_slug: str,
+    current_title: str,
+    articles_dir: Path,
+    base_url: str,
+    max_links: int = 4,
+) -> str:
+    """
+    Scan published articles and return an HTML 'Related articles' section
+    containing up to `max_links` links to articles with the highest keyword
+    overlap with the current article's title.
+
+    Returns an empty string if no related articles are found.
+    """
+    if not articles_dir.exists():
+        return ""
+
+    current_tokens = _title_tokens(current_title)
+    if not current_tokens:
+        return ""
+
+    scored: List[Dict] = []
+    for html_file in articles_dir.glob("*.html"):
+        if html_file.stem == current_slug:
+            continue
+        # Extract title from <title> tag
+        text = html_file.read_text(encoding="utf-8", errors="ignore")
+        m = re.search(r"<title>(.+?)</title>", text)
+        if not m:
+            continue
+        title = m.group(1).strip()
+        overlap = len(current_tokens & _title_tokens(title))
+        if overlap > 0:
+            scored.append({
+                "title": title,
+                "path": f"articles/{html_file.name}",
+                "overlap": overlap,
+            })
+
+    if not scored:
+        return ""
+
+    top = sorted(scored, key=lambda x: x["overlap"], reverse=True)[:max_links]
+    items = "\n".join(
+        f'    <li><a href="{base_url}/{r["path"]}">{r["title"]}</a></li>'
+        for r in top
+    )
+    return (
+        '\n<section class="related-articles">\n'
+        "  <h2>Related articles</h2>\n"
+        f"  <ul>\n{items}\n  </ul>\n"
+        "</section>\n"
+    )
+
+
 class DistributionAgent:
     """
     Responsible for publishing validated articles to the static site,
@@ -168,6 +239,10 @@ class DistributionAgent:
         path = self.articles_dir / filename
 
         body = _md_to_html(draft.content)
+        related_html = _related_articles_html(
+            draft.slug, draft.title, self.articles_dir, BASE_URL
+        )
+        body = body + related_html
         canonical = f"{BASE_URL}/articles/{filename}"
         description = f"In-depth technical guide: {draft.title}. Practical trade-offs, implementation patterns, and recommendations for production engineers."
 

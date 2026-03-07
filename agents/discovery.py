@@ -106,6 +106,21 @@ class DiscoveryAgent:
             "configure ESLint and Prettier for a team",
             "set up Python type checking with mypy in CI",
             "build a CLI tool with Python and Click",
+            # Affiliate-adjacent tutorials (added for income maximisation)
+            "use Cursor IDE AI features to write code 3x faster",
+            "set up Cursor IDE for a Python project from scratch",
+            "migrate from VS Code to Cursor IDE without losing your workflow",
+            "use Cursor IDE Composer to refactor a legacy codebase",
+            "deploy a full-stack app to Railway with a PostgreSQL database",
+            "set up Railway environment variables and secrets for production",
+            "migrate a Node.js app from Heroku to Railway in under an hour",
+            "connect a custom domain to a Railway deployment",
+            "set up Datadog APM for a Python Flask application",
+            "create Datadog dashboards and alerts for production incidents",
+            "use Datadog Logs to debug a microservices architecture",
+            "set up Datadog synthetic monitoring for an API endpoint",
+            "integrate Datadog with PagerDuty for on-call alerting",
+            "reduce Datadog costs by tuning log retention and sampling",
         ]
 
         topics: List[Topic] = []
