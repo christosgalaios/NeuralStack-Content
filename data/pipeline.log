@@ -407,3 +407,31 @@
 2026-03-07 04:20:38,296 [INFO] Published TikTok script: remote developer jobs that pay six figures [this_or_that] (score=95)
 2026-03-07 04:20:38,296 [INFO] TikTok pipeline complete: 5 scripts published.
 2026-03-07 04:20:38,297 [INFO] Pipeline completed successfully.
+2026-03-07 18:34:21,588 [INFO] Starting DiscoveryAgent.
+2026-03-07 18:34:21,604 [INFO] Starting ContentAgent.
+2026-03-07 18:34:21,611 [INFO] Starting ValidationAgent.
+2026-03-07 18:34:21,612 [INFO] Starting DistributionAgent.
+2026-03-07 18:34:21,645 [INFO] Starting TikTokAgent.
+2026-03-07 18:34:21,647 [INFO] TikTok discovery found 5 new topics.
+2026-03-07 18:34:21,647 [INFO] Generated TikTok script via template: keyboard shortcuts that 10x your coding speed
+2026-03-07 18:34:21,661 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-07 18:34:21,661 [WARNING] Video production failed for: keyboard shortcuts that 10x your coding speed
+2026-03-07 18:34:21,661 [INFO] Published TikTok script: keyboard shortcuts that 10x your coding speed [text_story] (score=95)
+2026-03-07 18:34:21,661 [INFO] Generated TikTok script via template: the mass layoffs in tech and how to survive
+2026-03-07 18:34:21,662 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-07 18:34:21,662 [WARNING] Video production failed for: the mass layoffs in tech and how to survive
+2026-03-07 18:34:21,662 [INFO] Published TikTok script: the mass layoffs in tech and how to survive [text_story] (score=95)
+2026-03-07 18:34:21,662 [INFO] Generated TikTok script via template: freelancing as a developer — the truth nobody shares
+2026-03-07 18:34:21,663 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-07 18:34:21,663 [WARNING] Video production failed for: freelancing as a developer — the truth nobody shares
+2026-03-07 18:34:21,663 [INFO] Published TikTok script: freelancing as a developer — the truth nobody shares [text_story] (score=95)
+2026-03-07 18:34:21,663 [INFO] Generated TikTok script via template: your phone is tracking you — here's how to stop it
+2026-03-07 18:34:21,664 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-07 18:34:21,664 [WARNING] Video production failed for: your phone is tracking you — here's how to stop it
+2026-03-07 18:34:21,664 [INFO] Published TikTok script: your phone is tracking you — here's how to stop it [hot_take_snap] (score=95)
+2026-03-07 18:34:21,664 [INFO] Generated TikTok script via template: remote developer jobs that pay six figures
+2026-03-07 18:34:21,665 [WARNING] Video production skipped — missing dependencies: ffmpeg, pillow
+2026-03-07 18:34:21,665 [WARNING] Video production failed for: remote developer jobs that pay six figures
+2026-03-07 18:34:21,665 [INFO] Published TikTok script: remote developer jobs that pay six figures [text_story] (score=95)
+2026-03-07 18:34:21,665 [INFO] TikTok pipeline complete: 5 scripts published.
+2026-03-07 18:34:21,665 [INFO] Pipeline completed successfully.
