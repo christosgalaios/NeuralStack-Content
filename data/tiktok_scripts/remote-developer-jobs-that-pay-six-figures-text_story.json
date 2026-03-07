@@ -1,0 +1,48 @@
+{
+  "id": "d53c04bb9f4f",
+  "topic": "remote developer jobs that pay six figures",
+  "format_name": "text_story",
+  "hook": "When remote developer jobs that pay six figures finally made sense...",
+  "script_segments": [
+    {
+      "timing": "0-3s",
+      "role": "text_hook",
+      "text": "When remote developer jobs that pay six figures finally made sense...",
+      "visual_direction": "Text on screen over b-roll or dark background. No face needed."
+    },
+    {
+      "timing": "3-5s",
+      "role": "text_punch",
+      "text": "remote developer jobs that pay six figures isn't about talent. It's about showing up when it's boring.",
+      "visual_direction": "Second text slide with the punchline. Bigger font. Center screen."
+    },
+    {
+      "timing": "5-7s",
+      "role": "text_cta",
+      "text": "Relatable? Like and save.",
+      "visual_direction": "Final text: 'Follow for more' or '...Part 2?'. Clean loop."
+    }
+  ],
+  "caption": "The honest truth about remote developer jobs that pay six figures that nobody is telling you.",
+  "hashtags": [
+    "#tech",
+    "#developer",
+    "#techtok",
+    "#foryou",
+    "#blowthisup",
+    "#todayilearned",
+    "#howto",
+    "#rust",
+    "#startup",
+    "#careertok",
+    "#sidehustle"
+  ],
+  "sound_suggestion": "lo-fi ambient / emotional piano / trending voiceless audio",
+  "cta": "Relatable? Like and save.",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-03-07T18:34:21.664461Z",
+  "metadata": {
+    "format_label": "Text Story / No-Face (7s)",
+    "word_count": 32
+  }
+}

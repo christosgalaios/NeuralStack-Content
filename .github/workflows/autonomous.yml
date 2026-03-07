@@ -4,13 +4,38 @@ on:
   schedule:
     - cron: "0 3 * * *"
   workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 permissions:
   contents: write
 
 jobs:
+  # ── Runs on every push and PR — fast test gate ───────────────────────────
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
+  # ── Runs on schedule / manual dispatch only — full autonomous pipeline ───
   run-pipeline:
     runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    needs: test
 
     steps:
       - name: Checkout repository
@@ -24,19 +49,13 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-
-      - name: Run tests
-        run: |
-          python -m unittest discover -s tests -v
+        run: python -m pip install --upgrade pip
 
       - name: Run autonomous pipeline
         env:
           PYTHONUNBUFFERED: "1"
           NEURALSTACK_BASE_URL: "https://christosgalaios.github.io/NeuralStack-Content"
-        run: |
-          python main.py
+        run: python main.py
 
       - name: Commit and push changes (if any)
         run: |

@@ -1,0 +1,48 @@
+{
+  "id": "16051533487c",
+  "topic": "the mass layoffs in tech and how to survive",
+  "format_name": "text_story",
+  "hook": "the mass layoffs in tech and how to survive: the part they don't tell beginners.",
+  "script_segments": [
+    {
+      "timing": "0-3s",
+      "role": "text_hook",
+      "text": "the mass layoffs in tech and how to survive: the part they don't tell beginners.",
+      "visual_direction": "Text on screen over b-roll or dark background. No face needed."
+    },
+    {
+      "timing": "3-5s",
+      "role": "text_punch",
+      "text": "Nobody talks about how lonely the the mass layoffs in tech and how to survive grind actually is.",
+      "visual_direction": "Second text slide with the punchline. Bigger font. Center screen."
+    },
+    {
+      "timing": "5-7s",
+      "role": "text_cta",
+      "text": "Comment if this was you.",
+      "visual_direction": "Final text: 'Follow for more' or '...Part 2?'. Clean loop."
+    }
+  ],
+  "caption": "I wish someone told me this about the mass layoffs in tech and how to survive sooner.",
+  "hashtags": [
+    "#tech",
+    "#techtok",
+    "#programming",
+    "#viral",
+    "#blowthisup",
+    "#learnontiktok",
+    "#todayilearned",
+    "#ai",
+    "#javascript",
+    "#techjobs",
+    "#remotework"
+  ],
+  "sound_suggestion": "lo-fi ambient / emotional piano / trending voiceless audio",
+  "cta": "Comment if this was you.",
+  "estimated_duration_sec": 7,
+  "created_at": "2026-03-07T18:34:21.661633Z",
+  "metadata": {
+    "format_label": "Text Story / No-Face (7s)",
+    "word_count": 38
+  }
+}
