@@ -3,7 +3,7 @@ name: Auto-merge Claude PRs
 on:
   pull_request:
     branches: ["main"]
-    types: [opened, synchronize, reopened, closed]
+    types: [opened, reopened]
 
 permissions:
   contents: write
@@ -12,27 +12,35 @@ permissions:
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
-    if: startsWith(github.head_ref, 'claude/') && github.event.action != 'closed'
+    if: startsWith(github.head_ref, 'claude/')
 
     steps:
-      - name: Enable auto-merge
+      - name: Wait for tests to pass
         run: |
-          gh pr merge "${{ github.event.pull_request.number }}" \
-            --auto \
-            --rebase \
-            --repo "${{ github.repository }}"
+          PR=${{ github.event.pull_request.number }}
+          REPO=${{ github.repository }}
+          echo "Waiting for test check on PR #$PR..."
+          for i in $(seq 1 30); do
+            STATUS=$(gh pr checks "$PR" --repo "$REPO" 2>&1 || true)
+            echo "$STATUS"
+            if echo "$STATUS" | grep -q "test.*pass"; then
+              echo "Tests passed!"
+              break
+            fi
+            if echo "$STATUS" | grep -q "test.*fail"; then
+              echo "Tests failed — skipping merge"
+              exit 1
+            fi
+            sleep 10
+          done
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  delete-branch:
-    runs-on: ubuntu-latest
-    if: startsWith(github.head_ref, 'claude/') && github.event.pull_request.merged == true
-
-    steps:
-      - name: Delete merged branch
+      - name: Squash and merge
         run: |
-          gh api \
-            --method DELETE \
-            "/repos/${{ github.repository }}/git/refs/heads/${{ github.head_ref }}"
+          gh pr merge "${{ github.event.pull_request.number }}" \
+            --squash \
+            --repo "${{ github.repository }}" \
+            --delete-branch
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
