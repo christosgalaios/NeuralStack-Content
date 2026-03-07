@@ -6,7 +6,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 
 from agents.content import DraftArticle
-from agents.distribution import DistributionAgent, BASE_URL
+from agents.distribution import DistributionAgent, BASE_URL, _related_articles_html, _title_tokens
 
 
 class TestDistributionAgent(unittest.TestCase):
@@ -87,6 +87,57 @@ class TestDistributionAgent(unittest.TestCase):
         perf = json.loads((self.data_dir / "performance.json").read_text())
         self.assertIn("latest_published_files", perf)
         self.assertEqual(len(perf["latest_published_files"]), 1)
+
+
+class TestRelatedArticles(unittest.TestCase):
+    def setUp(self):
+        self.tmpdir = TemporaryDirectory()
+        self.articles_dir = Path(self.tmpdir.name) / "articles"
+        self.articles_dir.mkdir()
+
+    def tearDown(self):
+        self.tmpdir.cleanup()
+
+    def _write_article(self, slug: str, title: str) -> None:
+        html = f"<html><head><title>{title}</title></head><body><article>body</article></body></html>"
+        (self.articles_dir / f"{slug}.html").write_text(html, encoding="utf-8")
+
+    def test_returns_empty_when_no_articles(self):
+        result = _related_articles_html("my-slug", "Docker on macOS", self.articles_dir, BASE_URL)
+        self.assertEqual(result, "")
+
+    def test_returns_empty_for_no_overlap(self):
+        self._write_article("python-tutorial", "Python Tutorial for Beginners")
+        result = _related_articles_html("docker-guide", "Docker on macOS", self.articles_dir, BASE_URL)
+        self.assertEqual(result, "")
+
+    def test_finds_related_articles_by_keyword_overlap(self):
+        self._write_article("docker-on-macos", "Docker on macOS compatibility guide")
+        self._write_article("podman-on-macos", "Podman on macOS compatibility guide")
+        result = _related_articles_html("docker-on-linux", "Docker on Linux", self.articles_dir, BASE_URL)
+        self.assertIn("Docker on macOS", result)
+        self.assertIn("related-articles", result)
+
+    def test_excludes_self(self):
+        self._write_article("docker-on-macos", "Docker on macOS compatibility guide")
+        result = _related_articles_html("docker-on-macos", "Docker on macOS", self.articles_dir, BASE_URL)
+        # The only article is self — should return empty
+        self.assertEqual(result, "")
+
+    def test_respects_max_links(self):
+        for i in range(10):
+            self._write_article(f"docker-guide-{i}", f"Docker guide number {i} for engineers")
+        result = _related_articles_html("docker-new", "Docker setup guide", self.articles_dir, BASE_URL, max_links=3)
+        # Count <li> entries — should be at most 3
+        self.assertLessEqual(result.count("<li>"), 3)
+
+    def test_title_tokens_filters_stop_words(self):
+        tokens = _title_tokens("VS Code vs Cursor IDE for full-stack developers")
+        self.assertNotIn("vs", tokens)
+        self.assertNotIn("for", tokens)
+        self.assertIn("code", tokens)
+        self.assertIn("cursor", tokens)
+        self.assertIn("developers", tokens)
 
 
 if __name__ == "__main__":

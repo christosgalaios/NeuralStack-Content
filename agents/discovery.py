@@ -106,6 +106,21 @@ class DiscoveryAgent:
             "configure ESLint and Prettier for a team",
             "set up Python type checking with mypy in CI",
             "build a CLI tool with Python and Click",
+            # Affiliate-adjacent tutorials (added for income maximisation)
+            "use Cursor IDE AI features to write code 3x faster",
+            "set up Cursor IDE for a Python project from scratch",
+            "migrate from VS Code to Cursor IDE without losing your workflow",
+            "use Cursor IDE Composer to refactor a legacy codebase",
+            "deploy a full-stack app to Railway with a PostgreSQL database",
+            "set up Railway environment variables and secrets for production",
+            "migrate a Node.js app from Heroku to Railway in under an hour",
+            "connect a custom domain to a Railway deployment",
+            "set up Datadog APM for a Python Flask application",
+            "create Datadog dashboards and alerts for production incidents",
+            "use Datadog Logs to debug a microservices architecture",
+            "set up Datadog synthetic monitoring for an API endpoint",
+            "integrate Datadog with PagerDuty for on-call alerting",
+            "reduce Datadog costs by tuning log retention and sampling",
         ]
 
         topics: List[Topic] = []
@@ -183,6 +198,56 @@ class DiscoveryAgent:
                     intent="Follow a practical, step-by-step guide to accomplish a specific task.",
                     difficulty_score=0.30,
                     source="heuristic-howto",
+                    created_at=now,
+                )
+            )
+
+        # High-priority affiliate-adjacent topics — score 0.10 so they are
+        # always selected before generic content (lower score = selected first).
+        affiliate_seeds = [
+            # Cursor IDE — affiliate #1
+            ("Cursor IDE vs GitHub Copilot: which AI code editor wins in 2026",
+             "devtools_comparison", "Evaluate which AI editor to adopt.", "priority-cursor-vs-copilot"),
+            ("Cursor IDE vs VS Code: is it worth switching in 2026",
+             "devtools_comparison", "Evaluate which editor to adopt.", "priority-cursor-vs-vscode-2026"),
+            ("Cursor IDE review: hands-on for professional developers",
+             "devtools_comparison", "Decide whether to adopt Cursor IDE.", "priority-cursor-review"),
+            ("Cursor IDE vs Windsurf: best AI code editor comparison",
+             "devtools_comparison", "Evaluate which AI editor to adopt.", "priority-cursor-vs-windsurf"),
+            ("Best AI code editors in 2026: Cursor vs Copilot vs Windsurf ranked",
+             "devtools_comparison", "Choose the best AI editor.", "priority-ai-editors-ranked-2026"),
+            # Railway — affiliate #2
+            ("Railway vs Heroku: the definitive platform comparison for 2026",
+             "devtools_comparison", "Decide which PaaS to use for deployment.", "priority-railway-vs-heroku"),
+            ("Railway vs Render vs Fly.io: cloud hosting comparison for developers",
+             "devtools_comparison", "Decide which hosting platform to use.", "priority-railway-vs-render-fly"),
+            ("Railway review: best Heroku alternative for Python and Node apps",
+             "devtools_comparison", "Decide whether to migrate to Railway.", "priority-railway-review"),
+            ("How to deploy a Python app to Railway from scratch (step-by-step guide)",
+             "tutorial", "Deploy a Python app to Railway.", "priority-railway-python-deploy"),
+            ("Railway vs Vercel vs Netlify: which platform for full-stack apps",
+             "devtools_comparison", "Choose the right deployment platform.", "priority-railway-vs-vercel-netlify"),
+            # Datadog — affiliate #3
+            ("Datadog vs Prometheus: which monitoring tool should you use in 2026",
+             "devtools_comparison", "Decide which monitoring tool to adopt.", "priority-datadog-vs-prometheus"),
+            ("Datadog vs Grafana Cloud: observability platform comparison",
+             "devtools_comparison", "Decide which observability platform to use.", "priority-datadog-vs-grafana"),
+            ("Datadog review: is it worth the cost for small engineering teams",
+             "devtools_comparison", "Decide whether to adopt Datadog.", "priority-datadog-review"),
+            ("How to set up Datadog monitoring for a Node.js app (complete guide)",
+             "tutorial", "Set up Datadog for Node.js.", "priority-datadog-nodejs-setup"),
+            ("Datadog vs New Relic vs Dynatrace: APM comparison for 2026",
+             "devtools_comparison", "Choose the right APM solution.", "priority-datadog-vs-newrelic-dynatrace"),
+        ]
+        for keyword, category, intent, slug in affiliate_seeds:
+            topics.append(
+                Topic(
+                    id=slug,
+                    keyword=keyword,
+                    category=category,
+                    intent=intent,
+                    difficulty_score=0.10,
+                    source="heuristic-affiliate-priority",
                     created_at=now,
                 )
             )
