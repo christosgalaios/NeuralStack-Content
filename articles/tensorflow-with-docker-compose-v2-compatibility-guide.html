@@ -12,6 +12,10 @@
   <link rel="canonical" href="https://christosgalaios.github.io/NeuralStack-Content/articles/tensorflow-with-docker-compose-v2-compatibility-guide.html" />
   <meta name="robots" content="index, follow" />
   <link rel="alternate" type="application/rss+xml" title="NeuralStack RSS" href="https://christosgalaios.github.io/NeuralStack-Content/feed.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%231A1615'/%3E%3Ctext x='50' y='68' font-family='serif' font-size='60' font-weight='bold' fill='%23F59E0B' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E" />
   <link rel="stylesheet" href="../assets/style.css" />
   <script type="application/ld+json">
 {
@@ -38,10 +42,34 @@
   </script>
 </head>
 <body>
-  <nav class="site-nav"><a href="https://christosgalaios.github.io/NeuralStack-Content/">&#8592; All articles</a></nav>
+  <div class="reading-progress"></div>
+  <nav class="site-nav"><a href="https://christosgalaios.github.io/NeuralStack-Content/">NeuralStack</a><span class="nav-sep">/</span><span class="nav-current">TensorFlow with Docker Compose v2 compatibility guide</span></nav>
 <article>
-<h1>TensorFlow with Docker Compose v2 compatibility guide</h1>
-
+<header class="article-header">
+  <span class="category-badge category-compatibility">Compatibility</span>
+  <h1>TensorFlow with Docker Compose v2 compatibility guide</h1>
+  <div class="article-meta">
+    <span>NeuralStack</span>
+    <span class="article-meta-dot">&#183;</span>
+    <span>2026-03-07</span>
+    <span class="article-meta-dot">&#183;</span>
+    <span>6 min read</span>
+  </div>
+</header>
+<details class="toc" open>
+  <summary class="toc-title">In this article</summary>
+  <ol>
+    <li><a href="#core-concepts-and-mental-models-internal-notes">Core concepts and mental models [internal notes]</a></li>
+    <li><a href="#high-intent-use-cases-and-user-journeys">High-intent use cases and user journeys</a></li>
+    <li><a href="#nuanced-comparisons-instead-of-hype">Nuanced comparisons instead of hype</a></li>
+    <li><a href="#architecture-and-workflow-comparison-table">Architecture and workflow comparison table</a></li>
+    <li><a href="#implementation-guidelines-and-failure-modes-field-experience">Implementation guidelines and failure modes [field experience]</a></li>
+    <li><a href="#recommended-tools-and-resources">Recommended tools and resources</a></li>
+    <li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+    <li><a href="#conclusion-how-to-move-forward-thoughtfully">Conclusion: how to move forward thoughtfully</a></li>
+  </ol>
+</details>
+<div class="article-body">
 <p>As a practitioner who cares about maintainable systems and realistic trade-offs, this guide walks through <strong>real-world considerations</strong> instead of fluffy marketing. The goal is to help you make a confident decision about your tooling and architecture, using language that any experienced engineer or tech lead would recognise.</p>
 
 <p>From a practical standpoint, treat this guide as a set of guardrails rather than a script. You are encouraged to adapt the examples to the constraints of your own organisation, regulatory environment, and risk appetite.</p>
@@ -57,7 +85,7 @@
 
 <p>All explanations target engineers shipping production systems in March 2026.</p>
 
-<h2>Core concepts and mental models [internal notes]</h2>
+<h2 id="core-concepts-and-mental-models-internal-notes">Core concepts and mental models [internal notes]</h2>
 
 <p>Before we dive into specific tools, it is useful to step back and describe the core mental models behind this topic. When you understand the moving pieces conceptually, you become far less dependent on any single vendor or framework.</p>
 
@@ -72,7 +100,7 @@
 
 <p>Even simple sounding decisions, such as choosing one editor or plugin over another, tend to compound over years as teams, codebases, and infrastructure evolve.</p>
 
-<h2>High-intent use cases and user journeys</h2>
+<h2 id="high-intent-use-cases-and-user-journeys">High-intent use cases and user journeys</h2>
 
 <p>Search intent around this topic is rarely casual. Engineers typing queries such as "TensorFlow with Docker Compose v2 compatibility guide" are normally stuck on:</p>
 
@@ -86,7 +114,7 @@
 
 <p>1. A new contributor cloning the repo and becoming productive. 2. A senior engineer debugging intermittent failures under load. 3. An ops team keeping the system observable, patchable, and auditable. 4. A tech lead justifying the stack to non-technical stakeholders.</p>
 
-<h2>Nuanced comparisons instead of hype</h2>
+<h2 id="nuanced-comparisons-instead-of-hype">Nuanced comparisons instead of hype</h2>
 
 <p>Tool comparisons often degenerate into unhelpful debates. A more responsible way to reason about options is to define a shortlist of evaluation criteria and then score each option in context.</p>
 
@@ -102,7 +130,7 @@
 
 <p>When you read benchmarks or case studies, pause and ask whether the environment, team skills, and risk profile actually match yours.</p>
 
-<h2>Architecture and workflow comparison table</h2>
+<h2 id="architecture-and-workflow-comparison-table">Architecture and workflow comparison table</h2>
 
 <table>
 <thead><tr><th>Dimension</th><th>Conservative choice</th><th>Progressive choice</th></tr></thead>
@@ -117,7 +145,7 @@
 
 <p>The right answer is rarely at either extreme. Most organisations end up standardising on a conservative baseline while enabling power users to extend their local workflows where it genuinely pays off.</p>
 
-<h2>Implementation guidelines and failure modes [field experience]</h2>
+<h2 id="implementation-guidelines-and-failure-modes-field-experience">Implementation guidelines and failure modes [field experience]</h2>
 
 <p>From an implementation perspective, treat configuration as code and invest early in reproducible environments. A few practical guidelines:</p>
 
@@ -130,7 +158,7 @@
 
 <p>Common failure modes include silent configuration drift, unclear ownership of tooling, and one-off shell scripts that become accidental production dependencies.</p>
 
-<h2>Recommended tools and resources</h2>
+<h2 id="recommended-tools-and-resources">Recommended tools and resources</h2>
 
 <p>            After working with many stacks over the past few years, these are tools             we genuinely recommend. We may earn a commission if you sign up through             the links below, but our recommendations are based on hands-on experience             — not payout.</p>
 
@@ -142,7 +170,7 @@
 
 <p>            Disclosure: some links above are affiliate links. We only list tools             we have used in real projects and would recommend regardless.</p>
 
-<h2>Frequently asked questions</h2>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
 
 <h3>Is it safe to standardise on a single tool?</h3>
 
@@ -156,7 +184,7 @@
 
 <p>Treat glossy benchmarks as a starting point, not a conclusion. Recreate the critical paths from your own system and run targeted experiments under realistic constraints, including network conditions and data size.</p>
 
-<h2>Conclusion: how to move forward thoughtfully</h2>
+<h2 id="conclusion-how-to-move-forward-thoughtfully">Conclusion: how to move forward thoughtfully</h2>
 
 <p>The most sustainable decisions are usually boring from the outside. Instead of chasing the newest stack, identify the smallest set of changes that meaningfully de-risk your roadmap and improve developer quality of life.</p>
 
@@ -173,6 +201,13 @@
 <p> In practice, each organisation should run small, low-risk experiments, observe the operational impact over several weeks, and only then roll out broader changes. Document the trade-offs clearly so that future engineers can understand not just what you chose, but why other options were rejected.</p>
 
 <p> In practice, each organisation should run small, low-risk experiments, observe the operational impact over several weeks, and only then roll out broader changes. Document the trade-offs clearly so that future engineers can understand not just what you chose, but why other options were rejected.</p>
+</div>
+<aside class="tool-callout">
+  <span class="tool-callout-badge">Recommended</span>
+  <h4>Datadog</h4>
+  <p>Full-stack observability platform for monitoring your cloud infrastructure and applications.</p>
+  <a href="https://www.datadoghq.com" class="tool-callout-cta" target="_blank" rel="noopener sponsored">Try Datadog &rarr;</a>
+</aside>
 <section class="related-articles">
   <h2>Related articles</h2>
   <ul>
@@ -182,6 +217,16 @@
     <li><a href="https://christosgalaios.github.io/NeuralStack-Content/articles/docker-with-cuda-12-4-compatibility-guide.html">Docker with CUDA 12.4 compatibility guide</a></li>
   </ul>
 </section>
-</article>
+<script>
+(function(){
+  var bar=document.querySelector('.reading-progress');
+  if(!bar)return;
+  window.addEventListener('scroll',function(){
+    var h=document.documentElement;
+    var pct=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;
+    bar.style.width=Math.min(pct,100)+'%';
+  });
+})();
+</script>
 </body>
 </html>
