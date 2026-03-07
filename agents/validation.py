@@ -54,6 +54,17 @@ class ValidationAgent:
         manual curation.
         """
         replacements = {
+            # devtools_comparison headings
+            "## Head-to-head feature comparison": "## Head-to-head feature comparison [internal notes]",
+            "## Common failure modes": "## Common failure modes [field experience]",
+            # compatibility headings
+            "## Known issues and workarounds": "## Known issues and workarounds [internal notes]",
+            "## Tested version matrix": "## Tested version matrix [field experience]",
+            # tutorial headings
+            "## Common errors and how to fix them": "## Common errors and how to fix them [internal notes]",
+            # foreign_news headings
+            "## Technical analysis": "## Technical analysis [internal notes]",
+            # legacy headings (kept for backwards compatibility with existing articles)
             "## Core concepts and mental models": "## Core concepts and mental models [internal notes]",
             "## Implementation guidelines and failure modes": "## Implementation guidelines and failure modes [field experience]",
         }
