@@ -51,8 +51,8 @@ jobs:
 
       - name: Run autonomous pipeline
         env:
+                  NEURALSTACK_BASE_URL: "https://neuralstackhello.co.uk"
           PYTHONUNBUFFERED: "1"
-          NEURALSTACK_BASE_URL: "https://christosgalaios.github.io/NeuralStack-Content"
         run: python main.py
 
       - name: Commit and push changes (if any)
