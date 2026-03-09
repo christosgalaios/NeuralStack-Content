@@ -24,6 +24,11 @@ BASE_URL = os.getenv(
 # Optional: set NEURALSTACK_ADSENSE_ID to inject AdSense auto-ads.
 ADSENSE_ID = os.getenv("NEURALSTACK_ADSENSE_ID", "")
 
+# Google Search Console verification tag.
+GOOGLE_VERIFICATION = os.getenv(
+    "NEURALSTACK_GOOGLE_VERIFICATION", "i27IVb0fNqCp511fOfQTd08teAnHKX23tp8d-TPuHO0"
+)
+
 # Affiliate configuration
 AFF1_NAME = os.getenv("NEURALSTACK_AFF1_NAME", "Cursor IDE")
 AFF1_URL = os.getenv("NEURALSTACK_AFF1_URL", "https://www.cursor.com")
@@ -446,6 +451,7 @@ class DistributionAgent:
             "<head>\n"
             '  <meta charset="utf-8" />\n'
             '  <meta name="viewport" content="width=device-width, initial-scale=1" />\n'
+            f'  <meta name="google-site-verification" content="{GOOGLE_VERIFICATION}" />\n'
             f"  <title>{draft.title}</title>\n"
             f'  <meta name="description" content="{description}" />\n'
             f'  <meta property="og:title" content="{draft.title}" />\n'
@@ -618,6 +624,7 @@ class DistributionAgent:
             "<head>\n"
             '  <meta charset="utf-8" />\n'
             '  <meta name="viewport" content="width=device-width, initial-scale=1" />\n'
+            f'  <meta name="google-site-verification" content="{GOOGLE_VERIFICATION}" />\n'
             '  <title>NeuralStack \u2014 Technical Guides for Engineers</title>\n'
             f'  <meta name="description" content="{description}" />\n'
             f'  <meta property="og:title" content="NeuralStack \u2014 Technical Guides for Engineers" />\n'
