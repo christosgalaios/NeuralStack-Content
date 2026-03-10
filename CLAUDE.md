@@ -1,4 +1,4 @@
-# CLAUDE.md — NeuralStack Autonomous Content Pipeline
+# CLAUDE.md — Autonomous Content Pipeline
 
 > **Purpose of this file**: Project brain for AI session continuity. Read this
 > first to pick up the full state of the project. **Update this file after every
@@ -6,20 +6,32 @@
 
 ## Project Overview
 
-Fully autonomous, zero-cost multi-agent content system. Generates SEO-optimized
-long-form technical articles + TikTok scripts, publishes to GitHub Pages via
-GitHub Actions. Runs daily at 03:00 UTC with zero human interaction required.
+Fully autonomous, zero-cost content system. Generates SEO-optimized long-form
+technical articles via a Python multi-agent pipeline, renders them through a
+Next.js React frontend, and publishes to GitHub Pages. Runs daily at 03:00 UTC
+with zero human interaction required.
 
 ## Architecture
 
-**Pipeline flow** (`main.py`):
-1. **DiscoveryAgent** (`agents/discovery.py`) — selects 5 unprocessed topics from pool (`status == "new"` or `"selected"`)
-2. **ContentAgent** (`agents/content.py`) — generates ~1,300-word articles using template or optional Ollama LLM
-3. **ValidationAgent** (`agents/validation.py`) — checks word count (≥1,200), structure (H2/table/FAQ), rejects AI patterns & keyword stuffing
-4. **DistributionAgent** (`agents/distribution.py`) — publishes HTML to `/articles/`, updates index/sitemap/RSS
-5. **TikTokAgent** (`agents/tiktok.py`) — generates 5 short-form video scripts per run
+### Two-stage build: Python pipeline → Next.js frontend
+
+**Stage 1 — Python content pipeline** (`main.py`):
+1. **DiscoveryAgent** (`agents/discovery.py`) — selects 5 unprocessed topics from pool
+2. **ContentAgent** (`agents/content.py`) — generates ~1,300-word articles
+3. **ValidationAgent** (`agents/validation.py`) — quality gate (word count, structure, tone)
+4. **DistributionAgent** (`agents/distribution.py`) — publishes HTML + exports JSON data
+
+**Stage 2 — Next.js frontend** (`frontend/`):
+- Reads article JSON from `data/articles/` at build time
+- Renders React pages with Tailwind CSS "Dark Tech" design system
+- Static export (`next export`) → `frontend/out/` → deployed to GitHub Pages
 
 **Topic lifecycle**: `new` → `selected` → `drafted` → `published`
+
+### URL strategy
+- `trailingSlash: false` generates `/articles/slug.html` files
+- Preserves all existing URL patterns — zero SEO disruption
+- `.nojekyll` file prevents GitHub Pages from ignoring `_next/` directory
 
 ## Key Files
 
@@ -29,147 +41,176 @@ GitHub Actions. Runs daily at 03:00 UTC with zero human interaction required.
 | `agents/discovery.py` | Topic pool generation and selection |
 | `agents/content.py` | Article generation (template + Ollama) |
 | `agents/validation.py` | Quality gate (word count, structure, tone) |
-| `agents/distribution.py` | HTML publishing, sitemap, RSS, SEO meta |
-| `agents/tiktok.py` | TikTok script generation |
+| `agents/distribution.py` | HTML publishing, JSON export, sitemap, RSS |
 | `agents/__init__.py` | Package exports for all agents |
 | `data/topics.json` | Topic pool with status tracking |
 | `data/performance.json` | Run history and metrics |
-| `data/tiktok_scripts/` | Generated TikTok scripts (JSON) |
-| `data/tiktok_topics.json` | TikTok topic pool |
-| `.github/workflows/autonomous.yml` | CI: tests → pipeline → commit |
-| `assets/style.css` | Site-wide CSS (tables, code, article layout) |
+| `data/articles/*.json` | Structured article data for Next.js |
+| `data/articles/_index.json` | Article index for frontend |
+| `frontend/src/lib/config.ts` | Brand name, URLs, affiliates, categories |
+| `frontend/src/lib/articles.ts` | Article data loading for Next.js |
+| `frontend/src/app/` | Next.js App Router pages |
+| `frontend/src/components/` | React components (layout, cards, monetization, SEO) |
+| `frontend/src/styles/globals.css` | Design system (dark/light themes) |
+| `.github/workflows/autonomous.yml` | CI: tests → pipeline → Next.js build → deploy |
+
+## Frontend Structure
+
+```
+frontend/src/
+├── app/
+│   ├── layout.tsx              # Root layout (header, footer, fonts)
+│   ├── page.tsx                # Homepage (hero, articles, tools)
+│   ├── articles/[slug]/page.tsx # Article pages (two-column, TOC, FAQ)
+│   ├── category/[cat]/page.tsx  # Category listing pages
+│   ├── tools/page.tsx          # Affiliate tools comparison
+│   └── about/page.tsx          # About/trust page (E-E-A-T)
+├── components/
+│   ├── layout/                 # SiteHeader, SiteFooter
+│   ├── cards/                  # ArticleCard, ToolCard, CategoryBadge
+│   ├── article/                # ReadingProgress, TableOfContents
+│   ├── monetization/           # AdSlot, ToolCallout
+│   └── seo/                    # ArticleJsonLd
+├── lib/
+│   ├── config.ts               # All brand/affiliate/category config
+│   └── articles.ts             # JSON data loading functions
+└── styles/
+    └── globals.css             # CSS custom properties, article styles
+```
 
 ## Session Startup Checklist
 
-Run these commands at the start of every session to pick up current state:
-
 ```bash
-# 1. Quick health check — topic pool status
+# 1. Topic pool status
 python -c "
 import json; from collections import Counter
 t = json.loads(open('data/topics.json').read())
 print('Topics:', Counter(x['status'] for x in t))
-print('Categories:', Counter(x['category'] for x in t))
 "
 
-# 2. Recent pipeline runs (last 3)
+# 2. Recent pipeline runs
 python -c "
 import json
 p = json.loads(open('data/performance.json').read())
 for r in p['runs'][-3:]:
-    print(f\"{r['timestamp']} | status={r['status']} | topics={r['generated_topics']} articles={r['generated_articles']} published={r['published_articles']}\")
+    print(f\"{r['timestamp']} | {r['status']} | articles={r['published_articles']}\")
 "
 
-# 3. Article count
-ls articles/*.html | wc -l
+# 3. Article JSON count
+ls data/articles/*.json | wc -l
 
-# 4. Test status
+# 4. Python tests
 python -m unittest discover -s tests -v 2>&1 | tail -5
 
-# 5. Check current branch
+# 5. Frontend build check
+cd frontend && npm run build 2>&1 | tail -5
+
+# 6. Git status
 git branch --show-current && git log --oneline -5
 ```
 
-## Current State (last updated: 2026-03-07)
+## Current State (last updated: 2026-03-10)
 
 ### Pipeline Health
-- **Status**: Fully operational — CI runs daily at 03:00 UTC, 5 articles + 5 TikTok scripts per run
-- **Last 3 CI runs**: 2026-03-05, 2026-03-06, 2026-03-07 — all success, 5/5/5 articles
-- **Active branch**: `claude/tender-einstein-drx2N` — pending PR to main
+- **Status**: Fully operational — daily CI at 03:00 UTC
+- **Architecture**: Python pipeline → JSON data → Next.js static build → GitHub Pages
 
 ### Content Stats
-- **Articles published**: 59 HTML files in `/articles/`
-- **Topic pool**: ~489 total (474 new, 55 published, 15 affiliate-priority at score 0.10)
-- **Categories**: 345 devtools_comparison, 159 compatibility, 15 tutorial, 10 foreign_news
-- **Days of content remaining**: ~95 at 5 articles/day
-- **TikTok scripts**: 15 generated (5 topics × 3 formats)
+- **Articles**: 11 JSON files in `data/articles/` (backfilled from HTML)
+- **Topic pool**: ~489 total (474 new, 15 affiliate-priority at score 0.10)
+- **Categories**: guide, review, comparison
 
 ### Test Coverage
-- **70 tests passing** across 6 test files
+- **38 tests passing** across 5 test files
 - `tests/test_discovery.py` — 5 tests
 - `tests/test_content.py` — 6 tests
 - `tests/test_validation.py` — 7 tests
-- `tests/test_distribution.py` — 7 tests
+- `tests/test_distribution.py` — 14 tests (includes 7 JSON export tests)
 - `tests/test_pipeline.py` — 1 integration test
-- `tests/test_tiktok.py` — **44 tests** (added 2026-03-07)
+- TikTok tests removed (feature removed)
+
+### Frontend
+- **Framework**: Next.js 15 + React 19 + Tailwind CSS v4
+- **Design**: "Dark Tech" theme — near-black backgrounds, blue accent, green CTAs
+- **Static export**: 20 pages generated successfully
+- **Brand**: Parameterized as "TechPulse" (placeholder — will change)
 
 ### Domain & SEO
-- **Domain**: `neuralstackhello.co.uk` — registered, DNS via Cloudflare (propagating)
-- **GitHub Pages**: configured for custom domain; HTTPS auto-enabled after DNS check
-- **Search Console**: sitemap submitted, awaiting DNS propagation
+- **Domain**: `devguide.co.uk`
+- **GitHub Pages**: custom domain with HTTPS
+- **Structured data**: TechArticle, FAQPage, BreadcrumbList JSON-LD per article
+- **Meta tags**: title, description, canonical, OpenGraph per page
 
 ## Monetization Setup
 
-- **Affiliate links**: Cursor IDE, Datadog, Railway embedded in every article
-  - Configurable via `NEURALSTACK_AFF{1,2,3}_{NAME,URL}` env vars
-  - Links rendered as `<a rel="noopener sponsored">` in published HTML
-- **Priority topics**: 15 affiliate-adjacent seeds (Cursor vs Copilot, Railway vs Heroku, Datadog vs Prometheus, etc.) have `difficulty_score=0.10` — selected before all generic content
-- **AdSense**: Set `NEURALSTACK_ADSENSE_ID=ca-pub-XXXXX` to inject auto-ads
-- **SEO per article**: description, canonical, og:title, og:description, og:type, og:url, JSON-LD TechArticle schema, RSS autodiscovery link
+- **Affiliate links**: Cursor IDE, Datadog, Railway
+  - Configured in `frontend/src/lib/config.ts` AFFILIATES array
+  - Rendered as `<a rel="noopener sponsored">` with green CTA buttons
+  - Tool cards on homepage, tools page, and article sidebar
+- **AdSense**: Set `ADSENSE_ID` GitHub secret → renders ad slots on all pages
+  - Slots: above-title, sidebar, in-article, in-feed, footer
+- **SEO per article**: JSON-LD TechArticle + FAQPage schema, canonical URLs, OpenGraph
 
 ## Environment Variables
 
+### Python Pipeline
 | Variable | Default | Purpose |
 |----------|---------|---------|
-| `NEURALSTACK_BASE_URL` | `https://christosgalaios.github.io/NeuralStack-Content` | Base URL for sitemap/RSS |
+| `NEURALSTACK_BASE_URL` | `https://devguide.co.uk` | Base URL for sitemap/RSS |
 | `NEURALSTACK_LLM_BACKEND` | `template` | Set to `ollama` for local LLM |
-| `NEURALSTACK_OLLAMA_MODEL` | `llama3` | Ollama model name |
-| `NEURALSTACK_ADSENSE_ID` | _(empty)_ | Google AdSense publisher ID |
-| `NEURALSTACK_AFF1_NAME` | `Cursor IDE` | First affiliate tool name |
-| `NEURALSTACK_AFF1_URL` | `https://www.cursor.com` | First affiliate link |
-| `NEURALSTACK_AFF2_NAME` | `Datadog` | Second affiliate tool name |
-| `NEURALSTACK_AFF2_URL` | `https://www.datadoghq.com` | Second affiliate link |
-| `NEURALSTACK_AFF3_NAME` | `Railway` | Third affiliate tool name |
-| `NEURALSTACK_AFF3_URL` | `https://railway.app` | Third affiliate link |
+
+### Next.js Frontend (via GitHub Secrets)
+| Variable | Purpose |
+|----------|---------|
+| `NEXT_PUBLIC_BASE_URL` | Site base URL |
+| `NEXT_PUBLIC_ADSENSE_ID` | Google AdSense publisher ID |
+| `NEXT_PUBLIC_SITE_NAME` | Brand name override |
 
 ## Development Commands
 
 ```bash
-# Run tests
+# Python tests
 python -m unittest discover -s tests -v
 
-# Run full pipeline locally
+# Run content pipeline
 python main.py
 
-# Check topic pool status
-python -c "
-import json; from collections import Counter
-t = json.loads(open('data/topics.json').read())
-print(Counter(x['status'] for x in t))
-"
+# Frontend dev server
+cd frontend && npm run dev
 
-# Quick markdown→HTML smoke test
-python -c "
-from agents.distribution import _md_to_html
-print(_md_to_html('## Hello\n\n**bold** and *italic*\n\n- item one\n- item two'))
-"
+# Frontend production build
+cd frontend && npm run build
+
+# Preview static export
+cd frontend/out && python -m http.server 8080
 ```
 
 ## Known Issues / Technical Debt
 
 ### P1 — Important
-1. **15 affiliate-priority topics not yet published** — they have `difficulty_score=0.10` and will be picked in the next 3 CI runs. Monitor to confirm.
-2. **Existing 59 articles still have raw markdown HTML** — they were published before the markdown→HTML fix. They will NOT be regenerated automatically (pipeline only publishes new articles). Options: run a one-off backfill script, or accept that only new articles benefit from the fix.
-3. **No backfill for existing articles** — need a script to re-render existing articles through `_publish_article` with the new markdown converter.
+1. **Brand name TBD** — currently "TechPulse" placeholder. Change in `frontend/src/lib/config.ts`.
+2. **Only 11 articles backfilled** — the original 59 HTML articles exist but only 11 were successfully exported to JSON format. Need to investigate and re-run backfill.
 
 ### P2 — Nice to Have
-4. **Internal linking between related articles** — no cross-links yet. A "Related articles" section at the bottom of each article would improve SEO authority flow and time-on-site.
-5. **Topic pool imbalance** — 345/489 topics are `devtools_comparison`. Adding more tutorial and compatibility seeds would diversify output.
-6. **RSS item descriptions** — currently hardcoded generic text. Should use article meta description.
+3. **Topic pool imbalance** — mostly `devtools_comparison`. More tutorial/compatibility seeds needed.
+4. **RSS/sitemap from Next.js** — currently still generated by Python. Should move to Next.js for consistency.
+5. **Light mode toggle** — CSS variables defined but no UI toggle component yet.
 
-## Suggested Next Steps (prioritized)
+## Suggested Next Steps
 
-1. **Backfill existing articles** — write a one-off script that reads all 59 articles, regenerates them through `_publish_article`, and commits the result
-2. **Add internal linking** — append "Related articles" section to each new article (match by overlapping keywords)
-3. **Sign up for affiliate programs** — Cursor IDE, Datadog, Railway — replace default URLs with tracked referral links via repo secrets
-4. **Enable AdSense** — set `NEURALSTACK_ADSENSE_ID` as a GitHub Actions secret
-5. **Expand tutorial topic pool** — add 50+ "How to use [affiliate tool]" seeds
+1. **Choose final brand name** — update `config.ts`, CNAME, DNS
+2. **Sign up for affiliate programs** — get tracked referral URLs for Cursor, Datadog, Railway
+3. **Enable AdSense** — set `ADSENSE_ID` as GitHub Actions secret
+4. **Fix backfill** — ensure all existing articles export to JSON
+5. **Add sitemap/RSS generation** to Next.js build
+6. **Expand topic pool** — add tutorial seeds for affiliate tools
 
 ## Conventions
 
-- **Zero external dependencies** — standard library only for core pipeline
-- **Branch**: develop on `claude/tender-einstein-drx2N`, push there
-- **Commits**: descriptive multi-line messages, include session link
+- **Python pipeline**: zero external dependencies (stdlib only)
+- **Frontend**: Next.js 15 App Router, Tailwind CSS v4, TypeScript
 - **Tests**: `tests/test_*.py`, run with `python -m unittest discover -s tests`
-- **No manual edits** to generated files (`index.html`, `sitemap.xml`, `feed.xml`, `articles/*.html`) — they are overwritten each pipeline run
-- **Update this file** after every significant change to keep future sessions accurate
+- **Git**: descriptive commit messages
+- **No manual edits** to `frontend/out/` — regenerated each build
+- **All brand references** parameterized in `frontend/src/lib/config.ts`
+- **Update this file** after every significant change

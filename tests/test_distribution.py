@@ -66,13 +66,6 @@ class TestDistributionAgent(unittest.TestCase):
         self.assertNotIn("{{BASE_URL}}", feed)
         self.assertIn(BASE_URL, feed)
 
-    def test_video_script_stub_created(self):
-        agent = DistributionAgent(self.data_dir, self.root, self.articles_dir)
-        agent.run([self._make_draft("my-slug", "My Title")])
-        script = self.data_dir / "video_scripts" / "my-slug-short-script.md"
-        self.assertTrue(script.exists())
-        self.assertIn("My Title", script.read_text())
-
     def test_run_with_no_drafts(self):
         agent = DistributionAgent(self.data_dir, self.root, self.articles_dir)
         published = agent.run([])
@@ -138,6 +131,107 @@ class TestRelatedArticles(unittest.TestCase):
         self.assertIn("code", tokens)
         self.assertIn("cursor", tokens)
         self.assertIn("developers", tokens)
+
+
+class TestJsonExport(unittest.TestCase):
+    def setUp(self):
+        self.tmpdir = TemporaryDirectory()
+        self.root = Path(self.tmpdir.name)
+        self.data_dir = self.root / "data"
+        self.articles_dir = self.root / "articles"
+        self.data_dir.mkdir()
+        self.articles_dir.mkdir()
+        perf = {"runs": [], "articles_published": 0, "last_run": None, "errors": []}
+        (self.data_dir / "performance.json").write_text(json.dumps(perf))
+
+    def tearDown(self):
+        self.tmpdir.cleanup()
+
+    def _make_draft(self, slug="test-article", title="Test Article vs Other Tool"):
+        content = (
+            "## Introduction\n\n"
+            "This is a comparison article with enough words. " * 60 + "\n\n"
+            "## Feature Comparison\n\n"
+            "| Feature | Tool A | Tool B |\n"
+            "| --- | --- | --- |\n"
+            "| Speed | Fast | Slow |\n\n"
+            "## FAQ\n\n"
+            "**Is Tool A better than Tool B?** Yes, Tool A is generally faster.\n\n"
+            "**How much does it cost?** Both are free for personal use.\n\n"
+        )
+        return DraftArticle(
+            topic_id="topic-1", title=title, slug=slug,
+            content=content, created_at="2026-01-15T00:00:00Z",
+        )
+
+    def test_export_article_json_creates_file(self):
+        agent = DistributionAgent(self.data_dir, self.root, self.articles_dir)
+        draft = self._make_draft()
+        path = agent._export_article_json(draft)
+        self.assertTrue(path.exists())
+        data = json.loads(path.read_text())
+        self.assertEqual(data["slug"], "test-article")
+        self.assertEqual(data["title"], "Test Article vs Other Tool")
+        self.assertIn("content_html", data)
+        self.assertIn("category", data)
+        self.assertEqual(data["category"], "comparison")
+
+    def test_export_article_json_has_required_fields(self):
+        agent = DistributionAgent(self.data_dir, self.root, self.articles_dir)
+        draft = self._make_draft()
+        path = agent._export_article_json(draft)
+        data = json.loads(path.read_text())
+        required = [
+            "slug", "title", "description", "content_html", "category",
+            "category_display", "date_published", "date_modified",
+            "reading_time_minutes", "word_count", "toc", "related_slugs",
+            "affiliate", "faq", "tags",
+        ]
+        for field in required:
+            self.assertIn(field, data, f"Missing field: {field}")
+
+    def test_export_article_json_affiliate_present(self):
+        agent = DistributionAgent(self.data_dir, self.root, self.articles_dir)
+        path = agent._export_article_json(self._make_draft())
+        data = json.loads(path.read_text())
+        self.assertIn("name", data["affiliate"])
+        self.assertIn("url", data["affiliate"])
+        self.assertTrue(data["affiliate"]["url"].startswith("https://"))
+
+    def test_export_article_json_toc_extracted(self):
+        agent = DistributionAgent(self.data_dir, self.root, self.articles_dir)
+        path = agent._export_article_json(self._make_draft())
+        data = json.loads(path.read_text())
+        self.assertGreaterEqual(len(data["toc"]), 2)
+        self.assertIn("id", data["toc"][0])
+        self.assertIn("text", data["toc"][0])
+
+    def test_export_article_index(self):
+        agent = DistributionAgent(self.data_dir, self.root, self.articles_dir)
+        agent._export_article_json(self._make_draft("article-a", "Article A vs B"))
+        agent._export_article_json(self._make_draft("article-b", "Article B Tutorial"))
+        index_path = agent._export_article_index()
+        self.assertTrue(index_path.exists())
+        index_data = json.loads(index_path.read_text())
+        self.assertEqual(len(index_data), 2)
+        self.assertIn("slug", index_data[0])
+
+    def test_run_creates_json_alongside_html(self):
+        agent = DistributionAgent(self.data_dir, self.root, self.articles_dir)
+        agent.run([self._make_draft()])
+        html_exists = (self.articles_dir / "test-article.html").exists()
+        json_exists = (self.data_dir / "articles" / "test-article.json").exists()
+        index_exists = (self.data_dir / "articles" / "_index.json").exists()
+        self.assertTrue(html_exists)
+        self.assertTrue(json_exists)
+        self.assertTrue(index_exists)
+
+    def test_extract_tags(self):
+        agent = DistributionAgent(self.data_dir, self.root, self.articles_dir)
+        tags = agent._extract_tags("Cursor IDE vs GitHub Copilot", "comparison")
+        self.assertIn("cursor", tags)
+        self.assertIn("copilot", tags)
+        self.assertIn("comparison", tags)
 
 
 if __name__ == "__main__":

@@ -18,6 +18,11 @@ ENV/
 .DS_Store
 Thumbs.db
 
+# Frontend build artifacts
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
 # Pipeline data (optional: remove if you want to track)
 # data/*.json
 # data/pipeline.log

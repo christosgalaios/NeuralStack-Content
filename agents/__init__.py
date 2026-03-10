@@ -4,7 +4,6 @@ from .discovery import DiscoveryAgent, Topic
 from .content import ContentAgent, DraftArticle, SimpleLocalLLM
 from .validation import ValidationAgent, ValidationResult
 from .distribution import DistributionAgent
-from .tiktok import TikTokAgent
 
 __all__ = [
     "DiscoveryAgent",
@@ -15,5 +14,4 @@ __all__ = [
     "ValidationAgent",
     "ValidationResult",
     "DistributionAgent",
-    "TikTokAgent",
 ]

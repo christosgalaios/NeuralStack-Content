@@ -1,0 +1,25 @@
+{
+  "slug": "test",
+  "title": "Test Article",
+  "description": "In-depth technical guide: Test Article. Practical trade-offs, implementation patterns, and recommendations for production engineers.",
+  "content_html": "",
+  "category": "guide",
+  "category_display": "Guide",
+  "date_published": "2026-03-10",
+  "date_modified": "2026-03-10",
+  "reading_time_minutes": 1,
+  "word_count": 0,
+  "toc": [],
+  "related_slugs": [],
+  "affiliate": {
+    "name": "Datadog",
+    "url": "https://www.datadoghq.com",
+    "description": "Full-stack observability platform for monitoring your cloud infrastructure and applications."
+  },
+  "faq": [],
+  "tags": [
+    "article",
+    "guide",
+    "test"
+  ]
+}

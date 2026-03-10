@@ -29,6 +29,19 @@ jobs:
       - name: Run tests
         run: python -m unittest discover -s tests -v
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        run: cd frontend && npm ci
+
+      - name: Build frontend
+        run: cd frontend && npm run build
+
   # ── Runs on schedule / manual dispatch only — full autonomous pipeline ───
   run-pipeline:
     runs-on: ubuntu-latest
@@ -51,9 +64,40 @@ jobs:
 
       - name: Run autonomous pipeline
         env:
-                  NEURALSTACK_BASE_URL: "https://neuralstackhello.co.uk"
+          NEURALSTACK_BASE_URL: "https://devguide.co.uk"
           PYTHONUNBUFFERED: "1"
         run: python main.py
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        run: cd frontend && npm ci
+
+      - name: Build static site
+        env:
+          NEXT_PUBLIC_BASE_URL: "https://devguide.co.uk"
+          NEXT_PUBLIC_ADSENSE_ID: ${{ secrets.ADSENSE_ID }}
+        run: cd frontend && npm run build
+
+      - name: Deploy static output to repo root
+        run: |
+          # Preserve CNAME for GitHub Pages custom domain
+          cp CNAME frontend/out/CNAME 2>/dev/null || true
+          # Copy robots.txt if it exists at repo root
+          cp robots.txt frontend/out/robots.txt 2>/dev/null || true
+          # Remove old generated files (keep data/, agents/, tests/, etc.)
+          rm -f index.html sitemap.xml feed.xml
+          rm -rf articles/ assets/
+          # Copy static export to repo root
+          cp -r frontend/out/* .
+          # Move _next to root for GitHub Pages
+          # Note: .nojekyll prevents GitHub Pages from ignoring _next/
+          touch .nojekyll
 
       - name: Commit and push changes (if any)
         run: |

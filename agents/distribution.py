@@ -18,7 +18,7 @@ _STOP_WORDS = frozenset({
 # Resolve base URL once at import time.
 BASE_URL = os.getenv(
     "NEURALSTACK_BASE_URL",
-        "https://neuralstackhello.co.uk",
+        "https://devguide.co.uk",
 )
 
 # Optional: set NEURALSTACK_ADSENSE_ID to inject AdSense auto-ads.
@@ -734,35 +734,174 @@ class DistributionAgent:
         data["latest_published_files"] = [str(p) for p in published_paths]
         perf_file.write_text(json.dumps(data, indent=2), encoding="utf-8")
 
-    def _prepare_video_script_stub(self, draft: DraftArticle, output_dir: Path) -> None:
-        """Create a short-form video script outline."""
-        output_dir.mkdir(parents=True, exist_ok=True)
-        path = output_dir / f"{draft.slug}-short-script.md"
-        outline = (
-            f"# Short video script for: {draft.title}\n\n"
-            "## Hook (3\u20135 seconds)\n"
-            "- State the core pain point in a single sharp sentence.\n\n"
-            "## Context (5\u201310 seconds)\n"
-            "- Mention who this is for and when it matters.\n\n"
-            "## Key idea (10\u201320 seconds)\n"
-            "- Summarise one concrete insight from the article.\n\n"
-            "## Call to action (3\u20135 seconds)\n"
-            "- Invite viewers to read the full guide on the site.\n"
+    def _extract_faq(self, html_body: str) -> List[Dict]:
+        """Extract FAQ question/answer pairs from article HTML."""
+        faq_items: List[Dict] = []
+        # Look for FAQ section: find h2 containing "FAQ" then collect subsequent content
+        parts = re.split(r'<h2[^>]*>.*?FAQ.*?</h2>', html_body, flags=re.IGNORECASE)
+        if len(parts) < 2:
+            return faq_items
+        faq_section = parts[1]
+        # Stop at next h2 if any
+        next_h2 = re.search(r'<h2', faq_section)
+        if next_h2:
+            faq_section = faq_section[:next_h2.start()]
+        # Extract bold questions followed by paragraph answers
+        pattern = r'<strong>([^<]+\?)\s*</strong>\s*(.+?)(?=<strong>|<h[23]|$)'
+        for m in re.finditer(pattern, faq_section, re.DOTALL):
+            answer = _strip_tags(m.group(2)).strip()
+            if answer:
+                faq_items.append({"question": m.group(1).strip(), "answer": answer})
+        # Also try <p> based patterns: Q as a line, A as next paragraph
+        if not faq_items:
+            paragraphs = re.findall(r'<p>(.*?)</p>', faq_section, re.DOTALL)
+            i = 0
+            while i < len(paragraphs) - 1:
+                q_text = _strip_tags(paragraphs[i]).strip()
+                if q_text.endswith('?'):
+                    a_text = _strip_tags(paragraphs[i + 1]).strip()
+                    if a_text:
+                        faq_items.append({"question": q_text, "answer": a_text})
+                    i += 2
+                else:
+                    i += 1
+        return faq_items
+
+    def _extract_tags(self, title: str, category: str) -> List[str]:
+        """Extract keyword tags from title for programmatic SEO."""
+        tokens = _title_tokens(title)
+        # Add category as a tag
+        tags = list(tokens)
+        cat_tag = category.replace("_", "-")
+        if cat_tag not in tags:
+            tags.append(cat_tag)
+        return sorted(tags)
+
+    def _export_article_json(self, draft: DraftArticle) -> Path:
+        """Export article data as JSON for the Next.js frontend."""
+        json_dir = self.data_dir / "articles"
+        json_dir.mkdir(parents=True, exist_ok=True)
+        path = json_dir / f"{draft.slug}.json"
+
+        body_html = _md_to_html(draft.content)
+        body_with_ids, toc_html = _add_heading_ids_and_toc(body_html)
+
+        # Extract TOC entries as structured data
+        toc_entries: List[Dict] = []
+        for m in re.finditer(r'<h2 id="([^"]+)">(.+?)</h2>', body_with_ids):
+            toc_entries.append({"id": m.group(1), "text": _strip_tags(m.group(2))})
+
+        # Related articles
+        related_slugs: List[str] = []
+        current_tokens = _title_tokens(draft.title)
+        if current_tokens and self.articles_dir.exists():
+            scored = []
+            for html_file in self.articles_dir.glob("*.html"):
+                if html_file.stem == draft.slug:
+                    continue
+                text = html_file.read_text(encoding="utf-8", errors="ignore")
+                tm = re.search(r"<title>(.+?)</title>", text)
+                if not tm:
+                    continue
+                overlap = len(current_tokens & _title_tokens(tm.group(1).strip()))
+                if overlap > 0:
+                    scored.append((html_file.stem, overlap))
+            for slug, _ in sorted(scored, key=lambda x: x[1], reverse=True)[:4]:
+                related_slugs.append(slug)
+
+        # Affiliate callout
+        affiliates = [
+            (AFF1_NAME, AFF1_URL),
+            (AFF2_NAME, AFF2_URL),
+            (AFF3_NAME, AFF3_URL),
+        ]
+        idx = abs(hash(draft.slug)) % len(affiliates)
+        aff_name, aff_url = affiliates[idx]
+        aff_desc = _TOOL_DESCRIPTIONS.get(aff_name, f"Check out {aff_name} for your next project.")
+
+        cat_name, cat_class = _infer_category(draft.title)
+        word_count = len(body_html.split())
+        reading_min = max(1, round(word_count / 220))
+        date_published = draft.created_at[:10]
+        date_modified = datetime.now(timezone.utc).date().isoformat()
+        description = (
+            f"In-depth technical guide: {draft.title}. Practical trade-offs, "
+            f"implementation patterns, and recommendations for production engineers."
         )
-        path.write_text(outline, encoding="utf-8")
+
+        faq_items = self._extract_faq(body_with_ids)
+        tags = self._extract_tags(draft.title, cat_class)
+
+        data = {
+            "slug": draft.slug,
+            "title": draft.title,
+            "description": description,
+            "content_html": body_with_ids,
+            "category": cat_class,
+            "category_display": cat_name,
+            "date_published": date_published,
+            "date_modified": date_modified,
+            "reading_time_minutes": reading_min,
+            "word_count": word_count,
+            "toc": toc_entries,
+            "related_slugs": related_slugs,
+            "affiliate": {
+                "name": aff_name,
+                "url": aff_url,
+                "description": aff_desc,
+            },
+            "faq": faq_items,
+            "tags": tags,
+        }
+
+        path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+        return path
+
+    def _export_article_index(self) -> Path:
+        """Generate a summary index of all published articles for the frontend."""
+        json_dir = self.data_dir / "articles"
+        if not json_dir.exists():
+            json_dir.mkdir(parents=True, exist_ok=True)
+
+        index_path = json_dir / "_index.json"
+        articles: List[Dict] = []
+
+        for json_file in sorted(json_dir.glob("*.json")):
+            if json_file.name.startswith("_"):
+                continue
+            try:
+                article = json.loads(json_file.read_text(encoding="utf-8"))
+                articles.append({
+                    "slug": article["slug"],
+                    "title": article["title"],
+                    "description": article["description"],
+                    "category": article["category"],
+                    "category_display": article["category_display"],
+                    "date_published": article["date_published"],
+                    "reading_time_minutes": article["reading_time_minutes"],
+                    "tags": article.get("tags", []),
+                })
+            except Exception:
+                continue
+
+        # Sort by date descending
+        articles.sort(key=lambda a: a["date_published"], reverse=True)
+        index_path.write_text(json.dumps(articles, indent=2, ensure_ascii=False), encoding="utf-8")
+        return index_path
 
     def run(self, approved_drafts: List[DraftArticle]) -> List[Path]:
         published_paths: List[Path] = []
         for draft in approved_drafts:
             post_path = self._publish_article(draft)
             published_paths.append(post_path)
-            self._prepare_video_script_stub(draft, self.data_dir / "video_scripts")
+            self._export_article_json(draft)
 
         posts_meta = self._load_posts_metadata()
         self._update_index(posts_meta)
         self._update_sitemap(posts_meta)
         self._update_rss(posts_meta)
         self._update_performance_summary(published_paths)
+        self._export_article_index()
         return published_paths
 
 
