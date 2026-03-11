@@ -109,14 +109,14 @@ cd frontend && npm run build 2>&1 | tail -5
 git branch --show-current && git log --oneline -5
 ```
 
-## Current State (last updated: 2026-03-11, citations added)
+## Current State (last updated: 2026-03-11, citation system overhauled)
 
 ### Pipeline Health
 - **Status**: Fully operational — daily CI at 03:00 UTC
 - **Architecture**: Python pipeline → JSON data → Next.js static build → GitHub Pages
 
 ### Content Stats
-- **Articles**: 24 JSON files in `data/articles/` (14 from HTML + 10 pipeline-generated)
+- **Articles**: 44 JSON files in `data/articles/` (all regenerated with citation system)
 - **Topic pool**: ~578 total (553 new, 35 affiliate-priority Vultr/Railway seeds at score 0.10)
 - **Categories**: guide, review, comparison, compatibility
 
@@ -138,10 +138,13 @@ git branch --show-current && git log --oneline -5
 - **Theme toggle**: Sun/moon button in header, persists to localStorage, respects system preference
 
 ### Citations & References
-- **Inline citations**: `[1]`, `[2]` superscript links in article body → scroll to numbered references
-- **Source mix**: official docs + blog posts, research papers, community wikis, video, surveys
-- **Reference pool**: `_TOOL_REFERENCES` in `agents/content.py` (~25 tools, 3–4 refs each)
-- **CSS**: `.citation-ref` styling, `scroll-margin-top` on `[id^="ref-"]` targets
+- **System**: `_RotatingCite` classes rotate through refs — max 1 citation per fact, no clusters
+- **Direct links**: `[N]` opens external URL in new tab (not in-page scroll)
+- **Density**: 15–20 sources per article, almost every factual claim cited
+- **Formatting**: no space before `[N]`, citation after punctuation (`fact.[N]`)
+- **Reference pool**: `_TOOL_REFERENCES` (~40 tools) + `_GENERAL_REFERENCES` (10 entries)
+- **Post-processing**: `_md_to_html()` replaces `#ref-N` → external URLs, fixes whitespace/punctuation
+- **CSS**: `.citation-ref` styling in `globals.css`
 
 ### Domain & SEO
 - **Domain**: `devguide.co.uk`
@@ -224,33 +227,44 @@ cd frontend/out && python -m http.server 8080
 
 ### Inline Citations & References
 
-Every factual claim in an article must have an inline citation (`[1]`, `[2]`,
-etc.) that links to the numbered "References and sources" section at the bottom.
-A claim can cite multiple sources: `[1][2]`. **Rules:**
+Every factual claim in an article must have an inline citation (`[N]`) that
+opens the source URL directly in a new tab. **Rules:**
 
-1. **Cite every fact** — pricing, features, compatibility, performance claims,
-   and any statement presented as factual must have at least one `[N]` citation.
-   Example: `"Cursor IDE starts at $20/month [1][2]."`.
-2. **No Wikipedia or wiki sources** — use professional sources only: official
+1. **Max 1 source per fact** — never cluster citations like `[1][2][3]`. Each
+   claim gets exactly one `[N]`. Rotate through available refs so the same
+   number isn't repeated back-to-back.
+2. **Direct external links** — citation `[N]` links open the source URL
+   directly (`target="_blank"`), NOT scroll to an in-page `#ref-N` anchor.
+   Post-processing in `_md_to_html()` replaces `#ref-N` hrefs with actual URLs.
+3. **15–20 sources per article** — `_collect_references()` gathers tool-specific
+   + general refs and caps at 20. Every article should have a substantial
+   reference list.
+4. **Cite almost everything** — pricing, features, compatibility, performance
+   claims, and any statement presented as factual must have a `[N]` citation.
+5. **No space before `[N]`** — citation attaches directly after punctuation:
+   `fact.[N] New sentence`. Post-processing removes whitespace before `<sup>`
+   and moves citations from before punctuation to after (`text[N].` → `text.[N]`).
+6. **No Wikipedia or wiki sources** — use professional sources only: official
    documentation, published articles, blog posts, research papers, industry
    surveys, conference talks, and editorial reviews.
-3. **Mix source types** — every article must include a blend of:
+7. **Mix source types** — every article must include a blend of:
    - Official documentation (1–2 per tool mentioned)
    - Third-party editorial: blog posts, reviews, comparisons (Builder.io, LogRocket, InfoQ, Pragmatic Engineer, The New Stack, etc.)
    - Research & data: academic papers (arXiv, IEEE), industry surveys (CNCF, Stack Overflow, JetBrains)
    - Professional community resources: DigitalOcean tutorials, dev.to, GitHub repos
    - Video/multimedia where relevant (Fireship, The Primeagen, conference talks)
-4. **No official-docs-only references** — at least half of references should be
+8. **No official-docs-only references** — at least half of references should be
    independent third-party sources for credibility and E-E-A-T.
-5. **Content-appropriate sources** — match sources to the article type:
-   - Comparisons → benchmark articles, analyst reviews, user surveys
-   - Tutorials → community guides, DigitalOcean/dev.to tutorials, GitHub repos
-   - Compatibility → release notes, issue trackers, Stack Overflow Q&As
-   - Reviews → hands-on reviews, Gartner/G2/PeerSpot, YouTube deep-dives
-6. **Scale with content** — more tools/topics mentioned = more references.
-   Aim for 4–8 references per article minimum.
-7. **Implementation**: `_TOOL_REFERENCES` in `agents/content.py` stores the
-   reference pool; `_cite_indices()` / `_cite_general()` generate inline markers;
-   `_inline_md()` in `agents/distribution.py` converts `[N]` to `<sup><a>` links;
-   `_md_to_html()` adds `id="ref-N"` anchors to reference list items;
-   frontend renders numbered list with scroll-to-anchor behavior.
+9. **Implementation**:
+   - `_RotatingCite` / `_RotatingCiteGeneral` classes in `agents/content.py`
+     use `__format__` protocol so each `{cite_a}` in an f-string triggers a
+     fresh rotation through available refs (one `[N]` per use, never repeating
+     consecutively).
+   - `_TOOL_REFERENCES` (~40 tools, 3–4 refs each) + `_GENERAL_REFERENCES`
+     (10 entries) in `agents/content.py` store the reference pool.
+   - `_cite_indices()` / `_cite_general()` return single `[N]` with rotation.
+   - `_collect_references()` gathers all relevant refs, capped at 20.
+   - `_md_to_html()` in `agents/distribution.py` converts `[N]` → `<sup><a>`
+     with direct external URLs, removes pre-citation whitespace, and fixes
+     punctuation order.
+   - Frontend renders numbered reference list at article bottom.
