@@ -54,7 +54,7 @@ export const AFFILIATE_RELEVANCE: Record<string, string[]> = {
 import { AFFILIATES, AFFILIATE_RELEVANCE, type Affiliate } from "./config";
 
 export function getRelevantAffiliate(article: Article): Affiliate | null {
-  const text = `${article.title} ${article.snippet} ${article.category}`.toLowerCase();
+  const text = `${article.title} ${article.description} ${article.category}`.toLowerCase();
   for (const aff of AFFILIATES) {
     const keywords = AFFILIATE_RELEVANCE[aff.name] || [];
     if (keywords.some((kw) => text.includes(kw))) return aff;
@@ -141,7 +141,7 @@ remove the Python version.
 
 #### Step 1: Add Next.js RSS Generation
 Create `frontend/src/app/feed.xml/route.ts` — a Next.js route handler that:
-- Reads all articles from `getArticles()`
+- Reads all articles from `getAllArticles()`
 - Generates valid RSS 2.0 XML
 - Uses `SITE_NAME`, `BASE_URL` from config
 - Exports as a static route via `export const dynamic = "force-static"`
@@ -151,7 +151,8 @@ Create `frontend/src/app/feed.xml/route.ts` — a Next.js route handler that:
 - Remove the `self._update_rss(posts_meta)` call in the `run()` method (line ~952)
 - Remove any RSS-related imports/constants used only by this method
 - Remove `test_rss_uses_real_base_url` test from `tests/test_distribution.py`
-- Delete `frontend/public/feed.xml` (static file) since the route handler replaces it
+- The Next.js route handler at `feed.xml/route.ts` replaces the Python-generated
+  `feed.xml` that was previously written to the output directory during pipeline runs
 
 ---
 
