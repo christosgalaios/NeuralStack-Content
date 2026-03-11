@@ -159,6 +159,14 @@ h1, h2, h3, h4 {
   overflow: hidden;
   border: 1px solid var(--border);
   min-width: 400px;
+  table-layout: fixed;
+}
+
+.article-content table th:first-child,
+.article-content table td:first-child {
+  width: 28%;
+  min-width: 100px;
+  word-break: normal;
 }
 
 .article-content thead {
