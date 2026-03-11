@@ -12,6 +12,39 @@ from typing import List, Dict, Any
 
 MIN_WORDS = 1200
 
+
+class _RotatingCite:
+    """Lazy citation formatter that rotates through refs on each f-string use.
+
+    Python f-strings call ``__format__`` for every ``{cite_a}`` occurrence,
+    so each interpolation gets the next reference in round-robin order.
+    """
+
+    def __init__(self, llm: "SimpleLocalLLM", refs: List[Dict[str, str]], tool_name: str) -> None:
+        self._llm = llm
+        self._refs = refs
+        self._tool = tool_name
+
+    def __format__(self, spec: str) -> str:
+        return self._llm._cite_indices(self._refs, self._tool)
+
+    def __str__(self) -> str:
+        return self._llm._cite_indices(self._refs, self._tool)
+
+
+class _RotatingCiteGeneral:
+    """Same as _RotatingCite but for general (non-tool) references."""
+
+    def __init__(self, llm: "SimpleLocalLLM", refs: List[Dict[str, str]]) -> None:
+        self._llm = llm
+        self._refs = refs
+
+    def __format__(self, spec: str) -> str:
+        return self._llm._cite_general(self._refs)
+
+    def __str__(self) -> str:
+        return self._llm._cite_general(self._refs)
+
 # Affiliate configuration — set via environment variables or edit defaults here.
 # Each entry: (env_name_for_name, env_name_for_url, default_name, default_url, description)
 AFFILIATE_SLOTS = [
@@ -53,6 +86,11 @@ class SimpleLocalLLM:
     the template-based generator if anything goes wrong. This keeps CI (GitHub
     Actions) safe while allowing richer content locally.
     """
+
+    def __init__(self) -> None:
+        # Tracks how many times each tool has been cited so we can rotate
+        # through available references instead of repeating the same one.
+        self._cite_counter: Dict[str, int] = {}
 
     def _aff_section(self) -> str:
         aff_items = "\n".join(
@@ -216,6 +254,79 @@ class SimpleLocalLLM:
             {"title": "ROCm GitHub Repository", "url": "https://github.com/ROCm/ROCm"},
             {"title": "AMD ROCm: Open-Source GPU Computing — Phoronix", "url": "https://www.phoronix.com/review/amd-rocm-overview"},
         ],
+        "Podman": [
+            {"title": "Podman Documentation", "url": "https://docs.podman.io"},
+            {"title": "Podman GitHub Repository", "url": "https://github.com/containers/podman"},
+            {"title": "Podman vs Docker: What Are the Differences? — Red Hat", "url": "https://www.redhat.com/en/topics/containers/what-is-podman"},
+            {"title": "Rootless Containers with Podman — Red Hat Developer", "url": "https://developers.redhat.com/blog/2020/09/25/rootless-containers-with-podman"},
+        ],
+        "Prisma": [
+            {"title": "Prisma Documentation", "url": "https://www.prisma.io/docs"},
+            {"title": "Prisma GitHub Repository", "url": "https://github.com/prisma/prisma"},
+            {"title": "Prisma vs TypeORM: Which ORM Should You Use? — LogRocket Blog", "url": "https://blog.logrocket.com/prisma-vs-typeorm/"},
+            {"title": "Why We Switched to Prisma — dev.to", "url": "https://dev.to/prisma/why-prisma-for-your-database-4fc7"},
+        ],
+        "CUDA": [
+            {"title": "CUDA Toolkit Documentation — NVIDIA", "url": "https://docs.nvidia.com/cuda/"},
+            {"title": "CUDA C++ Programming Guide — NVIDIA", "url": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/"},
+            {"title": "An Even Easier Introduction to CUDA — NVIDIA Developer Blog", "url": "https://developer.nvidia.com/blog/even-easier-introduction-cuda/"},
+            {"title": "CUDA by Example — NVIDIA Developer Zone", "url": "https://developer.nvidia.com/cuda-example"},
+        ],
+        "TensorRT": [
+            {"title": "TensorRT Documentation — NVIDIA", "url": "https://docs.nvidia.com/deeplearning/tensorrt/"},
+            {"title": "TensorRT GitHub Repository", "url": "https://github.com/NVIDIA/TensorRT"},
+            {"title": "Speeding Up Deep Learning Inference with TensorRT — NVIDIA Blog", "url": "https://developer.nvidia.com/blog/speeding-up-deep-learning-inference-using-tensorrt/"},
+        ],
+        "ONNX": [
+            {"title": "ONNX Runtime Documentation", "url": "https://onnxruntime.ai/docs/"},
+            {"title": "ONNX GitHub Repository", "url": "https://github.com/onnx/onnx"},
+            {"title": "Open Neural Network Exchange — Linux Foundation AI", "url": "https://lfaidata.foundation/projects/onnx/"},
+        ],
+        "NixOS": [
+            {"title": "NixOS Manual", "url": "https://nixos.org/manual/nixos/stable/"},
+            {"title": "Nix Package Manager Documentation", "url": "https://nixos.org/manual/nix/stable/"},
+            {"title": "NixOS: A Purely Functional Linux Distribution — ACM", "url": "https://dl.acm.org/doi/10.1145/1411204.1411255"},
+        ],
+        "Raspberry Pi": [
+            {"title": "Raspberry Pi Documentation", "url": "https://www.raspberrypi.com/documentation/"},
+            {"title": "Getting Started with Raspberry Pi — Raspberry Pi Foundation", "url": "https://www.raspberrypi.com/documentation/computers/getting-started.html"},
+            {"title": "Raspberry Pi 5 Review — Tom's Hardware", "url": "https://www.tomshardware.com/reviews/raspberry-pi-5"},
+        ],
+        "GitHub Codespaces": [
+            {"title": "GitHub Codespaces Documentation", "url": "https://docs.github.com/en/codespaces"},
+            {"title": "GitHub Codespaces Overview — GitHub Blog", "url": "https://github.blog/changelog/2022-11-09-codespaces-for-free-and-pro-accounts/"},
+            {"title": "Developing in a Codespace — GitHub Docs", "url": "https://docs.github.com/en/codespaces/developing-in-a-codespace"},
+        ],
+        "Netlify": [
+            {"title": "Netlify Documentation", "url": "https://docs.netlify.com"},
+            {"title": "Netlify vs Vercel: Which Platform Should You Choose? — Bejamas Blog", "url": "https://bejamas.io/blog/netlify-vs-vercel/"},
+            {"title": "Netlify Edge Functions — Netlify Docs", "url": "https://docs.netlify.com/edge-functions/overview/"},
+        ],
+        "DigitalOcean": [
+            {"title": "DigitalOcean Documentation", "url": "https://docs.digitalocean.com"},
+            {"title": "DigitalOcean Community Tutorials", "url": "https://www.digitalocean.com/community/tutorials"},
+            {"title": "DigitalOcean vs AWS: A Practical Comparison — DigitalOcean Blog", "url": "https://www.digitalocean.com/resources/articles/digitalocean-vs-aws"},
+        ],
+        "Hetzner": [
+            {"title": "Hetzner Cloud Documentation", "url": "https://docs.hetzner.com"},
+            {"title": "Hetzner Community Tutorials", "url": "https://community.hetzner.com/tutorials"},
+            {"title": "Hetzner Cloud Review — ServeTheHome", "url": "https://www.servethehome.com/hetzner-cloud-review/"},
+        ],
+        "Linode": [
+            {"title": "Linode Documentation — Akamai", "url": "https://www.linode.com/docs/"},
+            {"title": "Linode Community Q&A", "url": "https://www.linode.com/community/questions/"},
+            {"title": "Linode vs DigitalOcean — VP SBenchmarks", "url": "https://www.vpsbenchmarks.com/compare/linode_vs_digitalocean"},
+        ],
+        "AWS Lightsail": [
+            {"title": "AWS Lightsail Documentation", "url": "https://docs.aws.amazon.com/lightsail/"},
+            {"title": "Getting Started with Amazon Lightsail — AWS", "url": "https://aws.amazon.com/lightsail/getting-started/"},
+            {"title": "Amazon Lightsail vs EC2 — AWS Blog", "url": "https://aws.amazon.com/premiumsupport/knowledge-center/lightsail-differences-from-ec2/"},
+        ],
+        "Dynatrace": [
+            {"title": "Dynatrace Documentation", "url": "https://docs.dynatrace.com"},
+            {"title": "Dynatrace vs Datadog: In-Depth Comparison — PeerSpot", "url": "https://www.peerspot.com/products/comparisons/datadog_vs_dynatrace"},
+            {"title": "Gartner Magic Quadrant for APM and Observability", "url": "https://www.gartner.com/reviews/market/application-performance-monitoring-and-observability"},
+        ],
     }
 
     # General reference links applicable to broad engineering topics.
@@ -225,18 +336,30 @@ class SimpleLocalLLM:
         {"title": "CNCF Cloud Native Landscape", "url": "https://landscape.cncf.io"},
         {"title": "IEEE Software Engineering Body of Knowledge (SWEBOK)", "url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering"},
         {"title": "Martin Fowler — Software Architecture Guide", "url": "https://martinfowler.com/architecture/"},
+        {"title": "JetBrains Developer Ecosystem Survey", "url": "https://www.jetbrains.com/lp/devecosystem-2023/"},
+        {"title": "GitHub Octoverse — State of Open Source", "url": "https://octoverse.github.com"},
+        {"title": "The Twelve-Factor App", "url": "https://12factor.net"},
+        {"title": "Google — Site Reliability Engineering", "url": "https://sre.google/sre-book/table-of-contents/"},
+        {"title": "Gartner — Magic Quadrant Reports", "url": "https://www.gartner.com/en/research/magic-quadrant"},
     ]
 
     def _collect_references(self, keyword: str) -> List[Dict[str, str]]:
-        """Gather relevant reference URLs based on tools mentioned in the keyword."""
+        """Gather relevant reference URLs based on tools mentioned in the keyword.
+
+        Aims for 15-20 references per article by combining tool-specific refs
+        with general industry references.
+        """
         refs: List[Dict[str, str]] = []
         keyword_lower = keyword.lower()
         for tool_name, tool_refs in self._TOOL_REFERENCES.items():
             if tool_name.lower() in keyword_lower:
                 refs.extend(tool_refs)
-        # Always include at least some general references
-        if len(refs) < 2:
-            refs.extend(self._GENERAL_REFERENCES[:2])
+        # Always include general references to reach a healthy total
+        for gen in self._GENERAL_REFERENCES:
+            if len(refs) >= 20:
+                break
+            if gen["url"] not in {r["url"] for r in refs}:
+                refs.append(gen)
         return refs
 
     def _collect_numbered_references(self, keyword: str) -> List[Dict[str, str]]:
@@ -260,39 +383,48 @@ class SimpleLocalLLM:
         return unique
 
     def _cite_indices(self, refs: List[Dict[str, str]], tool_name: str) -> str:
-        """Return inline citation markers like ' [1][2]' for refs matching a tool.
+        """Return a single inline citation marker like '[3]' for one ref matching a tool.
 
-        Matches if the tool name (or its first word for multi-word names)
-        appears in the reference title or URL.  Returns an empty string
+        Rotates through matching refs on successive calls so the same
+        reference is not repeated back-to-back.  Returns an empty string
         when nothing matches so templates can unconditionally append.
         """
         tool_lower = tool_name.lower()
-        # For multi-word tool names like "Cursor IDE", also match on the
-        # primary word ("cursor") so "Cursor Documentation" still matches.
         words = tool_lower.split()
         primary = words[0] if words else tool_lower
-        indices = []
+        matching = []
         for ref in refs:
             title_lower = ref.get("title", "").lower()
             url_lower = ref.get("url", "").lower()
             if (tool_lower in title_lower or tool_lower in url_lower
                     or primary in title_lower or primary in url_lower):
-                indices.append(ref["index"])
-        if not indices:
+                matching.append(ref)
+        if not matching:
             return ""
-        return " " + "".join(f"[{idx}]" for idx in indices)
+        key = f"tool:{tool_lower}"
+        idx = self._cite_counter.get(key, 0)
+        ref = matching[idx % len(matching)]
+        self._cite_counter[key] = idx + 1
+        return f"[{ref['index']}]"
 
     def _cite_general(self, refs: List[Dict[str, str]]) -> str:
-        """Return citation markers for general (non-tool-specific) references."""
-        indices = []
+        """Return a single citation marker for a general (non-tool-specific) reference.
+
+        Rotates through matching general refs on successive calls.
+        """
+        matching = []
         for ref in refs:
             for gen in self._GENERAL_REFERENCES:
                 if ref.get("url") == gen["url"]:
-                    indices.append(ref["index"])
+                    matching.append(ref)
                     break
-        if not indices:
+        if not matching:
             return ""
-        return " " + "".join(f"[{idx}]" for idx in indices)
+        key = "general"
+        idx = self._cite_counter.get(key, 0)
+        ref = matching[idx % len(matching)]
+        self._cite_counter[key] = idx + 1
+        return f"[{ref['index']}]"
 
     def _references_section_from(self, refs: List[Dict[str, str]]) -> str:
         """Generate a numbered References/Sources section from pre-built refs."""
@@ -457,11 +589,11 @@ class SimpleLocalLLM:
         bestfor_a  = fa.get("best_for",    "Teams who value broad ecosystem and ease of use")
         bestfor_b  = fb.get("best_for",    "Teams who value performance and fine-grained control")
 
-        # Build numbered references and inline citation helpers
+        # Build numbered references and rotating citation helpers
         numbered_refs = self._collect_numbered_references(keyword)
-        cite_a = self._cite_indices(numbered_refs, tool_a)
-        cite_b = self._cite_indices(numbered_refs, tool_b)
-        cite_gen = self._cite_general(numbered_refs)
+        cite_a = _RotatingCite(self, numbered_refs, tool_a)
+        cite_b = _RotatingCite(self, numbered_refs, tool_b)
+        cite_gen = _RotatingCiteGeneral(self, numbered_refs)
 
         # Inline reference links for the tools
         refs_a = self._TOOL_REFERENCES.get(tool_a, [])
@@ -672,10 +804,10 @@ class SimpleLocalLLM:
         now = datetime.now().strftime("%B %Y")
         comp_a, comp_b = self._extract_compatibility_components(keyword)
 
-        # Build numbered references and citation helpers
+        # Build numbered references and rotating citation helpers
         numbered_refs = self._collect_numbered_references(keyword)
-        cite_a = self._cite_indices(numbered_refs, comp_a)
-        cite_b = self._cite_indices(numbered_refs, comp_b)
+        cite_a = _RotatingCite(self, numbered_refs, comp_a)
+        cite_b = _RotatingCite(self, numbered_refs, comp_b)
 
         # Build inline links for components
         refs_a = self._TOOL_REFERENCES.get(comp_a, [])
@@ -868,19 +1000,19 @@ class SimpleLocalLLM:
     def _template_tutorial(self, keyword: str, intent: str) -> str:
         now = datetime.now().strftime("%B %Y")
 
-        # Build numbered references and citation helpers
+        # Build numbered references and rotating citation helpers
         numbered_refs = self._collect_numbered_references(keyword)
-        # Find tool-specific citations from keyword
-        cite_all = ""
+        # Find the first matching tool for rotating citations
+        matched_tool = None
         keyword_lower = keyword.lower()
         for tool_name in self._TOOL_REFERENCES:
             if tool_name.lower() in keyword_lower:
-                c = self._cite_indices(numbered_refs, tool_name)
-                if c:
-                    cite_all = c
-                    break
-        if not cite_all:
-            cite_all = self._cite_general(numbered_refs)
+                matched_tool = tool_name
+                break
+        if matched_tool:
+            cite_all = _RotatingCite(self, numbered_refs, matched_tool)
+        else:
+            cite_all = _RotatingCiteGeneral(self, numbered_refs)
 
         # Build inline reference links for tools mentioned in keyword
         refs = self._collect_references(keyword)
@@ -1097,7 +1229,7 @@ class SimpleLocalLLM:
     def _template_foreign_news(self, keyword: str, intent: str) -> str:
         now = datetime.now().strftime("%B %Y")
         numbered_refs = self._collect_numbered_references(keyword)
-        cite_gen = self._cite_general(numbered_refs)
+        cite_gen = _RotatingCiteGeneral(self, numbered_refs)
         sections = [
             textwrap.dedent(f"""
             # {keyword}
@@ -1287,6 +1419,7 @@ class SimpleLocalLLM:
         return "\n\n".join(sections)
 
     def _generate_with_template(self, keyword: str, category: str, intent: str) -> str:
+        self._cite_counter = {}  # reset per article
         dispatch = {
             "devtools_comparison": self._template_devtools_comparison,
             "compatibility": self._template_compatibility,

@@ -76,7 +76,8 @@ def _inline_md(text: str) -> str:
         text,
     )
     # Inline citations: [1], [2], etc. → superscript anchor links
-    # Must run after markdown link conversion to avoid false matches
+    # Initially uses #ref-N placeholders; _md_to_html post-processing
+    # replaces these with direct external URLs.
     text = re.sub(
         r'\[(\d{1,2})\](?!\()',
         r'<sup><a href="#ref-\1" class="citation-ref">[\1]</a></sup>',
@@ -215,6 +216,39 @@ def _md_to_html(text: str) -> str:
             return f'<li id="ref-{counter[0]}">'
         items_html = re.sub(r'<li>', _add_ref_id, items_html)
         result = result[:ref_match.start()] + before + items_html + after + result[ref_match.end():]
+
+    # Build ref-number → URL map from reference list items, then replace
+    # placeholder #ref-N links with direct external URLs (open in new tab).
+    ref_url_map: Dict[str, str] = {}
+    for rm in re.finditer(
+        r'<li id="ref-(\d+)">[^<]*<a href="(https?://[^"]+)"', result
+    ):
+        ref_url_map[rm.group(1)] = rm.group(2)
+
+    if ref_url_map:
+        def _direct_link(m: re.Match) -> str:
+            num = m.group(1)
+            url = ref_url_map.get(num)
+            if url:
+                return (
+                    f'<sup><a href="{url}" target="_blank" '
+                    f'rel="noopener noreferrer" class="citation-ref">[{num}]</a></sup>'
+                )
+            return m.group(0)
+        result = re.sub(
+            r'<sup><a href="#ref-(\d+)" class="citation-ref">\[\d+\]</a></sup>',
+            _direct_link, result,
+        )
+
+    # Remove whitespace immediately before a citation superscript
+    result = re.sub(r'\s+(<sup><a[^>]+class="citation-ref">)', r'\1', result)
+
+    # Move citations from before punctuation to after it:
+    #   "fact<sup>[N]</sup>." → "fact.<sup>[N]</sup>"
+    result = re.sub(
+        r'(<sup><a[^>]+class="citation-ref">\[\d+\]</a></sup>)([.,;:!?])',
+        r'\2\1', result,
+    )
 
     return result
 
