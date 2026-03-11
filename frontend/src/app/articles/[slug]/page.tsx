@@ -10,6 +10,7 @@ import ArticleCard from "@/components/cards/ArticleCard";
 import ToolCallout from "@/components/monetization/ToolCallout";
 import AdSlot from "@/components/monetization/AdSlot";
 import ArticleJsonLd from "@/components/seo/ArticleJsonLd";
+import CategoryIllustration from "@/components/cards/CategoryIllustration";
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -77,6 +78,17 @@ export default async function ArticlePage({
           <span>/</span>
           <span className="truncate" style={{ color: "var(--text-secondary)" }}>{article.title}</span>
         </nav>
+
+        {/* Hero illustration */}
+        <div
+          className="mb-6 overflow-hidden rounded-xl border"
+          style={{ background: "var(--bg-elevated)", borderColor: "var(--border)" }}
+        >
+          <CategoryIllustration
+            category={article.category}
+            className="h-36 sm:h-44"
+          />
+        </div>
 
         <AdSlot position="above-title" className="mb-6" />
 
