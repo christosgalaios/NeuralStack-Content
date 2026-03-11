@@ -109,6 +109,11 @@ jobs:
       - name: Install frontend dependencies
         run: cd frontend && npm ci
 
+      - name: Copy latest sitemap and feed to frontend
+        run: |
+          [ -f sitemap.xml ] && cp sitemap.xml frontend/public/sitemap.xml || true
+          [ -f feed.xml ] && cp feed.xml frontend/public/feed.xml || true
+
       - name: Build static site
         env:
           NEXT_PUBLIC_BASE_URL: "https://devguide.co.uk"

@@ -1,5 +1,5 @@
 // Centralized brand & site configuration — change brand name here only
-export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || "DevGuide";
+export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || "Dev Guide";
 export const SITE_TAGLINE = "AI-Powered Developer Intelligence";
 export const SITE_DESCRIPTION =
   "In-depth technical guides on developer tooling, AI code editors, cloud platforms, and engineering workflows — updated daily.";
