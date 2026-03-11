@@ -221,6 +221,11 @@ cd frontend/out && python -m http.server 8080
 - **Frontend**: Next.js 15 App Router, Tailwind CSS v4, TypeScript
 - **Tests**: `tests/test_*.py`, run with `python -m unittest discover -s tests`
 - **Git**: descriptive commit messages
+- **Git workflow**: when making multiple PRs on the same branch, always
+  rebase onto latest `main` before pushing subsequent commits. After a PR
+  is merged (squash-merged), `main` advances and the branch diverges —
+  pushing without rebasing causes merge conflicts every time. Run
+  `git fetch origin main && git rebase origin/main` before each push.
 - **No manual edits** to `frontend/out/` — regenerated each build
 - **All brand references** parameterized in `frontend/src/lib/config.ts`
 - **Update this file** after every significant change
