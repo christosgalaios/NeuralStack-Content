@@ -16,9 +16,9 @@ MIN_WORDS = 1200
 # Each entry: (env_name_for_name, env_name_for_url, default_name, default_url, description)
 AFFILIATE_SLOTS = [
     {
-        "name": os.getenv("NEURALSTACK_AFF1_NAME", "DigitalOcean"),
-        "url": os.getenv("NEURALSTACK_AFF1_URL", "https://www.digitalocean.com"),
-        "desc": "simple, predictable cloud hosting with $200 free credit — deploy apps, databases, and Kubernetes in seconds",
+        "name": os.getenv("NEURALSTACK_AFF1_NAME", "Vultr"),
+        "url": os.getenv("NEURALSTACK_AFF1_URL", "https://www.vultr.com"),
+        "desc": "high-performance cloud compute, bare metal, and GPU instances — deploy worldwide in seconds with simple hourly billing",
     },
     {
         "name": os.getenv("NEURALSTACK_AFF2_NAME", "Railway"),

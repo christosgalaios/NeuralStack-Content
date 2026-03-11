@@ -30,13 +30,13 @@ GOOGLE_VERIFICATION = os.getenv(
 )
 
 # Affiliate configuration
-AFF1_NAME = os.getenv("NEURALSTACK_AFF1_NAME", "DigitalOcean")
-AFF1_URL = os.getenv("NEURALSTACK_AFF1_URL", "https://www.digitalocean.com")
+AFF1_NAME = os.getenv("NEURALSTACK_AFF1_NAME", "Vultr")
+AFF1_URL = os.getenv("NEURALSTACK_AFF1_URL", "https://www.vultr.com")
 AFF2_NAME = os.getenv("NEURALSTACK_AFF2_NAME", "Railway")
 AFF2_URL = os.getenv("NEURALSTACK_AFF2_URL", "https://railway.app?referralCode=2zaRHx")
 
 _TOOL_DESCRIPTIONS = {
-    "DigitalOcean": "Simple, predictable cloud hosting with $200 free credit \u2014 deploy apps, databases, and Kubernetes in seconds.",
+    "Vultr": "High-performance cloud compute, bare metal, and GPU instances \u2014 deploy worldwide in seconds with simple hourly billing.",
     "Railway": "Deploy code from GitHub in seconds \u2014 simple, powerful cloud hosting for developers.",
 }
 

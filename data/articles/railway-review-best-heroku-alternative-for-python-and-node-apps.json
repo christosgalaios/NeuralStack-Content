@@ -53,9 +53,9 @@
     "railway-vs-render-vs-fly-io-cloud-hosting-comparison-for-developers"
   ],
   "affiliate": {
-    "name": "DigitalOcean",
-    "url": "https://www.digitalocean.com",
-    "description": "Simple, predictable cloud hosting with $200 free credit — deploy apps, databases, and Kubernetes in seconds."
+    "name": "Vultr",
+    "url": "https://www.vultr.com",
+    "description": "High-performance cloud compute, bare metal, and GPU instances — deploy worldwide in seconds with simple hourly billing."
   },
   "faq": [
     {

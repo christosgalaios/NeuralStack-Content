@@ -15,11 +15,11 @@ export const GOOGLE_VERIFICATION =
 
 export const AFFILIATES = [
   {
-    name: process.env.NEXT_PUBLIC_AFF1_NAME || "DigitalOcean",
-    url: process.env.NEXT_PUBLIC_AFF1_URL || "https://www.digitalocean.com",
+    name: process.env.NEXT_PUBLIC_AFF1_NAME || "Vultr",
+    url: process.env.NEXT_PUBLIC_AFF1_URL || "https://www.vultr.com",
     description:
-      "Simple, predictable cloud hosting with $200 free credit — deploy apps, databases, and Kubernetes in seconds.",
-    tagline: "Cloud made simple",
+      "High-performance cloud compute, bare metal, and GPU instances — deploy worldwide in seconds with simple hourly billing.",
+    tagline: "Cloud compute, simplified",
   },
   {
     name: process.env.NEXT_PUBLIC_AFF2_NAME || "Railway",
