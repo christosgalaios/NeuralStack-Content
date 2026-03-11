@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+ <channel>
+  <title>Dev Guide — AI-Powered Developer Intelligence</title>
+  <link>https://devguide.co.uk/</link>
+  <description>In-depth technical guides on developer tooling, AI code editors, cloud platforms, and engineering workflows — updated daily.</description>
+  <atom:link href="https://devguide.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Railway vs Vercel vs Netlify: which platform for full-stack apps</title>
+    <link>https://devguide.co.uk/articles/railway-vs-vercel-vs-netlify-which-platform-for-full-stack-apps</link>
+    <guid>https://devguide.co.uk/articles/railway-vs-vercel-vs-netlify-which-platform-for-full-stack-apps</guid>
+    <pubDate>Mon, 09 Mar 2026 04:50:07 GMT</pubDate>
+    <description>In-depth technical guide: Railway vs Vercel vs Netlify: which platform for full-stack apps. Practical trade-offs, implementation patterns, and recommendations for production engineers.</description>
+  </item>
+  <item>
+    <title>Railway review: best Heroku alternative for Python and Node apps</title>
+    <link>https://devguide.co.uk/articles/railway-review-best-heroku-alternative-for-python-and-node-apps</link>
+    <guid>https://devguide.co.uk/articles/railway-review-best-heroku-alternative-for-python-and-node-apps</guid>
+    <pubDate>Mon, 09 Mar 2026 04:50:07 GMT</pubDate>
+    <description>In-depth technical guide: Railway review: best Heroku alternative for Python and Node apps. Practical trade-offs, implementation patterns, and recommendations for production engineers.</description>
+  </item>
+  <item>
+    <title>Railway vs Render vs Fly.io: cloud hosting comparison for developers</title>
+    <link>https://devguide.co.uk/articles/railway-vs-render-vs-fly-io-cloud-hosting-comparison-for-developers</link>
+    <guid>https://devguide.co.uk/articles/railway-vs-render-vs-fly-io-cloud-hosting-comparison-for-developers</guid>
+    <pubDate>Mon, 09 Mar 2026 04:50:07 GMT</pubDate>
+    <description>In-depth technical guide: Railway vs Render vs Fly.io: cloud hosting comparison for developers. Practical trade-offs, implementation patterns, and recommendations for production engineers.</description>
+  </item>
+  <item>
+    <title>Railway vs Heroku: the definitive platform comparison for 2026</title>
+    <link>https://devguide.co.uk/articles/railway-vs-heroku-the-definitive-platform-comparison-for-2026</link>
+    <guid>https://devguide.co.uk/articles/railway-vs-heroku-the-definitive-platform-comparison-for-2026</guid>
+    <pubDate>Mon, 09 Mar 2026 04:50:07 GMT</pubDate>
+    <description>In-depth technical guide: Railway vs Heroku: the definitive platform comparison for 2026. Practical trade-offs, implementation patterns, and recommendations for production engineers.</description>
+  </item>
+  <item>
+    <title>Cursor IDE review: hands-on for professional developers</title>
+    <link>https://devguide.co.uk/articles/cursor-ide-review-hands-on-for-professional-developers</link>
+    <guid>https://devguide.co.uk/articles/cursor-ide-review-hands-on-for-professional-developers</guid>
+    <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
+    <description>In-depth technical guide: Cursor IDE review: hands-on for professional developers. Practical trade-offs, implementation patterns, and recommendations for production engineers.</description>
+  </item>
+  <item>
+    <title>Cursor IDE vs GitHub Copilot: which AI code editor wins in 2026</title>
+    <link>https://devguide.co.uk/articles/cursor-ide-vs-github-copilot-which-ai-code-editor-wins-in-2026</link>
+    <guid>https://devguide.co.uk/articles/cursor-ide-vs-github-copilot-which-ai-code-editor-wins-in-2026</guid>
+    <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
+    <description>In-depth technical guide: Cursor IDE vs GitHub Copilot: which AI code editor wins in 2026. Practical trade-offs, implementation patterns, and recommendations for production engineers.</description>
+  </item>
+  <item>
+    <title>Cursor IDE vs VS Code: is it worth switching in 2026</title>
+    <link>https://devguide.co.uk/articles/cursor-ide-vs-vs-code-is-it-worth-switching-in-2026</link>
+    <guid>https://devguide.co.uk/articles/cursor-ide-vs-vs-code-is-it-worth-switching-in-2026</guid>
+    <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
+    <description>In-depth technical guide: Cursor IDE vs VS Code: is it worth switching in 2026. Practical trade-offs, implementation patterns, and recommendations for production engineers.</description>
+  </item>
+  <item>
+    <title>Cursor IDE vs Windsurf: best AI code editor comparison</title>
+    <link>https://devguide.co.uk/articles/cursor-ide-vs-windsurf-best-ai-code-editor-comparison</link>
+    <guid>https://devguide.co.uk/articles/cursor-ide-vs-windsurf-best-ai-code-editor-comparison</guid>
+    <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
+    <description>In-depth technical guide: Cursor IDE vs Windsurf: best AI code editor comparison. Practical trade-offs, implementation patterns, and recommendations for production engineers.</description>
+  </item>
+  <item>
+    <title>Best AI code editors in 2026: Cursor vs Copilot vs Windsurf ranked</title>
+    <link>https://devguide.co.uk/articles/best-ai-code-editors-in-2026-cursor-vs-copilot-vs-windsurf-ranked</link>
+    <guid>https://devguide.co.uk/articles/best-ai-code-editors-in-2026-cursor-vs-copilot-vs-windsurf-ranked</guid>
+    <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
+    <description>In-depth technical guide: Best AI code editors in 2026: Cursor vs Copilot vs Windsurf ranked. Practical trade-offs, implementation patterns, and recommendations for production engineers.</description>
+  </item>
+  <item>
+    <title>Versioning Developer Documentation in Static Site Hosts</title>
+    <link>https://devguide.co.uk/articles/versioning-developer-documentation-in-static-site-hosts</link>
+    <guid>https://devguide.co.uk/articles/versioning-developer-documentation-in-static-site-hosts</guid>
+    <pubDate>Sat, 07 Mar 2026 00:00:00 GMT</pubDate>
+    <description>A technical guide to implementing version-controlled documentation workflows for static site hosts using URL routing and build automation.</description>
+  </item>
+ </channel>
+</rss>
