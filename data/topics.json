@@ -5637,7 +5637,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "vultr-gpu-instances",
@@ -5647,7 +5647,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "new"
+    "status": "drafted"
   },
   {
     "id": "vultr-docker-setup",
@@ -5657,7 +5657,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "new"
+    "status": "drafted"
   },
   {
     "id": "vultr-wordpress-hosting",
@@ -5667,7 +5667,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "new"
+    "status": "drafted"
   },
   {
     "id": "vultr-terraform",
@@ -5677,7 +5677,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "new"
+    "status": "drafted"
   },
   {
     "id": "railway-deploy-nextjs",

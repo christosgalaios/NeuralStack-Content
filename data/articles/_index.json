@@ -203,6 +203,24 @@
     ]
   },
   {
+    "slug": "vultr-vs-aws-lightsail-simple-cloud-hosting-comparison",
+    "title": "Vultr vs AWS Lightsail: simple cloud hosting comparison",
+    "description": "Vultr vs AWS Lightsail: simple cloud hosting comparison. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 6,
+    "tags": [
+      "aws",
+      "cloud",
+      "comparison",
+      "hosting",
+      "lightsail",
+      "simple",
+      "vultr"
+    ]
+  },
+  {
     "slug": "vultr-vs-digitalocean-cloud-hosting-comparison-for-developers",
     "title": "Vultr vs DigitalOcean: cloud hosting comparison for developers",
     "description": "Vultr vs DigitalOcean: cloud hosting comparison for developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
