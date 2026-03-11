@@ -5778,5 +5778,1535 @@
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
     "status": "new"
+  },
+  {
+    "id": "tutorial-react-useeffect-deep-dive",
+    "keyword": "React useEffect Deep Dive: Cleanup, Dependencies, and Common Pitfalls",
+    "category": "tutorial",
+    "intent": "Master useEffect behavior including cleanup functions, dependency arrays, and avoiding infinite loops.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-react-custom-hooks-patterns",
+    "keyword": "Building Reusable Custom Hooks in React",
+    "category": "tutorial",
+    "intent": "Learn to extract and share stateful logic across components with custom hooks.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-react-context-performance",
+    "keyword": "React Context API Without Performance Problems",
+    "category": "tutorial",
+    "intent": "Use React Context effectively while avoiding unnecessary re-renders.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-react-server-components-basics",
+    "keyword": "Getting Started with React Server Components",
+    "category": "tutorial",
+    "intent": "Understand the mental model behind server components and when to use them.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-react-suspense-data-fetching",
+    "keyword": "React Suspense for Data Fetching: A Practical Guide",
+    "category": "tutorial",
+    "intent": "Implement Suspense boundaries for loading states and concurrent data fetching.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-react-error-boundaries-guide",
+    "keyword": "React Error Boundaries: Catching and Recovering from Render Errors",
+    "category": "tutorial",
+    "intent": "Build robust error handling with error boundaries and fallback UIs.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-react-usereducer-complex-state",
+    "keyword": "Managing Complex State with useReducer in React",
+    "category": "tutorial",
+    "intent": "Replace tangled useState calls with useReducer for predictable state management.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-react-memo-usecallback-optimization",
+    "keyword": "React.memo, useMemo, and useCallback: When They Actually Help",
+    "category": "tutorial",
+    "intent": "Know when memoization improves performance and when it adds unnecessary complexity.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-nextjs-app-router-migration",
+    "keyword": "Migrating from Next.js Pages Router to App Router",
+    "category": "tutorial",
+    "intent": "Step-by-step guide to adopting the App Router in an existing Next.js project.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-nextjs-middleware-auth",
+    "keyword": "Next.js Middleware for Authentication and Redirects",
+    "category": "tutorial",
+    "intent": "Protect routes and handle redirects at the edge with Next.js middleware.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-nextjs-isr-on-demand",
+    "keyword": "Incremental Static Regeneration in Next.js: On-Demand Revalidation",
+    "category": "tutorial",
+    "intent": "Keep static pages fresh with ISR and on-demand revalidation strategies.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-nextjs-api-routes-patterns",
+    "keyword": "Building REST APIs with Next.js Route Handlers",
+    "category": "tutorial",
+    "intent": "Design and implement API endpoints using the App Router route handler convention.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-nextjs-auth-nextauth",
+    "keyword": "Adding Authentication to Next.js with NextAuth.js",
+    "category": "tutorial",
+    "intent": "Implement OAuth, credentials, and session management with NextAuth.js.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-nextjs-server-actions",
+    "keyword": "Next.js Server Actions: Form Handling Without API Routes",
+    "category": "tutorial",
+    "intent": "Use server actions to mutate data directly from React components.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-typescript-generics-practical",
+    "keyword": "TypeScript Generics Explained with Real-World Examples",
+    "category": "tutorial",
+    "intent": "Go beyond basic generics to write flexible, type-safe utility functions and components.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-typescript-utility-types",
+    "keyword": "Mastering TypeScript Utility Types: Partial, Pick, Omit, and Beyond",
+    "category": "tutorial",
+    "intent": "Use built-in utility types to transform and compose types effectively.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-typescript-type-guards",
+    "keyword": "TypeScript Type Guards and Narrowing Techniques",
+    "category": "tutorial",
+    "intent": "Write runtime checks that narrow types for safer code without casting.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-typescript-declaration-files",
+    "keyword": "Writing TypeScript Declaration Files for JavaScript Libraries",
+    "category": "tutorial",
+    "intent": "Create .d.ts files to add type safety to untyped JavaScript packages.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-typescript-zod-validation",
+    "keyword": "Runtime Type Validation in TypeScript with Zod",
+    "category": "tutorial",
+    "intent": "Bridge the gap between compile-time types and runtime data validation.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-nodejs-streams-guide",
+    "keyword": "Node.js Streams: Reading, Writing, and Transforming Data Efficiently",
+    "category": "tutorial",
+    "intent": "Process large files and data flows without loading everything into memory.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-nodejs-worker-threads",
+    "keyword": "Parallel Processing in Node.js with Worker Threads",
+    "category": "tutorial",
+    "intent": "Offload CPU-intensive tasks to worker threads without blocking the event loop.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-nodejs-event-loop-explained",
+    "keyword": "The Node.js Event Loop Explained: Phases, Microtasks, and Timers",
+    "category": "tutorial",
+    "intent": "Understand how Node.js schedules callbacks, promises, and I/O operations.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-nodejs-native-fetch",
+    "keyword": "Using the Native Fetch API in Node.js 22",
+    "category": "tutorial",
+    "intent": "Replace axios and node-fetch with the built-in fetch API in modern Node.js.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-nodejs-esm-migration",
+    "keyword": "Migrating a Node.js Project from CommonJS to ES Modules",
+    "category": "tutorial",
+    "intent": "Convert require/module.exports to import/export with minimal breakage.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-python-async-await-guide",
+    "keyword": "Python async/await: Writing Concurrent Code with asyncio",
+    "category": "tutorial",
+    "intent": "Build non-blocking I/O applications using Python coroutines and the asyncio event loop.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-python-decorators-advanced",
+    "keyword": "Advanced Python Decorators: Closures, Arguments, and Class Decorators",
+    "category": "tutorial",
+    "intent": "Write decorators that accept arguments, wrap classes, and compose cleanly.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-python-type-hints-mypy",
+    "keyword": "Python Type Hints and mypy: A Practical Introduction",
+    "category": "tutorial",
+    "intent": "Add type annotations to Python code and catch bugs before runtime with mypy.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-python-virtual-environments",
+    "keyword": "Python Virtual Environments Demystified: venv, pip, and Poetry",
+    "category": "tutorial",
+    "intent": "Set up isolated Python environments and manage dependencies reliably.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-python-pydantic-validation",
+    "keyword": "Data Validation in Python with Pydantic v2",
+    "category": "tutorial",
+    "intent": "Define strict data models and validate input at runtime using Pydantic.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-postgresql-indexing-strategies",
+    "keyword": "PostgreSQL Indexing Strategies for Faster Queries",
+    "category": "tutorial",
+    "intent": "Choose the right index type and design indexes that speed up real query patterns.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-mongodb-aggregation-pipeline",
+    "keyword": "MongoDB Aggregation Pipeline: A Step-by-Step Tutorial",
+    "category": "tutorial",
+    "intent": "Transform, filter, and analyze documents using MongoDB aggregation stages.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-redis-caching-patterns",
+    "keyword": "Redis Caching Patterns for Web Applications",
+    "category": "tutorial",
+    "intent": "Implement cache-aside, write-through, and TTL strategies with Redis.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-sqlite-local-development",
+    "keyword": "SQLite for Local Development and Embedded Applications",
+    "category": "tutorial",
+    "intent": "Use SQLite as a lightweight local database for prototyping and small-scale apps.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-docker-multistage-builds",
+    "keyword": "Docker Multi-Stage Builds for Smaller Production Images",
+    "category": "tutorial",
+    "intent": "Reduce image size and build time by separating build and runtime stages.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-docker-compose-dev-environments",
+    "keyword": "Docker Compose for Local Development Environments",
+    "category": "tutorial",
+    "intent": "Define multi-container dev stacks with databases, caches, and app services.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-docker-networking-explained",
+    "keyword": "Docker Networking: Bridges, Overlays, and Service Discovery",
+    "category": "tutorial",
+    "intent": "Connect containers across networks and understand Docker DNS resolution.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-docker-volume-management",
+    "keyword": "Docker Volumes and Bind Mounts: Persisting Data Correctly",
+    "category": "tutorial",
+    "intent": "Choose between volumes and bind mounts for development and production data.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-jest-mocking-strategies",
+    "keyword": "Jest Mocking Strategies: Modules, Functions, and Timers",
+    "category": "tutorial",
+    "intent": "Mock dependencies, spy on calls, and control time in Jest test suites.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-playwright-e2e-testing",
+    "keyword": "End-to-End Testing with Playwright: Setup to CI Integration",
+    "category": "tutorial",
+    "intent": "Write reliable browser tests with Playwright and run them in CI pipelines.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-react-testing-library-guide",
+    "keyword": "Testing React Components with React Testing Library",
+    "category": "tutorial",
+    "intent": "Write user-centric tests that query by role, text, and accessibility semantics.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-snapshot-testing-pros-cons",
+    "keyword": "Snapshot Testing in JavaScript: When It Helps and When It Hurts",
+    "category": "tutorial",
+    "intent": "Understand when snapshot tests add value and when they create maintenance burden.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-vitest-setup-guide",
+    "keyword": "Setting Up Vitest for a Modern TypeScript Project",
+    "category": "tutorial",
+    "intent": "Configure Vitest with TypeScript, ESM, and code coverage from scratch.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-graphql-api-nodejs",
+    "keyword": "Building a GraphQL API with Node.js and Apollo Server",
+    "category": "tutorial",
+    "intent": "Design schemas, write resolvers, and handle authentication in a GraphQL backend.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-websockets-nodejs",
+    "keyword": "Real-Time Communication with WebSockets in Node.js",
+    "category": "tutorial",
+    "intent": "Build a WebSocket server and client for live data streaming and chat features.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-tailwindcss-component-patterns",
+    "keyword": "Tailwind CSS Component Patterns: Cards, Modals, and Navigation",
+    "category": "tutorial",
+    "intent": "Build reusable UI components using Tailwind utility classes and design tokens.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-github-actions-custom-workflows",
+    "keyword": "Writing Custom GitHub Actions Workflows for CI/CD",
+    "category": "tutorial",
+    "intent": "Create multi-job workflows with caching, matrix builds, and deployment gates.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "tutorial-prisma-orm-getting-started",
+    "keyword": "Getting Started with Prisma ORM: Schema, Migrations, and Queries",
+    "category": "tutorial",
+    "intent": "Set up Prisma from scratch with schema modeling, database migrations, and type-safe queries.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-clean-architecture-nodejs",
+    "keyword": "Clean Architecture in Node.js: Structuring Scalable Applications",
+    "category": "guide",
+    "intent": "Apply clean architecture principles to organize a Node.js backend for testability and maintainability.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-hexagonal-architecture-typescript",
+    "keyword": "Hexagonal Architecture with TypeScript: Ports and Adapters Pattern",
+    "category": "guide",
+    "intent": "Decouple business logic from infrastructure using the ports and adapters approach.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-event-sourcing-fundamentals",
+    "keyword": "Event Sourcing Fundamentals for Backend Developers",
+    "category": "guide",
+    "intent": "Store state as a sequence of events and rebuild projections for audit and flexibility.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-cqrs-pattern-explained",
+    "keyword": "CQRS Pattern Explained: Separating Reads and Writes",
+    "category": "guide",
+    "intent": "Implement Command Query Responsibility Segregation for complex domain models.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-domain-driven-design-basics",
+    "keyword": "Domain-Driven Design Basics for Web Application Teams",
+    "category": "guide",
+    "intent": "Apply bounded contexts, aggregates, and ubiquitous language to real projects.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-microservices-vs-monolith-decision",
+    "keyword": "Microservices vs Monolith: A Decision Framework for Teams",
+    "category": "guide",
+    "intent": "Evaluate when microservices add value and when a modular monolith is the better choice.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-error-handling-patterns-javascript",
+    "keyword": "Error Handling Patterns in JavaScript and TypeScript",
+    "category": "guide",
+    "intent": "Design consistent error handling with custom errors, Result types, and global handlers.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-logging-strategies-production",
+    "keyword": "Production Logging Strategies: Structured Logs, Levels, and Aggregation",
+    "category": "guide",
+    "intent": "Set up structured logging that makes debugging production issues faster.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-api-versioning-strategies",
+    "keyword": "API Versioning Strategies: URL, Header, and Query Parameter Approaches",
+    "category": "guide",
+    "intent": "Choose an API versioning approach that balances developer experience and maintainability.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-database-migration-best-practices",
+    "keyword": "Database Migration Best Practices for Zero-Downtime Deployments",
+    "category": "guide",
+    "intent": "Run schema changes safely in production without locking tables or breaking clients.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-environment-variables-management",
+    "keyword": "Managing Environment Variables Across Development, Staging, and Production",
+    "category": "guide",
+    "intent": "Handle secrets and config consistently across environments without leaking credentials.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-git-branching-strategies",
+    "keyword": "Git Branching Strategies Compared: Trunk-Based, GitFlow, and GitHub Flow",
+    "category": "guide",
+    "intent": "Pick the right branching model for your team size and release cadence.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-owasp-top-10-web-developers",
+    "keyword": "OWASP Top 10 for Web Developers: A Practical Walkthrough",
+    "category": "guide",
+    "intent": "Understand and mitigate the most common web security vulnerabilities.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-jwt-vs-sessions-auth",
+    "keyword": "JWT vs Session-Based Authentication: Trade-offs and Implementation",
+    "category": "guide",
+    "intent": "Compare stateless JWT tokens with server-side sessions for user authentication.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-cors-configuration-guide",
+    "keyword": "CORS Configuration Guide: Understanding and Fixing Cross-Origin Errors",
+    "category": "guide",
+    "intent": "Configure CORS headers correctly for APIs consumed by browser-based clients.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-csp-headers-setup",
+    "keyword": "Content Security Policy Headers: Protecting Against XSS and Injection",
+    "category": "guide",
+    "intent": "Set up CSP headers that block script injection without breaking your application.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-secure-api-design",
+    "keyword": "Secure API Design: Rate Limiting, Input Validation, and Authentication",
+    "category": "guide",
+    "intent": "Build APIs that resist abuse with layered security controls.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-dependency-security-scanning",
+    "keyword": "Dependency Security Scanning: Detecting Vulnerabilities Before Production",
+    "category": "guide",
+    "intent": "Integrate npm audit, Snyk, or Dependabot to catch vulnerable packages early.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-github-actions-workflows",
+    "keyword": "GitHub Actions Workflows: From Basic CI to Advanced Deployments",
+    "category": "guide",
+    "intent": "Design reusable GitHub Actions workflows for testing, building, and deploying.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-terraform-infrastructure-basics",
+    "keyword": "Terraform Basics: Managing Infrastructure as Code",
+    "category": "guide",
+    "intent": "Provision and manage cloud resources with declarative Terraform configurations.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-monitoring-setup-production",
+    "keyword": "Setting Up Production Monitoring: Metrics, Logs, and Alerts",
+    "category": "guide",
+    "intent": "Build a monitoring stack that catches problems before users report them.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-docker-production-checklist",
+    "keyword": "Docker Production Checklist: Security, Logging, and Health Checks",
+    "category": "guide",
+    "intent": "Harden Docker containers for production with security scanning and health monitoring.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-core-web-vitals-optimization",
+    "keyword": "Core Web Vitals Optimization: LCP, FID, and CLS Fixes",
+    "category": "guide",
+    "intent": "Diagnose and fix the specific metrics that affect search ranking and user experience.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-database-query-tuning",
+    "keyword": "Database Query Tuning: EXPLAIN Plans, Indexes, and N+1 Prevention",
+    "category": "guide",
+    "intent": "Find and fix slow queries using execution plans and indexing strategies.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-caching-strategies-web-apps",
+    "keyword": "Caching Strategies for Web Applications: Browser, CDN, and Server",
+    "category": "guide",
+    "intent": "Layer caching at every level to reduce latency and server load.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-image-optimization-web",
+    "keyword": "Image Optimization for the Web: Formats, Lazy Loading, and CDNs",
+    "category": "guide",
+    "intent": "Serve optimized images in modern formats with responsive sizing and lazy loading.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-javascript-bundle-optimization",
+    "keyword": "JavaScript Bundle Optimization: Code Splitting, Tree Shaking, and Lazy Imports",
+    "category": "guide",
+    "intent": "Reduce bundle size with targeted code splitting and dead code elimination.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-monorepo-management-turborepo",
+    "keyword": "Monorepo Management with Turborepo: Setup and Best Practices",
+    "category": "guide",
+    "intent": "Organize multiple packages in a single repository with efficient build caching.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-code-review-practices",
+    "keyword": "Code Review Practices That Actually Improve Code Quality",
+    "category": "guide",
+    "intent": "Run effective code reviews that catch real issues without slowing down the team.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-documentation-standards-teams",
+    "keyword": "Documentation Standards for Development Teams",
+    "category": "guide",
+    "intent": "Establish living documentation practices that stay current as the codebase evolves.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-technical-debt-management",
+    "keyword": "Managing Technical Debt: Tracking, Prioritizing, and Paying It Down",
+    "category": "guide",
+    "intent": "Build a systematic approach to identifying and reducing technical debt over time.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-rest-api-design-conventions",
+    "keyword": "REST API Design Conventions: Naming, Pagination, and Error Responses",
+    "category": "guide",
+    "intent": "Follow consistent REST conventions for endpoints, query parameters, and error formats.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-containerized-development-workflow",
+    "keyword": "Containerized Development Workflow: Dev Containers and Docker Compose",
+    "category": "guide",
+    "intent": "Set up reproducible development environments using Dev Containers or Docker Compose.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-feature-flags-implementation",
+    "keyword": "Feature Flags Implementation: Rolling Out Changes Safely",
+    "category": "guide",
+    "intent": "Use feature flags to deploy code to production without exposing unfinished features.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-observability-three-pillars",
+    "keyword": "Observability for Developers: Logs, Metrics, and Traces Explained",
+    "category": "guide",
+    "intent": "Build an observability strategy using the three pillars to debug distributed systems.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-serverless-architecture-patterns",
+    "keyword": "Serverless Architecture Patterns: Functions, Queues, and Event-Driven Design",
+    "category": "guide",
+    "intent": "Design serverless applications using common patterns for reliability and cost control.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-rate-limiting-strategies",
+    "keyword": "Rate Limiting Strategies for APIs: Token Bucket, Sliding Window, and Leaky Bucket",
+    "category": "guide",
+    "intent": "Implement rate limiting algorithms to protect APIs from abuse and traffic spikes.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-ci-cd-pipeline-design",
+    "keyword": "CI/CD Pipeline Design: Stages, Caching, and Deployment Strategies",
+    "category": "guide",
+    "intent": "Structure CI/CD pipelines with efficient caching, parallel jobs, and safe rollback patterns.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "guide-typescript-project-setup",
+    "keyword": "TypeScript Project Setup: tsconfig, Path Aliases, and Build Configuration",
+    "category": "guide",
+    "intent": "Configure TypeScript projects with strict settings, module resolution, and build tools.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-nextjs-vs-remix",
+    "keyword": "Next.js vs Remix: Which React Framework Should You Choose",
+    "category": "comparison",
+    "intent": "Compare routing, data loading, and deployment between Next.js and Remix.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-express-vs-fastify",
+    "keyword": "Express vs Fastify: Node.js HTTP Framework Performance and DX Compared",
+    "category": "comparison",
+    "intent": "Evaluate speed, plugin ecosystem, and developer experience of Express and Fastify.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-django-vs-fastapi",
+    "keyword": "Django vs FastAPI: Choosing a Python Web Framework",
+    "category": "comparison",
+    "intent": "Compare full-stack Django with async-first FastAPI for different project needs.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-nestjs-vs-express",
+    "keyword": "NestJS vs Express: When to Use a Full Framework vs a Minimal One",
+    "category": "comparison",
+    "intent": "Decide between NestJS structure and Express flexibility for backend projects.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-astro-vs-nextjs",
+    "keyword": "Astro vs Next.js: Content Sites vs Full Applications",
+    "category": "comparison",
+    "intent": "Choose between Astro for content-heavy sites and Next.js for interactive apps.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-sveltekit-vs-nextjs",
+    "keyword": "SvelteKit vs Next.js: A Full-Stack Framework Comparison",
+    "category": "comparison",
+    "intent": "Compare DX, bundle size, and performance between SvelteKit and Next.js.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-postgresql-vs-mysql",
+    "keyword": "PostgreSQL vs MySQL: Feature, Performance, and Ecosystem Comparison",
+    "category": "comparison",
+    "intent": "Choose between PostgreSQL and MySQL based on features, extensions, and workload fit.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-mongodb-vs-dynamodb",
+    "keyword": "MongoDB vs DynamoDB: Document Database Comparison for Serverless and Beyond",
+    "category": "comparison",
+    "intent": "Compare self-managed MongoDB with fully managed DynamoDB for different scale needs.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-redis-vs-memcached",
+    "keyword": "Redis vs Memcached: In-Memory Cache and Data Store Comparison",
+    "category": "comparison",
+    "intent": "Evaluate data structures, persistence, and clustering between Redis and Memcached.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-drizzle-vs-prisma",
+    "keyword": "Drizzle ORM vs Prisma: TypeScript ORM Comparison",
+    "category": "comparison",
+    "intent": "Compare type safety, query performance, and migration workflows of Drizzle and Prisma.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-supabase-vs-firebase",
+    "keyword": "Supabase vs Firebase: Backend-as-a-Service Comparison",
+    "category": "comparison",
+    "intent": "Evaluate open-source Supabase against Firebase for auth, database, and real-time features.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-jest-vs-vitest",
+    "keyword": "Jest vs Vitest: JavaScript Test Runner Comparison",
+    "category": "comparison",
+    "intent": "Compare speed, configuration, and ESM support between Jest and Vitest.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-cypress-vs-playwright",
+    "keyword": "Cypress vs Playwright: End-to-End Testing Framework Comparison",
+    "category": "comparison",
+    "intent": "Evaluate browser support, speed, and API design of Cypress and Playwright.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-pytest-vs-unittest",
+    "keyword": "pytest vs unittest: Python Testing Framework Comparison",
+    "category": "comparison",
+    "intent": "Compare fixture systems, assertion styles, and plugin ecosystems of pytest and unittest.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-storybook-vs-ladle",
+    "keyword": "Storybook vs Ladle: Component Development Environment Comparison",
+    "category": "comparison",
+    "intent": "Compare features and performance of Storybook and Ladle for UI component development.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-vite-vs-webpack",
+    "keyword": "Vite vs webpack: Modern Build Tool Comparison",
+    "category": "comparison",
+    "intent": "Compare dev server speed, build output, and plugin ecosystems of Vite and webpack.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-esbuild-vs-swc",
+    "keyword": "esbuild vs SWC: JavaScript Compiler and Bundler Speed Comparison",
+    "category": "comparison",
+    "intent": "Evaluate raw speed, feature sets, and integration options of esbuild and SWC.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-turborepo-vs-nx",
+    "keyword": "Turborepo vs Nx: Monorepo Build System Comparison",
+    "category": "comparison",
+    "intent": "Compare caching, task orchestration, and DX of Turborepo and Nx.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-pnpm-vs-npm-vs-yarn",
+    "keyword": "pnpm vs npm vs Yarn: Package Manager Comparison",
+    "category": "comparison",
+    "intent": "Compare disk usage, speed, and monorepo support across Node.js package managers.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-biome-vs-eslint-prettier",
+    "keyword": "Biome vs ESLint + Prettier: Linting and Formatting Tool Comparison",
+    "category": "comparison",
+    "intent": "Compare all-in-one Biome with the ESLint and Prettier combination for code quality.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-typescript-vs-javascript",
+    "keyword": "TypeScript vs JavaScript: When Types Are Worth the Overhead",
+    "category": "comparison",
+    "intent": "Decide when TypeScript adds enough value to justify the compilation step and complexity.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-python-vs-go-apis",
+    "keyword": "Python vs Go for Building APIs: Performance, DX, and Ecosystem",
+    "category": "comparison",
+    "intent": "Compare Python and Go for API development based on speed, tooling, and team familiarity.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-rust-vs-go-backend",
+    "keyword": "Rust vs Go for Backend Services: Performance and Productivity Trade-offs",
+    "category": "comparison",
+    "intent": "Evaluate Rust safety and speed against Go simplicity for server-side development.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-bun-vs-node-runtime",
+    "keyword": "Bun vs Node.js: JavaScript Runtime Comparison",
+    "category": "comparison",
+    "intent": "Compare startup time, API compatibility, and ecosystem maturity of Bun and Node.js.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-deno-vs-node-2026",
+    "keyword": "Deno 2 vs Node.js: Runtime Comparison in 2026",
+    "category": "comparison",
+    "intent": "Evaluate Deno 2 npm compatibility, permissions model, and tooling against Node.js.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-vercel-vs-netlify",
+    "keyword": "Vercel vs Netlify: Frontend Deployment Platform Comparison",
+    "category": "comparison",
+    "intent": "Compare build performance, serverless functions, and pricing of Vercel and Netlify.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-cloudflare-workers-vs-lambda",
+    "keyword": "Cloudflare Workers vs AWS Lambda: Serverless Edge Comparison",
+    "category": "comparison",
+    "intent": "Compare cold starts, pricing, and global distribution of Workers and Lambda.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-fly-io-vs-railway",
+    "keyword": "Fly.io vs Railway: Container Hosting Platform Comparison",
+    "category": "comparison",
+    "intent": "Evaluate global deployment, pricing, and DX of Fly.io and Railway.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-github-actions-vs-gitlab-ci",
+    "keyword": "GitHub Actions vs GitLab CI: CI/CD Platform Comparison",
+    "category": "comparison",
+    "intent": "Compare pipeline syntax, runner options, and ecosystem of GitHub Actions and GitLab CI.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "comparison-tailwind-vs-vanilla-extract",
+    "keyword": "Tailwind CSS vs vanilla-extract: Styling Approach Comparison",
+    "category": "comparison",
+    "intent": "Compare utility-first Tailwind with type-safe vanilla-extract for CSS-in-TypeScript projects.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-nodejs22-esm-packages",
+    "keyword": "Node.js 22 and ESM-Only Packages: Compatibility Guide",
+    "category": "compatibility",
+    "intent": "Resolve import issues when mixing CommonJS and ESM packages in Node.js 22.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-nodejs22-native-test-runner",
+    "keyword": "Node.js 22 Native Test Runner: Replacing Jest for Simple Projects",
+    "category": "compatibility",
+    "intent": "Use the built-in Node.js test runner as a lightweight alternative to Jest.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-nodejs22-typescript-loader",
+    "keyword": "Running TypeScript Directly in Node.js 22 with --experimental-strip-types",
+    "category": "compatibility",
+    "intent": "Execute TypeScript files without a build step using Node.js built-in type stripping.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-python313-breaking-changes",
+    "keyword": "Python 3.13 Breaking Changes: What You Need to Update",
+    "category": "compatibility",
+    "intent": "Identify and fix code that breaks under Python 3.13 deprecations and removals.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-python313-free-threading",
+    "keyword": "Python 3.13 Free Threading: GIL-Free Mode Compatibility Guide",
+    "category": "compatibility",
+    "intent": "Test your Python packages and C extensions with the experimental no-GIL build.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-python313-type-improvements",
+    "keyword": "Python 3.13 Type System Improvements and Backward Compatibility",
+    "category": "compatibility",
+    "intent": "Adopt new typing features in Python 3.13 while maintaining backward compatibility.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-typescript5-react19",
+    "keyword": "TypeScript 5.x with React 19: Resolving Type Conflicts",
+    "category": "compatibility",
+    "intent": "Fix type errors that arise when upgrading to TypeScript 5.x alongside React 19.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-typescript5-decorators",
+    "keyword": "TypeScript 5.x Decorators vs Legacy Decorators: Migration Path",
+    "category": "compatibility",
+    "intent": "Migrate from experimental decorators to the TC39 standard decorator syntax.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-esm-cjs-interop",
+    "keyword": "ESM vs CommonJS Interoperability: Resolving Module Format Conflicts",
+    "category": "compatibility",
+    "intent": "Fix import/require mismatches in projects that mix ESM and CJS dependencies.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-docker-apple-silicon",
+    "keyword": "Docker on Apple Silicon: Performance Tuning and Image Compatibility",
+    "category": "compatibility",
+    "intent": "Run x86 Docker images on ARM Macs with Rosetta and optimize for native ARM builds.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-wsl2-docker-desktop",
+    "keyword": "WSL2 with Docker Desktop: Setup, Performance, and Troubleshooting",
+    "category": "compatibility",
+    "intent": "Configure Docker Desktop on WSL2 for reliable Linux container development on Windows.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-wsl2-nodejs-development",
+    "keyword": "WSL2 for Node.js Development: File System Performance and Tool Setup",
+    "category": "compatibility",
+    "intent": "Optimize WSL2 file I/O and configure Node.js tooling for cross-platform development.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-podman-docker-compose",
+    "keyword": "Podman as a Docker Desktop Replacement: Compose and CLI Compatibility",
+    "category": "compatibility",
+    "intent": "Use Podman with Docker Compose files and existing Docker workflows.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-tailwindcss-v4-migration",
+    "keyword": "Tailwind CSS v4 Migration Guide: Breaking Changes and New Features",
+    "category": "compatibility",
+    "intent": "Upgrade from Tailwind CSS v3 to v4 with minimal disruption to existing styles.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-nextjs15-upgrade-path",
+    "keyword": "Next.js 15 Upgrade Guide: App Router Changes and Migration Steps",
+    "category": "compatibility",
+    "intent": "Handle breaking changes when upgrading from Next.js 14 to 15.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-react19-upgrade-guide",
+    "keyword": "React 19 Upgrade Guide: New Features and Breaking Changes",
+    "category": "compatibility",
+    "intent": "Adopt React 19 features like use() and compiler optimizations while fixing deprecations.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-prisma-6-migration",
+    "keyword": "Prisma 6 Migration Guide: Breaking Changes and New Query Engine",
+    "category": "compatibility",
+    "intent": "Upgrade Prisma ORM to version 6 and adapt to the new Rust-based query engine.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-eslint-9-flat-config",
+    "keyword": "ESLint 9 Flat Config Migration: Replacing .eslintrc with eslint.config.js",
+    "category": "compatibility",
+    "intent": "Migrate ESLint configuration from the legacy format to the new flat config system.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-vitest-jest-migration",
+    "keyword": "Migrating from Jest to Vitest: API Differences and Configuration",
+    "category": "compatibility",
+    "intent": "Replace Jest with Vitest in an existing project with minimal test rewriting.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-webpack-to-vite-migration",
+    "keyword": "Migrating from webpack to Vite: Configuration and Plugin Translation",
+    "category": "compatibility",
+    "intent": "Convert a webpack project to Vite by translating loaders, plugins, and config patterns.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-drizzle-prisma-migration",
+    "keyword": "Migrating from Prisma to Drizzle ORM: Schema and Query Translation",
+    "category": "compatibility",
+    "intent": "Switch from Prisma to Drizzle with side-by-side schema and query comparisons.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "compatibility-bun-node-modules",
+    "keyword": "Bun Compatibility with Node.js npm Packages: What Works and What Breaks",
+    "category": "compatibility",
+    "intent": "Test popular npm packages under the Bun runtime and work around incompatibilities.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-bun-runtime-2026",
+    "keyword": "Bun Runtime Review: Performance, Compatibility, and Production Readiness",
+    "category": "review",
+    "intent": "Evaluate whether Bun is ready for production workloads based on benchmarks and ecosystem support.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-deno2-runtime",
+    "keyword": "Deno 2 Review: npm Compatibility, Permissions, and Developer Experience",
+    "category": "review",
+    "intent": "Assess Deno 2 improvements including npm support and practical usability for real projects.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-turborepo-monorepo",
+    "keyword": "Turborepo Review: Monorepo Build Caching and Task Orchestration",
+    "category": "review",
+    "intent": "Evaluate Turborepo build speed, caching reliability, and monorepo management features.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-biome-linter-formatter",
+    "keyword": "Biome Linter and Formatter Review: Replacing ESLint and Prettier",
+    "category": "review",
+    "intent": "Test whether Biome delivers on its promise of fast, unified linting and formatting.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-vercel-platform-2026",
+    "keyword": "Vercel Platform Review: Pricing, Performance, and DX for Frontend Teams",
+    "category": "review",
+    "intent": "Assess Vercel hosting, serverless functions, and edge runtime for production applications.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-netlify-platform-2026",
+    "keyword": "Netlify Platform Review: Build, Deploy, and Serverless Features",
+    "category": "review",
+    "intent": "Evaluate Netlify build speed, serverless functions, and developer experience in 2026.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-cloudflare-workers-platform",
+    "keyword": "Cloudflare Workers Review: Edge Computing for Full-Stack Applications",
+    "category": "review",
+    "intent": "Assess Workers runtime, D1 database, and R2 storage for building edge-first applications.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-planetscale-database",
+    "keyword": "PlanetScale Review: Serverless MySQL with Git-Like Branching",
+    "category": "review",
+    "intent": "Evaluate PlanetScale branching workflows, performance, and pricing for production databases.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-neon-serverless-postgres",
+    "keyword": "Neon Serverless Postgres Review: Branching, Scaling, and Cold Starts",
+    "category": "review",
+    "intent": "Assess Neon database branching, autoscaling, and connection pooling for serverless apps.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-supabase-platform-2026",
+    "keyword": "Supabase Platform Review: Open-Source Firebase Alternative",
+    "category": "review",
+    "intent": "Evaluate Supabase auth, real-time, and edge functions for building full-stack applications.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-zed-editor-2026",
+    "keyword": "Zed Editor Review: Speed, Collaboration, and AI Integration",
+    "category": "review",
+    "intent": "Evaluate Zed editor performance, multiplayer editing, and AI features for daily development.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-neovim-modern-setup",
+    "keyword": "Modern Neovim Setup Review: LSP, Treesitter, and Plugin Ecosystem",
+    "category": "review",
+    "intent": "Assess the current Neovim experience with Lua config, native LSP, and modern plugins.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-jetbrains-fleet-2026",
+    "keyword": "JetBrains Fleet Review: Lightweight IDE with Smart Mode",
+    "category": "review",
+    "intent": "Evaluate Fleet editor performance, remote development, and polyglot language support.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-cursor-ide-2026",
+    "keyword": "Cursor IDE Review: AI-Powered Coding Experience",
+    "category": "review",
+    "intent": "Assess Cursor AI features, codebase understanding, and productivity gains for developers.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
+  },
+  {
+    "id": "review-github-copilot-workspace",
+    "keyword": "GitHub Copilot Workspace Review: AI-Assisted Development Environment",
+    "category": "review",
+    "intent": "Evaluate Copilot Workspace for planning, implementing, and testing code changes.",
+    "difficulty_score": 0.35,
+    "source": "seed-fullstack-broadening",
+    "created_at": "2026-03-11T00:00:00Z",
+    "status": "new"
   }
 ]
