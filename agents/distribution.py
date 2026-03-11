@@ -872,6 +872,30 @@ class DistributionAgent:
                 idx += 1
         return refs
 
+    @staticmethod
+    def _strip_references_section(html: str) -> str:
+        """Remove the References/Sources section from HTML body.
+
+        The frontend renders references separately from the ``references``
+        JSON field, so the inline section would cause duplication.
+        """
+        # Split at the references heading
+        parts = re.split(
+            r'<h2[^>]*>.*?\b(?:References|Sources)\b.*?</h2>',
+            html, maxsplit=1, flags=re.IGNORECASE,
+        )
+        if len(parts) < 2:
+            return html
+        before = parts[0]
+        after = parts[1]
+        # Keep everything after the next <h2 (i.e. skip the ref list itself)
+        next_h2 = re.search(r'<h2', after)
+        if next_h2:
+            after = after[next_h2.start():]
+        else:
+            after = ''
+        return (before + after).strip()
+
     def _extract_tags(self, title: str, category: str) -> List[str]:
         """Extract keyword tags from title for programmatic SEO."""
         tokens = _title_tokens(title)
@@ -954,6 +978,9 @@ class DistributionAgent:
         faq_items = self._extract_faq(body_with_ids)
         tags = self._extract_tags(draft.title, cat_class)
         references = self._extract_references(body_with_ids)
+        # Strip the inline references section so it isn't rendered twice
+        # (the frontend renders references from the ``references`` field).
+        body_with_ids = self._strip_references_section(body_with_ids)
 
         data = {
             "slug": draft.slug,
