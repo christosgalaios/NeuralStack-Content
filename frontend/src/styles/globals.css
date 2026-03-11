@@ -223,6 +223,33 @@ h1, h2, h3, h4 {
   line-height: 1.6;
 }
 
+/* ─── Inline Citations ────────────────────────────────────────── */
+
+.article-content .citation-ref {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0 1px;
+  transition: color 0.15s ease;
+}
+
+.article-content .citation-ref:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.article-content sup {
+  line-height: 0;
+  vertical-align: super;
+  font-size: 0.75em;
+}
+
+/* Smooth scroll to referenced item */
+[id^="ref-"] {
+  scroll-margin-top: 80px;
+}
+
 /* ─── Scrollbar ─────────────────────────────────────────────── */
 
 ::-webkit-scrollbar {

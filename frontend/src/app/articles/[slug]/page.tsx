@@ -137,24 +137,30 @@ export default async function ArticlePage({
                 <h2 className="mb-4 text-lg font-bold" style={{ color: "var(--text-primary)" }}>
                   Sources &amp; References
                 </h2>
-                <ul className="flex flex-col gap-2">
-                  {article.references.map((ref, i) => (
-                    <li key={i} className="text-sm">
-                      <a
-                        href={ref.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 transition-colors hover:underline"
-                        style={{ color: "var(--accent)" }}
-                      >
-                        <svg className="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                        </svg>
-                        {ref.title}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                <ol className="flex flex-col gap-2 list-none pl-0">
+                  {article.references.map((ref, i) => {
+                    const refNum = ref.index ?? i + 1;
+                    return (
+                      <li key={i} id={`ref-${refNum}`} className="text-sm flex items-start gap-2">
+                        <span className="font-mono text-xs shrink-0 mt-0.5" style={{ color: "var(--accent)" }}>
+                          [{refNum}]
+                        </span>
+                        <a
+                          href={ref.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 transition-colors hover:underline"
+                          style={{ color: "var(--accent)" }}
+                        >
+                          <svg className="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                          </svg>
+                          {ref.title}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ol>
                 <p className="mt-4 text-xs" style={{ color: "var(--text-muted)" }}>
                   Information verified against official documentation at the time of writing. Always check official sources for the most current details.
                 </p>

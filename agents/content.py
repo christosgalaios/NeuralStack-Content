@@ -202,14 +202,66 @@ class SimpleLocalLLM:
             refs.extend(self._GENERAL_REFERENCES[:2])
         return refs
 
-    def _references_section(self, keyword: str) -> str:
-        """Generate a markdown References/Sources section with real URLs."""
+    def _collect_numbered_references(self, keyword: str) -> List[Dict[str, str]]:
+        """Collect references and assign each a stable 1-based index.
+
+        Each dict gets an ``"index"`` key (str) so templates can insert
+        inline citations like ``[1]``, ``[2]``, etc.
+        """
         refs = self._collect_references(keyword)
         if not refs:
-            refs = self._GENERAL_REFERENCES[:2]
+            refs = list(self._GENERAL_REFERENCES[:2])
+        # Deduplicate by URL while preserving order
+        seen_urls: set = set()
+        unique: List[Dict[str, str]] = []
+        for ref in refs:
+            if ref["url"] not in seen_urls:
+                seen_urls.add(ref["url"])
+                unique.append(dict(ref))  # copy to avoid mutating class data
+        for i, ref in enumerate(unique, 1):
+            ref["index"] = str(i)
+        return unique
+
+    def _cite_indices(self, refs: List[Dict[str, str]], tool_name: str) -> str:
+        """Return inline citation markers like ' [1][2]' for refs matching a tool.
+
+        Matches if the tool name (or its first word for multi-word names)
+        appears in the reference title or URL.  Returns an empty string
+        when nothing matches so templates can unconditionally append.
+        """
+        tool_lower = tool_name.lower()
+        # For multi-word tool names like "Cursor IDE", also match on the
+        # primary word ("cursor") so "Cursor Documentation" still matches.
+        words = tool_lower.split()
+        primary = words[0] if words else tool_lower
+        indices = []
+        for ref in refs:
+            title_lower = ref.get("title", "").lower()
+            url_lower = ref.get("url", "").lower()
+            if (tool_lower in title_lower or tool_lower in url_lower
+                    or primary in title_lower or primary in url_lower):
+                indices.append(ref["index"])
+        if not indices:
+            return ""
+        return " " + "".join(f"[{idx}]" for idx in indices)
+
+    def _cite_general(self, refs: List[Dict[str, str]]) -> str:
+        """Return citation markers for general (non-tool-specific) references."""
+        indices = []
+        for ref in refs:
+            for gen in self._GENERAL_REFERENCES:
+                if ref.get("url") == gen["url"]:
+                    indices.append(ref["index"])
+                    break
+        if not indices:
+            return ""
+        return " " + "".join(f"[{idx}]" for idx in indices)
+
+    def _references_section_from(self, refs: List[Dict[str, str]]) -> str:
+        """Generate a numbered References/Sources section from pre-built refs."""
         lines = ["## References and sources", ""]
         for ref in refs:
-            lines.append(f"- [{ref['title']}]({ref['url']})")
+            lines.append(f"{ref['index']}. [{ref['title']}]({ref['url']})")
         lines.append("")
         lines.append(
             "All pricing, features, and compatibility information in this article "
@@ -217,6 +269,11 @@ class SimpleLocalLLM:
             "Always check the official sources above for the most current information."
         )
         return "\n".join(lines)
+
+    def _references_section(self, keyword: str) -> str:
+        """Generate a numbered References/Sources section with real URLs."""
+        refs = self._collect_numbered_references(keyword)
+        return self._references_section_from(refs)
 
     # Known facts for tools we write about. Used to make comparison tables
     # specific rather than generic "Option A / Option B" placeholders.
@@ -363,6 +420,12 @@ class SimpleLocalLLM:
         bestfor_a  = fa.get("best_for",    "Teams who value broad ecosystem and ease of use")
         bestfor_b  = fb.get("best_for",    "Teams who value performance and fine-grained control")
 
+        # Build numbered references and inline citation helpers
+        numbered_refs = self._collect_numbered_references(keyword)
+        cite_a = self._cite_indices(numbered_refs, tool_a)
+        cite_b = self._cite_indices(numbered_refs, tool_b)
+        cite_gen = self._cite_general(numbered_refs)
+
         # Inline reference links for the tools
         refs_a = self._TOOL_REFERENCES.get(tool_a, [])
         refs_b = self._TOOL_REFERENCES.get(tool_b, [])
@@ -397,7 +460,7 @@ class SimpleLocalLLM:
 
             Getting this decision right saves months of friction. Getting it wrong
             means fighting your tools every single day. According to the
-            [Stack Overflow Developer Survey](https://survey.stackoverflow.co),
+            Stack Overflow Developer Survey{cite_gen},
             tooling choices are consistently ranked among the top factors affecting
             developer satisfaction and productivity.
             """).strip(),
@@ -406,7 +469,7 @@ class SimpleLocalLLM:
             ## Head-to-head feature comparison
 
             The table below summarises pricing and features as documented on each
-            tool's official site. Check {docs_a} and {docs_b} for the latest details.
+            tool's official site{cite_a}{cite_b}. Check {docs_a} and {docs_b} for the latest details.
 
             | Criterion            | {tool_a}             | {tool_b}             |
             |----------------------|----------------------|----------------------|
@@ -423,7 +486,7 @@ class SimpleLocalLLM:
             textwrap.dedent(f"""
             ## When to choose {tool_a}
 
-            **{tool_a}** tends to win when:
+            **{tool_a}** tends to win when{cite_a}:
 
             - {bestfor_a}.
             - You need to ship fast and can tolerate some rough edges later.
@@ -438,7 +501,7 @@ class SimpleLocalLLM:
             textwrap.dedent(f"""
             ## When to choose {tool_b}
 
-            **{tool_b}** earns its place when:
+            **{tool_b}** earns its place when{cite_b}:
 
             - {bestfor_b}.
             - Performance and determinism are non-negotiable requirements.
@@ -462,7 +525,7 @@ class SimpleLocalLLM:
             4. **Plan a strangler-fig migration** — replace incrementally, not all at once.
             5. **Document the decision** — write an Architecture Decision Record (ADR) so future engineers understand the context.
 
-            The [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar)
+            The ThoughtWorks Technology Radar{cite_gen}
             is a useful reference for understanding where tools sit on the
             adopt/trial/assess/hold spectrum across the industry.
             """).strip(),
@@ -534,7 +597,7 @@ class SimpleLocalLLM:
             If the improvement pays for the subscription twice over, the answer is yes.
             """).strip(),
 
-            self._references_section(keyword),
+            self._references_section_from(numbered_refs),
 
             textwrap.dedent(f"""
             ## Conclusion
@@ -567,6 +630,11 @@ class SimpleLocalLLM:
         now = datetime.now().strftime("%B %Y")
         comp_a, comp_b = self._extract_compatibility_components(keyword)
 
+        # Build numbered references and citation helpers
+        numbered_refs = self._collect_numbered_references(keyword)
+        cite_a = self._cite_indices(numbered_refs, comp_a)
+        cite_b = self._cite_indices(numbered_refs, comp_b)
+
         # Build inline links for components
         refs_a = self._TOOL_REFERENCES.get(comp_a, [])
         refs_b = self._TOOL_REFERENCES.get(comp_b, [])
@@ -595,7 +663,7 @@ class SimpleLocalLLM:
             Before diving in, confirm:
 
             - Your operating system version and architecture (x86-64 vs ARM64 matters here).
-            - The exact version numbers of each component — check {docs_a} and {docs_b} for supported versions.
+            - The exact version numbers of each component — check {docs_a}{cite_a} and {docs_b}{cite_b} for supported versions.
             - Whether you are working in a container, VM, or bare-metal environment.
             - Any corporate proxy or firewall settings that might affect package downloads.
 
@@ -606,7 +674,7 @@ class SimpleLocalLLM:
             textwrap.dedent(f"""
             ## Tested version matrix
 
-            The matrix below summarises compatibility based on official release notes.
+            The matrix below summarises compatibility based on official release notes{cite_a}{cite_b}.
             Always cross-reference with {docs_a} for your exact patch version.
 
             | {comp_a} version    | {comp_b} version    | Status         | Notes                          |
@@ -700,7 +768,7 @@ class SimpleLocalLLM:
                missing system dependencies. Build failures point to API incompatibilities.
                Runtime failures often indicate mismatched shared libraries.
 
-            3. **Check the release notes and changelogs** — both {comp_a} and {comp_b}
+            3. **Check the release notes and changelogs** — both {comp_a}{cite_a} and {comp_b}{cite_b}
                publish changelogs with breaking changes highlighted. Search for your
                specific error in the project's issue tracker on GitHub.
 
@@ -739,7 +807,7 @@ class SimpleLocalLLM:
             in CI to avoid silent breakage.
             """).strip(),
 
-            self._references_section(keyword),
+            self._references_section_from(numbered_refs),
 
             textwrap.dedent(f"""
             ## Conclusion
@@ -757,6 +825,20 @@ class SimpleLocalLLM:
     def _template_tutorial(self, keyword: str, intent: str) -> str:
         now = datetime.now().strftime("%B %Y")
 
+        # Build numbered references and citation helpers
+        numbered_refs = self._collect_numbered_references(keyword)
+        # Find tool-specific citations from keyword
+        cite_all = ""
+        keyword_lower = keyword.lower()
+        for tool_name in self._TOOL_REFERENCES:
+            if tool_name.lower() in keyword_lower:
+                c = self._cite_indices(numbered_refs, tool_name)
+                if c:
+                    cite_all = c
+                    break
+        if not cite_all:
+            cite_all = self._cite_general(numbered_refs)
+
         # Build inline reference links for tools mentioned in keyword
         refs = self._collect_references(keyword)
         docs_link = ""
@@ -767,7 +849,7 @@ class SimpleLocalLLM:
             textwrap.dedent(f"""
             # {keyword}
 
-            This tutorial gives you a complete, working implementation of {keyword}
+            This tutorial gives you a complete, working implementation of {keyword}{cite_all}
             with no assumed knowledge beyond the prerequisites listed below.
             Every step is explained so you understand not just *what* to do but *why*.
 
@@ -949,12 +1031,12 @@ class SimpleLocalLLM:
 
             ### Where can I learn more about {keyword}?
 
-            The official documentation is always the most reliable source. Supplement
+            The official documentation{cite_all} is always the most reliable source. Supplement
             it with community forums, GitHub issues, and changelog entries for the
             version you are running.
             """).strip(),
 
-            self._references_section(keyword),
+            self._references_section_from(numbered_refs),
 
             textwrap.dedent(f"""
             ## Conclusion
@@ -971,6 +1053,8 @@ class SimpleLocalLLM:
 
     def _template_foreign_news(self, keyword: str, intent: str) -> str:
         now = datetime.now().strftime("%B %Y")
+        numbered_refs = self._collect_numbered_references(keyword)
+        cite_gen = self._cite_general(numbered_refs)
         sections = [
             textwrap.dedent(f"""
             # {keyword}
@@ -999,7 +1083,7 @@ class SimpleLocalLLM:
             limitations — of what is being reported.
 
             For authoritative industry positioning, the
-            [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar)
+            ThoughtWorks Technology Radar{cite_gen}
             provides a useful framework for categorising emerging technology into
             adopt, trial, assess, and hold rings based on real-world engineering
             experience across multiple organisations and geographies.
@@ -1098,7 +1182,7 @@ class SimpleLocalLLM:
             - **Run your own benchmarks** — vendor-published benchmarks are designed
               to make the product look good. Run the workloads that matter to your
               team on your infrastructure with your data. The
-              [CNCF Landscape](https://landscape.cncf.io) is a useful starting point
+              the CNCF Landscape{cite_gen} is a useful starting point
               for discovering alternatives in any given category.
 
             - **Talk to actual users** — find teams that have used the technology in
@@ -1157,7 +1241,7 @@ class SimpleLocalLLM:
             """).strip(),
         ]
         # Insert references section before the conclusion
-        sections.insert(-1, self._references_section(keyword))
+        sections.insert(-1, self._references_section_from(numbered_refs))
         return "\n\n".join(sections)
 
     def _generate_with_template(self, keyword: str, category: str, intent: str) -> str:

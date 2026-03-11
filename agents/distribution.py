@@ -66,13 +66,20 @@ _FAVICON = (
 # ---------------------------------------------------------------------------
 
 def _inline_md(text: str) -> str:
-    """Convert inline markdown to HTML (bold, italic, code, links)."""
+    """Convert inline markdown to HTML (bold, italic, code, links, citations)."""
     text = re.sub(r'\*\*([^*\n]+)\*\*', r'<strong>\1</strong>', text)
     text = re.sub(r'\*([^*\n]+)\*', r'<em>\1</em>', text)
     text = re.sub(r'`([^`\n]+)`', r'<code>\1</code>', text)
     text = re.sub(
         r'\[([^\]]+)\]\((https?://[^\)]+)\)',
         r'<a href="\2" target="_blank" rel="noopener sponsored">\1</a>',
+        text,
+    )
+    # Inline citations: [1], [2], etc. → superscript anchor links
+    # Must run after markdown link conversion to avoid false matches
+    text = re.sub(
+        r'\[(\d{1,2})\](?!\()',
+        r'<sup><a href="#ref-\1" class="citation-ref">[\1]</a></sup>',
         text,
     )
     return text
@@ -155,6 +162,19 @@ def _md_to_html(text: str) -> str:
             output.append('<ul>\n' + '\n'.join(items) + '\n</ul>')
             continue
 
+        # ── Ordered lists (1. 2. 3. etc.) ────────────────────────────────
+        ol_match = re.match(r'^(\d+)\.\s+', line)
+        if ol_match:
+            ol_items: List[str] = []
+            start_num = ol_match.group(1)
+            while i < len(lines) and re.match(r'^\d+\.\s+', lines[i]):
+                item_text = re.sub(r'^\d+\.\s+', '', lines[i]).strip()
+                ol_items.append(f'<li>{_inline_md(item_text)}</li>')
+                i += 1
+            start_attr = f' start="{start_num}"' if start_num != "1" else ""
+            output.append(f'<ol{start_attr}>\n' + '\n'.join(ol_items) + '\n</ol>')
+            continue
+
         # ── Blank line ────────────────────────────────────────────────────
         if not line.strip():
             output.append('')
@@ -169,7 +189,8 @@ def _md_to_html(text: str) -> str:
                     or re.match(r'^#{1,3}\s', ln)
                     or ln.strip().startswith('|')
                     or ln.strip().startswith('```')
-                    or re.match(r'^[-*]\s+', ln)):
+                    or re.match(r'^[-*]\s+', ln)
+                    or re.match(r'^\d+\.\s+', ln)):
                 break
             para.append(ln)
             i += 1
@@ -768,7 +789,11 @@ class DistributionAgent:
         return faq_items
 
     def _extract_references(self, html_body: str) -> List[Dict]:
-        """Extract reference links from the References/Sources section."""
+        """Extract reference links from the References/Sources section.
+
+        Returns a list of dicts with ``title``, ``url``, and ``index`` (1-based
+        string) so the frontend can render numbered citations.
+        """
         refs: List[Dict] = []
         # Find the references section
         parts = re.split(
@@ -784,11 +809,13 @@ class DistributionAgent:
             ref_section = ref_section[:next_h2.start()]
 
         # Extract all links from the references section
+        idx = 1
         for m in re.finditer(r'<a\s+href="(https?://[^"]+)"[^>]*>([^<]+)</a>', ref_section):
             url = m.group(1).strip()
             title = _strip_tags(m.group(2)).strip()
             if url and title:
-                refs.append({"title": title, "url": url})
+                refs.append({"title": title, "url": url, "index": idx})
+                idx += 1
         return refs
 
     def _extract_tags(self, title: str, category: str) -> List[str]:
