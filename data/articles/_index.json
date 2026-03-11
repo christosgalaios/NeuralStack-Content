@@ -2,11 +2,11 @@
   {
     "slug": "datadog-review-is-it-worth-the-cost-for-small-engineering-teams",
     "title": "Datadog review: is it worth the cost for small engineering teams",
-    "description": "In-depth technical guide: Datadog review: is it worth the cost for small engineering teams. Practical trade-offs, implementation patterns, and recommendations for production engineers.",
+    "description": "Datadog review: is it worth the cost for small engineering teams. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
     "category": "review",
     "category_display": "Review",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 7,
     "tags": [
       "cost",
       "datadog",
@@ -20,11 +20,11 @@
   {
     "slug": "datadog-vs-grafana-cloud-observability-platform-comparison",
     "title": "Datadog vs Grafana Cloud: observability platform comparison",
-    "description": "In-depth technical guide: Datadog vs Grafana Cloud: observability platform comparison. Practical trade-offs, implementation patterns, and recommendations for production engineers.",
+    "description": "Datadog vs Grafana Cloud: observability platform comparison. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 8,
     "tags": [
       "cloud",
       "comparison",
@@ -37,11 +37,11 @@
   {
     "slug": "datadog-vs-new-relic-vs-dynatrace-apm-comparison-for-2026",
     "title": "Datadog vs New Relic vs Dynatrace: APM comparison for 2026",
-    "description": "In-depth technical guide: Datadog vs New Relic vs Dynatrace: APM comparison for 2026. Practical trade-offs, implementation patterns, and recommendations for production engineers.",
+    "description": "Datadog vs New Relic vs Dynatrace: APM comparison for 2026. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 8,
     "tags": [
       "2026",
       "apm",
@@ -55,11 +55,11 @@
   {
     "slug": "datadog-vs-prometheus-which-monitoring-tool-should-you-use-in-2026",
     "title": "Datadog vs Prometheus: which monitoring tool should you use in 2026",
-    "description": "In-depth technical guide: Datadog vs Prometheus: which monitoring tool should you use in 2026. Practical trade-offs, implementation patterns, and recommendations for production engineers.",
+    "description": "Datadog vs Prometheus: which monitoring tool should you use in 2026. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 8,
     "tags": [
       "2026",
       "comparison",
@@ -76,7 +76,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 6,
+    "reading_time_minutes": 7,
     "tags": [
       "codespaces",
       "compatibility",
@@ -91,7 +91,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 7,
     "tags": [
       "apple",
       "compatibility",
@@ -106,7 +106,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 6,
+    "reading_time_minutes": 7,
     "tags": [
       "compatibility",
       "docker",
@@ -120,7 +120,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 6,
+    "reading_time_minutes": 7,
     "tags": [
       "compatibility",
       "docker",
@@ -134,7 +134,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 7,
     "tags": [
       "arm",
       "compatibility",
@@ -149,7 +149,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 7,
     "tags": [
       "arm",
       "compatibility",
@@ -164,7 +164,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 7,
     "tags": [
       "compatibility",
       "cuda",
@@ -178,7 +178,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 6,
+    "reading_time_minutes": 8,
     "tags": [
       "compatibility",
       "compose",
@@ -192,7 +192,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 7,
     "tags": [
       "compatibility",
       "docker",
@@ -207,7 +207,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 8,
     "tags": [
       "amd",
       "compatibility",
@@ -223,7 +223,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 7,
     "tags": [
       "compatibility",
       "docker",
@@ -239,7 +239,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 7,
     "tags": [
       "compatibility",
       "postgresql",
@@ -253,7 +253,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 8,
     "tags": [
       "compatibility",
       "pytorch",
@@ -267,7 +267,7 @@
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 6,
+    "reading_time_minutes": 8,
     "tags": [
       "app",
       "comparison",
@@ -286,7 +286,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 6,
     "tags": [
       "compatibility",
       "onnx",
@@ -300,7 +300,7 @@
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 6,
+    "reading_time_minutes": 7,
     "tags": [
       "aws",
       "cloud",
@@ -318,7 +318,7 @@
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 6,
+    "reading_time_minutes": 7,
     "tags": [
       "cloud",
       "comparison",
@@ -335,7 +335,7 @@
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 6,
+    "reading_time_minutes": 7,
     "tags": [
       "2026",
       "budget",
@@ -353,7 +353,7 @@
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 6,
+    "reading_time_minutes": 7,
     "tags": [
       "2026",
       "better",
@@ -372,7 +372,7 @@
     "category": "compatibility",
     "category_display": "Compatibility",
     "date_published": "2026-03-11",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 6,
     "tags": [
       "compatibility",
       "gpu",
@@ -387,7 +387,7 @@
     "category": "review",
     "category_display": "Review",
     "date_published": "2026-03-09",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 7,
     "tags": [
       "alternative",
       "apps",
@@ -405,7 +405,7 @@
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-09",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 8,
     "tags": [
       "2026",
       "comparison",
@@ -422,7 +422,7 @@
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-09",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 8,
     "tags": [
       "cloud",
       "comparison",
@@ -440,7 +440,7 @@
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-09",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 8,
     "tags": [
       "apps",
       "comparison",
@@ -459,7 +459,7 @@
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-08",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 7,
     "tags": [
       "2026",
       "code",
@@ -478,7 +478,7 @@
     "category": "review",
     "category_display": "Review",
     "date_published": "2026-03-08",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 7,
     "tags": [
       "cursor",
       "developers",
@@ -495,7 +495,7 @@
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-08",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 8,
     "tags": [
       "2026",
       "code",
@@ -515,7 +515,7 @@
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-08",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 8,
     "tags": [
       "2026",
       "code",
@@ -533,7 +533,7 @@
     "category": "comparison",
     "category_display": "Comparison",
     "date_published": "2026-03-08",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 8,
     "tags": [
       "code",
       "comparison",
@@ -550,7 +550,7 @@
     "category": "guide",
     "category_display": "Guide",
     "date_published": "2026-03-07",
-    "reading_time_minutes": 6,
+    "reading_time_minutes": 7,
     "tags": [
       "automated",
       "deployment",

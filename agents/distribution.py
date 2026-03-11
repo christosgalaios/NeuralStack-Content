@@ -197,7 +197,26 @@ def _md_to_html(text: str) -> str:
         if para:
             output.append(f'<p>{_inline_md(" ".join(para))}</p>')
 
-    return '\n'.join(output)
+    result = '\n'.join(output)
+
+    # Post-process: add id="ref-N" anchors to list items in the References section
+    # so that inline citation links like [1] can scroll to the correct reference.
+    ref_match = re.search(
+        r'(<h2[^>]*>.*?\b(?:References|Sources)\b.*?</h2>\s*<ol[^>]*>)(.*?)(</ol>)',
+        result, re.IGNORECASE | re.DOTALL,
+    )
+    if ref_match:
+        before = ref_match.group(1)
+        items_html = ref_match.group(2)
+        after = ref_match.group(3)
+        counter = [0]
+        def _add_ref_id(m: re.Match) -> str:
+            counter[0] += 1
+            return f'<li id="ref-{counter[0]}">'
+        items_html = re.sub(r'<li>', _add_ref_id, items_html)
+        result = result[:ref_match.start()] + before + items_html + after + result[ref_match.end():]
+
+    return result
 
 
 # ---------------------------------------------------------------------------
@@ -795,9 +814,10 @@ class DistributionAgent:
         string) so the frontend can render numbered citations.
         """
         refs: List[Dict] = []
-        # Find the references section
+        # Find the references section (word-boundary match to avoid
+        # false positives like "Recommended tools and resources")
         parts = re.split(
-            r'<h2[^>]*>.*?(?:References|Sources).*?</h2>',
+            r'<h2[^>]*>.*?\b(?:References|Sources)\b.*?</h2>',
             html_body, flags=re.IGNORECASE,
         )
         if len(parts) < 2:
