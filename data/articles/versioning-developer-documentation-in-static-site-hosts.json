@@ -58,5 +58,15 @@
     "static",
     "strategies",
     "versioning"
+  ],
+  "references": [
+    {
+      "title": "ThoughtWorks Technology Radar",
+      "url": "https://www.thoughtworks.com/radar"
+    },
+    {
+      "title": "Stack Overflow Developer Survey",
+      "url": "https://survey.stackoverflow.co"
+    }
   ]
 }
