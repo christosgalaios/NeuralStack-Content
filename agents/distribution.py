@@ -767,6 +767,30 @@ class DistributionAgent:
                     i += 1
         return faq_items
 
+    def _extract_references(self, html_body: str) -> List[Dict]:
+        """Extract reference links from the References/Sources section."""
+        refs: List[Dict] = []
+        # Find the references section
+        parts = re.split(
+            r'<h2[^>]*>.*?(?:References|Sources).*?</h2>',
+            html_body, flags=re.IGNORECASE,
+        )
+        if len(parts) < 2:
+            return refs
+        ref_section = parts[1]
+        # Stop at next h2 if any
+        next_h2 = re.search(r'<h2', ref_section)
+        if next_h2:
+            ref_section = ref_section[:next_h2.start()]
+
+        # Extract all links from the references section
+        for m in re.finditer(r'<a\s+href="(https?://[^"]+)"[^>]*>([^<]+)</a>', ref_section):
+            url = m.group(1).strip()
+            title = _strip_tags(m.group(2)).strip()
+            if url and title:
+                refs.append({"title": title, "url": url})
+        return refs
+
     def _extract_tags(self, title: str, category: str) -> List[str]:
         """Extract keyword tags from title for programmatic SEO."""
         tokens = _title_tokens(title)
@@ -848,6 +872,7 @@ class DistributionAgent:
 
         faq_items = self._extract_faq(body_with_ids)
         tags = self._extract_tags(draft.title, cat_class)
+        references = self._extract_references(body_with_ids)
 
         data = {
             "slug": draft.slug,
@@ -869,6 +894,7 @@ class DistributionAgent:
             },
             "faq": faq_items,
             "tags": tags,
+            "references": references,
         }
 
         path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")

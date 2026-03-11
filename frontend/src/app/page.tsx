@@ -1,4 +1,4 @@
-import { getAllArticles, getAllCategories } from "@/lib/articles";
+import { getAllArticles, getAllCategories, getAllTags } from "@/lib/articles";
 import { SITE_NAME, SITE_DESCRIPTION, BASE_URL, CATEGORY_META } from "@/lib/config";
 import ArticleCard from "@/components/cards/ArticleCard";
 import AdSlot from "@/components/monetization/AdSlot";
@@ -7,95 +7,131 @@ import Link from "next/link";
 export default function HomePage() {
   const articles = getAllArticles();
   const categories = getAllCategories();
+  const tags = getAllTags().slice(0, 20);
   const featured = articles.slice(0, 6);
-  const archive = articles.slice(6);
+  const recent = articles.slice(6, 18);
 
   return (
     <div className="animate-in">
-      {/* Hero */}
-      <section className="py-10 text-center sm:py-14">
-        <div className="mb-4 inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium" style={{ borderColor: "var(--border)", color: "var(--accent)" }}>
-          Updated daily
-        </div>
-        <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl" style={{ color: "var(--text-primary)" }}>
-          Developer intelligence,<br className="hidden sm:block" /> distilled.
+      {/* Hero — clean and minimal */}
+      <section className="py-8 sm:py-12">
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "var(--text-primary)" }}>
+          Latest Posts
         </h1>
-        <p className="mx-auto mt-4 max-w-lg text-base" style={{ color: "var(--text-muted)" }}>
-          In-depth guides on frameworks, tools, databases, and engineering workflows. No fluff.
+        <p className="mt-2 text-base" style={{ color: "var(--text-muted)" }}>
+          In-depth guides on developer tooling, cloud platforms, and engineering workflows.
         </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
-          <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color: "var(--accent)" }}>{articles.length}</p>
-            <p className="text-xs" style={{ color: "var(--text-muted)" }}>Articles</p>
-          </div>
-          <div className="h-8 w-px" style={{ background: "var(--border)" }} />
-          <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color: "var(--accent)" }}>{categories.length}</p>
-            <p className="text-xs" style={{ color: "var(--text-muted)" }}>Categories</p>
-          </div>
-        </div>
       </section>
 
-      {/* Category Pills */}
-      {categories.length > 0 && (
-        <div className="mb-8 flex flex-wrap gap-2">
-          {categories.map((cat) => {
-            const meta = CATEGORY_META[cat];
-            return (
-              <Link
-                key={cat}
-                href={`/category/${cat}`}
-                className="rounded-full border px-3 py-1 text-sm transition-colors hover:border-blue-500/40"
-                style={{ borderColor: "var(--border)", color: "var(--text-secondary)" }}
-              >
-                {meta?.display || cat}
-              </Link>
-            );
-          })}
+      {/* Main content + sidebar layout */}
+      <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
+        {/* Main column */}
+        <div>
+          {/* Featured Articles Grid */}
+          {featured.length > 0 && (
+            <div className="grid gap-5 sm:grid-cols-2">
+              {featured.map((article) => (
+                <ArticleCard key={article.slug} article={article} />
+              ))}
+            </div>
+          )}
+
+          <AdSlot position="in-feed" className="my-8" />
+
+          {/* Recent Articles List */}
+          {recent.length > 0 && (
+            <section className="mt-8">
+              <h2 className="mb-4 text-lg font-bold" style={{ color: "var(--text-primary)" }}>
+                More Articles
+              </h2>
+              <div className="flex flex-col gap-1">
+                {recent.map((article) => {
+                  const catMeta = CATEGORY_META[article.category];
+                  return (
+                    <Link
+                      key={article.slug}
+                      href={`/articles/${article.slug}`}
+                      className="group flex items-center gap-3 rounded-lg px-3 py-3 transition-colors"
+                      style={{ color: "var(--text-secondary)" }}
+                    >
+                      <span
+                        className="shrink-0 text-xs font-medium"
+                        style={{ color: "var(--text-muted)", minWidth: "5rem" }}
+                      >
+                        {article.date_published}
+                      </span>
+                      <span
+                        className="font-medium transition-colors group-hover:underline"
+                        style={{ color: "var(--text-primary)" }}
+                      >
+                        {article.title}
+                      </span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </section>
+          )}
         </div>
-      )}
 
-      {/* Featured Articles */}
-      {featured.length > 0 && (
-        <section>
-          <h2 className="mb-5 text-xl font-bold" style={{ color: "var(--text-primary)" }}>
-            Latest Articles
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {featured.map((article) => (
-              <ArticleCard key={article.slug} article={article} />
-            ))}
-          </div>
-        </section>
-      )}
-
-      <AdSlot position="in-feed" className="my-8" />
-
-      {/* Archive */}
-      {archive.length > 0 && (
-        <section className="my-12">
-          <h2 className="mb-5 text-xl font-bold" style={{ color: "var(--text-primary)" }}>
-            All Articles
-          </h2>
-          <div className="flex flex-col gap-3">
-            {archive.map((article) => (
-              <Link
-                key={article.slug}
-                href={`/articles/${article.slug}`}
-                className="archive-link-hover flex items-center justify-between rounded-lg border px-4 py-3 text-sm"
-                style={{ borderColor: "var(--border)", color: "var(--text-secondary)" }}
+        {/* Sidebar */}
+        <aside className="mt-10 lg:mt-0">
+          <div className="sticky top-20 flex flex-col gap-6">
+            {/* Categories */}
+            {categories.length > 0 && (
+              <div
+                className="rounded-xl border p-5"
+                style={{ background: "var(--bg-card)", borderColor: "var(--border)" }}
               >
-                <span className="font-medium" style={{ color: "var(--text-primary)" }}>
-                  {article.title}
-                </span>
-                <span className="shrink-0 text-xs" style={{ color: "var(--text-muted)" }}>
-                  {article.date_published}
-                </span>
-              </Link>
-            ))}
+                <h3 className="mb-3 text-sm font-bold uppercase tracking-wider" style={{ color: "var(--text-muted)" }}>
+                  Categories
+                </h3>
+                <div className="flex flex-col gap-1">
+                  {categories.map((cat) => {
+                    const meta = CATEGORY_META[cat];
+                    return (
+                      <Link
+                        key={cat}
+                        href={`/category/${cat}`}
+                        className="rounded px-2 py-1.5 text-sm transition-colors hover:underline"
+                        style={{ color: "var(--text-secondary)" }}
+                      >
+                        {meta?.display || cat}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Trending Tags */}
+            {tags.length > 0 && (
+              <div
+                className="rounded-xl border p-5"
+                style={{ background: "var(--bg-card)", borderColor: "var(--border)" }}
+              >
+                <h3 className="mb-3 text-sm font-bold uppercase tracking-wider" style={{ color: "var(--text-muted)" }}>
+                  Trending Tags
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {tags.map((tag) => (
+                    <Link
+                      key={tag}
+                      href={`/tag/${tag}`}
+                      className="rounded-full border px-2.5 py-1 text-xs transition-colors hover:border-blue-500/40"
+                      style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}
+                    >
+                      {tag}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <AdSlot position="sidebar" />
           </div>
-        </section>
-      )}
+        </aside>
+      </div>
 
       {articles.length === 0 && (
         <p className="py-16 text-center" style={{ color: "var(--text-muted)" }}>

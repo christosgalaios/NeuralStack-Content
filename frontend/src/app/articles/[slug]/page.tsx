@@ -10,7 +10,6 @@ import ArticleCard from "@/components/cards/ArticleCard";
 import ToolCallout from "@/components/monetization/ToolCallout";
 import AdSlot from "@/components/monetization/AdSlot";
 import ArticleJsonLd from "@/components/seo/ArticleJsonLd";
-import CategoryIllustration from "@/components/cards/CategoryIllustration";
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -61,7 +60,6 @@ export default async function ArticlePage({
   if (!article) notFound();
 
   const related = getRelatedArticles(article.related_slugs);
-  const catMeta = CATEGORY_META[article.category];
 
   return (
     <>
@@ -80,17 +78,6 @@ export default async function ArticlePage({
           <span className="truncate" style={{ color: "var(--text-secondary)" }}>{article.title}</span>
         </nav>
 
-        {/* Hero illustration */}
-        <div
-          className="mb-6 overflow-hidden rounded-xl border"
-          style={{ background: "var(--bg-elevated)", borderColor: "var(--border)" }}
-        >
-          <CategoryIllustration
-            category={article.category}
-            className="h-36 sm:h-44"
-          />
-        </div>
-
         <AdSlot position="above-title" className="mb-6" />
 
         {/* Article Header */}
@@ -105,8 +92,6 @@ export default async function ArticlePage({
             <span>{article.date_published}</span>
             <span>&bull;</span>
             <span>{article.reading_time_minutes} min read</span>
-            <span>&bull;</span>
-            <span>{article.word_count.toLocaleString()} words</span>
           </div>
         </header>
 
@@ -130,6 +115,39 @@ export default async function ArticlePage({
                 />
               ) : null;
             })()}
+
+            {/* References / Sources section */}
+            {article.references && article.references.length > 0 && (
+              <section
+                className="mt-10 rounded-xl border p-6"
+                style={{ background: "var(--bg-card)", borderColor: "var(--border)" }}
+              >
+                <h2 className="mb-4 text-lg font-bold" style={{ color: "var(--text-primary)" }}>
+                  Sources &amp; References
+                </h2>
+                <ul className="flex flex-col gap-2">
+                  {article.references.map((ref, i) => (
+                    <li key={i} className="text-sm">
+                      <a
+                        href={ref.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 transition-colors hover:underline"
+                        style={{ color: "var(--accent)" }}
+                      >
+                        <svg className="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                        </svg>
+                        {ref.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4 text-xs" style={{ color: "var(--text-muted)" }}>
+                  Information verified against official documentation at the time of writing. Always check official sources for the most current details.
+                </p>
+              </section>
+            )}
 
             {/* FAQ section */}
             {article.faq && article.faq.length > 0 && (

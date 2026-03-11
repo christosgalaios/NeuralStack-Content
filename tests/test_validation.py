@@ -80,7 +80,7 @@ class TestValidationAgent(unittest.TestCase):
         self.assertFalse(result.approved)
         self.assertIn("potential keyword stuffing detected", result.reasons)
 
-    def test_run_filters_and_enriches(self):
+    def test_run_filters_bad_drafts(self):
         llm = SimpleLocalLLM()
         good_content = llm.generate_long_form_article(
             keyword="Good topic", category="compatibility", intent="Test."
@@ -91,13 +91,17 @@ class TestValidationAgent(unittest.TestCase):
         approved = self.agent.run([good_draft, bad_draft])
         self.assertEqual(len(approved), 1)
         self.assertEqual(approved[0].topic_id, "test-1")
-        # Enrichment should have added inline citations.
-        self.assertIn("[internal notes]", approved[0].content)
 
-    def test_enrich_context_adds_paragraph(self):
-        content = "First paragraph.\n\nSecond paragraph.\n\nThird paragraph."
-        enriched = self.agent._enrich_context(content)
-        self.assertIn("From a practical standpoint", enriched)
+    def test_has_references_section(self):
+        content_with_refs = (
+            "## Introduction\n\nSome text.\n\n"
+            "## References and sources\n\n"
+            "- [Python Docs](https://docs.python.org/3/)\n"
+        )
+        self.assertTrue(self.agent._has_references_section(content_with_refs))
+
+        content_without_refs = "## Introduction\n\nSome text.\n\n## Conclusion\n\n"
+        self.assertFalse(self.agent._has_references_section(content_without_refs))
 
 
 if __name__ == "__main__":

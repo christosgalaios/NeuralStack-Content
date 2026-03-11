@@ -77,43 +77,16 @@ class ValidationAgent:
             seen.add(normalised)
         return False
 
-    def _add_inline_citations(self, content: str) -> str:
-        """
-        Naive "citation" injection: append contextual reference hints to
-        some headings. These are not external links, but cues for future
-        manual curation.
-        """
-        replacements = {
-            # devtools_comparison headings
-            "## Head-to-head feature comparison": "## Head-to-head feature comparison [internal notes]",
-            "## Common failure modes": "## Common failure modes [field experience]",
-            # compatibility headings
-            "## Known issues and workarounds": "## Known issues and workarounds [internal notes]",
-            "## Tested version matrix": "## Tested version matrix [field experience]",
-            # tutorial headings
-            "## Common errors and how to fix them": "## Common errors and how to fix them [internal notes]",
-            # foreign_news headings
-            "## Technical analysis": "## Technical analysis [internal notes]",
-            # legacy headings (kept for backwards compatibility with existing articles)
-            "## Core concepts and mental models": "## Core concepts and mental models [internal notes]",
-            "## Implementation guidelines and failure modes": "## Implementation guidelines and failure modes [field experience]",
-        }
-        for old, new in replacements.items():
-            content = content.replace(old, new)
-        return content
-
-    def _enrich_context(self, content: str) -> str:
-        """Add one short contextual paragraph near the top."""
-        paragraphs = content.split("\n\n")
-        if len(paragraphs) < 2:
-            return content
-        context = (
-            "From a practical standpoint, treat this guide as a set of guardrails "
-            "rather than a script. You are encouraged to adapt the examples to the "
-            "constraints of your own organisation, regulatory environment, and risk appetite."
-        )
-        paragraphs.insert(2, context)
-        return "\n\n".join(paragraphs)
+    def _has_references_section(self, content: str) -> bool:
+        """Check if the content has a References/Sources section with actual URLs."""
+        lower = content.lower()
+        has_heading = "## references" in lower or "## sources" in lower
+        # Check for at least one markdown link in the references area
+        if has_heading:
+            ref_idx = lower.index("## references") if "## references" in lower else lower.index("## sources")
+            ref_section = content[ref_idx:]
+            return "](http" in ref_section
+        return False
 
     def _rejects_keyword_stuffing(self, content: str, keyword: str) -> bool:
         if not keyword:
@@ -155,9 +128,6 @@ class ValidationAgent:
                 # For now we simply skip low quality drafts. They remain available
                 # in the logs if you choose to inspect them manually.
                 continue
-            updated_content = self._add_inline_citations(draft.content)
-            updated_content = self._enrich_context(updated_content)
-            draft.content = updated_content
             approved_drafts.append(draft)
         return approved_drafts
 
