@@ -44,10 +44,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
           rel="stylesheet"
         />
-        <link
-          rel="icon"
-          href={`data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%233B82F6'/%3E%3Ctext x='50' y='68' font-family='system-ui' font-size='56' font-weight='800' fill='white' text-anchor='middle'%3E${SITE_NAME[0]}%3C/text%3E%3C/svg%3E`}
-        />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/icon.svg" />
         {ADSENSE_ID && (
           <script
             async
