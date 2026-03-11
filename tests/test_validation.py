@@ -68,7 +68,7 @@ class TestValidationAgent(unittest.TestCase):
 
     def test_keyword_stuffing_detected(self):
         keyword = "test keyword"
-        stuffed = (keyword + " ") * 20
+        stuffed = (keyword + " ") * 30
         content = (
             f"## Section about {keyword}\n\n{stuffed}\n\n"
             "## Frequently asked questions\n\n"

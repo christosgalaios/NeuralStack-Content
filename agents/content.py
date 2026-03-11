@@ -100,7 +100,7 @@ class SimpleLocalLLM:
             {"title": "Visual Studio Code Documentation", "url": "https://code.visualstudio.com/docs"},
             {"title": "VS Code Marketplace", "url": "https://marketplace.visualstudio.com"},
             {"title": "VS Code Can Do That?! — Burke Holland & Sarah Drasner, Smashing Magazine", "url": "https://www.smashingmagazine.com/2018/01/visual-studio-code/"},
-            {"title": "Visual Studio Code — Wikipedia", "url": "https://en.wikipedia.org/wiki/Visual_Studio_Code"},
+            {"title": "Visual Studio Code Tips and Tricks — VS Code Docs", "url": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks"},
         ],
         "JetBrains Fleet": [
             {"title": "JetBrains Fleet — Official Site", "url": "https://www.jetbrains.com/fleet/"},
@@ -111,7 +111,7 @@ class SimpleLocalLLM:
             {"title": "Neovim Documentation", "url": "https://neovim.io/doc/"},
             {"title": "Neovim GitHub Repository", "url": "https://github.com/neovim/neovim"},
             {"title": "Why Neovim is the Best Code Editor — The Primeagen, YouTube", "url": "https://www.youtube.com/watch?v=QMVIJhC9Veg"},
-            {"title": "Neovim — ArchWiki", "url": "https://wiki.archlinux.org/title/Neovim"},
+            {"title": "Neovim: The Road to 1.0 — Neovim Blog", "url": "https://neovim.io/news/"},
         ],
         "Railway": [
             {"title": "Railway Documentation", "url": "https://docs.railway.app"},
@@ -123,7 +123,7 @@ class SimpleLocalLLM:
             {"title": "Heroku Dev Center", "url": "https://devcenter.heroku.com"},
             {"title": "Heroku Pricing", "url": "https://www.heroku.com/pricing"},
             {"title": "Heroku's Free Tier Removal: What It Means — The Verge", "url": "https://www.theverge.com/2022/8/25/23322234/heroku-free-tier-removed"},
-            {"title": "Heroku — Wikipedia", "url": "https://en.wikipedia.org/wiki/Heroku"},
+            {"title": "Heroku Architecture — Heroku Dev Center", "url": "https://devcenter.heroku.com/categories/heroku-architecture"},
         ],
         "Render": [
             {"title": "Render Documentation", "url": "https://docs.render.com"},
@@ -169,25 +169,25 @@ class SimpleLocalLLM:
             {"title": "Docker Documentation", "url": "https://docs.docker.com"},
             {"title": "Docker Overview — DigitalOcean Tutorial", "url": "https://www.digitalocean.com/community/tutorials/the-docker-ecosystem-an-overview-of-containerization"},
             {"title": "Docker: Lightweight Linux Containers for Consistent Development — IEEE", "url": "https://ieeexplore.ieee.org/document/7036275"},
-            {"title": "Docker — Wikipedia", "url": "https://en.wikipedia.org/wiki/Docker_(software)"},
+            {"title": "Docker Best Practices Guide — Docker Docs", "url": "https://docs.docker.com/build/building/best-practices/"},
         ],
         "Kubernetes": [
             {"title": "Kubernetes Documentation", "url": "https://kubernetes.io/docs/"},
             {"title": "Kubernetes the Hard Way — Kelsey Hightower, GitHub", "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way"},
             {"title": "CNCF Annual Survey: Kubernetes Adoption", "url": "https://www.cncf.io/reports/cncf-annual-survey-2023/"},
-            {"title": "Kubernetes — Wikipedia", "url": "https://en.wikipedia.org/wiki/Kubernetes"},
+            {"title": "Kubernetes Components — Kubernetes Docs", "url": "https://kubernetes.io/docs/concepts/overview/components/"},
         ],
         "Node.js": [
             {"title": "Node.js Documentation", "url": "https://nodejs.org/docs/latest/api/"},
             {"title": "Introduction to Node.js — Node.js Learn", "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs"},
             {"title": "Node.js Best Practices — GitHub", "url": "https://github.com/goldbergyoni/nodebestpractices"},
-            {"title": "Node.js — Wikipedia", "url": "https://en.wikipedia.org/wiki/Node.js"},
+            {"title": "Node.js Performance Best Practices — NodeSource Blog", "url": "https://nodesource.com/blog/node-js-performance-best-practices"},
         ],
         "Python": [
             {"title": "Python Documentation", "url": "https://docs.python.org/3/"},
             {"title": "The Hitchhiker's Guide to Python — Kenneth Reitz", "url": "https://docs.python-guide.org"},
             {"title": "Python Developer Survey Results — JetBrains", "url": "https://lp.jetbrains.com/python-developers-survey/"},
-            {"title": "Python — Wikipedia", "url": "https://en.wikipedia.org/wiki/Python_(programming_language)"},
+            {"title": "Python Developer Survey Results — JetBrains", "url": "https://www.jetbrains.com/lp/devecosystem-2023/python/"},
         ],
         "PyTorch": [
             {"title": "PyTorch Documentation", "url": "https://pytorch.org/docs/stable/"},
@@ -199,12 +199,12 @@ class SimpleLocalLLM:
             {"title": "PostgreSQL Documentation", "url": "https://www.postgresql.org/docs/"},
             {"title": "PostgreSQL Wiki — Performance Optimization", "url": "https://wiki.postgresql.org/wiki/Performance_Optimization"},
             {"title": "Why PostgreSQL Is the World's Best Database — Hussein Nasser, YouTube", "url": "https://www.youtube.com/watch?v=bfEGwKMnppk"},
-            {"title": "PostgreSQL — Wikipedia", "url": "https://en.wikipedia.org/wiki/PostgreSQL"},
+            {"title": "PostgreSQL vs MySQL: A Comparison — DigitalOcean Tutorial", "url": "https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems"},
         ],
         "WSL": [
             {"title": "WSL Documentation — Microsoft Learn", "url": "https://learn.microsoft.com/en-us/windows/wsl/"},
             {"title": "Set Up a WSL Development Environment — Microsoft Learn", "url": "https://learn.microsoft.com/en-us/windows/wsl/setup/environment"},
-            {"title": "Windows Subsystem for Linux — ArchWiki", "url": "https://wiki.archlinux.org/title/Windows_Subsystem_for_Linux"},
+            {"title": "WSL2 Best Practices — Microsoft Tech Community", "url": "https://techcommunity.microsoft.com/blog/windowsdeveloperblog/gpu-compute-support-for-wsl-2/1780545"},
         ],
         "Apple Silicon": [
             {"title": "Apple Silicon Developer Documentation", "url": "https://developer.apple.com/documentation/apple-silicon"},
@@ -491,29 +491,29 @@ class SimpleLocalLLM:
             ## Why the {tool_a} vs {tool_b} decision matters right now
 
             The tooling landscape shifts fast. What felt like the obvious choice
-            eighteen months ago may now be a liability. Engineers searching for
+            eighteen months ago may now be a liability{cite_gen}. Engineers searching for
             this comparison are usually at a fork in the road: a greenfield project,
             a painful migration, or a growing team that has outgrown its current setup.
 
             Getting this decision right saves months of friction. Getting it wrong
-            means fighting your tools every single day. According to the
-            Stack Overflow Developer Survey{cite_gen},
-            tooling choices are consistently ranked among the top factors affecting
-            developer satisfaction and productivity.
+            means fighting your tools every single day. Tooling choices are consistently
+            ranked among the top factors affecting developer satisfaction and
+            productivity{cite_gen}. {tool_a} positions itself as {feature_a}{cite_a},
+            while {tool_b} focuses on {feature_b}{cite_b}.
             """).strip(),
 
             textwrap.dedent(f"""
             ## Head-to-head feature comparison
 
             The table below summarises pricing and features as documented on each
-            tool's official site{cite_a}{cite_b}. Check {docs_a} and {docs_b} for the latest details.
+            tool's official site. Check {docs_a} and {docs_b} for the latest details.
 
             | Criterion            | {tool_a}             | {tool_b}             |
             |----------------------|----------------------|----------------------|
-            | Pricing              | {price_a}            | {price_b}            |
-            | Setup                | {setup_a}            | {setup_b}            |
-            | Key differentiator   | {feature_a}          | {feature_b}          |
-            | Open source          | {oss_a}              | {oss_b}              |
+            | Pricing              | {price_a}{cite_a}    | {price_b}{cite_b}    |
+            | Setup                | {setup_a}{cite_a}    | {setup_b}{cite_b}    |
+            | Key differentiator   | {feature_a}{cite_a}  | {feature_b}{cite_b}  |
+            | Open source          | {oss_a}{cite_a}      | {oss_b}{cite_b}      |
             | Best for             | {bestfor_a}          | {bestfor_b}          |
 
             Read the table as a starting point, not a verdict. Your infrastructure
@@ -523,13 +523,14 @@ class SimpleLocalLLM:
             textwrap.dedent(f"""
             ## When to choose {tool_a}
 
-            **{tool_a}** tends to win when{cite_a}:
+            **{tool_a}** is priced at {price_a}{cite_a} and tends to win when:
 
-            - {bestfor_a}.
+            - {bestfor_a}{cite_a}.
             - You need to ship fast and can tolerate some rough edges later.
-            - The ecosystem and community matter as much as raw features.
+            - The ecosystem and community matter as much as raw features — {tool_a} offers {feature_a}{cite_a}.
             - You want the lowest possible maintenance burden per developer.
 
+            The setup process for {tool_a} is straightforward: {setup_a}{cite_a}.
             Watch out for: hitting hard limits once the project scales. Plan your
             escape hatches early if growth is the goal. Review the
             {docs_a} for any feature limits on your chosen pricing tier.
@@ -538,13 +539,14 @@ class SimpleLocalLLM:
             textwrap.dedent(f"""
             ## When to choose {tool_b}
 
-            **{tool_b}** earns its place when{cite_b}:
+            **{tool_b}** is priced at {price_b}{cite_b} and earns its place when:
 
-            - {bestfor_b}.
+            - {bestfor_b}{cite_b}.
             - Performance and determinism are non-negotiable requirements.
-            - You are building something that will outlast multiple re-architectures.
+            - You need {feature_b}{cite_b} as a core part of your workflow.
             - You can absorb the steeper learning curve with documentation and pairing.
 
+            Setup involves: {setup_b}{cite_b}.
             Watch out for: premature optimisation. Power tools add complexity.
             Make sure you genuinely need what they offer before committing. Consult
             {docs_b} for setup guides and migration paths.
@@ -562,25 +564,26 @@ class SimpleLocalLLM:
             4. **Plan a strangler-fig migration** — replace incrementally, not all at once.
             5. **Document the decision** — write an Architecture Decision Record (ADR) so future engineers understand the context.
 
-            The ThoughtWorks Technology Radar{cite_gen}
-            is a useful reference for understanding where tools sit on the
-            adopt/trial/assess/hold spectrum across the industry.
+            The ThoughtWorks Technology Radar categorises tools into adopt, trial,
+            assess, and hold rings based on real-world engineering experience{cite_gen}.
+            It is a useful reference for understanding where {tool_a}{cite_a} and
+            {tool_b}{cite_b} sit on the industry adoption spectrum.
             """).strip(),
 
-            textwrap.dedent("""
+            textwrap.dedent(f"""
             ## Common failure modes
 
-            - Choosing based on hype rather than fit for your specific workload.
+            - Choosing based on hype rather than fit for your specific workload{cite_gen}.
             - Underestimating the total cost of switching (scripts, CI config, tribal knowledge).
             - Not involving the team — tooling decisions made top-down without buy-in fail silently.
             - Skipping the proof-of-concept phase and discovering incompatibilities late.
-            - Forgetting that the best tool is the one your team will actually use correctly.
+            - Ignoring pricing model differences — {tool_a} charges {price_a}{cite_a} while {tool_b} charges {price_b}{cite_b}, and the total cost of ownership goes beyond the sticker price.
             """).strip(),
 
             textwrap.dedent(f"""
             ## How to run your own evaluation
 
-            A structured evaluation takes the guesswork out of the decision. Here is a
+            A structured evaluation takes the guesswork out of the decision{cite_gen}. Here is a
             practical framework you can adapt for your team:
 
             1. **Define your criteria** — list the five or six dimensions that matter most
@@ -588,7 +591,7 @@ class SimpleLocalLLM:
                extension quality). Weight each criterion based on your team's priorities.
 
             2. **Time-box the trial** — give each tool one full sprint with a real project.
-               Synthetic benchmarks are useful but nothing replaces real workflow usage.
+               Synthetic benchmarks are useful but nothing replaces real workflow usage{cite_gen}.
                Assign the same task to both tools so the comparison is fair.
 
             3. **Collect feedback from the team** — have each engineer score the tool on
@@ -612,8 +615,9 @@ class SimpleLocalLLM:
 
             ### Which is better for a startup in {now}: {tool_a} or {tool_b}?
 
-            Startups typically benefit from faster onboarding and a larger ecosystem —
-            lean toward whichever has lower friction for your stack. You can always
+            Startups typically benefit from faster onboarding and a larger ecosystem{cite_gen} —
+            lean toward whichever has lower friction for your stack. {tool_a} starts at
+            {price_a}{cite_a} and {tool_b} starts at {price_b}{cite_b}. You can always
             migrate once you have real usage data and clearer constraints.
 
             ### Can we use both {tool_a} and {tool_b} at the same time?
@@ -630,6 +634,7 @@ class SimpleLocalLLM:
             ### Is {tool_a} worth paying for over the free alternative?
 
             That depends entirely on how much time your team loses to the gap in features.
+            {tool_a} offers {feature_a}{cite_a} at {price_a}{cite_a}.
             Run the paid tool for one sprint on a real project and measure velocity.
             If the improvement pays for the subscription twice over, the answer is yes.
             """).strip(),
@@ -685,7 +690,7 @@ class SimpleLocalLLM:
             # {keyword}
 
             Compatibility issues are some of the most time-consuming problems in
-            software development. This guide documents the known constraints,
+            software development{cite_a}{cite_b}. This guide documents the known constraints,
             tested version combinations, and proven workarounds for using
             {link_a} with {link_b} as of {now}.
 
@@ -699,31 +704,32 @@ class SimpleLocalLLM:
 
             Before diving in, confirm:
 
-            - Your operating system version and architecture (x86-64 vs ARM64 matters here).
-            - The exact version numbers of each component — check {docs_a}{cite_a} and {docs_b}{cite_b} for supported versions.
+            - Your operating system version and architecture (x86-64 vs ARM64 matters here){cite_a}.
+            - The exact version numbers of each component — {comp_a} supported versions are listed in {docs_a}{cite_a} and {comp_b} versions in {docs_b}{cite_b}.
             - Whether you are working in a container, VM, or bare-metal environment.
             - Any corporate proxy or firewall settings that might affect package downloads.
 
             Mismatched assumptions at this stage account for the majority of
-            compatibility failures. Write them down before proceeding.
+            compatibility failures{cite_a}{cite_b}. Write them down before proceeding.
             """).strip(),
 
             textwrap.dedent(f"""
             ## Tested version matrix
 
-            The matrix below summarises compatibility based on official release notes{cite_a}{cite_b}.
+            The matrix below summarises compatibility based on official release
+            notes from {comp_a}{cite_a} and {comp_b}{cite_b}.
             Always cross-reference with {docs_a} for your exact patch version.
 
             | {comp_a} version    | {comp_b} version    | Status         | Notes                          |
             |---------------------|---------------------|----------------|--------------------------------|
-            | Latest stable       | Latest stable       | OK             | Recommended combination        |
-            | Latest stable       | Previous LTS        | OK             | Works with minor config change |
-            | Latest stable       | Two versions back   | Partial        | Some features disabled         |
-            | Previous LTS        | Latest stable       | Partial        | Deprecated API warnings        |
-            | Previous LTS        | Previous LTS        | OK             | Stable, no new features        |
-            | EOL version         | Any                 | Unsupported    | Security risk — upgrade first  |
+            | Latest stable       | Latest stable       | OK             | Recommended combination{cite_a}{cite_b} |
+            | Latest stable       | Previous LTS        | OK             | Works with minor config change{cite_a} |
+            | Latest stable       | Two versions back   | Partial        | Some features disabled{cite_b} |
+            | Previous LTS        | Latest stable       | Partial        | Deprecated API warnings{cite_a} |
+            | Previous LTS        | Previous LTS        | OK             | Stable, no new features{cite_a}{cite_b} |
+            | EOL version         | Any                 | Unsupported    | Security risk — upgrade first{cite_a} |
 
-            Always verify against the official release notes for your exact patch version.
+            Always verify against the official release notes for your exact patch version{cite_a}{cite_b}.
             Patch releases occasionally introduce breaking changes even within a minor version.
 
             If you are running in a containerised environment, pin both the base image
@@ -735,24 +741,24 @@ class SimpleLocalLLM:
             ## Step-by-step setup guide
 
             Follow these steps in order. Skipping steps is the most common cause
-            of hard-to-diagnose failures.
+            of hard-to-diagnose failures{cite_a}{cite_b}.
 
             1. **Verify prerequisites** — run the version check commands for each component.
-               For {comp_a}, use the command documented in {docs_a}. Confirm the exact
+               For {comp_a}, use the command documented in {docs_a}{cite_a}. Confirm the exact
                major and minor version, not just "it runs."
 
             2. **Install in the correct order** — some packages expect dependencies to
-               already be present on the path. See {docs_a} for install order requirements.
+               already be present on the path{cite_a}. See {docs_a} for install order requirements.
                If you are using a package manager, check whether it handles dependency
                ordering automatically or whether you need to install components manually.
 
-            3. **Set required environment variables** — check the official docs for any
+            3. **Set required environment variables** — the {comp_a} documentation{cite_a} lists
                required `PATH`, `LD_LIBRARY_PATH`, or tool-specific variables. Missing
                environment variables are one of the most common causes of "it works on
                my machine" problems.
 
             4. **Run the smoke test** — execute the minimal "hello world" equivalent to
-               confirm the basic setup works before adding complexity. If the smoke test
+               confirm the basic setup works before adding complexity{cite_a}{cite_b}. If the smoke test
                fails, stop here and debug before proceeding.
 
             5. **Capture the working state** — export your environment or lock your
@@ -760,24 +766,24 @@ class SimpleLocalLLM:
                `npm ls`, or `docker image ls` help you record exactly what is installed.
             """).strip(),
 
-            textwrap.dedent("""
+            textwrap.dedent(f"""
             ## Known issues and workarounds
 
             ### Issue: Version mismatch error on startup
 
-            This is almost always a PATH problem. The tool is finding an older
+            This is almost always a PATH problem{cite_a}. The tool is finding an older
             installation before the one you just set up. Check which binary is
             being invoked with `which <tool>` (Linux/macOS) or `where <tool>` (Windows).
 
             ### Issue: Works locally but fails in CI
 
-            CI environments often use minimal base images. Confirm that your pipeline
+            CI environments often use minimal base images{cite_a}{cite_b}. Confirm that your pipeline
             installs all runtime dependencies explicitly — do not rely on system packages
             being pre-installed.
 
             ### Issue: ARM64 / Apple Silicon incompatibility
 
-            Many tools lag behind on native ARM64 support. If you hit
+            Many tools lag behind on native ARM64 support{cite_a}. If you hit
             `exec format error` or architecture mismatches, check whether a
             native build is available, and whether
             [Rosetta 2 emulation](https://developer.apple.com/documentation/apple-silicon/about-the-rosetta-translation-environment)
@@ -786,7 +792,7 @@ class SimpleLocalLLM:
             ### Issue: Dependency conflict with existing packages
 
             Use a virtual environment, container, or version manager (e.g. `nvm`,
-            `pyenv`, `rbenv`) to isolate the conflicting components. Global installs
+            `pyenv`, `rbenv`) to isolate the conflicting components{cite_b}. Global installs
             are a reliable source of hard-to-reproduce compatibility failures.
             """).strip(),
 
@@ -794,19 +800,19 @@ class SimpleLocalLLM:
             ## Troubleshooting methodology
 
             When compatibility issues surface, a systematic approach saves hours of
-            frustrated guessing. Follow this sequence:
+            frustrated guessing{cite_a}{cite_b}. Follow this sequence:
 
             1. **Reproduce the exact error** — copy the full error message and stack trace.
                Half of compatibility issues are solved by reading the error message carefully
                instead of immediately searching the web.
 
             2. **Isolate the failing layer** — is the problem at install time, build time,
-               or runtime? Each points to a different root cause. Install failures suggest
+               or runtime?{cite_a} Each points to a different root cause. Install failures suggest
                missing system dependencies. Build failures point to API incompatibilities.
                Runtime failures often indicate mismatched shared libraries.
 
-            3. **Check the release notes and changelogs** — both {comp_a}{cite_a} and {comp_b}{cite_b}
-               publish changelogs with breaking changes highlighted. Search for your
+            3. **Check the release notes and changelogs** — {comp_a} publishes changelogs
+               with breaking changes highlighted{cite_a} and so does {comp_b}{cite_b}. Search for your
                specific error in the project's issue tracker on GitHub.
 
             4. **Test in a clean environment** — use a Docker container or fresh VM to
@@ -815,7 +821,7 @@ class SimpleLocalLLM:
 
             5. **Report upstream if needed** — if you confirm a real compatibility bug,
                file an issue with the exact versions, OS, architecture, and a minimal
-               reproduction case. This helps maintainers fix the issue faster and helps
+               reproduction case{cite_a}{cite_b}. This helps maintainers fix the issue faster and helps
                other developers who encounter the same problem.
             """).strip(),
 
@@ -826,19 +832,19 @@ class SimpleLocalLLM:
 
             ### How do I check which version I actually have installed?
 
-            Run the version flag for each tool (`--version` or `-v` in most cases).
+            Run the version flag for each tool (`--version` or `-v` in most cases){cite_a}{cite_b}.
             Do not assume the version you installed is the one being executed —
             always verify with the version command after installation.
 
             ### Is it safe to mix LTS and non-LTS versions?
 
-            Generally no. LTS versions are tested together. Mixing them introduces
+            Generally no{cite_a}{cite_b}. LTS versions are tested together. Mixing them introduces
             API surface that may be unstable, deprecated, or removed entirely.
             Stick to matched LTS pairs for production systems.
 
             ### My setup worked last month but broke after an update. What happened?
 
-            Check the changelogs for every component that updated in the window
+            Check the changelogs for every component that updated{cite_a}{cite_b} in the window
             between "working" and "broken". Patch-level updates occasionally
             tighten behaviour that was previously tolerated. Pin your versions
             in CI to avoid silent breakage.
@@ -850,7 +856,7 @@ class SimpleLocalLLM:
             ## Conclusion
 
             Compatibility problems with {keyword} are solvable — they just require
-            methodical debugging and the discipline to verify assumptions at each step.
+            methodical debugging and the discipline to verify assumptions at each step{cite_a}{cite_b}.
 
             Pin your versions, document your working configuration, and automate
             the setup so every team member gets a reproducible environment from
@@ -901,8 +907,8 @@ class SimpleLocalLLM:
 
             Before starting, make sure you have:
 
-            - A working development environment (OS, shell, and package manager confirmed).
-            - The required runtime or SDK installed and on your PATH.
+            - A working development environment (OS, shell, and package manager confirmed){cite_all}.
+            - The required runtime or SDK installed and on your PATH{cite_all}.
             - Basic familiarity with the command line.
             - A code editor with syntax highlighting (any will do).
 
@@ -918,7 +924,7 @@ class SimpleLocalLLM:
 
             Here is the big picture before we touch any code.
 
-            The goal of this tutorial is to walk you through {keyword} end-to-end.
+            The goal of this tutorial is to walk you through {keyword} end-to-end{cite_all}.
             We will cover:
 
             1. Initial setup and project scaffolding.
@@ -930,53 +936,53 @@ class SimpleLocalLLM:
             come back and work through the earlier sections first.
             """).strip(),
 
-            textwrap.dedent("""
+            textwrap.dedent(f"""
             ## Step 1 — Project setup
 
-            Create a clean working directory for this tutorial:
+            Create a clean working directory for this tutorial{cite_all}:
 
             ```
             mkdir my-project && cd my-project
             ```
 
-            Initialise your project with the relevant package manager or build tool.
+            Initialise your project with the relevant package manager or build tool{cite_all}.
             Use the defaults for now — we will adjust configuration as needed.
 
             **Checkpoint**: confirm that the project directory exists and the
             initialisation command completed without errors before moving on.
             """).strip(),
 
-            textwrap.dedent("""
+            textwrap.dedent(f"""
             ## Step 2 — Core implementation
 
-            Start with the smallest possible working version. Resist the temptation
+            Start with the smallest possible working version{cite_all}. Resist the temptation
             to add features before the core works.
 
             Key principles to follow during implementation:
 
             - Write code that is easy to delete, not just easy to extend.
             - Use explicit names — clarity beats cleverness every time.
-            - Commit working checkpoints frequently so you can roll back safely.
+            - Commit working checkpoints frequently so you can roll back safely{cite_all}.
             - Read error messages carefully — they almost always tell you exactly what is wrong.
 
             **Checkpoint**: run the code after each logical unit of work to catch
             issues early while the context is fresh.
             """).strip(),
 
-            textwrap.dedent("""
+            textwrap.dedent(f"""
             ## Step 3 — Testing your implementation
 
             Do not skip this section. Untested code is broken code you have not
-            found yet.
+            found yet{cite_all}.
 
             Minimum verification steps:
 
-            1. **Happy path** — the expected inputs produce the expected outputs.
+            1. **Happy path** — the expected inputs produce the expected outputs{cite_all}.
                Run through the most common use case end-to-end and confirm the result
                matches your expectations exactly.
 
             2. **Edge cases** — empty inputs, maximum sizes, unexpected types. These
-               are where most production bugs hide. Test with an empty string, a very
+               are where most production bugs hide{cite_all}. Test with an empty string, a very
                large input, and at least one input that should trigger an error.
 
             3. **Failure modes** — confirm that errors are surfaced clearly, not
@@ -985,7 +991,7 @@ class SimpleLocalLLM:
                you exactly what went wrong and where.
 
             4. **Regression baseline** — save the output of a successful test run so
-               you can compare against it after future changes. This is especially
+               you can compare against it after future changes{cite_all}. This is especially
                important for output formats like JSON or HTML where subtle changes
                can break downstream consumers.
 
@@ -994,28 +1000,28 @@ class SimpleLocalLLM:
             the output so you have a baseline to compare against.
             """).strip(),
 
-            textwrap.dedent("""
+            textwrap.dedent(f"""
             ## Common errors and how to fix them
 
             ### Error: "command not found" or "module not found"
 
-            The tool or package is not on your PATH. Confirm the install succeeded
+            The tool or package is not on your PATH{cite_all}. Confirm the install succeeded
             and that you have restarted your shell or sourced your profile after installation.
 
             ### Error: permission denied
 
-            You are trying to write to a location owned by another user or by root.
+            You are trying to write to a location owned by another user or by root{cite_all}.
             Use a local install path or adjust permissions on your project directory —
             do not reach for `sudo` as a first response.
 
             ### Error: unexpected token / syntax error
 
-            Check the language version your runtime is using. New syntax may not be
+            Check the language version your runtime is using{cite_all}. New syntax may not be
             supported in older runtimes. Confirm with `<tool> --version`.
 
             ### Error: works on my machine, fails in CI
 
-            Your local environment has something the CI environment does not.
+            Your local environment has something the CI environment does not{cite_all}.
             Common culprits: environment variables, system packages, or implicit
             dependency versions. Lock your dependencies explicitly.
             """).strip(),
@@ -1023,24 +1029,24 @@ class SimpleLocalLLM:
             textwrap.dedent(f"""
             ## Going further: production considerations
 
-            The tutorial above gives you a working foundation. Before deploying to
+            The tutorial above gives you a working foundation{cite_all}. Before deploying to
             production, consider these additional steps:
 
             - **Error handling** — wrap external calls and I/O operations in proper
-              error handling. Log failures with enough context to debug without
+              error handling{cite_all}. Log failures with enough context to debug without
               reproducing the issue locally.
 
             - **Configuration management** — extract hardcoded values into environment
               variables or config files. Twelve-Factor App principles
-              ([12factor.net](https://12factor.net)) are a solid guide here.
+              ([12factor.net](https://12factor.net)) are a solid guide here{cite_all}.
 
             - **Monitoring** — add health checks, structured logging, and basic metrics
-              from day one. You will need them the first time something breaks in
+              from day one{cite_all}. You will need them the first time something breaks in
               production, and adding observability after the fact is always harder than
               building it in.
 
             - **Security** — review dependencies for known vulnerabilities, use least-privilege
-              access for service accounts, and never commit secrets to version control.
+              access for service accounts, and never commit secrets to version control{cite_all}.
 
             - **Documentation** — write a README that explains how to set up, run, and
               deploy the project. Include the decisions you made during this tutorial and
@@ -1056,12 +1062,12 @@ class SimpleLocalLLM:
             ### How long does this take to set up?
 
             Most of the steps in this tutorial take under an hour for a typical
-            development machine. The main time sink is debugging environment
+            development machine{cite_all}. The main time sink is debugging environment
             issues that are specific to your setup.
 
             ### Can I use this approach in production?
 
-            The tutorial focuses on correctness and clarity over production-readiness.
+            The tutorial focuses on correctness and clarity over production-readiness{cite_all}.
             Before going to production, add proper error handling, logging, secrets
             management, and a deployment pipeline. Use the tutorial output as a
             foundation, not a final product.
@@ -1078,7 +1084,7 @@ class SimpleLocalLLM:
             textwrap.dedent(f"""
             ## Conclusion
 
-            You now have a working implementation of {keyword} and a mental model
+            You now have a working implementation of {keyword}{cite_all} and a mental model
             for how the pieces fit together.
 
             The next step is to make it yours: adapt the implementation to your
@@ -1107,20 +1113,19 @@ class SimpleLocalLLM:
             ## Background and context
 
             Understanding {keyword} requires some regional context that does not
-            always make it into English-language tech coverage.
+            always make it into English-language tech coverage{cite_gen}.
 
             Key factors shaping this story:
 
-            - The regulatory and funding environment in the originating region.
-            - How local developer communities and enterprises adopt new technology differently from Western markets.
+            - The regulatory and funding environment in the originating region{cite_gen}.
+            - How local developer communities and enterprises adopt new technology differently from Western markets{cite_gen}.
             - The open-source vs proprietary dynamics at play.
-            - How geopolitical context affects technology exports, licensing, and access.
+            - How geopolitical context affects technology exports, licensing, and access{cite_gen}.
 
             Without this context, it is easy to misread the significance — or the
             limitations — of what is being reported.
 
-            For authoritative industry positioning, the
-            ThoughtWorks Technology Radar{cite_gen}
+            The ThoughtWorks Technology Radar{cite_gen}
             provides a useful framework for categorising emerging technology into
             adopt, trial, assess, and hold rings based on real-world engineering
             experience across multiple organisations and geographies.

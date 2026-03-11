@@ -93,8 +93,9 @@ class ValidationAgent:
             return False
         pattern = re.escape(keyword.lower())
         count = len(re.findall(pattern, content.lower()))
-        # Rough heuristic: keyword used more than 15 times is suspicious.
-        return count > 15
+        # Rough heuristic: keyword used more than 25 times is suspicious.
+        # (Templates with dense inline citations legitimately repeat tool names.)
+        return count > 25
 
     def validate(self, draft: DraftArticle) -> ValidationResult:
         reasons: List[str] = []
