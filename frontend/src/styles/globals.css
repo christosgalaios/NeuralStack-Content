@@ -47,6 +47,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -55,6 +56,7 @@ body {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* ─── Typography ────────────────────────────────────────────── */
@@ -63,9 +65,16 @@ h1, h2, h3, h4 {
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.2;
+  overflow-wrap: break-word;
 }
 
 /* ─── Article Content Styling ───────────────────────────────── */
+
+.article-content {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+}
 
 .article-content h2 {
   font-size: 1.5rem;
@@ -135,6 +144,12 @@ h1, h2, h3, h4 {
 
 /* ─── Tables ────────────────────────────────────────────────── */
 
+.article-content .table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
 .article-content table {
   width: 100%;
   border-collapse: collapse;
@@ -143,6 +158,7 @@ h1, h2, h3, h4 {
   border-radius: var(--radius-sm);
   overflow: hidden;
   border: 1px solid var(--border);
+  min-width: 400px;
 }
 
 .article-content thead {
