@@ -31,12 +31,12 @@ GOOGLE_VERIFICATION = os.getenv(
 
 # Affiliate configuration
 AFF1_NAME = os.getenv("NEURALSTACK_AFF1_NAME", "Vultr")
-AFF1_URL = os.getenv("NEURALSTACK_AFF1_URL", "https://www.vultr.com")
+AFF1_URL = os.getenv("NEURALSTACK_AFF1_URL", "https://www.vultr.com/?ref=9880243-9J")
 AFF2_NAME = os.getenv("NEURALSTACK_AFF2_NAME", "Railway")
 AFF2_URL = os.getenv("NEURALSTACK_AFF2_URL", "https://railway.app?referralCode=2zaRHx")
 
 _TOOL_DESCRIPTIONS = {
-    "Vultr": "High-performance cloud compute, bare metal, and GPU instances \u2014 deploy worldwide in seconds with simple hourly billing.",
+    "Vultr": "High-performance cloud compute, bare metal, and GPU instances \u2014 get $300 free credit and deploy worldwide in seconds.",
     "Railway": "Deploy code from GitHub in seconds \u2014 simple, powerful cloud hosting for developers.",
 }
 

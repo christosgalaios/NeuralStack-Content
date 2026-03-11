@@ -16,9 +16,9 @@ export const GOOGLE_VERIFICATION =
 export const AFFILIATES = [
   {
     name: process.env.NEXT_PUBLIC_AFF1_NAME || "Vultr",
-    url: process.env.NEXT_PUBLIC_AFF1_URL || "https://www.vultr.com",
+    url: process.env.NEXT_PUBLIC_AFF1_URL || "https://www.vultr.com/?ref=9880243-9J",
     description:
-      "High-performance cloud compute, bare metal, and GPU instances — deploy worldwide in seconds with simple hourly billing.",
+      "High-performance cloud compute, bare metal, and GPU instances — get $300 free credit and deploy worldwide in seconds.",
     tagline: "Cloud compute, simplified",
   },
   {

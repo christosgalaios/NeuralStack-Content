@@ -17,8 +17,8 @@ MIN_WORDS = 1200
 AFFILIATE_SLOTS = [
     {
         "name": os.getenv("NEURALSTACK_AFF1_NAME", "Vultr"),
-        "url": os.getenv("NEURALSTACK_AFF1_URL", "https://www.vultr.com"),
-        "desc": "high-performance cloud compute, bare metal, and GPU instances — deploy worldwide in seconds with simple hourly billing",
+        "url": os.getenv("NEURALSTACK_AFF1_URL", "https://www.vultr.com/?ref=9880243-9J"),
+        "desc": "high-performance cloud compute, bare metal, and GPU instances — get $300 free credit and deploy worldwide in seconds",
     },
     {
         "name": os.getenv("NEURALSTACK_AFF2_NAME", "Railway"),
