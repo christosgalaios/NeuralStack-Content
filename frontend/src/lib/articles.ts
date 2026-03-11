@@ -21,6 +21,7 @@ export interface Article extends ArticleMeta {
   related_slugs: string[];
   affiliate: { name: string; url: string; description: string };
   faq: { question: string; answer: string }[];
+  references?: { title: string; url: string }[];
 }
 
 const DATA_DIR = path.join(process.cwd(), "..", "data", "articles");
