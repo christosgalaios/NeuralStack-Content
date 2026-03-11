@@ -14,10 +14,36 @@ export default function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-2.5 text-lg font-bold tracking-tight" style={{ color: "var(--text-primary)" }}>
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg transition-shadow duration-300 group-hover:shadow-[0_0_16px_rgba(59,130,246,0.3)]" style={{ background: "linear-gradient(135deg, #3b82f6, #60a5fa)" }}>
-            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 5L3 10L7 15" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M13 5L17 10L13 15" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+          <span className="compass-logo flex h-9 w-9 items-center justify-center">
+            <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="hdr-needle" x1="0.5" y1="0" x2="0.5" y2="1">
+                  <stop offset="0%" stopColor="#1a6b7a"/>
+                  <stop offset="100%" stopColor="#4db8c9"/>
+                </linearGradient>
+                <linearGradient id="hdr-needle-lt" x1="0.5" y1="0" x2="0.5" y2="1">
+                  <stop offset="0%" stopColor="#4db8c9"/>
+                  <stop offset="100%" stopColor="#7dd3e1"/>
+                </linearGradient>
+              </defs>
+              {/* Outer ring */}
+              <circle className="compass-ring" cx="20" cy="20" r="17.5" fill="none" stroke="currentColor" strokeWidth="1.2" opacity="0.35"/>
+              {/* Inner ring */}
+              <circle cx="20" cy="20" r="14" fill="none" stroke="currentColor" strokeWidth="0.6" opacity="0.2"/>
+              {/* Cardinal ticks */}
+              <g className="compass-ticks" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" opacity="0.45">
+                <line x1="20" y1="1" x2="20" y2="5.5"/>
+                <line x1="39" y1="20" x2="34.5" y2="20"/>
+                <line x1="20" y1="39" x2="20" y2="34.5"/>
+                <line x1="1" y1="20" x2="5.5" y2="20"/>
+              </g>
+              {/* Needle group — this rotates on hover */}
+              <g className="compass-needle">
+                <polygon points="20,5.5 17,20 20,17.5 23,20" fill="url(#hdr-needle)"/>
+                <polygon points="20,34.5 23,20 20,22.5 17,20" fill="url(#hdr-needle-lt)" opacity="0.45"/>
+                <circle cx="20" cy="20" r="1.8" fill="#4db8c9"/>
+                <circle cx="20" cy="20" r="0.9" fill="#1a6b7a"/>
+              </g>
             </svg>
           </span>
           {SITE_NAME}
