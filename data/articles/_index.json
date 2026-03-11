@@ -424,6 +424,21 @@
     ]
   },
   {
+    "slug": "pytorch-inside-github-codespaces-compatibility-guide",
+    "title": "PyTorch inside GitHub Codespaces compatibility guide",
+    "description": "PyTorch inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "codespaces",
+      "compatibility",
+      "github",
+      "pytorch"
+    ]
+  },
+  {
     "slug": "pytorch-on-apple-silicon-m3-compatibility-guide",
     "title": "PyTorch on Apple Silicon M3 compatibility guide",
     "description": "PyTorch on Apple Silicon M3 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
@@ -436,6 +451,34 @@
       "compatibility",
       "pytorch",
       "silicon"
+    ]
+  },
+  {
+    "slug": "pytorch-on-nixos-compatibility-guide",
+    "title": "PyTorch on NixOS compatibility guide",
+    "description": "PyTorch on NixOS compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "nixos",
+      "pytorch"
+    ]
+  },
+  {
+    "slug": "pytorch-on-raspberry-pi-5-compatibility-guide",
+    "title": "PyTorch on Raspberry Pi 5 compatibility guide",
+    "description": "PyTorch on Raspberry Pi 5 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "pytorch",
+      "raspberry"
     ]
   },
   {
@@ -454,6 +497,20 @@
     ]
   },
   {
+    "slug": "pytorch-with-cuda-12-4-compatibility-guide",
+    "title": "PyTorch with CUDA 12.4 compatibility guide",
+    "description": "PyTorch with CUDA 12.4 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "cuda",
+      "pytorch"
+    ]
+  },
+  {
     "slug": "pytorch-with-rocm-detailed-compatibility-guide",
     "title": "PyTorch with ROCm detailed compatibility guide",
     "description": "PyTorch with ROCm detailed compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
@@ -463,6 +520,22 @@
     "reading_time_minutes": 7,
     "tags": [
       "compatibility",
+      "pytorch",
+      "rocm"
+    ]
+  },
+  {
+    "slug": "pytorch-with-rocm-on-amd-gpus-compatibility-guide",
+    "title": "PyTorch with ROCm on AMD GPUs compatibility guide",
+    "description": "PyTorch with ROCm on AMD GPUs compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "amd",
+      "compatibility",
+      "gpus",
       "pytorch",
       "rocm"
     ]
