@@ -247,6 +247,21 @@
     ]
   },
   {
+    "slug": "podman-inside-github-codespaces-compatibility-guide",
+    "title": "Podman inside GitHub Codespaces compatibility guide",
+    "description": "Podman inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "codespaces",
+      "compatibility",
+      "github",
+      "podman"
+    ]
+  },
+  {
     "slug": "podman-on-apple-silicon-m3-compatibility-guide",
     "title": "Podman on Apple Silicon M3 compatibility guide",
     "description": "Podman on Apple Silicon M3 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
@@ -262,6 +277,34 @@
     ]
   },
   {
+    "slug": "podman-on-nixos-compatibility-guide",
+    "title": "Podman on NixOS compatibility guide",
+    "description": "Podman on NixOS compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "nixos",
+      "podman"
+    ]
+  },
+  {
+    "slug": "podman-on-raspberry-pi-5-compatibility-guide",
+    "title": "Podman on Raspberry Pi 5 compatibility guide",
+    "description": "Podman on Raspberry Pi 5 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "podman",
+      "raspberry"
+    ]
+  },
+  {
     "slug": "podman-on-windows-11-arm-compatibility-guide",
     "title": "Podman on Windows 11 ARM compatibility guide",
     "description": "Podman on Windows 11 ARM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
@@ -274,6 +317,35 @@
       "compatibility",
       "podman",
       "windows"
+    ]
+  },
+  {
+    "slug": "podman-with-cuda-12-4-compatibility-guide",
+    "title": "Podman with CUDA 12.4 compatibility guide",
+    "description": "Podman with CUDA 12.4 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "cuda",
+      "podman"
+    ]
+  },
+  {
+    "slug": "podman-with-prisma-orm-compatibility-guide",
+    "title": "Podman with Prisma ORM compatibility guide",
+    "description": "Podman with Prisma ORM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "orm",
+      "podman",
+      "prisma"
     ]
   },
   {
