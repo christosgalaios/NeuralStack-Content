@@ -13,6 +13,13 @@ export const GOOGLE_VERIFICATION =
   process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION ||
   "i27IVb0fNqCp511fOfQTd08teAnHKX23tp8d-TPuHO0";
 
+export interface Affiliate {
+  name: string;
+  url: string;
+  description: string;
+  tagline: string;
+}
+
 export const AFFILIATES = [
   {
     name: process.env.NEXT_PUBLIC_AFF1_NAME || "Vultr",
@@ -29,6 +36,12 @@ export const AFFILIATES = [
     tagline: "Ship faster, scale easier",
   },
 ];
+
+export const AFFILIATE_RELEVANCE: Record<string, string[]> = {
+  "Cursor IDE": ["code-editor", "ai-coding", "ide", "developer-tools", "copilot", "vscode", "cursor", "ai editor"],
+  "Datadog": ["monitoring", "observability", "logging", "debugging", "apm", "production", "datadog", "grafana"],
+  "Railway": ["deployment", "hosting", "cloud", "ci-cd", "infrastructure", "paas", "railway", "heroku", "render"],
+};
 
 export const CATEGORY_META: Record<
   string,

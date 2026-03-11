@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { AFFILIATES, AFFILIATE_RELEVANCE, type Affiliate } from "./config";
 
 export interface ArticleMeta {
   slug: string;
@@ -71,4 +72,13 @@ export function getRelatedArticles(slugs: string[]): ArticleMeta[] {
   return slugs
     .map((s) => all.find((a) => a.slug === s))
     .filter((a): a is ArticleMeta => a !== undefined);
+}
+
+export function getRelevantAffiliate(article: { title: string; description: string; category: string }): Affiliate | null {
+  const text = `${article.title} ${article.description} ${article.category}`.toLowerCase();
+  for (const aff of AFFILIATES) {
+    const keywords = AFFILIATE_RELEVANCE[aff.name] || [];
+    if (keywords.some((kw) => text.includes(kw))) return aff;
+  }
+  return null;
 }
