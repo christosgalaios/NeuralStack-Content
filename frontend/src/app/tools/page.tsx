@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Recommended Developer Tools",
-  description: `Hand-picked developer tools reviewed and recommended by ${SITE_NAME}. AI code editors, observability platforms, and cloud hosting.`,
+  description: `Hand-picked developer tools reviewed and recommended by ${SITE_NAME}. Cloud compute, hosting platforms, and deployment tools.`,
   openGraph: {
     title: `Recommended Developer Tools | ${SITE_NAME}`,
     url: `${BASE_URL}/tools`,
@@ -58,18 +58,12 @@ export default function ToolsPage() {
             <tbody>
               <tr className="border-t" style={{ borderColor: "var(--border)" }}>
                 <td className="px-4 py-3 font-medium" style={{ color: "var(--text-primary)" }}>{AFFILIATES[0].name}</td>
-                <td className="px-4 py-3" style={{ color: "var(--text-secondary)" }}>AI Code Editor</td>
-                <td className="px-4 py-3" style={{ color: "var(--text-secondary)" }}>Developers who want AI-assisted coding</td>
-                <td className="px-4 py-3" style={{ color: "var(--accent-cta)" }}>Yes</td>
+                <td className="px-4 py-3" style={{ color: "var(--text-secondary)" }}>Cloud Compute</td>
+                <td className="px-4 py-3" style={{ color: "var(--text-secondary)" }}>VPS, bare metal, and GPU workloads</td>
+                <td className="px-4 py-3" style={{ color: "var(--accent-cta)" }}>$300 credit</td>
               </tr>
               <tr className="border-t" style={{ borderColor: "var(--border)" }}>
                 <td className="px-4 py-3 font-medium" style={{ color: "var(--text-primary)" }}>{AFFILIATES[1].name}</td>
-                <td className="px-4 py-3" style={{ color: "var(--text-secondary)" }}>Observability</td>
-                <td className="px-4 py-3" style={{ color: "var(--text-secondary)" }}>Teams monitoring cloud infrastructure</td>
-                <td className="px-4 py-3" style={{ color: "var(--accent-cta)" }}>14-day trial</td>
-              </tr>
-              <tr className="border-t" style={{ borderColor: "var(--border)" }}>
-                <td className="px-4 py-3 font-medium" style={{ color: "var(--text-primary)" }}>{AFFILIATES[2].name}</td>
                 <td className="px-4 py-3" style={{ color: "var(--text-secondary)" }}>Cloud Hosting</td>
                 <td className="px-4 py-3" style={{ color: "var(--text-secondary)" }}>Deploying from GitHub in seconds</td>
                 <td className="px-4 py-3" style={{ color: "var(--accent-cta)" }}>$5 credit</td>

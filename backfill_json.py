@@ -8,7 +8,7 @@ from pathlib import Path
 from agents.distribution import (
     DistributionAgent, _md_to_html, _add_heading_ids_and_toc,
     _strip_tags, _title_tokens, _infer_category, _TOOL_DESCRIPTIONS,
-    BASE_URL, AFF1_NAME, AFF1_URL, AFF2_NAME, AFF2_URL, AFF3_NAME, AFF3_URL,
+    BASE_URL, AFF1_NAME, AFF1_URL, AFF2_NAME, AFF2_URL,
 )
 
 BASE_DIR = Path(__file__).parent
@@ -23,7 +23,6 @@ def backfill():
     affiliates = [
         (AFF1_NAME, AFF1_URL),
         (AFF2_NAME, AFF2_URL),
-        (AFF3_NAME, AFF3_URL),
     ]
 
     html_files = sorted(ARTICLES_DIR.glob("*.html"))

@@ -5578,5 +5578,205 @@
     "source": "heuristic-affiliate-priority",
     "created_at": "2026-03-08T04:41:54.961453Z",
     "status": "published"
+  },
+  {
+    "id": "vultr-deploy-nodejs",
+    "keyword": "How to deploy a Node.js app on Vultr (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "vultr-deploy-python-flask",
+    "keyword": "How to deploy a Python Flask app on Vultr cloud (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "vultr-kubernetes-cluster",
+    "keyword": "How to set up a Kubernetes cluster on Vultr (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "vultr-vs-digitalocean",
+    "keyword": "Vultr vs DigitalOcean: cloud hosting comparison for developers",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "vultr-vs-linode",
+    "keyword": "Vultr vs Linode: which cloud provider is better for developers in 2026",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "vultr-vs-aws-lightsail",
+    "keyword": "Vultr vs AWS Lightsail: simple cloud hosting comparison",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "vultr-gpu-instances",
+    "keyword": "How to run GPU workloads on Vultr cloud (ML and AI guide)",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "vultr-docker-setup",
+    "keyword": "How to set up Docker on a Vultr VPS (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "vultr-wordpress-hosting",
+    "keyword": "How to host WordPress on Vultr with Nginx and SSL",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "vultr-terraform",
+    "keyword": "How to provision Vultr infrastructure with Terraform",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "railway-deploy-nextjs",
+    "keyword": "How to deploy a Next.js app on Railway (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "railway-postgres-setup",
+    "keyword": "How to set up PostgreSQL on Railway for production apps",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "railway-docker-deploy",
+    "keyword": "How to deploy Docker containers on Railway",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "railway-cron-jobs",
+    "keyword": "How to run scheduled cron jobs on Railway",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "railway-monorepo",
+    "keyword": "How to deploy a monorepo on Railway (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "railway-vs-vultr",
+    "keyword": "Railway vs Vultr: PaaS vs IaaS for web app deployment",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "vultr-vs-hetzner",
+    "keyword": "Vultr vs Hetzner: budget cloud hosting comparison for 2026",
+    "category": "devtools_comparison",
+    "intent": "Evaluate which tool to adopt for a specific workflow.",
+    "difficulty_score": 0.1,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "docker-compose-production",
+    "keyword": "How to use Docker Compose in production (best practices guide)",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.25,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "github-actions-docker",
+    "keyword": "How to build and push Docker images with GitHub Actions",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.25,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
+  },
+  {
+    "id": "ssl-letsencrypt-nginx",
+    "keyword": "How to set up free SSL with Let's Encrypt and Nginx",
+    "category": "tutorial",
+    "intent": "Step-by-step tutorial or comparison for developer workflows.",
+    "difficulty_score": 0.25,
+    "source": "manual-affiliate-seeds",
+    "created_at": "2026-03-11T15:19:08.984428+00:00",
+    "status": "new"
   }
 ]

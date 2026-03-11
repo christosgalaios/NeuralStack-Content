@@ -218,20 +218,6 @@
     ]
   },
   {
-    "slug": "test",
-    "title": "Test Article",
-    "description": "In-depth technical guide: Test Article. Practical trade-offs, implementation patterns, and recommendations for production engineers.",
-    "category": "guide",
-    "category_display": "Guide",
-    "date_published": "2026-03-10",
-    "reading_time_minutes": 1,
-    "tags": [
-      "article",
-      "guide",
-      "test"
-    ]
-  },
-  {
     "slug": "railway-review-best-heroku-alternative-for-python-and-node-apps",
     "title": "Railway review: best Heroku alternative for Python and Node apps",
     "description": "Railway review: best Heroku alternative for Python and Node apps. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",

@@ -16,18 +16,13 @@ MIN_WORDS = 1200
 # Each entry: (env_name_for_name, env_name_for_url, default_name, default_url, description)
 AFFILIATE_SLOTS = [
     {
-        "name": os.getenv("NEURALSTACK_AFF1_NAME", "Cursor IDE"),
-        "url": os.getenv("NEURALSTACK_AFF1_URL", "https://www.cursor.com"),
-        "desc": "AI-native code editor built on VS Code — autocomplete, inline chat, and codebase-aware suggestions out of the box",
+        "name": os.getenv("NEURALSTACK_AFF1_NAME", "Vultr"),
+        "url": os.getenv("NEURALSTACK_AFF1_URL", "https://www.vultr.com/?ref=9880243-9J"),
+        "desc": "high-performance cloud compute, bare metal, and GPU instances — get $300 free credit and deploy worldwide in seconds",
     },
     {
-        "name": os.getenv("NEURALSTACK_AFF2_NAME", "Datadog"),
-        "url": os.getenv("NEURALSTACK_AFF2_URL", "https://www.datadoghq.com"),
-        "desc": "unified observability platform for logs, metrics, and traces — free tier available for small teams",
-    },
-    {
-        "name": os.getenv("NEURALSTACK_AFF3_NAME", "Railway"),
-        "url": os.getenv("NEURALSTACK_AFF3_URL", "https://railway.app"),
+        "name": os.getenv("NEURALSTACK_AFF2_NAME", "Railway"),
+        "url": os.getenv("NEURALSTACK_AFF2_URL", "https://railway.app?referralCode=2zaRHx"),
         "desc": "deploy from a GitHub repo in seconds with built-in CI, databases, and cron — pay only for what you use",
     },
 ]

@@ -15,22 +15,15 @@ export const GOOGLE_VERIFICATION =
 
 export const AFFILIATES = [
   {
-    name: process.env.NEXT_PUBLIC_AFF1_NAME || "Cursor IDE",
-    url: process.env.NEXT_PUBLIC_AFF1_URL || "https://www.cursor.com",
+    name: process.env.NEXT_PUBLIC_AFF1_NAME || "Vultr",
+    url: process.env.NEXT_PUBLIC_AFF1_URL || "https://www.vultr.com/?ref=9880243-9J",
     description:
-      "AI-first code editor that accelerates your workflow with intelligent completions and inline chat.",
-    tagline: "Write code 10x faster",
+      "High-performance cloud compute, bare metal, and GPU instances — get $300 free credit and deploy worldwide in seconds.",
+    tagline: "Cloud compute, simplified",
   },
   {
-    name: process.env.NEXT_PUBLIC_AFF2_NAME || "Datadog",
-    url: process.env.NEXT_PUBLIC_AFF2_URL || "https://www.datadoghq.com",
-    description:
-      "Full-stack observability platform for monitoring your cloud infrastructure and applications.",
-    tagline: "See everything in production",
-  },
-  {
-    name: process.env.NEXT_PUBLIC_AFF3_NAME || "Railway",
-    url: process.env.NEXT_PUBLIC_AFF3_URL || "https://railway.app",
+    name: process.env.NEXT_PUBLIC_AFF2_NAME || "Railway",
+    url: process.env.NEXT_PUBLIC_AFF2_URL || "https://railway.app?referralCode=2zaRHx",
     description:
       "Deploy code from GitHub in seconds — simple, powerful cloud hosting for developers.",
     tagline: "Ship faster, scale easier",
