@@ -4,6 +4,7 @@ import { getAllCategories, getArticlesByCategory } from "@/lib/articles";
 import { SITE_NAME, BASE_URL, CATEGORY_META } from "@/lib/config";
 import ArticleCard from "@/components/cards/ArticleCard";
 import AdSlot from "@/components/monetization/AdSlot";
+import CategoryIllustration from "@/components/cards/CategoryIllustration";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -19,6 +20,7 @@ export async function generateMetadata({
   const meta = CATEGORY_META[cat];
   if (!meta) return {};
 
+  const ogImage = `${BASE_URL}/og/${cat}.svg`;
   return {
     title: `${meta.display} Articles`,
     description: meta.description,
@@ -26,6 +28,13 @@ export async function generateMetadata({
       title: `${meta.display} Articles | ${SITE_NAME}`,
       description: meta.description,
       url: `${BASE_URL}/category/${cat}`,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: `${meta.display} Articles` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${meta.display} Articles | ${SITE_NAME}`,
+      description: meta.description,
+      images: [ogImage],
     },
     alternates: { canonical: `${BASE_URL}/category/${cat}` },
   };
@@ -51,7 +60,13 @@ export default async function CategoryPage({
         <span style={{ color: "var(--text-secondary)" }}>{meta.display}</span>
       </nav>
 
-      {/* Hero */}
+      {/* Hero with illustration */}
+      <div
+        className="mb-8 overflow-hidden rounded-xl border"
+        style={{ background: "var(--bg-elevated)", borderColor: "var(--border)" }}
+      >
+        <CategoryIllustration category={cat} className="h-32 sm:h-40" />
+      </div>
       <header className="mb-8">
         <h1 className="text-2xl font-extrabold sm:text-3xl" style={{ color: "var(--text-primary)" }}>
           {meta.display}
