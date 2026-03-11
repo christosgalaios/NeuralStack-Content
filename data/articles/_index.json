@@ -334,6 +334,35 @@
     ]
   },
   {
+    "slug": "podman-with-docker-compose-v2-compatibility-guide",
+    "title": "Podman with Docker Compose v2 compatibility guide",
+    "description": "Podman with Docker Compose v2 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 8,
+    "tags": [
+      "compatibility",
+      "compose",
+      "docker",
+      "podman"
+    ]
+  },
+  {
+    "slug": "podman-with-kubernetes-1-30-compatibility-guide",
+    "title": "Podman with Kubernetes 1.30 compatibility guide",
+    "description": "Podman with Kubernetes 1.30 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "kubernetes",
+      "podman"
+    ]
+  },
+  {
     "slug": "podman-with-prisma-orm-compatibility-guide",
     "title": "Podman with Prisma ORM compatibility guide",
     "description": "Podman with Prisma ORM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
@@ -395,6 +424,36 @@
     ]
   },
   {
+    "slug": "pytorch-on-apple-silicon-m3-compatibility-guide",
+    "title": "PyTorch on Apple Silicon M3 compatibility guide",
+    "description": "PyTorch on Apple Silicon M3 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "apple",
+      "compatibility",
+      "pytorch",
+      "silicon"
+    ]
+  },
+  {
+    "slug": "pytorch-on-windows-11-arm-compatibility-guide",
+    "title": "PyTorch on Windows 11 ARM compatibility guide",
+    "description": "PyTorch on Windows 11 ARM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "arm",
+      "compatibility",
+      "pytorch",
+      "windows"
+    ]
+  },
+  {
     "slug": "pytorch-with-rocm-detailed-compatibility-guide",
     "title": "PyTorch with ROCm detailed compatibility guide",
     "description": "PyTorch with ROCm detailed compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
@@ -406,6 +465,22 @@
       "compatibility",
       "pytorch",
       "rocm"
+    ]
+  },
+  {
+    "slug": "pytorch-with-wsl2-gpu-passthrough-compatibility-guide",
+    "title": "PyTorch with WSL2 GPU passthrough compatibility guide",
+    "description": "PyTorch with WSL2 GPU passthrough compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "gpu",
+      "passthrough",
+      "pytorch",
+      "wsl2"
     ]
   },
   {
