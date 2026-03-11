@@ -145,37 +145,46 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: SITE_NAME,
-              url: BASE_URL,
-              description: SITE_DESCRIPTION,
-              potentialAction: {
-                "@type": "SearchAction",
-                target: `${BASE_URL}/?q={search_term_string}`,
-                "query-input": "required name=search_term_string",
-              },
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: SITE_NAME,
+            url: BASE_URL,
+            description: SITE_DESCRIPTION,
+            potentialAction: {
+              "@type": "SearchAction",
+              target: `${BASE_URL}/?q={search_term_string}`,
+              "query-input": "required name=search_term_string",
             },
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: SITE_NAME,
-              url: BASE_URL,
-              description: SITE_DESCRIPTION,
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "ItemList",
-              itemListElement: articles.slice(0, 10).map((a, i) => ({
-                "@type": "ListItem",
-                position: i + 1,
-                url: `${BASE_URL}/articles/${a.slug}`,
-                name: a.title,
-              })),
-            },
-          ]),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: SITE_NAME,
+            url: BASE_URL,
+            description: SITE_DESCRIPTION,
+            logo: `${BASE_URL}/icon.svg`,
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            itemListElement: articles.slice(0, 10).map((a, i) => ({
+              "@type": "ListItem",
+              position: i + 1,
+              url: `${BASE_URL}/articles/${a.slug}`,
+              name: a.title,
+            })),
+          }),
         }}
       />
     </div>

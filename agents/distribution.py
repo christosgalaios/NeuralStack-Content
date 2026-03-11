@@ -158,8 +158,27 @@ def _md_to_html(text: str) -> str:
         if re.match(r'^[-*]\s+', line):
             items: List[str] = []
             while i < len(lines) and re.match(r'^[-*]\s+', lines[i]):
-                items.append(f'<li>{_inline_md(lines[i][2:].strip())}</li>')
+                item_parts = [lines[i][2:].strip()]
                 i += 1
+                # Gather continuation lines (indented or non-blank, non-block)
+                while i < len(lines):
+                    cl = lines[i]
+                    if not cl.strip():
+                        # Blank line: skip if next line is a continuation or new item
+                        if (i + 1 < len(lines) and
+                                (re.match(r'^[-*]\s+', lines[i + 1]) or
+                                 re.match(r'^\s{2,}\S', lines[i + 1]))):
+                            i += 1
+                            continue
+                        break
+                    if re.match(r'^[-*]\s+', cl):
+                        break  # new list item
+                    if re.match(r'^#{1,3}\s', cl) or cl.strip().startswith('```') or cl.strip().startswith('|') or re.match(r'^\d+\.\s+', cl):
+                        break  # block boundary
+                    # Continuation line (may have leading whitespace)
+                    item_parts.append(cl.strip())
+                    i += 1
+                items.append(f'<li>{_inline_md(" ".join(item_parts))}</li>')
             output.append('<ul>\n' + '\n'.join(items) + '\n</ul>')
             continue
 
@@ -170,8 +189,27 @@ def _md_to_html(text: str) -> str:
             start_num = ol_match.group(1)
             while i < len(lines) and re.match(r'^\d+\.\s+', lines[i]):
                 item_text = re.sub(r'^\d+\.\s+', '', lines[i]).strip()
-                ol_items.append(f'<li>{_inline_md(item_text)}</li>')
+                item_parts = [item_text]
                 i += 1
+                # Gather continuation lines (indented or non-blank, non-block)
+                while i < len(lines):
+                    cl = lines[i]
+                    if not cl.strip():
+                        # Blank line: skip if next line is a continuation or new item
+                        if (i + 1 < len(lines) and
+                                (re.match(r'^\d+\.\s+', lines[i + 1]) or
+                                 re.match(r'^\s{2,}\S', lines[i + 1]))):
+                            i += 1
+                            continue
+                        break
+                    if re.match(r'^\d+\.\s+', cl):
+                        break  # new list item
+                    if re.match(r'^#{1,3}\s', cl) or cl.strip().startswith('```') or cl.strip().startswith('|') or re.match(r'^[-*]\s+', cl):
+                        break  # block boundary
+                    # Continuation line (may have leading whitespace)
+                    item_parts.append(cl.strip())
+                    i += 1
+                ol_items.append(f'<li>{_inline_md(" ".join(item_parts))}</li>')
             start_attr = f' start="{start_num}"' if start_num != "1" else ""
             output.append(f'<ol{start_attr}>\n' + '\n'.join(ol_items) + '\n</ol>')
             continue

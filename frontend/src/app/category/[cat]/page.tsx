@@ -99,24 +99,27 @@ export default async function CategoryPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "CollectionPage",
-              name: `${meta.display} Articles`,
-              description: meta.description,
-              url: `${BASE_URL}/category/${cat}`,
-              numberOfItems: articles.length,
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
-                { "@type": "ListItem", position: 2, name: meta.display },
-              ],
-            },
-          ]),
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: `${meta.display} Articles`,
+            description: meta.description,
+            url: `${BASE_URL}/category/${cat}`,
+            numberOfItems: articles.length,
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+              { "@type": "ListItem", position: 2, name: meta.display },
+            ],
+          }),
         }}
       />
     </div>

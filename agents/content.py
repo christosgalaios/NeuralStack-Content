@@ -97,21 +97,20 @@ class SimpleLocalLLM:
             f"- [{s['name']}]({s['url']}) — {s['desc']}"
             for s in AFFILIATE_SLOTS
         )
-        return textwrap.dedent(
-            f"""
-            ## Recommended tools and resources
-
-            After working with many stacks over the past few years, these are tools
-            we genuinely recommend. We may earn a commission if you sign up through
-            the links below, but our recommendations are based on hands-on experience
-            — not payout.
-
-            {aff_items}
-
-            Disclosure: some links above are affiliate links. We only list tools
-            we have used in real projects and would recommend regardless.
-            """
-        ).strip()
+        lines = [
+            "## Recommended tools and resources",
+            "",
+            "After working with many stacks over the past few years, these are tools",
+            "we genuinely recommend. We may earn a commission if you sign up through",
+            "the links below, but our recommendations are based on hands-on experience",
+            "— not payout.",
+            "",
+            aff_items,
+            "",
+            "Disclosure: some links above are affiliate links. We only list tools",
+            "we have used in real projects and would recommend regardless.",
+        ]
+        return "\n".join(lines)
 
     # Reference URLs for tools — used to build the Sources section.
     # References per tool: mix of official docs AND third-party editorial
