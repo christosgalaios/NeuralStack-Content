@@ -318,61 +318,40 @@ h1, h2, h3, h4 {
   border-color: var(--accent) !important;
 }
 
-/* ─── Compass Logo Animation ───────────────────────────────── */
+/* ─── Compass Logo ─────────────────────────────────────────── */
 
 .compass-logo {
   position: relative;
 }
 
-/* Needle — continuous slow oscillation on all devices */
-.compass-needle {
-  transform-origin: 20px 20px;
-  animation: needleSway 6s ease-in-out infinite;
-}
-
-@keyframes needleSway {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(12deg); }
-  75% { transform: rotate(-8deg); }
-}
-
-/* Subtle glow pulse — always visible */
+/* Subtle glow pulse behind compass */
 .compass-logo::after {
   content: "";
   position: absolute;
   inset: -4px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(77, 184, 201, 0.12), transparent 70%);
+  background: radial-gradient(circle, rgba(13, 74, 90, 0.15), transparent 70%);
   animation: compassGlow 4s ease-in-out infinite;
   pointer-events: none;
 }
 
 @keyframes compassGlow {
   0%, 100% { opacity: 0.3; }
-  50% { opacity: 0.8; }
+  50% { opacity: 0.7; }
 }
 
-/* Ring pulse — always visible */
+/* Ring subtle pulse */
 .compass-ring {
   animation: ringPulse 4s ease-in-out infinite;
 }
 
 @keyframes ringPulse {
-  0%, 100% { opacity: 0.35; stroke-width: 1.2; }
-  50% { opacity: 0.55; stroke-width: 1.5; }
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.55; }
 }
 
-/* Desktop hover: full spin + stronger glow */
+/* Hover: stronger glow */
 @media (hover: hover) {
-  .compass-needle {
-    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-
-  .group:hover .compass-needle {
-    animation: none;
-    transform: rotate(360deg);
-  }
-
   .group:hover .compass-logo::after {
     animation: none;
     opacity: 1;
@@ -380,31 +359,45 @@ h1, h2, h3, h4 {
 
   .group:hover .compass-ring {
     animation: none;
-    opacity: 0.7;
-    stroke-width: 1.8;
-  }
-
-  .compass-ticks {
-    transition: opacity 0.4s ease;
-  }
-
-  .group:hover .compass-ticks {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
-/* Touch: tap triggers a quick spin via active state */
-@media (hover: none) {
-  .group:active .compass-needle {
-    animation: tapSpin 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
+/* ─── Hero Compass ─────────────────────────────────────────── */
 
-  @keyframes tapSpin {
-    to { transform: rotate(360deg); }
-  }
+.hero-compass {
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+  position: relative;
+}
 
-  .group:active .compass-logo::after {
-    opacity: 1;
+/* Glow behind hero compass */
+.hero-compass::after {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(13, 74, 90, 0.12), transparent 70%);
+  animation: compassGlow 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero-compass-ring {
+  animation: ringPulse 4s ease-in-out infinite;
+}
+
+/* Hide hero compass on small screens, show smaller on medium */
+@media (max-width: 639px) {
+  .hero-compass {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .hero-compass {
+    width: 160px;
+    height: 160px;
   }
 }
 

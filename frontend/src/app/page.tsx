@@ -2,7 +2,7 @@ import { getAllArticles, getAllCategories, getAllTags } from "@/lib/articles";
 import { SITE_NAME, SITE_DESCRIPTION, BASE_URL, CATEGORY_META, AFFILIATES } from "@/lib/config";
 import ArticleCard from "@/components/cards/ArticleCard";
 import AdSlot from "@/components/monetization/AdSlot";
-import GyroCompass from "@/components/GyroCompass";
+import HeroCompass from "@/components/layout/HeroCompass";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -33,9 +33,7 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        <div className="shrink-0">
-          <GyroCompass />
-        </div>
+        <HeroCompass />
       </section>
 
       {/* Main content + sidebar layout */}

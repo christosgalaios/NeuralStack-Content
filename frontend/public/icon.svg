@@ -1,54 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <linearGradient id="nd" x1="0" y1="0" x2="0.8" y2="1">
-      <stop offset="0%" stop-color="#082e36"/>
-      <stop offset="40%" stop-color="#10525e"/>
-      <stop offset="100%" stop-color="#1a7080"/>
+    <linearGradient id="n-grad" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#0d4a5a"/>
+      <stop offset="100%" stop-color="#1a8a9a"/>
     </linearGradient>
-    <linearGradient id="nl" x1="0.2" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#18707e"/>
-      <stop offset="50%" stop-color="#2c9cac"/>
-      <stop offset="100%" stop-color="#44b8c8"/>
-    </linearGradient>
-    <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#c8ccd4"/>
-      <stop offset="50%" stop-color="#a8aeb8"/>
-      <stop offset="100%" stop-color="#c8ccd4"/>
-    </linearGradient>
-    <linearGradient id="rd" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#166a78"/>
-      <stop offset="100%" stop-color="#1a7a8a"/>
-    </linearGradient>
-    <linearGradient id="rl" x1="1" y1="1" x2="0" y2="0">
-      <stop offset="0%" stop-color="#1e8494"/>
-      <stop offset="100%" stop-color="#2a96a6"/>
+    <linearGradient id="s-grad" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2da0b0"/>
+      <stop offset="100%" stop-color="#4cc0d0"/>
     </linearGradient>
   </defs>
 
   <!-- Outer ring -->
-  <circle cx="100" cy="100" r="86" fill="none" stroke="url(#rg)" stroke-width="14" opacity="0.55"/>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#7a8494" stroke-width="3" opacity="0.4"/>
 
-  <!-- Compass rose: 4 wide arrow arms extending through the ring -->
-  <!-- North -->
-  <path d="M100,10 L76,74 L100,56 Z" fill="url(#rd)"/>
-  <path d="M100,10 L124,74 L100,56 Z" fill="url(#rl)"/>
-  <!-- South -->
-  <path d="M100,190 L124,126 L100,144 Z" fill="url(#rl)"/>
-  <path d="M100,190 L76,126 L100,144 Z" fill="url(#rd)"/>
-  <!-- East -->
-  <path d="M190,100 L126,76 L144,100 Z" fill="url(#rd)"/>
-  <path d="M190,100 L126,124 L144,100 Z" fill="url(#rl)"/>
-  <!-- West -->
-  <path d="M10,100 L74,124 L56,100 Z" fill="url(#rl)"/>
-  <path d="M10,100 L74,76 L56,100 Z" fill="url(#rd)"/>
+  <!-- Inner structural ring -->
+  <circle cx="50" cy="50" r="34" fill="none" stroke="#7a8494" stroke-width="1.2" opacity="0.2"/>
 
-  <!-- Main needle: smooth blade from (155,16) to (45,184) -->
-  <!-- Dark face (upper-left curved edge) — slightly narrower -->
-  <path d="M155,16 Q65,72 45,184 L100,100 Z" fill="url(#nd)"/>
-  <!-- Light face (lower-right curved edge) -->
-  <path d="M155,16 Q135,128 45,184 L100,100 Z" fill="url(#nl)" opacity="0.88"/>
+  <!-- Cardinal markers: D-E-V-G -->
+  <!-- Top: E -->
+  <polygon points="50,2 44,12 50,7 56,12" fill="#9aa4b4" opacity="0.5"/>
+  <text x="50" y="21" text-anchor="middle" font-size="7" font-weight="800" font-family="Inter, system-ui, sans-serif" fill="#b0bac8" opacity="0.8">E</text>
 
-  <!-- Center dot -->
-  <circle cx="100" cy="100" r="10" fill="white"/>
-  <circle cx="100" cy="100" r="6.5" fill="#e4e6ea"/>
+  <!-- Left: D -->
+  <polygon points="2,50 12,56 7,50 12,44" fill="#9aa4b4" opacity="0.45"/>
+  <text x="19" y="53" text-anchor="middle" font-size="7" font-weight="800" font-family="Inter, system-ui, sans-serif" fill="#b0bac8" opacity="0.7">D</text>
+
+  <!-- Right: V -->
+  <polygon points="98,50 88,44 93,50 88,56" fill="#9aa4b4" opacity="0.45"/>
+  <text x="81" y="53" text-anchor="middle" font-size="7" font-weight="800" font-family="Inter, system-ui, sans-serif" fill="#b0bac8" opacity="0.7">V</text>
+
+  <!-- Bottom: G -->
+  <polygon points="50,98 56,88 50,93 44,88" fill="#9aa4b4" opacity="0.45"/>
+  <text x="50" y="86" text-anchor="middle" font-size="7" font-weight="800" font-family="Inter, system-ui, sans-serif" fill="#b0bac8" opacity="0.7">G</text>
+
+  <!-- Inner < / > code symbols -->
+  <text x="31" y="53" text-anchor="middle" font-size="8" font-weight="700" font-family="monospace" fill="#4cc0d0" opacity="0.25">&lt;</text>
+  <text x="50" y="53" text-anchor="middle" font-size="8" font-weight="700" font-family="monospace" fill="#4cc0d0" opacity="0.25">/</text>
+  <text x="69" y="53" text-anchor="middle" font-size="8" font-weight="700" font-family="monospace" fill="#4cc0d0" opacity="0.25">&gt;</text>
+
+  <!-- North needle -->
+  <path d="M50,8 L43,30 L36,44 L45,50 L50,43 L55,50 L64,44 L57,30 Z" fill="url(#n-grad)"/>
+
+  <!-- South needle -->
+  <path d="M50,92 L57,70 L64,56 L55,50 L50,57 L45,50 L36,56 L43,70 Z" fill="url(#s-grad)" opacity="0.35"/>
+
+  <!-- Center pivot -->
+  <circle cx="50" cy="50" r="5" fill="#e2e8f0"/>
+  <circle cx="50" cy="50" r="2.5" fill="#0d4a5a"/>
 </svg>
