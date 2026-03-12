@@ -127,8 +127,8 @@ export default function HeroCompass() {
           }
         )}
 
-        {/* Cardinal markers: D-E-V-G */}
-        {/* Top: E */}
+        {/* Cardinal markers: D-G-V-E */}
+        {/* Top: G (Guide) */}
         <polygon
           points="100,5 90,22 100,14 110,22"
           fill="#9aa4b4"
@@ -144,7 +144,7 @@ export default function HeroCompass() {
           fill="#b0bac8"
           opacity="0.8"
         >
-          E
+          G
         </text>
 
         {/* Left: D */}
@@ -185,7 +185,7 @@ export default function HeroCompass() {
           V
         </text>
 
-        {/* Bottom: G (Guide) */}
+        {/* Bottom: E */}
         <polygon
           points="100,195 110,178 100,186 90,178"
           fill="#9aa4b4"
@@ -201,7 +201,7 @@ export default function HeroCompass() {
           fill="#b0bac8"
           opacity="0.75"
         >
-          G
+          E
         </text>
 
         {/* Inner < / > code symbols */}

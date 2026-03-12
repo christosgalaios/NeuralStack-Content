@@ -104,8 +104,8 @@ export default function CompassLogo() {
           opacity="0.2"
         />
 
-        {/* Cardinal markers: D-E-V-G */}
-        {/* Top: E */}
+        {/* Cardinal markers: D-G-V-E */}
+        {/* Top: G (Guide) */}
         <polygon
           points="20,1 17,5 20,3 23,5"
           fill="#9aa4b4"
@@ -121,7 +121,7 @@ export default function CompassLogo() {
           fill="#b0bac8"
           opacity="0.7"
         >
-          E
+          G
         </text>
         {/* Left: D */}
         <polygon
@@ -159,7 +159,7 @@ export default function CompassLogo() {
         >
           V
         </text>
-        {/* Bottom: G (Guide) */}
+        {/* Bottom: E */}
         <polygon
           points="20,39 23,35 20,37 17,35"
           fill="#9aa4b4"
@@ -175,7 +175,7 @@ export default function CompassLogo() {
           fill="#b0bac8"
           opacity="0.65"
         >
-          G
+          E
         </text>
 
         {/* Needle group — rotates to follow mouse */}
