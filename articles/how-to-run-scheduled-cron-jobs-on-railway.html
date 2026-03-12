@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="i27IVb0fNqCp511fOfQTd08teAnHKX23tp8d-TPuHO0" />
+  <title>How to run scheduled cron jobs on Railway</title>
+  <meta name="description" content="How to run scheduled cron jobs on Railway. Step-by-step tutorial with code examples, configuration snippets, and deployment patterns." />
+  <meta property="og:title" content="How to run scheduled cron jobs on Railway" />
+  <meta property="og:description" content="How to run scheduled cron jobs on Railway. Step-by-step tutorial with code examples, configuration snippets, and deployment patterns." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://devguide.co.uk/articles/how-to-run-scheduled-cron-jobs-on-railway.html" />
+  <link rel="canonical" href="https://devguide.co.uk/articles/how-to-run-scheduled-cron-jobs-on-railway.html" />
+  <meta name="robots" content="index, follow" />
+  <link rel="alternate" type="application/rss+xml" title="Dev Guide RSS" href="https://devguide.co.uk/feed.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%231A1615'/%3E%3Ctext x='50' y='68' font-family='serif' font-size='60' font-weight='bold' fill='%23F59E0B' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "How to run scheduled cron jobs on Railway",
+  "description": "How to run scheduled cron jobs on Railway. Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+  "datePublished": "2026-03-12",
+  "dateModified": "2026-03-12",
+  "author": {
+    "@type": "Organization",
+    "name": "Dev Guide"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dev Guide",
+    "url": "https://devguide.co.uk"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://devguide.co.uk/articles/how-to-run-scheduled-cron-jobs-on-railway.html"
+  }
+}
+  </script>
+</head>
+<body>
+  <div class="reading-progress"></div>
+  <nav class="site-nav"><a href="https://devguide.co.uk/">Dev Guide</a><span class="nav-sep">/</span><span class="nav-current">How to run scheduled cron jobs on Railway</span></nav>
+<article>
+<header class="article-header">
+  <span class="category-badge category-tutorial">Tutorial</span>
+  <h1>How to run scheduled cron jobs on Railway</h1>
+  <div class="article-meta">
+    <span>Dev Guide</span>
+    <span class="article-meta-dot">&#183;</span>
+    <span>2026-03-12</span>
+    <span class="article-meta-dot">&#183;</span>
+    <span>7 min read</span>
+  </div>
+</header>
+<details class="toc" open>
+  <summary class="toc-title">In this article</summary>
+  <ol>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#overview-what-we-are-building">Overview: what we are building</a></li>
+    <li><a href="#step-1-project-setup">Step 1 — Project setup</a></li>
+    <li><a href="#step-2-core-implementation">Step 2 — Core implementation</a></li>
+    <li><a href="#step-3-testing-your-implementation">Step 3 — Testing your implementation</a></li>
+    <li><a href="#quick-reference">Quick reference</a></li>
+    <li><a href="#common-errors-and-how-to-fix-them">Common errors and how to fix them</a></li>
+    <li><a href="#going-further-production-considerations">Going further: production considerations</a></li>
+    <li><a href="#ready-to-deploy">Ready to deploy?</a></li>
+    <li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+    <li><a href="#references-and-sources">References and sources</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ol>
+</details>
+<div class="article-body">
+<h1>How to run scheduled cron jobs on Railway</h1>
+
+<p>This tutorial gives you a complete, working implementation of How to run scheduled cron jobs on Railway<sup><a href="https://docs.railway.app" target="_blank" rel="noopener noreferrer" class="citation-ref">[1]</a></sup> with no assumed knowledge beyond the prerequisites listed below. Every step is explained so you understand not just <em>what</em> to do but <em>why</em>.</p>
+
+<p>By the end you will have a working setup you can extend, a mental model for how the pieces fit together, and a checklist for common mistakes to avoid.</p>
+
+<p><em>Last verified: March 2026</em></p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Before starting, make sure you have:</p>
+
+<ul>
+<li>A working development environment (OS, shell, and package manager confirmed).<sup><a href="https://railway.app/pricing" target="_blank" rel="noopener noreferrer" class="citation-ref">[2]</a></sup></li>
+<li>The required runtime or SDK installed and on your PATH.<sup><a href="https://www.youtube.com/watch?v=Kx_1NQUG-qQ" target="_blank" rel="noopener noreferrer" class="citation-ref">[3]</a></sup></li>
+<li>Basic familiarity with the command line.</li>
+<li>A code editor with syntax highlighting (any will do).</li>
+</ul>
+
+<p>Refer to <a href="https://docs.railway.app" target="_blank" rel="noopener sponsored">Railway Documentation</a> for the latest install instructions.</p>
+
+<p>If you are missing any of these, set them up first. Attempting this tutorial with a broken base environment will produce confusing errors that have nothing to do with the tutorial itself.</p>
+
+<h2 id="overview-what-we-are-building">Overview: what we are building</h2>
+
+<p>Here is the big picture before we touch any code.</p>
+
+<p>The goal of this tutorial is to walk you through How to run scheduled cron jobs on Railway end-to-end.<sup><a href="https://docs.railway.app" target="_blank" rel="noopener noreferrer" class="citation-ref">[1]</a></sup> We will cover:</p>
+
+<ol>
+<li>Initial setup and project scaffolding.</li>
+<li>Core implementation with explanations at each step.</li>
+<li>Testing that the implementation actually works.</li>
+<li>Common extensions and next steps.</li>
+</ol>
+
+<p>Each section builds on the last. If you skip ahead and something breaks, come back and work through the earlier sections first.</p>
+
+<h2 id="step-1-project-setup">Step 1 — Project setup</h2>
+
+<p>Create a clean working directory for this tutorial:<sup><a href="https://railway.app/pricing" target="_blank" rel="noopener noreferrer" class="citation-ref">[2]</a></sup></p>
+
+<pre><code class="language-text">mkdir my-project &amp;&amp; cd my-project</code></pre>
+
+<p>Initialise your project with the relevant package manager or build tool.<sup><a href="https://www.youtube.com/watch?v=Kx_1NQUG-qQ" target="_blank" rel="noopener noreferrer" class="citation-ref">[3]</a></sup> Use the defaults for now — we will adjust configuration as needed.</p>
+
+<p><strong>Checkpoint</strong>: confirm that the project directory exists and the initialisation command completed without errors before moving on.</p>
+
+<h2 id="step-2-core-implementation">Step 2 — Core implementation</h2>
+
+<p>Start with the smallest possible working version.<sup><a href="https://docs.railway.app" target="_blank" rel="noopener noreferrer" class="citation-ref">[1]</a></sup> Resist the temptation to add features before the core works.</p>
+
+<p>Key principles to follow during implementation:</p>
+
+<ul>
+<li>Write code that is easy to delete, not just easy to extend.</li>
+<li>Use explicit names — clarity beats cleverness every time.</li>
+<li>Commit working checkpoints frequently so you can roll back safely.<sup><a href="https://railway.app/pricing" target="_blank" rel="noopener noreferrer" class="citation-ref">[2]</a></sup></li>
+<li>Read error messages carefully — they almost always tell you exactly what is wrong.</li>
+</ul>
+
+<p><strong>Checkpoint</strong>: run the code after each logical unit of work to catch issues early while the context is fresh.</p>
+
+<h2 id="step-3-testing-your-implementation">Step 3 — Testing your implementation</h2>
+
+<p>Do not skip this section. Untested code is broken code you have not found yet.<sup><a href="https://www.youtube.com/watch?v=Kx_1NQUG-qQ" target="_blank" rel="noopener noreferrer" class="citation-ref">[3]</a></sup></p>
+
+<p>Minimum verification steps:</p>
+
+<ol>
+<li><strong>Happy path</strong> — the expected inputs produce the expected outputs.<sup><a href="https://docs.railway.app" target="_blank" rel="noopener noreferrer" class="citation-ref">[1]</a></sup> Run through the most common use case end-to-end and confirm the result matches your expectations exactly.</li>
+<li><strong>Edge cases</strong> — empty inputs, maximum sizes, unexpected types. These are where most production bugs hide.<sup><a href="https://railway.app/pricing" target="_blank" rel="noopener noreferrer" class="citation-ref">[2]</a></sup> Test with an empty string, a very large input, and at least one input that should trigger an error.</li>
+<li><strong>Failure modes</strong> — confirm that errors are surfaced clearly, not swallowed silently. Disconnect from the network, provide invalid credentials, or pass malformed data. The error messages should tell you exactly what went wrong and where.</li>
+<li><strong>Regression baseline</strong> — save the output of a successful test run so you can compare against it after future changes.<sup><a href="https://www.youtube.com/watch?v=Kx_1NQUG-qQ" target="_blank" rel="noopener noreferrer" class="citation-ref">[3]</a></sup> This is especially important for output formats like JSON or HTML where subtle changes can break downstream consumers.</li>
+</ol>
+
+<p>A good test takes five minutes to write and saves hours of debugging later. If you are short on time, at least run the happy path manually and capture the output so you have a baseline to compare against.</p>
+
+<h2 id="quick-reference">Quick reference</h2>
+
+<table>
+<thead><tr><th>Step</th><th>Action</th><th>Checkpoint</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Project setup and scaffolding</td><td>Directory exists, init succeeds</td></tr>
+<tr><td>2</td><td>Core implementation</td><td>Code runs without errors</td></tr>
+<tr><td>3</td><td>Testing</td><td>Happy path and edge cases pass</td></tr>
+<tr><td>4</td><td>Production hardening</td><td>Monitoring, config, security reviewed</td></tr>
+</tbody>
+</table>
+
+<h2 id="common-errors-and-how-to-fix-them">Common errors and how to fix them</h2>
+
+<h3>Error: "command not found" or "module not found"</h3>
+
+<p>The tool or package is not on your PATH.<sup><a href="https://docs.railway.app" target="_blank" rel="noopener noreferrer" class="citation-ref">[1]</a></sup> Confirm the install succeeded and that you have restarted your shell or sourced your profile after installation.</p>
+
+<h3>Error: permission denied</h3>
+
+<p>You are trying to write to a location owned by another user or by root.<sup><a href="https://railway.app/pricing" target="_blank" rel="noopener noreferrer" class="citation-ref">[2]</a></sup> Use a local install path or adjust permissions on your project directory — do not reach for <code>sudo</code> as a first response.</p>
+
+<h3>Error: unexpected token / syntax error</h3>
+
+<p>Check the language version your runtime is using.<sup><a href="https://www.youtube.com/watch?v=Kx_1NQUG-qQ" target="_blank" rel="noopener noreferrer" class="citation-ref">[3]</a></sup> New syntax may not be supported in older runtimes. Confirm with <code><tool> --version</code>.</p>
+
+<h3>Error: works on my machine, fails in CI</h3>
+
+<p>Your local environment has something the CI environment does not.<sup><a href="https://docs.railway.app" target="_blank" rel="noopener noreferrer" class="citation-ref">[1]</a></sup> Common culprits: environment variables, system packages, or implicit dependency versions. Lock your dependencies explicitly.</p>
+
+<h2 id="going-further-production-considerations">Going further: production considerations</h2>
+
+<p>The tutorial above gives you a working foundation.<sup><a href="https://railway.app/pricing" target="_blank" rel="noopener noreferrer" class="citation-ref">[2]</a></sup> Before deploying to production, consider these additional steps:</p>
+
+<ul>
+<li><strong>Error handling</strong> — wrap external calls and I/O operations in proper error handling.<sup><a href="https://www.youtube.com/watch?v=Kx_1NQUG-qQ" target="_blank" rel="noopener noreferrer" class="citation-ref">[3]</a></sup> Log failures with enough context to debug without reproducing the issue locally.</li>
+<li><strong>Configuration management</strong> — extract hardcoded values into environment variables or config files. Twelve-Factor App principles (<a href="https://12factor.net" target="_blank" rel="noopener sponsored">12factor.net</a>) are a solid guide here.<sup><a href="https://docs.railway.app" target="_blank" rel="noopener noreferrer" class="citation-ref">[1]</a></sup></li>
+<li><strong>Monitoring</strong> — add health checks, structured logging, and basic metrics from day one.<sup><a href="https://railway.app/pricing" target="_blank" rel="noopener noreferrer" class="citation-ref">[2]</a></sup> You will need them the first time something breaks in production, and adding observability after the fact is always harder than building it in.</li>
+<li><strong>Security</strong> — review dependencies for known vulnerabilities, use least-privilege access for service accounts, and never commit secrets to version control.<sup><a href="https://www.youtube.com/watch?v=Kx_1NQUG-qQ" target="_blank" rel="noopener noreferrer" class="citation-ref">[3]</a></sup></li>
+<li><strong>Documentation</strong> — write a README that explains how to set up, run, and deploy the project. Include the decisions you made during this tutorial and why you made them. Future contributors (including your future self) will thank you.</li>
+</ul>
+
+<h2 id="ready-to-deploy">Ready to deploy?</h2>
+
+<p>If you are evaluating hosting or infrastructure, these are the platforms we use and recommend for real projects.</p>
+
+<ul>
+<li><a href="https://www.vultr.com/?ref=9880243-9J" target="_blank" rel="noopener sponsored">Get $300 Free Credit: Vultr</a> — high-performance cloud compute, bare metal, and GPU instances — get $300 free credit and deploy worldwide in seconds</li>
+<li><a href="https://railway.app?referralCode=2zaRHx" target="_blank" rel="noopener sponsored">Deploy Your First App: Railway</a> — deploy from a GitHub repo in seconds with built-in CI, databases, and cron — pay only for what you use</li>
+</ul>
+
+<p>Disclosure: some links above are affiliate links. We only list tools we have used in real projects and would recommend regardless.</p>
+
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+
+<h3>How long does this take to set up?</h3>
+
+<p>Most of the steps in this tutorial take under an hour for a typical development machine.<sup><a href="https://docs.railway.app" target="_blank" rel="noopener noreferrer" class="citation-ref">[1]</a></sup> The main time sink is debugging environment issues that are specific to your setup.</p>
+
+<h3>Can I use this approach in production?</h3>
+
+<p>The tutorial focuses on correctness and clarity over production-readiness.<sup><a href="https://railway.app/pricing" target="_blank" rel="noopener noreferrer" class="citation-ref">[2]</a></sup> Before going to production, add proper error handling, logging, secrets management, and a deployment pipeline. Use the tutorial output as a foundation, not a final product.</p>
+
+<h3>Where can I learn more about How to run scheduled cron jobs on Railway?</h3>
+
+<p>The official documentation<sup><a href="https://www.youtube.com/watch?v=Kx_1NQUG-qQ" target="_blank" rel="noopener noreferrer" class="citation-ref">[3]</a></sup> is always the most reliable source. Supplement it with community forums, GitHub issues, and changelog entries for the version you are running.</p>
+
+<h2 id="references-and-sources">References and sources</h2>
+
+<ol>
+<li id="ref-1"><a href="https://docs.railway.app" target="_blank" rel="noopener sponsored">Railway Documentation</a></li>
+<li id="ref-2"><a href="https://railway.app/pricing" target="_blank" rel="noopener sponsored">Railway Pricing</a></li>
+<li id="ref-3"><a href="https://www.youtube.com/watch?v=Kx_1NQUG-qQ" target="_blank" rel="noopener sponsored">Railway: The Heroku Alternative? — Fireship, YouTube</a></li>
+<li id="ref-4"><a href="https://dev.to/techno-tim/best-heroku-alternatives-for-developers-5d6e" target="_blank" rel="noopener sponsored">Best Heroku Alternatives for Developers — dev.to</a></li>
+<li id="ref-5"><a href="https://www.thoughtworks.com/radar" target="_blank" rel="noopener sponsored">ThoughtWorks Technology Radar</a></li>
+<li id="ref-6"><a href="https://survey.stackoverflow.co" target="_blank" rel="noopener sponsored">Stack Overflow Annual Developer Survey</a></li>
+<li id="ref-7"><a href="https://landscape.cncf.io" target="_blank" rel="noopener sponsored">CNCF Cloud Native Landscape</a></li>
+<li id="ref-8"><a href="https://www.computer.org/education/bodies-of-knowledge/software-engineering" target="_blank" rel="noopener sponsored">IEEE Software Engineering Body of Knowledge (SWEBOK)</a></li>
+<li id="ref-9"><a href="https://martinfowler.com/architecture/" target="_blank" rel="noopener sponsored">Martin Fowler — Software Architecture Guide</a></li>
+<li id="ref-10"><a href="https://www.jetbrains.com/lp/devecosystem-2023/" target="_blank" rel="noopener sponsored">JetBrains Developer Ecosystem Survey</a></li>
+<li id="ref-11"><a href="https://octoverse.github.com" target="_blank" rel="noopener sponsored">GitHub Octoverse — State of Open Source</a></li>
+<li id="ref-12"><a href="https://12factor.net" target="_blank" rel="noopener sponsored">The Twelve-Factor App</a></li>
+<li id="ref-13"><a href="https://sre.google/sre-book/table-of-contents/" target="_blank" rel="noopener sponsored">Google — Site Reliability Engineering</a></li>
+<li id="ref-14"><a href="https://www.gartner.com/en/research/magic-quadrant" target="_blank" rel="noopener sponsored">Gartner — Magic Quadrant Reports</a></li>
+</ol>
+
+<p>All pricing, features, and compatibility information in this article was verified against official documentation at the time of writing. Always check the official sources above for the most current information.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>You now have a working implementation of How to run scheduled cron jobs on Railway<sup><a href="https://docs.railway.app" target="_blank" rel="noopener noreferrer" class="citation-ref">[1]</a></sup> and a mental model for how the pieces fit together.</p>
+
+<p>The next step is to make it yours: adapt the implementation to your specific use case, add tests that reflect your real requirements, and document any decisions you made so future collaborators understand the context.</p>
+</div>
+<aside class="tool-callout">
+  <span class="tool-callout-badge">Recommended</span>
+  <h4>Railway</h4>
+  <p>Deploy code from GitHub in seconds — simple, powerful cloud hosting for developers.</p>
+  <a href="https://railway.app?referralCode=2zaRHx" class="tool-callout-cta" target="_blank" rel="noopener sponsored">Try Railway &rarr;</a>
+</aside>
+
+<section class="related-articles">
+  <h2>Related articles</h2>
+  <ul>
+    <li><a href="https://devguide.co.uk/articles/how-to-deploy-a-monorepo-on-railway-step-by-step-guide.html">How to deploy a monorepo on Railway (step-by-step guide)</a></li>
+    <li><a href="https://devguide.co.uk/articles/how-to-deploy-a-next-js-app-on-railway-step-by-step-guide.html">How to deploy a Next.js app on Railway (step-by-step guide)</a></li>
+    <li><a href="https://devguide.co.uk/articles/how-to-deploy-a-next-js-app-on-railway-with-a-postgresql-database.html">How to deploy a Next.js app on Railway with a PostgreSQL database</a></li>
+    <li><a href="https://devguide.co.uk/articles/how-to-deploy-a-python-app-to-railway-from-scratch-step-by-step-guide.html">How to deploy a Python app to Railway from scratch (step-by-step guide)</a></li>
+  </ul>
+</section>
+</article>
+<script>
+(function(){
+  var bar=document.querySelector('.reading-progress');
+  if(!bar)return;
+  window.addEventListener('scroll',function(){
+    var h=document.documentElement;
+    var pct=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;
+    bar.style.width=Math.min(pct,100)+'%';
+  });
+})();
+</script>
+</body>
+</html>

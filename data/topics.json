@@ -3907,7 +3907,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compat-tensorflow-withrocmonamdgpus",
@@ -3917,7 +3917,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compat-tensorflow-withcuda124",
@@ -5517,7 +5517,7 @@
     "difficulty_score": 0.1,
     "source": "heuristic-affiliate-priority",
     "created_at": "2026-03-08T04:41:54.961453Z",
-    "status": "drafted"
+    "status": "published"
   },
   {
     "id": "priority-railway-vs-vercel-netlify",
@@ -5587,7 +5587,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "drafted"
+    "status": "published"
   },
   {
     "id": "vultr-deploy-python-flask",
@@ -5597,7 +5597,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "drafted"
+    "status": "published"
   },
   {
     "id": "vultr-kubernetes-cluster",
@@ -5607,7 +5607,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "drafted"
+    "status": "published"
   },
   {
     "id": "vultr-vs-digitalocean",
@@ -5647,7 +5647,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "drafted"
+    "status": "published"
   },
   {
     "id": "vultr-docker-setup",
@@ -5657,7 +5657,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "drafted"
+    "status": "published"
   },
   {
     "id": "vultr-wordpress-hosting",
@@ -5667,7 +5667,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "drafted"
+    "status": "published"
   },
   {
     "id": "vultr-terraform",
@@ -5677,7 +5677,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "drafted"
+    "status": "published"
   },
   {
     "id": "railway-deploy-nextjs",
@@ -5687,7 +5687,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "drafted"
+    "status": "published"
   },
   {
     "id": "railway-postgres-setup",
@@ -5697,7 +5697,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "drafted"
+    "status": "published"
   },
   {
     "id": "railway-docker-deploy",
@@ -5707,7 +5707,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "drafted"
+    "status": "published"
   },
   {
     "id": "railway-cron-jobs",
@@ -5717,7 +5717,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "drafted"
+    "status": "published"
   },
   {
     "id": "railway-monorepo",
@@ -5727,7 +5727,7 @@
     "difficulty_score": 0.1,
     "source": "manual-affiliate-seeds",
     "created_at": "2026-03-11T15:19:08.984428+00:00",
-    "status": "drafted"
+    "status": "published"
   },
   {
     "id": "railway-vs-vultr",
@@ -7308,5 +7308,295 @@
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
     "status": "new"
+  },
+  {
+    "id": "howto-set-up-a-vultr-vps-with-ubuntu-and-secure-it-for-production",
+    "keyword": "How to set up a Vultr VPS with Ubuntu and secure it for production (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-deploy-a-flask-api-on-vultr-with-gunicorn-and-nginx",
+    "keyword": "How to deploy a Flask API on Vultr with Gunicorn and Nginx (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-set-up-automated-backups-on-vultr-object-storage",
+    "keyword": "How to set up automated backups on Vultr object storage (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "new"
+  },
+  {
+    "id": "howto-deploy-a-redis-cache-on-vultr-for-a-web-application",
+    "keyword": "How to deploy a Redis cache on Vultr for a web application (step-by-step guide)",
+    "category": "tutorial",
+    "intent": "Follow a practical, step-by-step guide to accomplish a specific task.",
+    "difficulty_score": 0.3,
+    "source": "heuristic-howto",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "new"
+  },
+  {
+    "id": "priority-vultr-vs-digitalocean",
+    "keyword": "Vultr vs DigitalOcean: cloud hosting comparison for developers",
+    "category": "comparison",
+    "intent": "Decide which cloud provider to use.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-vultr-vs-linode",
+    "keyword": "Vultr vs Linode: which cloud provider is better for developers in 2026",
+    "category": "comparison",
+    "intent": "Compare Vultr and Linode for developer workloads.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-vultr-vs-aws-lightsail",
+    "keyword": "Vultr vs AWS Lightsail: simple cloud hosting comparison",
+    "category": "comparison",
+    "intent": "Compare Vultr and AWS Lightsail for simplicity.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-vultr-vs-hetzner",
+    "keyword": "Vultr vs Hetzner: budget cloud hosting comparison for 2026",
+    "category": "comparison",
+    "intent": "Compare affordable cloud providers.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-best-cheap-vps-2026",
+    "keyword": "Best cheap VPS hosting for developers in 2026",
+    "category": "comparison",
+    "intent": "Find the most affordable VPS for dev workloads.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-vultr-django-deploy",
+    "keyword": "How to deploy a Django app on Vultr with Docker and Nginx",
+    "category": "guide",
+    "intent": "Deploy a production Django app on Vultr.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-vultr-k8s-setup",
+    "keyword": "How to set up a Kubernetes cluster on Vultr from scratch",
+    "category": "guide",
+    "intent": "Run Kubernetes on Vultr cloud.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-vultr-gpu-ml-guide",
+    "keyword": "Vultr GPU instances for machine learning: complete setup guide",
+    "category": "guide",
+    "intent": "Run ML workloads on Vultr GPU instances.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-vultr-nodejs-deploy",
+    "keyword": "How to deploy a Node.js app on Vultr with PM2 and Nginx",
+    "category": "guide",
+    "intent": "Deploy a production Node.js app on Vultr.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-vultr-wordpress-hosting",
+    "keyword": "How to host WordPress on Vultr with Nginx and free SSL",
+    "category": "guide",
+    "intent": "Set up WordPress hosting on Vultr.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-vultr-baremetal-vs-cloud",
+    "keyword": "Vultr bare metal vs cloud compute: when to use each",
+    "category": "comparison",
+    "intent": "Choose between Vultr bare metal and cloud.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-best-cloud-startups-2026",
+    "keyword": "Best cloud hosting for startups in 2026: Vultr vs AWS vs DigitalOcean",
+    "category": "comparison",
+    "intent": "Choose cloud hosting for a startup.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-vultr-docker-setup",
+    "keyword": "How to set up Docker on a Vultr VPS in 5 minutes",
+    "category": "guide",
+    "intent": "Quick Docker setup on Vultr.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-vultr-review-2026",
+    "keyword": "Vultr review: affordable cloud infrastructure for developers",
+    "category": "review",
+    "intent": "Evaluate Vultr for development workloads.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-vultr-terraform-guide",
+    "keyword": "How to provision Vultr infrastructure with Terraform",
+    "category": "guide",
+    "intent": "Automate Vultr infrastructure with IaC.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-railway-nextjs-deploy",
+    "keyword": "How to deploy a Next.js app on Railway with a PostgreSQL database",
+    "category": "guide",
+    "intent": "Deploy full-stack Next.js on Railway.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-railway-postgres-setup",
+    "keyword": "How to set up PostgreSQL on Railway for production apps",
+    "category": "guide",
+    "intent": "Run production Postgres on Railway.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-railway-docker-deploy",
+    "keyword": "How to deploy Docker containers on Railway",
+    "category": "guide",
+    "intent": "Deploy containerised apps on Railway.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-best-side-project-hosting-2026",
+    "keyword": "Best platforms to deploy a side project in 2026",
+    "category": "comparison",
+    "intent": "Find the easiest hosting for side projects.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-heroku-to-railway-migration",
+    "keyword": "How to migrate from Heroku to Railway: step-by-step guide",
+    "category": "guide",
+    "intent": "Migrate apps from Heroku to Railway.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-railway-vs-aws-small-teams",
+    "keyword": "Railway vs AWS for small teams: simplicity vs flexibility",
+    "category": "comparison",
+    "intent": "Compare Railway and AWS for small teams.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-railway-cron-jobs",
+    "keyword": "How to run scheduled cron jobs on Railway",
+    "category": "guide",
+    "intent": "Set up background jobs on Railway.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-railway-monorepo-deploy",
+    "keyword": "How to deploy a monorepo on Railway",
+    "category": "guide",
+    "intent": "Deploy monorepo projects on Railway.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-railway-vs-vultr",
+    "keyword": "Railway vs Vultr: PaaS vs IaaS for web app deployment",
+    "category": "comparison",
+    "intent": "Understand when to use PaaS vs IaaS.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
+  },
+  {
+    "id": "priority-best-cloud-stack-indie-2026",
+    "keyword": "Best cloud hosting stack for indie developers in 2026",
+    "category": "guide",
+    "intent": "Build an affordable cloud stack.",
+    "difficulty_score": 0.1,
+    "source": "heuristic-affiliate-priority",
+    "created_at": "2026-03-12T01:07:38.578705Z",
+    "status": "published"
   }
 ]

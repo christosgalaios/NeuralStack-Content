@@ -1361,6 +1361,17 @@ class SimpleLocalLLM:
             """).strip(),
 
             textwrap.dedent(f"""
+            ## Quick reference
+
+            | Step | Action | Checkpoint |
+            |------|--------|------------|
+            | 1 | Project setup and scaffolding | Directory exists, init succeeds |
+            | 2 | Core implementation | Code runs without errors |
+            | 3 | Testing | Happy path and edge cases pass |
+            | 4 | Production hardening | Monitoring, config, security reviewed |
+            """).strip(),
+
+            textwrap.dedent(f"""
             ## Common errors and how to fix them
 
             ### Error: "command not found" or "module not found"
@@ -1653,8 +1664,11 @@ class SimpleLocalLLM:
             return self._template_review(keyword, intent)
         dispatch = {
             "devtools_comparison": self._template_devtools_comparison,
+            "comparison": self._template_devtools_comparison,
             "compatibility": self._template_compatibility,
             "tutorial": self._template_tutorial,
+            "guide": self._template_tutorial,
+            "review": self._template_review,
             "foreign_news": self._template_foreign_news,
         }
         generator = dispatch.get(category, self._template_devtools_comparison)
