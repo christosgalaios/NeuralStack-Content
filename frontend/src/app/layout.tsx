@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE_NAME, SITE_DESCRIPTION, BASE_URL, ADSENSE_ID, GOOGLE_VERIFICATION } from "@/lib/config";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
+import FloatingCompass from "@/components/layout/FloatingCompass";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
@@ -65,6 +66,7 @@ export default function RootLayout({
         <SiteHeader />
         <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6">{children}</main>
         <SiteFooter />
+        <FloatingCompass />
       </body>
     </html>
   );

@@ -16,7 +16,7 @@ export default function SiteHeader() {
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-2.5 text-lg font-bold tracking-tight" style={{ color: "var(--text-primary)" }}>
           <CompassLogo />
-          {SITE_NAME}
+          Dev <span style={{ color: "#1a9aaa" }}>Guide</span>
         </Link>
 
         {/* Desktop Nav */}

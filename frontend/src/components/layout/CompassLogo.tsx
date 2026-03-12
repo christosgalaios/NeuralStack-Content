@@ -105,11 +105,11 @@ export default function CompassLogo() {
         />
 
         {/* Cardinal markers: D-G-V-E */}
-        {/* Top: G (Guide) */}
+        {/* Top: G (Guide) — accent color to distinguish from D-E-V */}
         <polygon
           points="20,1 17,5 20,3 23,5"
-          fill="#9aa4b4"
-          opacity="0.55"
+          fill="#1a8a9a"
+          opacity="0.7"
         />
         <text
           x="20"
@@ -118,8 +118,8 @@ export default function CompassLogo() {
           fontSize="3.5"
           fontWeight="800"
           fontFamily="Inter, system-ui, sans-serif"
-          fill="#b0bac8"
-          opacity="0.7"
+          fill="#1a9aaa"
+          opacity="0.9"
         >
           G
         </text>

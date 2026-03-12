@@ -128,11 +128,11 @@ export default function HeroCompass() {
         )}
 
         {/* Cardinal markers: D-G-V-E */}
-        {/* Top: G (Guide) */}
+        {/* Top: G (Guide) — accent color to distinguish from D-E-V */}
         <polygon
           points="100,5 90,22 100,14 110,22"
-          fill="#9aa4b4"
-          opacity="0.5"
+          fill="#1a8a9a"
+          opacity="0.7"
         />
         <text
           x="100"
@@ -141,8 +141,8 @@ export default function HeroCompass() {
           fontSize="18"
           fontWeight="800"
           fontFamily="Inter, system-ui, sans-serif"
-          fill="#b0bac8"
-          opacity="0.8"
+          fill="#1a9aaa"
+          opacity="0.95"
         >
           G
         </text>

@@ -456,3 +456,44 @@ body::before {
 [data-theme="light"] body::before {
   background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(13, 106, 122, 0.04), transparent);
 }
+
+/* ─── Floating Compass (back to top) ────────────────────────── */
+
+.floating-compass {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 5px;
+  cursor: pointer;
+  z-index: 40;
+  transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transform: translateY(0);
+  box-shadow: 0 2px 16px rgba(13, 74, 90, 0.2);
+}
+
+.floating-compass[style*="opacity: 0"] {
+  transform: translateY(16px);
+}
+
+.floating-compass:hover {
+  border-color: #1a8a9a;
+  box-shadow: 0 0 20px rgba(26, 138, 154, 0.3);
+}
+
+.floating-compass:active {
+  transform: scale(0.92);
+}
+
+@media (max-width: 639px) {
+  .floating-compass {
+    bottom: 1rem;
+    right: 1rem;
+    width: 48px;
+    height: 48px;
+  }
+}
