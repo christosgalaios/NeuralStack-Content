@@ -15,7 +15,7 @@ export default function HomePage() {
   return (
     <div className="animate-in">
       {/* Hero */}
-      <section className="flex items-center gap-8 py-8 sm:py-12">
+      <section className="flex flex-col items-center gap-6 py-8 sm:flex-row sm:gap-8 sm:py-12">
         <div className="flex-1">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "var(--text-primary)" }}>
             Pick the right dev tools &mdash; skip the research rabbit hole

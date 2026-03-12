@@ -387,10 +387,11 @@ h1, h2, h3, h4 {
   animation: ringPulse 4s ease-in-out infinite;
 }
 
-/* Hide hero compass on small screens, show smaller on medium */
+/* Smaller hero compass on mobile */
 @media (max-width: 639px) {
   .hero-compass {
-    display: none;
+    width: 140px;
+    height: 140px;
   }
 }
 
