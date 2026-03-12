@@ -451,6 +451,20 @@
     ]
   },
   {
+    "slug": "mysql-8-on-nixos-compatibility-guide",
+    "title": "MySQL 8 on NixOS compatibility guide",
+    "description": "MySQL 8 on NixOS compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "mysql",
+      "nixos"
+    ]
+  },
+  {
     "slug": "mysql-8-on-raspberry-pi-5-compatibility-guide",
     "title": "MySQL 8 on Raspberry Pi 5 compatibility guide",
     "description": "MySQL 8 on Raspberry Pi 5 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
@@ -491,6 +505,50 @@
       "compatibility",
       "cuda",
       "mysql"
+    ]
+  },
+  {
+    "slug": "mysql-8-with-docker-compose-v2-compatibility-guide",
+    "title": "MySQL 8 with Docker Compose v2 compatibility guide",
+    "description": "MySQL 8 with Docker Compose v2 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "compose",
+      "docker",
+      "mysql"
+    ]
+  },
+  {
+    "slug": "mysql-8-with-kubernetes-1-30-compatibility-guide",
+    "title": "MySQL 8 with Kubernetes 1.30 compatibility guide",
+    "description": "MySQL 8 with Kubernetes 1.30 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "kubernetes",
+      "mysql"
+    ]
+  },
+  {
+    "slug": "mysql-8-with-prisma-orm-compatibility-guide",
+    "title": "MySQL 8 with Prisma ORM compatibility guide",
+    "description": "MySQL 8 with Prisma ORM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "mysql",
+      "orm",
+      "prisma"
     ]
   },
   {
@@ -723,6 +781,21 @@
       "railway",
       "vultr",
       "web"
+    ]
+  },
+  {
+    "slug": "redis-7-on-windows-11-arm-compatibility-guide",
+    "title": "Redis 7 on Windows 11 ARM compatibility guide",
+    "description": "Redis 7 on Windows 11 ARM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "arm",
+      "compatibility",
+      "redis",
+      "windows"
     ]
   },
   {
