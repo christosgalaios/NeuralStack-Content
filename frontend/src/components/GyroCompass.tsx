@@ -13,7 +13,6 @@ export default function GyroCompass() {
     let active = true;
 
     function handleOrientation(e: DeviceOrientationEvent) {
-      // alpha = compass heading (0-360), null if unavailable
       if (e.alpha != null) {
         setHasGyro(true);
         targetRotation.current = e.alpha;
@@ -25,25 +24,20 @@ export default function GyroCompass() {
       if (!active) return;
       setRotation((prev) => {
         const target = targetRotation.current;
-        // Handle wraparound (e.g. 350 -> 10 should go +20, not -340)
         let diff = target - prev;
         if (diff > 180) diff -= 360;
         if (diff < -180) diff += 360;
-        // Lerp 10% per frame for smooth motion
         return prev + diff * 0.1;
       });
       animFrame.current = requestAnimationFrame(animate);
     }
 
-    // Try to request permission (required on iOS 13+)
     if (
       typeof DeviceOrientationEvent !== "undefined" &&
       typeof (DeviceOrientationEvent as any).requestPermission === "function"
     ) {
-      // iOS — permission will be requested on first user tap (see below)
       window.addEventListener("deviceorientation", handleOrientation);
     } else if (typeof window !== "undefined" && "DeviceOrientationEvent" in window) {
-      // Android / desktop with orientation support
       window.addEventListener("deviceorientation", handleOrientation);
     }
 
@@ -56,7 +50,6 @@ export default function GyroCompass() {
     };
   }, []);
 
-  // iOS requires user gesture to request permission
   async function requestPermission() {
     if (
       typeof DeviceOrientationEvent !== "undefined" &&
@@ -73,7 +66,7 @@ export default function GyroCompass() {
     }
   }
 
-  // On desktop: needle follows mouse cursor position relative to compass center
+  // On desktop: needle follows mouse cursor
   const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
@@ -102,52 +95,64 @@ export default function GyroCompass() {
     >
       <svg
         ref={svgRef}
-        viewBox="0 0 100 100"
+        viewBox="0 0 200 200"
         className="h-28 w-28 sm:h-36 sm:w-36 drop-shadow-lg"
         style={{ filter: "drop-shadow(0 0 12px rgba(77,184,201,0.3))" }}
       >
         <defs>
-          <linearGradient id="gyro-needle" x1="0.5" y1="0" x2="0.5" y2="1">
-            <stop offset="0%" stopColor="#1a6b7a" />
-            <stop offset="100%" stopColor="#4db8c9" />
+          <linearGradient id="gyro-needle-dark" x1="0.2" y1="0" x2="0.8" y2="1">
+            <stop offset="0%" stopColor="#0a3d47" />
+            <stop offset="50%" stopColor="#126068" />
+            <stop offset="100%" stopColor="#1a7a8a" />
           </linearGradient>
-          <linearGradient id="gyro-needle-light" x1="0.5" y1="0" x2="0.5" y2="1">
-            <stop offset="0%" stopColor="#4db8c9" />
-            <stop offset="100%" stopColor="#7dd3e1" />
+          <linearGradient id="gyro-needle-mid" x1="0.2" y1="0" x2="0.8" y2="1">
+            <stop offset="0%" stopColor="#16636f" />
+            <stop offset="100%" stopColor="#3aafbf" />
+          </linearGradient>
+          <linearGradient id="gyro-needle-lo-dark" x1="0.8" y1="1" x2="0.2" y2="0">
+            <stop offset="0%" stopColor="#0e4e58" />
+            <stop offset="100%" stopColor="#1a7a8a" />
+          </linearGradient>
+          <linearGradient id="gyro-needle-lo-light" x1="0.8" y1="1" x2="0.2" y2="0">
+            <stop offset="0%" stopColor="#2a8a96" />
+            <stop offset="100%" stopColor="#5bc4d4" />
+          </linearGradient>
+          <linearGradient id="gyro-ring" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="#c0c4cc" />
+            <stop offset="50%" stopColor="#a0a6b0" />
+            <stop offset="100%" stopColor="#c0c4cc" />
+          </linearGradient>
+          <linearGradient id="gyro-rose" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="#1a7a8a" />
+            <stop offset="100%" stopColor="#2a9aaa" />
           </linearGradient>
         </defs>
 
-        {/* Outer ring */}
-        <circle cx="50" cy="50" r="44" fill="none" stroke="#6b7280" strokeWidth="3" opacity="0.5" />
-        {/* Inner ring */}
-        <circle cx="50" cy="50" r="36" fill="none" stroke="#6b7280" strokeWidth="1.5" opacity="0.3" />
+        {/* Static outer ring */}
+        <circle cx="100" cy="100" r="90" fill="none" stroke="url(#gyro-ring)" strokeWidth="10" opacity="0.55" />
+        {/* Static inner ring */}
+        <circle cx="100" cy="100" r="70" fill="none" stroke="url(#gyro-ring)" strokeWidth="6" opacity="0.35" />
 
-        {/* Cardinal ticks */}
-        <line x1="50" y1="2" x2="50" y2="14" stroke="#6b7280" strokeWidth="3" strokeLinecap="round" opacity="0.6" />
-        <line x1="98" y1="50" x2="86" y2="50" stroke="#6b7280" strokeWidth="3" strokeLinecap="round" opacity="0.6" />
-        <line x1="50" y1="98" x2="50" y2="86" stroke="#6b7280" strokeWidth="3" strokeLinecap="round" opacity="0.6" />
-        <line x1="2" y1="50" x2="14" y2="50" stroke="#6b7280" strokeWidth="3" strokeLinecap="round" opacity="0.6" />
+        {/* Rotating group: compass rose + needle */}
+        <g ref={needleRef} transform={`rotate(${rotation}, 100, 100)`}>
+          {/* Compass rose — 4 pointed star arms */}
+          <polygon points="100,8 80,68 100,54 120,68" fill="url(#gyro-rose)" opacity="0.9" />
+          <polygon points="100,192 120,132 100,146 80,132" fill="url(#gyro-rose)" opacity="0.9" />
+          <polygon points="192,100 132,80 146,100 132,120" fill="url(#gyro-rose)" opacity="0.9" />
+          <polygon points="8,100 68,120 54,100 68,80" fill="url(#gyro-rose)" opacity="0.9" />
 
-        {/* Diagonal ticks */}
-        <line x1="84" y1="16" x2="76" y2="24" stroke="#6b7280" strokeWidth="2" strokeLinecap="round" opacity="0.35" />
-        <line x1="84" y1="84" x2="76" y2="76" stroke="#6b7280" strokeWidth="2" strokeLinecap="round" opacity="0.35" />
-        <line x1="16" y1="84" x2="24" y2="76" stroke="#6b7280" strokeWidth="2" strokeLinecap="round" opacity="0.35" />
-        <line x1="16" y1="16" x2="24" y2="24" stroke="#6b7280" strokeWidth="2" strokeLinecap="round" opacity="0.35" />
-
-        {/* Rotating needle group */}
-        <g ref={needleRef} transform={`rotate(${rotation}, 50, 50)`}>
-          {/* North needle */}
-          <polygon points="50,14 42,50 50,44 58,50" fill="url(#gyro-needle)" />
-          {/* South needle */}
-          <polygon points="50,86 58,50 50,56 42,50" fill="url(#gyro-needle-light)" opacity="0.5" />
+          {/* Wide blade needle — top-right to bottom-left */}
+          <polygon points="156,16 100,100 72,80" fill="url(#gyro-needle-dark)" />
+          <polygon points="156,16 100,100 120,128" fill="url(#gyro-needle-mid)" opacity="0.9" />
+          <polygon points="44,184 100,100 128,120" fill="url(#gyro-needle-lo-dark)" opacity="0.6" />
+          <polygon points="44,184 100,100 80,72" fill="url(#gyro-needle-lo-light)" opacity="0.75" />
         </g>
 
-        {/* Center dot */}
-        <circle cx="50" cy="50" r="4" fill="#4db8c9" />
-        <circle cx="50" cy="50" r="2" fill="#1a6b7a" />
+        {/* Center dot (stays fixed) */}
+        <circle cx="100" cy="100" r="9" fill="white" />
+        <circle cx="100" cy="100" r="5.5" fill="#e8eaed" />
       </svg>
 
-      {/* Tap hint on mobile — shown briefly */}
       {!hasGyro && (
         <p
           className="absolute -bottom-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] sm:hidden"
