@@ -421,6 +421,21 @@
     ]
   },
   {
+    "slug": "postgresql-inside-github-codespaces-compatibility-guide",
+    "title": "PostgreSQL inside GitHub Codespaces compatibility guide",
+    "description": "PostgreSQL inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 7,
+    "tags": [
+      "codespaces",
+      "compatibility",
+      "github",
+      "postgresql"
+    ]
+  },
+  {
     "slug": "postgresql-on-apple-silicon-m3-compatibility-guide",
     "title": "PostgreSQL on Apple Silicon M3 compatibility guide",
     "description": "PostgreSQL on Apple Silicon M3 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
@@ -436,6 +451,34 @@
     ]
   },
   {
+    "slug": "postgresql-on-nixos-compatibility-guide",
+    "title": "PostgreSQL on NixOS compatibility guide",
+    "description": "PostgreSQL on NixOS compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "nixos",
+      "postgresql"
+    ]
+  },
+  {
+    "slug": "postgresql-on-raspberry-pi-5-compatibility-guide",
+    "title": "PostgreSQL on Raspberry Pi 5 compatibility guide",
+    "description": "PostgreSQL on Raspberry Pi 5 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "postgresql",
+      "raspberry"
+    ]
+  },
+  {
     "slug": "postgresql-on-windows-11-arm-compatibility-guide",
     "title": "PostgreSQL on Windows 11 ARM compatibility guide",
     "description": "PostgreSQL on Windows 11 ARM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
@@ -448,6 +491,36 @@
       "compatibility",
       "postgresql",
       "windows"
+    ]
+  },
+  {
+    "slug": "postgresql-with-cuda-12-4-compatibility-guide",
+    "title": "PostgreSQL with CUDA 12.4 compatibility guide",
+    "description": "PostgreSQL with CUDA 12.4 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "cuda",
+      "postgresql"
+    ]
+  },
+  {
+    "slug": "postgresql-with-rocm-on-amd-gpus-compatibility-guide",
+    "title": "PostgreSQL with ROCm on AMD GPUs compatibility guide",
+    "description": "PostgreSQL with ROCm on AMD GPUs compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 7,
+    "tags": [
+      "amd",
+      "compatibility",
+      "gpus",
+      "postgresql",
+      "rocm"
     ]
   },
   {
