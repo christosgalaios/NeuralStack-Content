@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     type: "website",
     siteName: SITE_NAME,
     locale: "en_US",
-    images: [{ url: `${BASE_URL}/og/default.svg`, width: 1200, height: 630, alt: `${SITE_NAME} — AI-Powered Developer Intelligence` }],
+    images: [{ url: `${BASE_URL}/og/default-16x9.png`, width: 1200, height: 675, alt: `${SITE_NAME} — AI-Powered Developer Intelligence` }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [`${BASE_URL}/og/default.svg`],
+    images: [`${BASE_URL}/og/default-16x9.png`],
   },
   robots: { index: true, follow: true },
   alternates: {

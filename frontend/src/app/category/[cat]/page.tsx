@@ -20,7 +20,7 @@ export async function generateMetadata({
   const meta = CATEGORY_META[cat];
   if (!meta) return {};
 
-  const ogImage = `${BASE_URL}/og/${cat}.svg`;
+  const ogImage = `${BASE_URL}/og/${cat}-16x9.png`;
   return {
     title: `${meta.display} Articles`,
     description: meta.description,
@@ -28,7 +28,7 @@ export async function generateMetadata({
       title: `${meta.display} Articles | ${SITE_NAME}`,
       description: meta.description,
       url: `${BASE_URL}/category/${cat}`,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: `${meta.display} Articles` }],
+      images: [{ url: ogImage, width: 1200, height: 675, alt: `${meta.display} Articles` }],
     },
     twitter: {
       card: "summary_large_image",

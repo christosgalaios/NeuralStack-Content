@@ -26,7 +26,7 @@ export async function generateMetadata({
   if (!article) return {};
 
   const canonical = `${BASE_URL}/articles/${slug}`;
-  const ogImage = `${BASE_URL}/og/${article.category}.svg`;
+  const ogImage = `${BASE_URL}/og/${article.category}-16x9.png`;
   return {
     title: article.title,
     description: article.description,
@@ -38,7 +38,7 @@ export async function generateMetadata({
       publishedTime: article.date_published,
       modifiedTime: article.date_modified,
       section: article.category_display,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: article.title }],
+      images: [{ url: ogImage, width: 1200, height: 675, alt: article.title }],
     },
     twitter: {
       card: "summary_large_image",

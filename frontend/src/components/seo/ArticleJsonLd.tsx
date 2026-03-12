@@ -3,26 +3,34 @@ import type { Article } from "@/lib/articles";
 
 export default function ArticleJsonLd({ article }: { article: Article }) {
   const canonical = `${BASE_URL}/articles/${article.slug}`;
-  const ogImage = `${BASE_URL}/og/${article.category || "default"}.svg`;
+  const cat = article.category || "default";
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
     description: article.description,
-    image: ogImage,
+    image: [
+      `${BASE_URL}/og/${cat}-16x9.png`,
+      `${BASE_URL}/og/${cat}-4x3.png`,
+      `${BASE_URL}/og/${cat}-1x1.png`,
+    ],
     datePublished: article.date_published,
     dateModified: article.date_modified,
     wordCount: article.word_count,
     articleSection: article.category_display,
-    author: { "@type": "Organization", name: SITE_NAME, url: BASE_URL },
+    author: {
+      "@type": "Person",
+      name: `${SITE_NAME} Editorial`,
+      url: `${BASE_URL}/about`,
+    },
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/icon.svg`,
+        url: `${BASE_URL}/icon.png`,
       },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
