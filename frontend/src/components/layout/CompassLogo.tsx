@@ -32,14 +32,14 @@ export default function CompassLogo() {
       animFrame = requestAnimationFrame(applyRotation);
     };
 
-    const handleMouseMove = (e: MouseEvent) => {
+    const updateTarget = (clientX: number, clientY: number) => {
       if (!compassRef.current) return;
       const rect = compassRef.current.getBoundingClientRect();
       const cx = rect.left + rect.width / 2;
       const cy = rect.top + rect.height / 2;
       // atan2(dx, -dy) gives 0° = north, positive = clockwise
       targetRef.current =
-        Math.atan2(e.clientX - cx, -(e.clientY - cy)) * (180 / Math.PI);
+        Math.atan2(clientX - cx, -(clientY - cy)) * (180 / Math.PI);
       isTrackingRef.current = true;
 
       clearTimeout(idleTimeoutRef.current);
@@ -48,11 +48,27 @@ export default function CompassLogo() {
       }, 3000);
     };
 
+    const handleMouseMove = (e: MouseEvent) => {
+      updateTarget(e.clientX, e.clientY);
+    };
+    const handleTouchStart = (e: TouchEvent) => {
+      const touch = e.touches[0];
+      if (touch) updateTarget(touch.clientX, touch.clientY);
+    };
+    const handleTouchMove = (e: TouchEvent) => {
+      const touch = e.touches[0];
+      if (touch) updateTarget(touch.clientX, touch.clientY);
+    };
+
     window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("touchstart", handleTouchStart, { passive: true });
+    window.addEventListener("touchmove", handleTouchMove, { passive: true });
     animFrame = requestAnimationFrame(applyRotation);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
       cancelAnimationFrame(animFrame);
       clearTimeout(idleTimeoutRef.current);
     };
