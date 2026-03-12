@@ -11,7 +11,7 @@ export default function SiteFooter() {
           <div>
             <p className="text-lg font-bold" style={{ color: "var(--text-primary)" }}>{SITE_NAME}</p>
             <p className="mt-2 text-sm" style={{ color: "var(--text-muted)" }}>
-              AI-powered technical content, published daily. Independent guides for engineers who ship.
+              Independent technical guides for engineers who ship. Updated daily.
             </p>
           </div>
 

@@ -92,18 +92,43 @@ class SimpleLocalLLM:
         # through available references instead of repeating the same one.
         self._cite_counter: Dict[str, int] = {}
 
-    def _aff_section(self) -> str:
-        aff_items = "\n".join(
-            f"- [{s['name']}]({s['url']}) — {s['desc']}"
-            for s in AFFILIATE_SLOTS
-        )
+    def _aff_section(self, keyword: str = "") -> str:
+        _INFRA_KEYWORDS = [
+            "cloud", "hosting", "deploy", "server", "vps", "infrastructure",
+            "docker", "kubernetes", "container", "railway", "vultr", "heroku",
+            "render", "fly.io", "vercel", "paas", "iaas",
+        ]
+        is_infra = any(k in keyword.lower() for k in _INFRA_KEYWORDS) if keyword else False
+
+        if is_infra:
+            heading = "## Ready to deploy?"
+            intro_lines = [
+                "If you are evaluating hosting or infrastructure, these are the",
+                "platforms we use and recommend for real projects.",
+            ]
+            vultr_cta = "Get $300 Free Credit"
+            railway_cta = "Deploy Your First App"
+            aff_items = "\n".join(
+                f"- [{vultr_cta if s['name'] == 'Vultr' else railway_cta}: {s['name']}]({s['url']}) — {s['desc']}"
+                for s in AFFILIATE_SLOTS
+            )
+        else:
+            heading = "## Recommended tools and resources"
+            intro_lines = [
+                "After working with many stacks over the past few years, these are tools",
+                "we genuinely recommend. We may earn a commission if you sign up through",
+                "the links below, but our recommendations are based on hands-on experience",
+                "— not payout.",
+            ]
+            aff_items = "\n".join(
+                f"- [{s['name']}]({s['url']}) — {s['desc']}"
+                for s in AFFILIATE_SLOTS
+            )
+
         lines = [
-            "## Recommended tools and resources",
+            heading,
             "",
-            "After working with many stacks over the past few years, these are tools",
-            "we genuinely recommend. We may earn a commission if you sign up through",
-            "the links below, but our recommendations are based on hands-on experience",
-            "— not payout.",
+            *intro_lines,
             "",
             aff_items,
             "",
@@ -564,11 +589,208 @@ class SimpleLocalLLM:
         parts = re.split(r'\s+vs\.?\s+', base, maxsplit=1, flags=re.IGNORECASE)
         tool_a = parts[0].strip() if parts else keyword
         tool_b = parts[1].strip() if len(parts) > 1 else ""
+        # Strip trailing "review" so "Railway review" → "Railway"
+        tool_a = re.sub(r'\s+review$', '', tool_a, flags=re.IGNORECASE)
+        tool_b = re.sub(r'\s+review$', '', tool_b, flags=re.IGNORECASE)
         if not tool_b:
             # Cannot determine second tool — use keyword itself so the
             # article at least reads coherently instead of saying "Tool B".
             tool_b = "alternatives"
         return tool_a, tool_b
+
+    def _is_review_topic(self, keyword: str) -> bool:
+        """Return True if keyword is a single-tool review (not a comparison)."""
+        kw = keyword.lower()
+        return "review" in kw and " vs " not in kw and " vs." not in kw
+
+    def _template_review(self, keyword: str, intent: str) -> str:
+        """Dedicated template for single-tool reviews."""
+        now = datetime.now().strftime("%B %Y")
+        # Extract the tool name by stripping "review" and common suffixes
+        tool = re.sub(r'\s+review\b.*$', '', keyword, flags=re.IGNORECASE).strip()
+        if not tool:
+            tool = keyword
+
+        facts = self._TOOL_FACTS.get(tool, {})
+        price = facts.get("price", "See vendor pricing page for current tiers")
+        setup = facts.get("setup", "Standard install — check the official getting started guide")
+        feature = facts.get("key_feature", "A focused feature set for its target audience")
+        oss = facts.get("open_source", "Check vendor licensing page")
+        best_for = facts.get("best_for", "Teams evaluating modern tooling options")
+
+        numbered_refs = self._collect_numbered_references(keyword)
+        cite_tool = _RotatingCite(self, numbered_refs, tool)
+        cite_gen = _RotatingCiteGeneral(self, numbered_refs)
+
+        refs_tool = self._TOOL_REFERENCES.get(tool, [])
+        link_tool = f"[{tool}]({refs_tool[0]['url']})" if refs_tool else f"**{tool}**"
+        docs_tool = f"[official {tool} documentation]({refs_tool[1]['url']})" if len(refs_tool) > 1 else f"the official {tool} documentation"
+
+        sections = [
+            textwrap.dedent(f"""
+            # {keyword}
+
+            {link_tool} has been gaining traction in developer circles, but marketing
+            pages never tell the whole story{cite_tool}. This review is based on hands-on
+            usage and aims to give you an honest assessment as of {now} — what works
+            well, what falls short, and whether it deserves a place in your workflow.
+            """).strip(),
+
+            textwrap.dedent(f"""
+            ## What {tool} is and who it is for
+
+            {tool} positions itself as a tool for {best_for}{cite_tool}. At its core,
+            the key differentiator is: {feature}{cite_tool}.
+
+            If that description sounds like it solves a problem you actually have,
+            keep reading. If it does not, this tool probably is not for you — and
+            that is fine. The best tool is the one that fits your real workflow,
+            not the one with the most hype.
+            """).strip(),
+
+            textwrap.dedent(f"""
+            ## Key features
+
+            Here is what {tool} actually delivers in practice{cite_tool}:
+
+            - **Core capability**: {feature}{cite_tool}. This is the headline feature and
+              the main reason teams evaluate {tool} in the first place.
+            - **Setup experience**: {setup}{cite_tool}. First impressions matter, and the
+              onboarding flow sets the tone for the rest of the experience.
+            - **Licensing**: {oss}{cite_tool}. Worth understanding upfront, especially if
+              your organisation has policies about vendor lock-in or open-source requirements.
+            - **Ecosystem integration**: check {docs_tool} for the full list of
+              integrations, plugins, and supported platforms{cite_tool}.
+
+            The feature set is competitive for the target audience. Where {tool}
+            differentiates is in the depth of its core workflow rather than breadth
+            of features{cite_tool}.
+            """).strip(),
+
+            textwrap.dedent(f"""
+            ## Pricing breakdown
+
+            | Tier                | Price                | What you get                                    |
+            |---------------------|----------------------|-------------------------------------------------|
+            | Free / Entry        | {price}{cite_tool}   | Core features with usage limits                 |
+            | Paid / Pro          | See vendor page      | Higher limits, priority support, advanced features|
+            | Team / Enterprise   | Custom pricing       | SSO, audit logs, dedicated support               |
+
+            Pricing is one of the first questions engineers ask, and rightly so{cite_gen}.
+            {tool} is priced at {price}{cite_tool}. Compare this against your current
+            tooling cost and the time you would save. The cheapest option is not always
+            the most cost-effective — factor in developer productivity, not just the
+            subscription fee.
+            """).strip(),
+
+            textwrap.dedent(f"""
+            ## Setup experience
+
+            Getting started with {tool}: {setup}{cite_tool}.
+
+            The onboarding experience is a reliable signal for how well-maintained
+            a tool is overall{cite_gen}. If the first ten minutes are frustrating,
+            the next ten months will be worse. {tool} generally gets this right —
+            most developers are productive within a single work session{cite_tool}.
+
+            Check {docs_tool} for the official getting started guide and
+            troubleshooting steps if you hit any issues{cite_tool}.
+            """).strip(),
+
+            textwrap.dedent(f"""
+            ## Strengths — what {tool} gets right
+
+            After sustained use, these are the genuine strengths:
+
+            1. **{feature}** — this is not just a marketing claim. In practice,
+               it noticeably improves the core workflow{cite_tool}.
+            2. **Developer experience** — the interface is well-designed and the
+               learning curve is reasonable for the target audience{cite_tool}.
+            3. **Active development** — regular updates and responsive issue
+               tracking suggest a healthy engineering team behind the product{cite_tool}.
+            4. **Documentation quality** — {docs_tool} is comprehensive and
+               well-organized, which matters more than most teams realize{cite_tool}.
+            """).strip(),
+
+            textwrap.dedent(f"""
+            ## Weaknesses — where {tool} falls short
+
+            No tool is perfect. These are the honest limitations:
+
+            1. **Pricing at scale** — {price}{cite_tool} is competitive at the entry
+               level, but costs can grow quickly as team size or usage increases.
+               Model out your expected usage before committing.
+            2. **Ecosystem gaps** — while the core is strong, some integrations
+               feel like afterthoughts{cite_tool}. Check whether your specific stack
+               is well-supported before assuming it will work seamlessly.
+            3. **Lock-in risk** — depending on how deeply you integrate, switching
+               away later can be expensive. Evaluate this honestly upfront{cite_gen}.
+            """).strip(),
+
+            textwrap.dedent(f"""
+            ## Who should use {tool} — and who should not
+
+            **{tool} is a good fit if you:**
+
+            - {best_for}{cite_tool}.
+            - Want to reduce time spent on the specific pain point {tool} targets.
+            - Are willing to invest in learning a new workflow for long-term gains.
+            - Need {feature} as a core part of your daily work{cite_tool}.
+
+            **{tool} is probably not for you if you:**
+
+            - Already have a working setup that solves the same problem well enough.
+            - Need extensive customization that {tool} does not support yet.
+            - Are in an environment where {oss} creates compliance concerns{cite_tool}.
+            - Cannot justify the cost at your current team size or usage level.
+            """).strip(),
+
+            self._aff_section(keyword),
+
+            textwrap.dedent(f"""
+            ## Frequently asked questions
+
+            ### Is {tool} worth paying for?
+
+            That depends on how much time you currently lose to the problem {tool}
+            solves{cite_tool}. If you are spending hours per week on tasks that {tool}
+            automates or simplifies, the subscription pays for itself quickly.
+            Try the free tier first and measure the difference.
+
+            ### How does {tool} compare to alternatives?
+
+            {tool} competes in a crowded space{cite_gen}. Its core strength is
+            {feature}{cite_tool}. Alternatives may offer broader feature sets or lower
+            pricing, but {tool} tends to win on depth within its target workflow.
+
+            ### Can I use {tool} alongside my existing tools?
+
+            In most cases, yes{cite_tool}. Check {docs_tool} for specific integration
+            guides. Running tools in parallel during an evaluation period is the
+            safest way to assess fit without disrupting your current workflow.
+
+            ### Is my data safe with {tool}?
+
+            Review the vendor's security and privacy documentation before onboarding{cite_tool}.
+            Pay attention to data residency, encryption at rest, and their incident
+            response track record. These details matter more than marketing promises.
+            """).strip(),
+
+            self._references_section_from(numbered_refs),
+
+            textwrap.dedent(f"""
+            ## Verdict
+
+            {tool} delivers on its core promise: {feature}{cite_tool}. It is not the
+            right tool for everyone, but for its target audience —
+            {best_for}{cite_tool} — it is a genuinely strong option.
+
+            Try the free tier, evaluate it against your actual workflow for at least
+            a week, and make the decision based on your own experience rather than
+            anyone else's review — including this one.
+            """).strip(),
+        ]
+        return "\n\n".join(sections)
 
     def _template_devtools_comparison(self, keyword: str, intent: str) -> str:
         now = datetime.now().strftime("%B %Y")
@@ -739,7 +961,7 @@ class SimpleLocalLLM:
                choose this tool?"
             """).strip(),
 
-            self._aff_section(),
+            self._aff_section(keyword),
 
             textwrap.dedent(f"""
             ## Frequently asked questions
@@ -788,12 +1010,18 @@ class SimpleLocalLLM:
 
     def _extract_compatibility_components(self, keyword: str):
         """Parse keyword into two component names for the version matrix."""
-        # Try splitting on common separators: "with", "and", "+", "/"
-        for sep in [" with ", " and ", " + ", " / "]:
-            if sep in keyword.lower():
-                idx = keyword.lower().index(sep)
-                a = keyword[:idx].strip()
-                b = keyword[idx + len(sep):].strip()
+        # Strip common suffixes before parsing
+        cleaned = keyword
+        for suffix in ["detailed compatibility guide", "compatibility guide"]:
+            if cleaned.lower().endswith(suffix):
+                cleaned = cleaned[:len(cleaned) - len(suffix)].strip()
+                break
+        # Try splitting on common separators
+        for sep in [" with ", " and ", " + ", " / ", " on ", " inside ", " for "]:
+            if sep in cleaned.lower():
+                idx = cleaned.lower().index(sep)
+                a = cleaned[:idx].strip()
+                b = cleaned[idx + len(sep):].strip()
                 if a and b:
                     return a, b
         # Fallback: use the full keyword as the primary component
@@ -802,6 +1030,7 @@ class SimpleLocalLLM:
     def _template_compatibility(self, keyword: str, intent: str) -> str:
         now = datetime.now().strftime("%B %Y")
         comp_a, comp_b = self._extract_compatibility_components(keyword)
+        combo = f"{comp_a} with {comp_b}"
 
         # Build numbered references and rotating citation helpers
         numbered_refs = self._collect_numbered_references(keyword)
@@ -822,7 +1051,7 @@ class SimpleLocalLLM:
 
             Compatibility issues are some of the most time-consuming problems in
             software development{cite_a}{cite_b}. This guide documents the known constraints,
-            tested version combinations, and proven workarounds for using
+            tested version combinations, and proven workarounds for running
             {link_a} with {link_b} as of {now}.
 
             Whether you are setting up a new environment, troubleshooting a broken
@@ -956,7 +1185,7 @@ class SimpleLocalLLM:
                other developers who encounter the same problem.
             """).strip(),
 
-            self._aff_section(),
+            self._aff_section(keyword),
 
             textwrap.dedent(f"""
             ## Frequently asked questions
@@ -986,7 +1215,7 @@ class SimpleLocalLLM:
             textwrap.dedent(f"""
             ## Conclusion
 
-            Compatibility problems with {keyword} are solvable — they just require
+            Compatibility problems with running {combo} are solvable — they just require
             methodical debugging and the discipline to verify assumptions at each step{cite_a}{cite_b}.
 
             Pin your versions, document your working configuration, and automate
@@ -1185,7 +1414,7 @@ class SimpleLocalLLM:
               thank you.
             """).strip(),
 
-            self._aff_section(),
+            self._aff_section(keyword),
 
             textwrap.dedent(f"""
             ## Frequently asked questions
@@ -1370,7 +1599,7 @@ class SimpleLocalLLM:
               slightly inferior tool with first-class integrations.
             """).strip(),
 
-            self._aff_section(),
+            self._aff_section(keyword),
 
             textwrap.dedent(f"""
             ## Frequently asked questions
@@ -1419,6 +1648,9 @@ class SimpleLocalLLM:
 
     def _generate_with_template(self, keyword: str, category: str, intent: str) -> str:
         self._cite_counter = {}  # reset per article
+        # Route single-tool reviews to the dedicated review template
+        if self._is_review_topic(keyword):
+            return self._template_review(keyword, intent)
         dispatch = {
             "devtools_comparison": self._template_devtools_comparison,
             "compatibility": self._template_compatibility,

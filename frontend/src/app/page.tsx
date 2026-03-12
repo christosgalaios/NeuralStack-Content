@@ -1,5 +1,5 @@
 import { getAllArticles, getAllCategories, getAllTags } from "@/lib/articles";
-import { SITE_NAME, SITE_DESCRIPTION, BASE_URL, CATEGORY_META } from "@/lib/config";
+import { SITE_NAME, SITE_DESCRIPTION, BASE_URL, CATEGORY_META, AFFILIATES } from "@/lib/config";
 import ArticleCard from "@/components/cards/ArticleCard";
 import AdSlot from "@/components/monetization/AdSlot";
 import Link from "next/link";
@@ -13,14 +13,23 @@ export default function HomePage() {
 
   return (
     <div className="animate-in">
-      {/* Hero — clean and minimal */}
+      {/* Hero */}
       <section className="py-8 sm:py-12">
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "var(--text-primary)" }}>
-          Latest Posts
+          Pick the right dev tools &mdash; skip the research rabbit hole
         </h1>
         <p className="mt-2 text-base" style={{ color: "var(--text-muted)" }}>
-          In-depth guides on developer tooling, cloud platforms, and engineering workflows.
+          Honest comparisons, compatibility guides, and hands-on reviews of the tools engineers actually use.
         </p>
+        <div className="mt-4">
+          <Link
+            href="/tools"
+            className="inline-block rounded-lg px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:opacity-90"
+            style={{ background: "var(--accent-cta)" }}
+          >
+            See Recommended Tools &rarr;
+          </Link>
+        </div>
       </section>
 
       {/* Main content + sidebar layout */}
@@ -35,6 +44,29 @@ export default function HomePage() {
               ))}
             </div>
           )}
+
+          {/* Tools promotion */}
+          <section className="my-8 grid gap-4 sm:grid-cols-2">
+            {AFFILIATES.map((aff) => (
+              <div
+                key={aff.name}
+                className="rounded-xl border p-5"
+                style={{ background: "var(--bg-card)", borderColor: "var(--border)" }}
+              >
+                <p className="text-sm font-bold" style={{ color: "var(--text-primary)" }}>{aff.name}</p>
+                <p className="mt-1 text-xs" style={{ color: "var(--text-muted)" }}>{aff.tagline}</p>
+                <a
+                  href={aff.url}
+                  target="_blank"
+                  rel="noopener sponsored"
+                  className="mt-3 inline-block rounded-lg px-4 py-2 text-xs font-semibold text-white transition-colors hover:opacity-90"
+                  style={{ background: "var(--accent-cta)" }}
+                >
+                  {aff.name === "Vultr" ? "Get $300 Free Credit \u2192" : "Deploy for Free \u2192"}
+                </a>
+              </div>
+            ))}
+          </section>
 
           <AdSlot position="in-feed" className="my-8" />
 

@@ -30,7 +30,10 @@ class TestSimpleLocalLLM(unittest.TestCase):
         self.assertIn("|", text)  # table
         # Affiliate section should contain real tool links, not raw placeholders.
         self.assertNotIn("{{AFFILIATE_TOOL_1}}", text)
-        self.assertIn("Recommended tools and resources", text)
+        self.assertTrue(
+            "Recommended tools and resources" in text or "Ready to deploy?" in text,
+            "Affiliate section heading not found",
+        )
         self.assertIn("https://", text)
 
     def test_template_includes_keyword(self):

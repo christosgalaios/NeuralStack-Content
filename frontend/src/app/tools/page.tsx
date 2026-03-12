@@ -28,7 +28,7 @@ export default function ToolsPage() {
           Recommended Developer Tools
         </h1>
         <p className="mt-2 max-w-2xl" style={{ color: "var(--text-secondary)" }}>
-          We test and review developer tools so you don&apos;t have to. These are the tools we genuinely recommend for modern engineering workflows.
+          Hand-picked tools for developers who want to ship faster. We use these ourselves.
         </p>
       </header>
 

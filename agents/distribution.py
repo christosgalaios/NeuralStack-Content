@@ -934,6 +934,28 @@ class DistributionAgent:
             after = ''
         return (before + after).strip()
 
+    @staticmethod
+    def _strip_faq_section(html: str) -> str:
+        """Remove the FAQ section from HTML body.
+
+        The frontend renders FAQ separately from the ``faq`` JSON field,
+        so the inline section would cause duplication.
+        """
+        parts = re.split(
+            r'<h2[^>]*>.*?(?:FAQ|[Ff]requently\s+[Aa]sked).*?</h2>',
+            html, maxsplit=1, flags=re.IGNORECASE,
+        )
+        if len(parts) < 2:
+            return html
+        before = parts[0]
+        after = parts[1]
+        next_h2 = re.search(r'<h2', after)
+        if next_h2:
+            after = after[next_h2.start():]
+        else:
+            after = ''
+        return (before + after).strip()
+
     def _extract_tags(self, title: str, category: str) -> List[str]:
         """Extract keyword tags from title for programmatic SEO."""
         tokens = _title_tokens(title)
@@ -1019,6 +1041,9 @@ class DistributionAgent:
         # Strip the inline references section so it isn't rendered twice
         # (the frontend renders references from the ``references`` field).
         body_with_ids = self._strip_references_section(body_with_ids)
+        # Strip the inline FAQ section so it isn't rendered twice
+        # (the frontend renders FAQ from the ``faq`` field).
+        body_with_ids = self._strip_faq_section(body_with_ids)
 
         data = {
             "slug": draft.slug,
