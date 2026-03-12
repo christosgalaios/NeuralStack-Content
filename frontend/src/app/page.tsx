@@ -154,7 +154,7 @@ export default function HomePage() {
                     <Link
                       key={tag}
                       href={`/tag/${tag}`}
-                      className="rounded-full border px-2.5 py-1 text-xs transition-colors hover:border-blue-500/40"
+                      className="rounded-full border px-2.5 py-1 text-xs transition-colors hover:border-[#1a9aaa]/40"
                       style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}
                     >
                       {tag}

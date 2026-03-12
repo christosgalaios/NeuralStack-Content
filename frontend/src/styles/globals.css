@@ -3,44 +3,44 @@
 /* ─── Custom Design Tokens ─────────────────────────────────── */
 
 :root {
-  --bg-primary: #0a0a0b;
-  --bg-card: #111114;
-  --bg-elevated: #18181b;
-  --bg-hover: #1f1f23;
-  --text-primary: #fafafa;
-  --text-secondary: #a1a1aa;
-  --text-muted: #71717a;
-  --accent: #3b82f6;
-  --accent-hover: #2563eb;
-  --accent-glow: rgba(59, 130, 246, 0.12);
+  --bg-primary: #080b0d;
+  --bg-card: #0e1317;
+  --bg-elevated: #141a1f;
+  --bg-hover: #1a2228;
+  --text-primary: #e8edf2;
+  --text-secondary: #9aa4b4;
+  --text-muted: #6b7a8d;
+  --accent: #1a9aaa;
+  --accent-hover: #22b8ca;
+  --accent-glow: rgba(26, 154, 170, 0.10);
   --accent-cta: #22c55e;
   --accent-cta-hover: #16a34a;
-  --accent-highlight: #f59e0b;
-  --border: #27272a;
-  --border-hover: #3f3f46;
-  --code-bg: #0d0d0f;
+  --accent-highlight: #4cc0d0;
+  --border: #1c2630;
+  --border-hover: #2a3844;
+  --code-bg: #0a0e12;
   --radius: 12px;
   --radius-sm: 8px;
   --radius-xs: 6px;
 }
 
 [data-theme="light"] {
-  --bg-primary: #ffffff;
-  --bg-card: #f4f4f5;
-  --bg-elevated: #e4e4e7;
-  --bg-hover: #d4d4d8;
-  --text-primary: #18181b;
-  --text-secondary: #52525b;
-  --text-muted: #a1a1aa;
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
-  --accent-glow: rgba(37, 99, 235, 0.08);
+  --bg-primary: #f8fafb;
+  --bg-card: #eef2f5;
+  --bg-elevated: #dfe6eb;
+  --bg-hover: #d0dae1;
+  --text-primary: #0c1820;
+  --text-secondary: #3d5060;
+  --text-muted: #7a8e9e;
+  --accent: #0d6a7a;
+  --accent-hover: #095060;
+  --accent-glow: rgba(13, 106, 122, 0.06);
   --accent-cta: #16a34a;
   --accent-cta-hover: #15803d;
-  --accent-highlight: #d97706;
-  --border: #e4e4e7;
-  --border-hover: #d4d4d8;
-  --code-bg: #f4f4f5;
+  --accent-highlight: #0d8a9a;
+  --border: #d4dde3;
+  --border-hover: #c0cdd5;
+  --code-bg: #edf1f4;
 }
 
 /* ─── Base ──────────────────────────────────────────────────── */
@@ -277,7 +277,7 @@ h1, h2, h3, h4 {
   top: 0;
   left: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-cta));
+  background: linear-gradient(90deg, #0d4a5a, #1a8a9a, #4cc0d0);
   z-index: 100;
   transition: width 0.1s linear;
 }
@@ -408,4 +408,51 @@ h1, h2, h3, h4 {
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--border), transparent);
   margin: 2rem 0;
+}
+
+/* Compass-themed section divider with diamond center */
+.compass-divider {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 2.5rem 0;
+}
+
+.compass-divider::before,
+.compass-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+}
+
+.compass-divider::before {
+  background: linear-gradient(90deg, transparent, #1a8a9a33);
+}
+
+.compass-divider::after {
+  background: linear-gradient(90deg, #1a8a9a33, transparent);
+}
+
+.compass-divider-diamond {
+  width: 6px;
+  height: 6px;
+  background: #1a8a9a;
+  transform: rotate(45deg);
+  opacity: 0.4;
+  flex-shrink: 0;
+}
+
+/* ─── Subtle Background Texture ──────────────────────────────── */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(13, 74, 90, 0.06), transparent);
+  pointer-events: none;
+  z-index: -1;
+}
+
+[data-theme="light"] body::before {
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(13, 106, 122, 0.04), transparent);
 }
