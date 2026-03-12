@@ -458,6 +458,78 @@
     ]
   },
   {
+    "slug": "tensorflow-inside-github-codespaces-compatibility-guide",
+    "title": "TensorFlow inside GitHub Codespaces compatibility guide",
+    "description": "TensorFlow inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "codespaces",
+      "compatibility",
+      "github",
+      "tensorflow"
+    ]
+  },
+  {
+    "slug": "tensorflow-on-nixos-compatibility-guide",
+    "title": "TensorFlow on NixOS compatibility guide",
+    "description": "TensorFlow on NixOS compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "nixos",
+      "tensorflow"
+    ]
+  },
+  {
+    "slug": "tensorflow-on-raspberry-pi-5-compatibility-guide",
+    "title": "TensorFlow on Raspberry Pi 5 compatibility guide",
+    "description": "TensorFlow on Raspberry Pi 5 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "raspberry",
+      "tensorflow"
+    ]
+  },
+  {
+    "slug": "tensorflow-with-cuda-12-4-compatibility-guide",
+    "title": "TensorFlow with CUDA 12.4 compatibility guide",
+    "description": "TensorFlow with CUDA 12.4 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "cuda",
+      "tensorflow"
+    ]
+  },
+  {
+    "slug": "tensorflow-with-prisma-orm-compatibility-guide",
+    "title": "TensorFlow with Prisma ORM compatibility guide",
+    "description": "TensorFlow with Prisma ORM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "orm",
+      "prisma",
+      "tensorflow"
+    ]
+  },
+  {
     "slug": "tensorflow-with-rocm-on-amd-gpus-compatibility-guide",
     "title": "TensorFlow with ROCm on AMD GPUs compatibility guide",
     "description": "TensorFlow with ROCm on AMD GPUs compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
