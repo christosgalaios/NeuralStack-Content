@@ -1,5 +1,81 @@
 [
   {
+    "slug": "elasticsearch-8-on-apple-silicon-m3-compatibility-guide",
+    "title": "Elasticsearch 8 on Apple Silicon M3 compatibility guide",
+    "description": "Elasticsearch 8 on Apple Silicon M3 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-14",
+    "reading_time_minutes": 6,
+    "tags": [
+      "apple",
+      "compatibility",
+      "elasticsearch",
+      "silicon"
+    ]
+  },
+  {
+    "slug": "elasticsearch-8-on-windows-11-arm-compatibility-guide",
+    "title": "Elasticsearch 8 on Windows 11 ARM compatibility guide",
+    "description": "Elasticsearch 8 on Windows 11 ARM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-14",
+    "reading_time_minutes": 6,
+    "tags": [
+      "arm",
+      "compatibility",
+      "elasticsearch",
+      "windows"
+    ]
+  },
+  {
+    "slug": "elasticsearch-8-with-rocm-on-amd-gpus-compatibility-guide",
+    "title": "Elasticsearch 8 with ROCm on AMD GPUs compatibility guide",
+    "description": "Elasticsearch 8 with ROCm on AMD GPUs compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-14",
+    "reading_time_minutes": 6,
+    "tags": [
+      "amd",
+      "compatibility",
+      "elasticsearch",
+      "gpus",
+      "rocm"
+    ]
+  },
+  {
+    "slug": "elasticsearch-8-with-wsl2-gpu-passthrough-compatibility-guide",
+    "title": "Elasticsearch 8 with WSL2 GPU passthrough compatibility guide",
+    "description": "Elasticsearch 8 with WSL2 GPU passthrough compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-14",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "elasticsearch",
+      "gpu",
+      "passthrough",
+      "wsl2"
+    ]
+  },
+  {
+    "slug": "mongodb-7-with-kubernetes-1-30-compatibility-guide",
+    "title": "MongoDB 7 with Kubernetes 1.30 compatibility guide",
+    "description": "MongoDB 7 with Kubernetes 1.30 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-14",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "kubernetes",
+      "mongodb"
+    ]
+  },
+  {
     "slug": "mongodb-7-inside-github-codespaces-compatibility-guide",
     "title": "MongoDB 7 inside GitHub Codespaces compatibility guide",
     "description": "MongoDB 7 inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
