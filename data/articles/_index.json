@@ -1,5 +1,77 @@
 [
   {
+    "slug": "elasticsearch-8-inside-github-codespaces-compatibility-guide",
+    "title": "Elasticsearch 8 inside GitHub Codespaces compatibility guide",
+    "description": "Elasticsearch 8 inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-15",
+    "reading_time_minutes": 6,
+    "tags": [
+      "codespaces",
+      "compatibility",
+      "elasticsearch",
+      "github"
+    ]
+  },
+  {
+    "slug": "elasticsearch-8-on-nixos-compatibility-guide",
+    "title": "Elasticsearch 8 on NixOS compatibility guide",
+    "description": "Elasticsearch 8 on NixOS compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-15",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "elasticsearch",
+      "nixos"
+    ]
+  },
+  {
+    "slug": "elasticsearch-8-on-raspberry-pi-5-compatibility-guide",
+    "title": "Elasticsearch 8 on Raspberry Pi 5 compatibility guide",
+    "description": "Elasticsearch 8 on Raspberry Pi 5 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-15",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "elasticsearch",
+      "raspberry"
+    ]
+  },
+  {
+    "slug": "elasticsearch-8-with-cuda-12-4-compatibility-guide",
+    "title": "Elasticsearch 8 with CUDA 12.4 compatibility guide",
+    "description": "Elasticsearch 8 with CUDA 12.4 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-15",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "cuda",
+      "elasticsearch"
+    ]
+  },
+  {
+    "slug": "elasticsearch-8-with-prisma-orm-compatibility-guide",
+    "title": "Elasticsearch 8 with Prisma ORM compatibility guide",
+    "description": "Elasticsearch 8 with Prisma ORM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-15",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "elasticsearch",
+      "orm",
+      "prisma"
+    ]
+  },
+  {
     "slug": "elasticsearch-8-on-apple-silicon-m3-compatibility-guide",
     "title": "Elasticsearch 8 on Apple Silicon M3 compatibility guide",
     "description": "Elasticsearch 8 on Apple Silicon M3 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
