@@ -4577,7 +4577,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compat-nodejs22-withcuda124",
@@ -4587,7 +4587,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compat-nodejs22-onraspberrypi5",
@@ -4597,7 +4597,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compat-nodejs22-insidegithubcodespaces",
@@ -4607,7 +4607,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compat-nodejs22-onnixos",
@@ -4617,7 +4617,7 @@
     "difficulty_score": 0.28,
     "source": "heuristic-compatibility",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compat-nodejs22-withprismaorm",

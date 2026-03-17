@@ -1,5 +1,78 @@
 [
   {
+    "slug": "node-js-22-inside-github-codespaces-compatibility-guide",
+    "title": "Node.js 22 inside GitHub Codespaces compatibility guide",
+    "description": "Node.js 22 inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-17",
+    "reading_time_minutes": 7,
+    "tags": [
+      "codespaces",
+      "compatibility",
+      "github",
+      "node"
+    ]
+  },
+  {
+    "slug": "node-js-22-on-nixos-compatibility-guide",
+    "title": "Node.js 22 on NixOS compatibility guide",
+    "description": "Node.js 22 on NixOS compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-17",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "nixos",
+      "node"
+    ]
+  },
+  {
+    "slug": "node-js-22-on-raspberry-pi-5-compatibility-guide",
+    "title": "Node.js 22 on Raspberry Pi 5 compatibility guide",
+    "description": "Node.js 22 on Raspberry Pi 5 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-17",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "node",
+      "raspberry"
+    ]
+  },
+  {
+    "slug": "node-js-22-with-cuda-12-4-compatibility-guide",
+    "title": "Node.js 22 with CUDA 12.4 compatibility guide",
+    "description": "Node.js 22 with CUDA 12.4 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-17",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "cuda",
+      "node"
+    ]
+  },
+  {
+    "slug": "node-js-22-with-rocm-on-amd-gpus-compatibility-guide",
+    "title": "Node.js 22 with ROCm on AMD GPUs compatibility guide",
+    "description": "Node.js 22 with ROCm on AMD GPUs compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-17",
+    "reading_time_minutes": 7,
+    "tags": [
+      "amd",
+      "compatibility",
+      "gpus",
+      "node",
+      "rocm"
+    ]
+  },
+  {
     "slug": "elasticsearch-8-with-docker-compose-v2-compatibility-guide",
     "title": "Elasticsearch 8 with Docker Compose v2 compatibility guide",
     "description": "Elasticsearch 8 with Docker Compose v2 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
