@@ -1,5 +1,85 @@
 [
   {
+    "slug": "bun-runtime-inside-github-codespaces-compatibility-guide",
+    "title": "Bun runtime inside GitHub Codespaces compatibility guide",
+    "description": "Bun runtime inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-19",
+    "reading_time_minutes": 6,
+    "tags": [
+      "bun",
+      "codespaces",
+      "compatibility",
+      "github",
+      "runtime"
+    ]
+  },
+  {
+    "slug": "bun-runtime-on-raspberry-pi-5-compatibility-guide",
+    "title": "Bun runtime on Raspberry Pi 5 compatibility guide",
+    "description": "Bun runtime on Raspberry Pi 5 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-19",
+    "reading_time_minutes": 6,
+    "tags": [
+      "bun",
+      "compatibility",
+      "raspberry",
+      "runtime"
+    ]
+  },
+  {
+    "slug": "bun-runtime-with-cuda-12-4-compatibility-guide",
+    "title": "Bun runtime with CUDA 12.4 compatibility guide",
+    "description": "Bun runtime with CUDA 12.4 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-19",
+    "reading_time_minutes": 6,
+    "tags": [
+      "bun",
+      "compatibility",
+      "cuda",
+      "runtime"
+    ]
+  },
+  {
+    "slug": "bun-runtime-with-rocm-on-amd-gpus-compatibility-guide",
+    "title": "Bun runtime with ROCm on AMD GPUs compatibility guide",
+    "description": "Bun runtime with ROCm on AMD GPUs compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-19",
+    "reading_time_minutes": 6,
+    "tags": [
+      "amd",
+      "bun",
+      "compatibility",
+      "gpus",
+      "rocm",
+      "runtime"
+    ]
+  },
+  {
+    "slug": "bun-runtime-with-wsl2-gpu-passthrough-compatibility-guide",
+    "title": "Bun runtime with WSL2 GPU passthrough compatibility guide",
+    "description": "Bun runtime with WSL2 GPU passthrough compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-19",
+    "reading_time_minutes": 6,
+    "tags": [
+      "bun",
+      "compatibility",
+      "gpu",
+      "passthrough",
+      "runtime",
+      "wsl2"
+    ]
+  },
+  {
     "slug": "bun-runtime-on-apple-silicon-m3-compatibility-guide",
     "title": "Bun runtime on Apple Silicon M3 compatibility guide",
     "description": "Bun runtime on Apple Silicon M3 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
