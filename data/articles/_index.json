@@ -1,5 +1,82 @@
 [
   {
+    "slug": "bun-runtime-on-nixos-compatibility-guide",
+    "title": "Bun runtime on NixOS compatibility guide",
+    "description": "Bun runtime on NixOS compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-20",
+    "reading_time_minutes": 6,
+    "tags": [
+      "bun",
+      "compatibility",
+      "nixos",
+      "runtime"
+    ]
+  },
+  {
+    "slug": "bun-runtime-with-docker-compose-v2-compatibility-guide",
+    "title": "Bun runtime with Docker Compose v2 compatibility guide",
+    "description": "Bun runtime with Docker Compose v2 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-20",
+    "reading_time_minutes": 6,
+    "tags": [
+      "bun",
+      "compatibility",
+      "compose",
+      "docker",
+      "runtime"
+    ]
+  },
+  {
+    "slug": "bun-runtime-with-kubernetes-1-30-compatibility-guide",
+    "title": "Bun runtime with Kubernetes 1.30 compatibility guide",
+    "description": "Bun runtime with Kubernetes 1.30 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-20",
+    "reading_time_minutes": 6,
+    "tags": [
+      "bun",
+      "compatibility",
+      "kubernetes",
+      "runtime"
+    ]
+  },
+  {
+    "slug": "bun-runtime-with-prisma-orm-compatibility-guide",
+    "title": "Bun runtime with Prisma ORM compatibility guide",
+    "description": "Bun runtime with Prisma ORM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-20",
+    "reading_time_minutes": 6,
+    "tags": [
+      "bun",
+      "compatibility",
+      "orm",
+      "prisma",
+      "runtime"
+    ]
+  },
+  {
+    "slug": "deno-2-on-windows-11-arm-compatibility-guide",
+    "title": "Deno 2 on Windows 11 ARM compatibility guide",
+    "description": "Deno 2 on Windows 11 ARM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-20",
+    "reading_time_minutes": 6,
+    "tags": [
+      "arm",
+      "compatibility",
+      "deno",
+      "windows"
+    ]
+  },
+  {
     "slug": "bun-runtime-inside-github-codespaces-compatibility-guide",
     "title": "Bun runtime inside GitHub Codespaces compatibility guide",
     "description": "Bun runtime inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
