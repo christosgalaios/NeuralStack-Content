@@ -1,5 +1,78 @@
 [
   {
+    "slug": "deno-2-inside-github-codespaces-compatibility-guide",
+    "title": "Deno 2 inside GitHub Codespaces compatibility guide",
+    "description": "Deno 2 inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-22",
+    "reading_time_minutes": 6,
+    "tags": [
+      "codespaces",
+      "compatibility",
+      "deno",
+      "github"
+    ]
+  },
+  {
+    "slug": "deno-2-on-nixos-compatibility-guide",
+    "title": "Deno 2 on NixOS compatibility guide",
+    "description": "Deno 2 on NixOS compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-22",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "deno",
+      "nixos"
+    ]
+  },
+  {
+    "slug": "deno-2-with-docker-compose-v2-compatibility-guide",
+    "title": "Deno 2 with Docker Compose v2 compatibility guide",
+    "description": "Deno 2 with Docker Compose v2 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-22",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "compose",
+      "deno",
+      "docker"
+    ]
+  },
+  {
+    "slug": "deno-2-with-kubernetes-1-30-compatibility-guide",
+    "title": "Deno 2 with Kubernetes 1.30 compatibility guide",
+    "description": "Deno 2 with Kubernetes 1.30 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-22",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "deno",
+      "kubernetes"
+    ]
+  },
+  {
+    "slug": "deno-2-with-prisma-orm-compatibility-guide",
+    "title": "Deno 2 with Prisma ORM compatibility guide",
+    "description": "Deno 2 with Prisma ORM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-22",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "deno",
+      "orm",
+      "prisma"
+    ]
+  },
+  {
     "slug": "deno-2-on-apple-silicon-m3-compatibility-guide",
     "title": "Deno 2 on Apple Silicon M3 compatibility guide",
     "description": "Deno 2 on Apple Silicon M3 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
