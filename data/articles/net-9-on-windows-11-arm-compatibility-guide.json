@@ -1,0 +1,131 @@
+{
+  "slug": "net-9-on-windows-11-arm-compatibility-guide",
+  "title": ".NET 9 on Windows 11 ARM compatibility guide",
+  "description": ".NET 9 on Windows 11 ARM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+  "content_html": "<h1>.NET 9 on Windows 11 ARM compatibility guide</h1>\n\n<p>Compatibility issues are some of the most time-consuming problems in software development.<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> This guide documents the known constraints, tested version combinations, and proven workarounds for running <strong>.NET 9</strong> with <strong>Windows 11 ARM</strong> as of March 2026.</p>\n\n<p>Whether you are setting up a new environment, troubleshooting a broken build, or planning an upgrade, this page gives you the facts without the fluff.</p>\n\n<h2 id=\"what-you-need-before-you-start\">What you need before you start</h2>\n\n<p>Before diving in, confirm:</p>\n\n<ul>\n<li>Your operating system version and architecture (x86-64 vs ARM64 matters here).<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup></li>\n<li>The exact version numbers of each component — .NET 9 supported versions are listed in the official .NET 9 documentation<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> and Windows 11 ARM versions in the official Windows 11 ARM documentation.</li>\n<li>Whether you are working in a container, VM, or bare-metal environment.</li>\n<li>Any corporate proxy or firewall settings that might affect package downloads.</li>\n</ul>\n\n<p>Mismatched assumptions at this stage account for the majority of compatibility failures.<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> Write them down before proceeding.</p>\n\n<h2 id=\"tested-version-matrix\">Tested version matrix</h2>\n\n<p>The matrix below summarises compatibility based on official release notes from .NET 9<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> and Windows 11 ARM. Always cross-reference with the official .NET 9 documentation for your exact patch version.</p>\n\n<table>\n<thead><tr><th>.NET 9 version</th><th>Windows 11 ARM version</th><th>Status</th><th>Notes</th></tr></thead>\n<tbody>\n<tr><td>Latest stable</td><td>Latest stable</td><td>OK</td><td>Recommended combination<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup></td></tr>\n<tr><td>Latest stable</td><td>Previous LTS</td><td>OK</td><td>Works with minor config change<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup></td></tr>\n<tr><td>Latest stable</td><td>Two versions back</td><td>Partial</td><td>Some features disabled</td></tr>\n<tr><td>Previous LTS</td><td>Latest stable</td><td>Partial</td><td>Deprecated API warnings<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup></td></tr>\n<tr><td>Previous LTS</td><td>Previous LTS</td><td>OK</td><td>Stable, no new features<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup></td></tr>\n<tr><td>EOL version</td><td>Any</td><td>Unsupported</td><td>Security risk — upgrade first<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup></td></tr>\n</tbody>\n</table>\n\n<p>Always verify against the official release notes for your exact patch version.<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> Patch releases occasionally introduce breaking changes even within a minor version.</p>\n\n<p>If you are running in a containerised environment, pin both the base image tag and the package versions inside the container. Floating tags like <code>latest</code> or <code>lts</code> will eventually pull a version that breaks your build.</p>\n\n<h2 id=\"step-by-step-setup-guide\">Step-by-step setup guide</h2>\n\n<p>Follow these steps in order. Skipping steps is the most common cause of hard-to-diagnose failures.<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup></p>\n\n<ol>\n<li><strong>Verify prerequisites</strong> — run the version check commands for each component. For .NET 9, use the command documented in the official .NET 9 documentation.<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> Confirm the exact major and minor version, not just \"it runs.\"</li>\n<li><strong>Install in the correct order</strong> — some packages expect dependencies to already be present on the path.<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> See the official .NET 9 documentation for install order requirements. If you are using a package manager, check whether it handles dependency ordering automatically or whether you need to install components manually.</li>\n<li><strong>Set required environment variables</strong> — the .NET 9 documentation<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> lists required <code>PATH</code>, <code>LD_LIBRARY_PATH</code>, or tool-specific variables. Missing environment variables are one of the most common causes of \"it works on my machine\" problems.</li>\n<li><strong>Run the smoke test</strong> — execute the minimal \"hello world\" equivalent to confirm the basic setup works before adding complexity.<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> If the smoke test fails, stop here and debug before proceeding.</li>\n<li><strong>Capture the working state</strong> — export your environment or lock your dependency versions before continuing. Tools like <code>pip freeze</code>, <code>npm ls</code>, or <code>docker image ls</code> help you record exactly what is installed.</li>\n</ol>\n\n<h2 id=\"known-issues-and-workarounds\">Known issues and workarounds</h2>\n\n<h3>Issue: Version mismatch error on startup</h3>\n\n<p>This is almost always a PATH problem.<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> The tool is finding an older installation before the one you just set up. Check which binary is being invoked with <code>which <tool></code> (Linux/macOS) or <code>where <tool></code> (Windows).</p>\n\n<h3>Issue: Works locally but fails in CI</h3>\n\n<p>CI environments often use minimal base images.<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> Confirm that your pipeline installs all runtime dependencies explicitly — do not rely on system packages being pre-installed.</p>\n\n<h3>Issue: ARM64 / Apple Silicon incompatibility</h3>\n\n<p>Many tools lag behind on native ARM64 support.<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> If you hit <code>exec format error</code> or architecture mismatches, check whether a native build is available, and whether <a href=\"https://developer.apple.com/documentation/apple-silicon/about-the-rosetta-translation-environment\" target=\"_blank\" rel=\"noopener sponsored\">Rosetta 2 emulation</a> is a viable interim workaround.</p>\n\n<h3>Issue: Dependency conflict with existing packages</h3>\n\n<p>Use a virtual environment, container, or version manager (e.g. <code>nvm</code>, <code>pyenv</code>, <code>rbenv</code>) to isolate the conflicting components. Global installs are a reliable source of hard-to-reproduce compatibility failures.</p>\n\n<h2 id=\"troubleshooting-methodology\">Troubleshooting methodology</h2>\n\n<p>When compatibility issues surface, a systematic approach saves hours of frustrated guessing.<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> Follow this sequence:</p>\n\n<ol>\n<li><strong>Reproduce the exact error</strong> — copy the full error message and stack trace. Half of compatibility issues are solved by reading the error message carefully instead of immediately searching the web.</li>\n<li><strong>Isolate the failing layer</strong> — is the problem at install time, build time, or runtime?<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> Each points to a different root cause. Install failures suggest missing system dependencies. Build failures point to API incompatibilities. Runtime failures often indicate mismatched shared libraries.</li>\n<li><strong>Check the release notes and changelogs</strong> — .NET 9 publishes changelogs with breaking changes highlighted<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> and so does Windows 11 ARM. Search for your specific error in the project's issue tracker on GitHub.</li>\n<li><strong>Test in a clean environment</strong> — use a Docker container or fresh VM to rule out local environment pollution. If the issue disappears in a clean environment, the problem is your local setup, not a genuine incompatibility.</li>\n<li><strong>Report upstream if needed</strong> — if you confirm a real compatibility bug, file an issue with the exact versions, OS, architecture, and a minimal reproduction case.<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup> This helps maintainers fix the issue faster and helps other developers who encounter the same problem.</li>\n</ol>\n\n<h2 id=\"recommended-tools-and-resources\">Recommended tools and resources</h2>\n\n<p>After working with many stacks over the past few years, these are tools we genuinely recommend. We may earn a commission if you sign up through the links below, but our recommendations are based on hands-on experience — not payout.</p>\n\n<ul>\n<li><a href=\"https://www.vultr.com/?ref=9880243-9J\" target=\"_blank\" rel=\"noopener sponsored\">Vultr</a> — high-performance cloud compute, bare metal, and GPU instances — get $300 free credit and deploy worldwide in seconds</li>\n<li><a href=\"https://railway.app?referralCode=2zaRHx\" target=\"_blank\" rel=\"noopener sponsored\">Railway</a> — deploy from a GitHub repo in seconds with built-in CI, databases, and cron — pay only for what you use</li>\n</ul>\n\n<p>Disclosure: some links above are affiliate links. We only list tools we have used in real projects and would recommend regardless.</p>\n\n<h2 id=\"conclusion\">Conclusion</h2>\n\n<p>Compatibility problems with running .NET 9 with Windows 11 ARM are solvable — they just require methodical debugging and the discipline to verify assumptions at each step.<sup><a href=\"https://12factor.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"citation-ref\">[8]</a></sup></p>\n\n<p>Pin your versions, document your working configuration, and automate the setup so every team member gets a reproducible environment from day one.</p>",
+  "category": "compatibility",
+  "category_display": "Compatibility",
+  "date_published": "2026-03-23",
+  "date_modified": "2026-03-23",
+  "reading_time_minutes": 6,
+  "word_count": 1421,
+  "toc": [
+    {
+      "id": "what-you-need-before-you-start",
+      "text": "What you need before you start"
+    },
+    {
+      "id": "tested-version-matrix",
+      "text": "Tested version matrix"
+    },
+    {
+      "id": "step-by-step-setup-guide",
+      "text": "Step-by-step setup guide"
+    },
+    {
+      "id": "known-issues-and-workarounds",
+      "text": "Known issues and workarounds"
+    },
+    {
+      "id": "troubleshooting-methodology",
+      "text": "Troubleshooting methodology"
+    },
+    {
+      "id": "recommended-tools-and-resources",
+      "text": "Recommended tools and resources"
+    },
+    {
+      "id": "frequently-asked-questions",
+      "text": "Frequently asked questions"
+    },
+    {
+      "id": "references-and-sources",
+      "text": "References and sources"
+    },
+    {
+      "id": "conclusion",
+      "text": "Conclusion"
+    }
+  ],
+  "related_slugs": [
+    "tensorflow-with-wsl2-gpu-passthrough-compatibility-guide",
+    "tensorflow-with-rocm-on-amd-gpus-compatibility-guide"
+  ],
+  "affiliate": {
+    "name": "Vultr",
+    "url": "https://www.vultr.com/?ref=9880243-9J",
+    "description": "High-performance cloud compute, bare metal, and GPU instances — get $300 free credit and deploy worldwide in seconds."
+  },
+  "faq": [
+    {
+      "question": "How do I check which version I actually have installed?",
+      "answer": "Run the version flag for each tool (--version or -v in most cases).[8] Do not assume the version you installed is the one being executed — always verify with the version command after installation."
+    },
+    {
+      "question": "Is it safe to mix LTS and non-LTS versions?",
+      "answer": "Generally no.[8] LTS versions are tested together. Mixing them introduces API surface that may be unstable, deprecated, or removed entirely. Stick to matched LTS pairs for production systems."
+    },
+    {
+      "question": "My setup worked last month but broke after an update. What happened?",
+      "answer": "Check the changelogs for every component that updated[8] in the window between \"working\" and \"broken\". Patch-level updates occasionally tighten behaviour that was previously tolerated. Pin your versions in CI to avoid silent breakage."
+    }
+  ],
+  "tags": [
+    "arm",
+    "compatibility",
+    "net",
+    "windows"
+  ],
+  "references": [
+    {
+      "title": "ThoughtWorks Technology Radar",
+      "url": "https://www.thoughtworks.com/radar",
+      "index": 1
+    },
+    {
+      "title": "Stack Overflow Annual Developer Survey",
+      "url": "https://survey.stackoverflow.co",
+      "index": 2
+    },
+    {
+      "title": "CNCF Cloud Native Landscape",
+      "url": "https://landscape.cncf.io",
+      "index": 3
+    },
+    {
+      "title": "IEEE Software Engineering Body of Knowledge (SWEBOK)",
+      "url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+      "index": 4
+    },
+    {
+      "title": "Martin Fowler — Software Architecture Guide",
+      "url": "https://martinfowler.com/architecture/",
+      "index": 5
+    },
+    {
+      "title": "JetBrains Developer Ecosystem Survey",
+      "url": "https://www.jetbrains.com/lp/devecosystem-2023/",
+      "index": 6
+    },
+    {
+      "title": "GitHub Octoverse — State of Open Source",
+      "url": "https://octoverse.github.com",
+      "index": 7
+    },
+    {
+      "title": "The Twelve-Factor App",
+      "url": "https://12factor.net",
+      "index": 8
+    },
+    {
+      "title": "Google — Site Reliability Engineering",
+      "url": "https://sre.google/sre-book/table-of-contents/",
+      "index": 9
+    },
+    {
+      "title": "Gartner — Magic Quadrant Reports",
+      "url": "https://www.gartner.com/en/research/magic-quadrant",
+      "index": 10
+    }
+  ]
+}

@@ -1,5 +1,81 @@
 [
   {
+    "slug": "net-9-on-apple-silicon-m3-compatibility-guide",
+    "title": ".NET 9 on Apple Silicon M3 compatibility guide",
+    "description": ".NET 9 on Apple Silicon M3 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-23",
+    "reading_time_minutes": 7,
+    "tags": [
+      "apple",
+      "compatibility",
+      "net",
+      "silicon"
+    ]
+  },
+  {
+    "slug": "net-9-on-windows-11-arm-compatibility-guide",
+    "title": ".NET 9 on Windows 11 ARM compatibility guide",
+    "description": ".NET 9 on Windows 11 ARM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-23",
+    "reading_time_minutes": 6,
+    "tags": [
+      "arm",
+      "compatibility",
+      "net",
+      "windows"
+    ]
+  },
+  {
+    "slug": "net-9-with-cuda-12-4-compatibility-guide",
+    "title": ".NET 9 with CUDA 12.4 compatibility guide",
+    "description": ".NET 9 with CUDA 12.4 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-23",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "cuda",
+      "net"
+    ]
+  },
+  {
+    "slug": "net-9-with-rocm-on-amd-gpus-compatibility-guide",
+    "title": ".NET 9 with ROCm on AMD GPUs compatibility guide",
+    "description": ".NET 9 with ROCm on AMD GPUs compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-23",
+    "reading_time_minutes": 7,
+    "tags": [
+      "amd",
+      "compatibility",
+      "gpus",
+      "net",
+      "rocm"
+    ]
+  },
+  {
+    "slug": "net-9-with-wsl2-gpu-passthrough-compatibility-guide",
+    "title": ".NET 9 with WSL2 GPU passthrough compatibility guide",
+    "description": ".NET 9 with WSL2 GPU passthrough compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-23",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "gpu",
+      "net",
+      "passthrough",
+      "wsl2"
+    ]
+  },
+  {
     "slug": "deno-2-inside-github-codespaces-compatibility-guide",
     "title": "Deno 2 inside GitHub Codespaces compatibility guide",
     "description": "Deno 2 inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
