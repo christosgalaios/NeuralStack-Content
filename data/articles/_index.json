@@ -1,5 +1,78 @@
 [
   {
+    "slug": "net-9-inside-github-codespaces-compatibility-guide",
+    "title": ".NET 9 inside GitHub Codespaces compatibility guide",
+    "description": ".NET 9 inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-24",
+    "reading_time_minutes": 7,
+    "tags": [
+      "codespaces",
+      "compatibility",
+      "github",
+      "net"
+    ]
+  },
+  {
+    "slug": "net-9-on-nixos-compatibility-guide",
+    "title": ".NET 9 on NixOS compatibility guide",
+    "description": ".NET 9 on NixOS compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-24",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "net",
+      "nixos"
+    ]
+  },
+  {
+    "slug": "net-9-on-raspberry-pi-5-compatibility-guide",
+    "title": ".NET 9 on Raspberry Pi 5 compatibility guide",
+    "description": ".NET 9 on Raspberry Pi 5 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-24",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "net",
+      "raspberry"
+    ]
+  },
+  {
+    "slug": "net-9-with-docker-compose-v2-compatibility-guide",
+    "title": ".NET 9 with Docker Compose v2 compatibility guide",
+    "description": ".NET 9 with Docker Compose v2 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-24",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "compose",
+      "docker",
+      "net"
+    ]
+  },
+  {
+    "slug": "net-9-with-prisma-orm-compatibility-guide",
+    "title": ".NET 9 with Prisma ORM compatibility guide",
+    "description": ".NET 9 with Prisma ORM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-24",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "net",
+      "orm",
+      "prisma"
+    ]
+  },
+  {
     "slug": "net-9-on-apple-silicon-m3-compatibility-guide",
     "title": ".NET 9 on Apple Silicon M3 compatibility guide",
     "description": ".NET 9 on Apple Silicon M3 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
