@@ -1,5 +1,77 @@
 [
   {
+    "slug": "go-1-23-on-apple-silicon-m3-compatibility-guide",
+    "title": "Go 1.23 on Apple Silicon M3 compatibility guide",
+    "description": "Go 1.23 on Apple Silicon M3 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-25",
+    "reading_time_minutes": 7,
+    "tags": [
+      "apple",
+      "compatibility",
+      "silicon"
+    ]
+  },
+  {
+    "slug": "go-1-23-on-windows-11-arm-compatibility-guide",
+    "title": "Go 1.23 on Windows 11 ARM compatibility guide",
+    "description": "Go 1.23 on Windows 11 ARM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-25",
+    "reading_time_minutes": 6,
+    "tags": [
+      "arm",
+      "compatibility",
+      "windows"
+    ]
+  },
+  {
+    "slug": "go-1-23-with-rocm-on-amd-gpus-compatibility-guide",
+    "title": "Go 1.23 with ROCm on AMD GPUs compatibility guide",
+    "description": "Go 1.23 with ROCm on AMD GPUs compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-25",
+    "reading_time_minutes": 7,
+    "tags": [
+      "amd",
+      "compatibility",
+      "gpus",
+      "rocm"
+    ]
+  },
+  {
+    "slug": "go-1-23-with-wsl2-gpu-passthrough-compatibility-guide",
+    "title": "Go 1.23 with WSL2 GPU passthrough compatibility guide",
+    "description": "Go 1.23 with WSL2 GPU passthrough compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-25",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "gpu",
+      "passthrough",
+      "wsl2"
+    ]
+  },
+  {
+    "slug": "net-9-with-kubernetes-1-30-compatibility-guide",
+    "title": ".NET 9 with Kubernetes 1.30 compatibility guide",
+    "description": ".NET 9 with Kubernetes 1.30 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-25",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "kubernetes",
+      "net"
+    ]
+  },
+  {
     "slug": "net-9-inside-github-codespaces-compatibility-guide",
     "title": ".NET 9 inside GitHub Codespaces compatibility guide",
     "description": ".NET 9 inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
