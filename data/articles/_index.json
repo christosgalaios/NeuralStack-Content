@@ -1,5 +1,72 @@
 [
   {
+    "slug": "go-1-23-inside-github-codespaces-compatibility-guide",
+    "title": "Go 1.23 inside GitHub Codespaces compatibility guide",
+    "description": "Go 1.23 inside GitHub Codespaces compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "codespaces",
+      "compatibility",
+      "github"
+    ]
+  },
+  {
+    "slug": "go-1-23-on-nixos-compatibility-guide",
+    "title": "Go 1.23 on NixOS compatibility guide",
+    "description": "Go 1.23 on NixOS compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "nixos"
+    ]
+  },
+  {
+    "slug": "go-1-23-on-raspberry-pi-5-compatibility-guide",
+    "title": "Go 1.23 on Raspberry Pi 5 compatibility guide",
+    "description": "Go 1.23 on Raspberry Pi 5 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "raspberry"
+    ]
+  },
+  {
+    "slug": "go-1-23-with-cuda-12-4-compatibility-guide",
+    "title": "Go 1.23 with CUDA 12.4 compatibility guide",
+    "description": "Go 1.23 with CUDA 12.4 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "cuda"
+    ]
+  },
+  {
+    "slug": "go-1-23-with-prisma-orm-compatibility-guide",
+    "title": "Go 1.23 with Prisma ORM compatibility guide",
+    "description": "Go 1.23 with Prisma ORM compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-03-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "orm",
+      "prisma"
+    ]
+  },
+  {
     "slug": "go-1-23-on-apple-silicon-m3-compatibility-guide",
     "title": "Go 1.23 on Apple Silicon M3 compatibility guide",
     "description": "Go 1.23 on Apple Silicon M3 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
