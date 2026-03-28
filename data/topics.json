@@ -5177,7 +5177,7 @@
     "difficulty_score": 0.3,
     "source": "heuristic-howto",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "howto-migrate-from-heroku-to-self-hosted-docker",
@@ -5187,7 +5187,7 @@
     "difficulty_score": 0.3,
     "source": "heuristic-howto",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "howto-monitor-a-node.js-app-with-prometheus-and-grafana",
@@ -5197,7 +5197,7 @@
     "difficulty_score": 0.3,
     "source": "heuristic-howto",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "howto-set-up-tailscale-vpn-for-a-dev-team",
@@ -5207,7 +5207,7 @@
     "difficulty_score": 0.3,
     "source": "heuristic-howto",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "howto-containerise-a-legacy-django-app",
@@ -5217,7 +5217,7 @@
     "difficulty_score": 0.3,
     "source": "heuristic-howto",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "howto-configure-vs-code-remote-development-over-ssh",

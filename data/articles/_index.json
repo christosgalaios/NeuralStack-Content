@@ -1,5 +1,89 @@
 [
   {
+    "slug": "how-to-containerise-a-legacy-django-app-step-by-step-guide",
+    "title": "How to containerise a legacy Django app (step-by-step guide)",
+    "description": "How to containerise a legacy Django app (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-03-28",
+    "reading_time_minutes": 7,
+    "tags": [
+      "app",
+      "containerise",
+      "django",
+      "legacy",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-migrate-from-heroku-to-self-hosted-docker-step-by-step-guide",
+    "title": "How to migrate from Heroku to self-hosted Docker (step-by-step guide)",
+    "description": "How to migrate from Heroku to self-hosted Docker (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-03-28",
+    "reading_time_minutes": 7,
+    "tags": [
+      "docker",
+      "heroku",
+      "hosted",
+      "migrate",
+      "self",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-monitor-a-node-js-app-with-prometheus-and-grafana-step-by-step-guide",
+    "title": "How to monitor a Node.js app with Prometheus and Grafana (step-by-step guide)",
+    "description": "How to monitor a Node.js app with Prometheus and Grafana (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-03-28",
+    "reading_time_minutes": 7,
+    "tags": [
+      "app",
+      "grafana",
+      "monitor",
+      "node",
+      "prometheus",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-set-up-postgresql-replication-for-high-availability-step-by-step-guide",
+    "title": "How to set up PostgreSQL replication for high availability (step-by-step guide)",
+    "description": "How to set up PostgreSQL replication for high availability (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-03-28",
+    "reading_time_minutes": 7,
+    "tags": [
+      "availability",
+      "high",
+      "postgresql",
+      "replication",
+      "set",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-set-up-tailscale-vpn-for-a-dev-team-step-by-step-guide",
+    "title": "How to set up Tailscale VPN for a dev team (step-by-step guide)",
+    "description": "How to set up Tailscale VPN for a dev team (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-03-28",
+    "reading_time_minutes": 7,
+    "tags": [
+      "dev",
+      "set",
+      "tailscale",
+      "team",
+      "tutorial",
+      "vpn"
+    ]
+  },
+  {
     "slug": "go-1-23-with-docker-compose-v2-compatibility-guide",
     "title": "Go 1.23 with Docker Compose v2 compatibility guide",
     "description": "Go 1.23 with Docker Compose v2 compatibility guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
