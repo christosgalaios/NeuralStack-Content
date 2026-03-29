@@ -1,5 +1,87 @@
 [
   {
+    "slug": "how-to-automate-database-backups-with-cron-and-s3-step-by-step-guide",
+    "title": "How to automate database backups with cron and S3 (step-by-step guide)",
+    "description": "How to automate database backups with cron and S3 (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-03-29",
+    "reading_time_minutes": 7,
+    "tags": [
+      "automate",
+      "backups",
+      "cron",
+      "database",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-configure-eslint-and-prettier-for-a-team-step-by-step-guide",
+    "title": "How to configure ESLint and Prettier for a team (step-by-step guide)",
+    "description": "How to configure ESLint and Prettier for a team (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-03-29",
+    "reading_time_minutes": 7,
+    "tags": [
+      "configure",
+      "eslint",
+      "prettier",
+      "team",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-configure-vs-code-remote-development-over-ssh-step-by-step-guide",
+    "title": "How to configure VS Code remote development over SSH (step-by-step guide)",
+    "description": "How to configure VS Code remote development over SSH (step-by-step guide). Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-03-29",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "comparison",
+      "configure",
+      "development",
+      "over",
+      "remote",
+      "ssh"
+    ]
+  },
+  {
+    "slug": "how-to-deploy-a-static-site-with-cloudflare-pages-step-by-step-guide",
+    "title": "How to deploy a static site with Cloudflare Pages (step-by-step guide)",
+    "description": "How to deploy a static site with Cloudflare Pages (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-03-29",
+    "reading_time_minutes": 7,
+    "tags": [
+      "cloudflare",
+      "deploy",
+      "pages",
+      "site",
+      "static",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-set-up-a-monorepo-with-turborepo-step-by-step-guide",
+    "title": "How to set up a monorepo with Turborepo (step-by-step guide)",
+    "description": "How to set up a monorepo with Turborepo (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-03-29",
+    "reading_time_minutes": 7,
+    "tags": [
+      "monorepo",
+      "set",
+      "turborepo",
+      "tutorial"
+    ]
+  },
+  {
     "slug": "how-to-containerise-a-legacy-django-app-step-by-step-guide",
     "title": "How to containerise a legacy Django app (step-by-step guide)",
     "description": "How to containerise a legacy Django app (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",

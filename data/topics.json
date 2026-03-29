@@ -5227,7 +5227,7 @@
     "difficulty_score": 0.3,
     "source": "heuristic-howto",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "howto-automate-database-backups-with-cron-and-s3",
@@ -5237,7 +5237,7 @@
     "difficulty_score": 0.3,
     "source": "heuristic-howto",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "howto-set-up-a-monorepo-with-turborepo",
@@ -5247,7 +5247,7 @@
     "difficulty_score": 0.3,
     "source": "heuristic-howto",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "howto-deploy-a-static-site-with-cloudflare-pages",
@@ -5257,7 +5257,7 @@
     "difficulty_score": 0.3,
     "source": "heuristic-howto",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "howto-configure-eslint-and-prettier-for-a-team",
@@ -5267,7 +5267,7 @@
     "difficulty_score": 0.3,
     "source": "heuristic-howto",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "howto-set-up-python-type-checking-with-mypy-in-ci",
