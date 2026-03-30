@@ -1,5 +1,94 @@
 [
   {
+    "slug": "how-to-build-a-cli-tool-with-python-and-click-step-by-step-guide",
+    "title": "How to build a CLI tool with Python and Click (step-by-step guide)",
+    "description": "How to build a CLI tool with Python and Click (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-03-30",
+    "reading_time_minutes": 7,
+    "tags": [
+      "build",
+      "cli",
+      "click",
+      "python",
+      "tool",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-migrate-from-vs-code-to-cursor-ide-without-losing-your-workflow-step-by-s",
+    "title": "How to migrate from VS Code to Cursor IDE without losing your workflow (step-by-step guide)",
+    "description": "How to migrate from VS Code to Cursor IDE without losing your workflow (step-by-step guide). Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-03-30",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "comparison",
+      "cursor",
+      "ide",
+      "losing",
+      "migrate",
+      "without",
+      "workflow"
+    ]
+  },
+  {
+    "slug": "how-to-set-up-cursor-ide-for-a-python-project-from-scratch-step-by-step-guide",
+    "title": "How to set up Cursor IDE for a Python project from scratch (step-by-step guide)",
+    "description": "How to set up Cursor IDE for a Python project from scratch (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-03-30",
+    "reading_time_minutes": 7,
+    "tags": [
+      "cursor",
+      "ide",
+      "project",
+      "python",
+      "scratch",
+      "set",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-set-up-python-type-checking-with-mypy-in-ci-step-by-step-guide",
+    "title": "How to set up Python type checking with mypy in CI (step-by-step guide)",
+    "description": "How to set up Python type checking with mypy in CI (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-03-30",
+    "reading_time_minutes": 7,
+    "tags": [
+      "checking",
+      "mypy",
+      "python",
+      "set",
+      "tutorial",
+      "type"
+    ]
+  },
+  {
+    "slug": "how-to-use-cursor-ide-ai-features-to-write-code-3x-faster-step-by-step-guide",
+    "title": "How to use Cursor IDE AI features to write code 3x faster (step-by-step guide)",
+    "description": "How to use Cursor IDE AI features to write code 3x faster (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-03-30",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "cursor",
+      "faster",
+      "features",
+      "ide",
+      "tutorial",
+      "write"
+    ]
+  },
+  {
     "slug": "how-to-automate-database-backups-with-cron-and-s3-step-by-step-guide",
     "title": "How to automate database backups with cron and S3 (step-by-step guide)",
     "description": "How to automate database backups with cron and S3 (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
