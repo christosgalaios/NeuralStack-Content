@@ -1,5 +1,93 @@
 [
   {
+    "slug": "how-to-create-datadog-dashboards-and-alerts-for-production-incidents-step-by-ste",
+    "title": "How to create Datadog dashboards and alerts for production incidents (step-by-step guide)",
+    "description": "How to create Datadog dashboards and alerts for production incidents (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-04-01",
+    "reading_time_minutes": 7,
+    "tags": [
+      "alerts",
+      "create",
+      "dashboards",
+      "datadog",
+      "incidents",
+      "production",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-integrate-datadog-with-pagerduty-for-on-call-alerting-step-by-step-guide",
+    "title": "How to integrate Datadog with PagerDuty for on-call alerting (step-by-step guide)",
+    "description": "How to integrate Datadog with PagerDuty for on-call alerting (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-04-01",
+    "reading_time_minutes": 7,
+    "tags": [
+      "alerting",
+      "call",
+      "datadog",
+      "integrate",
+      "pagerduty",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-set-up-datadog-apm-for-a-python-flask-application-step-by-step-guide",
+    "title": "How to set up Datadog APM for a Python Flask application (step-by-step guide)",
+    "description": "How to set up Datadog APM for a Python Flask application (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-04-01",
+    "reading_time_minutes": 7,
+    "tags": [
+      "apm",
+      "application",
+      "datadog",
+      "flask",
+      "python",
+      "set",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-set-up-datadog-synthetic-monitoring-for-an-api-endpoint-step-by-step-guid",
+    "title": "How to set up Datadog synthetic monitoring for an API endpoint (step-by-step guide)",
+    "description": "How to set up Datadog synthetic monitoring for an API endpoint (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-04-01",
+    "reading_time_minutes": 7,
+    "tags": [
+      "api",
+      "datadog",
+      "endpoint",
+      "monitoring",
+      "set",
+      "synthetic",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-use-datadog-logs-to-debug-a-microservices-architecture-step-by-step-guide",
+    "title": "How to use Datadog Logs to debug a microservices architecture (step-by-step guide)",
+    "description": "How to use Datadog Logs to debug a microservices architecture (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-04-01",
+    "reading_time_minutes": 7,
+    "tags": [
+      "architecture",
+      "datadog",
+      "debug",
+      "logs",
+      "microservices",
+      "tutorial"
+    ]
+  },
+  {
     "slug": "how-to-connect-a-custom-domain-to-a-railway-deployment-step-by-step-guide",
     "title": "How to connect a custom domain to a Railway deployment (step-by-step guide)",
     "description": "How to connect a custom domain to a Railway deployment (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
