@@ -1,5 +1,96 @@
 [
   {
+    "slug": "how-to-deploy-a-flask-api-on-vultr-with-gunicorn-and-nginx-step-by-step-guide",
+    "title": "How to deploy a Flask API on Vultr with Gunicorn and Nginx (step-by-step guide)",
+    "description": "How to deploy a Flask API on Vultr with Gunicorn and Nginx (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-04-02",
+    "reading_time_minutes": 7,
+    "tags": [
+      "api",
+      "deploy",
+      "flask",
+      "gunicorn",
+      "nginx",
+      "tutorial",
+      "vultr"
+    ]
+  },
+  {
+    "slug": "how-to-deploy-a-redis-cache-on-vultr-for-a-web-application-step-by-step-guide",
+    "title": "How to deploy a Redis cache on Vultr for a web application (step-by-step guide)",
+    "description": "How to deploy a Redis cache on Vultr for a web application (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-04-02",
+    "reading_time_minutes": 7,
+    "tags": [
+      "application",
+      "cache",
+      "deploy",
+      "redis",
+      "tutorial",
+      "vultr",
+      "web"
+    ]
+  },
+  {
+    "slug": "how-to-reduce-datadog-costs-by-tuning-log-retention-and-sampling-step-by-step-gu",
+    "title": "How to reduce Datadog costs by tuning log retention and sampling (step-by-step guide)",
+    "description": "How to reduce Datadog costs by tuning log retention and sampling (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-04-02",
+    "reading_time_minutes": 7,
+    "tags": [
+      "costs",
+      "datadog",
+      "log",
+      "reduce",
+      "retention",
+      "sampling",
+      "tuning",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "how-to-set-up-a-vultr-vps-with-ubuntu-and-secure-it-for-production-step-by-step-",
+    "title": "How to set up a Vultr VPS with Ubuntu and secure it for production (step-by-step guide)",
+    "description": "How to set up a Vultr VPS with Ubuntu and secure it for production (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-04-02",
+    "reading_time_minutes": 7,
+    "tags": [
+      "production",
+      "secure",
+      "set",
+      "tutorial",
+      "ubuntu",
+      "vps",
+      "vultr"
+    ]
+  },
+  {
+    "slug": "how-to-set-up-automated-backups-on-vultr-object-storage-step-by-step-guide",
+    "title": "How to set up automated backups on Vultr object storage (step-by-step guide)",
+    "description": "How to set up automated backups on Vultr object storage (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-04-02",
+    "reading_time_minutes": 7,
+    "tags": [
+      "automated",
+      "backups",
+      "object",
+      "set",
+      "storage",
+      "tutorial",
+      "vultr"
+    ]
+  },
+  {
     "slug": "how-to-create-datadog-dashboards-and-alerts-for-production-incidents-step-by-ste",
     "title": "How to create Datadog dashboards and alerts for production incidents (step-by-step guide)",
     "description": "How to create Datadog dashboards and alerts for production incidents (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
