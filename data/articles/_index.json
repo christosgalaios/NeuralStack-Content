@@ -1,5 +1,101 @@
 [
   {
+    "slug": "chinese-open-source-ecosystem-for-global-engineers-translated-summary",
+    "title": "Chinese open source ecosystem for global engineers (translated summary)",
+    "description": "Chinese open source ecosystem for global engineers (translated summary). Practical news covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "news",
+    "category_display": "News",
+    "date_published": "2026-04-03",
+    "reading_time_minutes": 6,
+    "tags": [
+      "chinese",
+      "ecosystem",
+      "engineers",
+      "global",
+      "news",
+      "open",
+      "source",
+      "summary",
+      "translated"
+    ]
+  },
+  {
+    "slug": "cn-cloud-provider-partnership-for-global-engineers-translated-summary",
+    "title": "CN cloud provider partnership for global engineers (translated summary)",
+    "description": "CN cloud provider partnership for global engineers (translated summary). Practical news covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "news",
+    "category_display": "News",
+    "date_published": "2026-04-03",
+    "reading_time_minutes": 6,
+    "tags": [
+      "cloud",
+      "engineers",
+      "global",
+      "news",
+      "partnership",
+      "provider",
+      "summary",
+      "translated"
+    ]
+  },
+  {
+    "slug": "japan-dev-community-reaction-for-global-engineers-translated-summary",
+    "title": "Japan dev community reaction for global engineers (translated summary)",
+    "description": "Japan dev community reaction for global engineers (translated summary). Practical news covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "news",
+    "category_display": "News",
+    "date_published": "2026-04-03",
+    "reading_time_minutes": 6,
+    "tags": [
+      "community",
+      "dev",
+      "engineers",
+      "global",
+      "japan",
+      "news",
+      "reaction",
+      "summary",
+      "translated"
+    ]
+  },
+  {
+    "slug": "shanghai-ai-labs-testing-for-global-engineers-translated-summary",
+    "title": "Shanghai AI labs testing for global engineers (translated summary)",
+    "description": "Shanghai AI labs testing for global engineers (translated summary). Practical news covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "news",
+    "category_display": "News",
+    "date_published": "2026-04-03",
+    "reading_time_minutes": 6,
+    "tags": [
+      "engineers",
+      "global",
+      "labs",
+      "news",
+      "shanghai",
+      "summary",
+      "testing",
+      "translated"
+    ]
+  },
+  {
+    "slug": "tokyo-startups-using-for-global-engineers-translated-summary",
+    "title": "Tokyo startups using for global engineers (translated summary)",
+    "description": "Tokyo startups using for global engineers (translated summary). Practical news covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "news",
+    "category_display": "News",
+    "date_published": "2026-04-03",
+    "reading_time_minutes": 6,
+    "tags": [
+      "engineers",
+      "global",
+      "news",
+      "startups",
+      "summary",
+      "tokyo",
+      "translated"
+    ]
+  },
+  {
     "slug": "how-to-deploy-a-flask-api-on-vultr-with-gunicorn-and-nginx-step-by-step-guide",
     "title": "How to deploy a Flask API on Vultr with Gunicorn and Nginx (step-by-step guide)",
     "description": "How to deploy a Flask API on Vultr with Gunicorn and Nginx (step-by-step guide). Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
