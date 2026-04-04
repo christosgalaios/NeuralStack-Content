@@ -1,5 +1,104 @@
 [
   {
+    "slug": "alibaba-cloud-open-source-push-for-global-engineers-translated-summary",
+    "title": "Alibaba Cloud open source push for global engineers (translated summary)",
+    "description": "Alibaba Cloud open source push for global engineers (translated summary). Practical news covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "news",
+    "category_display": "News",
+    "date_published": "2026-04-04",
+    "reading_time_minutes": 6,
+    "tags": [
+      "alibaba",
+      "cloud",
+      "engineers",
+      "global",
+      "news",
+      "open",
+      "push",
+      "source",
+      "summary",
+      "translated"
+    ]
+  },
+  {
+    "slug": "bytedance-internal-tooling-for-global-engineers-translated-summary",
+    "title": "ByteDance internal tooling for global engineers (translated summary)",
+    "description": "ByteDance internal tooling for global engineers (translated summary). Practical news covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "news",
+    "category_display": "News",
+    "date_published": "2026-04-04",
+    "reading_time_minutes": 6,
+    "tags": [
+      "bytedance",
+      "engineers",
+      "global",
+      "internal",
+      "news",
+      "summary",
+      "tooling",
+      "translated"
+    ]
+  },
+  {
+    "slug": "japanese-enterprise-rust-adoption-for-global-engineers-translated-summary",
+    "title": "Japanese enterprise Rust adoption for global engineers (translated summary)",
+    "description": "Japanese enterprise Rust adoption for global engineers (translated summary). Practical news covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "news",
+    "category_display": "News",
+    "date_published": "2026-04-04",
+    "reading_time_minutes": 6,
+    "tags": [
+      "adoption",
+      "engineers",
+      "enterprise",
+      "global",
+      "japanese",
+      "news",
+      "rust",
+      "summary",
+      "translated"
+    ]
+  },
+  {
+    "slug": "korean-fintech-engineering-for-global-engineers-translated-summary",
+    "title": "Korean fintech engineering for global engineers (translated summary)",
+    "description": "Korean fintech engineering for global engineers (translated summary). Practical news covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "news",
+    "category_display": "News",
+    "date_published": "2026-04-04",
+    "reading_time_minutes": 6,
+    "tags": [
+      "engineering",
+      "engineers",
+      "fintech",
+      "global",
+      "korean",
+      "news",
+      "summary",
+      "translated"
+    ]
+  },
+  {
+    "slug": "shenzhen-hardware-software-integration-for-global-engineers-translated-summary",
+    "title": "Shenzhen hardware-software integration for global engineers (translated summary)",
+    "description": "Shenzhen hardware-software integration for global engineers (translated summary). Practical news covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "news",
+    "category_display": "News",
+    "date_published": "2026-04-04",
+    "reading_time_minutes": 6,
+    "tags": [
+      "engineers",
+      "global",
+      "hardware",
+      "integration",
+      "news",
+      "shenzhen",
+      "software",
+      "summary",
+      "translated"
+    ]
+  },
+  {
     "slug": "chinese-open-source-ecosystem-for-global-engineers-translated-summary",
     "title": "Chinese open source ecosystem for global engineers (translated summary)",
     "description": "Chinese open source ecosystem for global engineers (translated summary). Practical news covering implementation patterns, trade-offs, and recommendations for production engineers.",

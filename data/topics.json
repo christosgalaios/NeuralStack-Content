@@ -5097,7 +5097,7 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "news-shenzhenhardware-softwareintegration",
@@ -5107,7 +5107,7 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "news-japaneseenterpriserustadoption",
@@ -5117,7 +5117,7 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "news-alibabacloudopensourcepush",
@@ -5127,7 +5127,7 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "news-bytedanceinternaltooling",
@@ -5137,7 +5137,7 @@
     "difficulty_score": 0.32,
     "source": "heuristic-foreign-news",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "howto-set-up-a-ci/cd-pipeline-with-github-actions",
