@@ -1,5 +1,95 @@
 [
   {
+    "slug": "vs-code-vs-cursor-ide-for-full-stack-developers",
+    "title": "VS Code vs Cursor IDE for full-stack developers",
+    "description": "VS Code vs Cursor IDE for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-05",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "cursor",
+      "developers",
+      "full",
+      "ide",
+      "stack"
+    ]
+  },
+  {
+    "slug": "vs-code-vs-github-copilot-cli-for-full-stack-developers",
+    "title": "VS Code vs GitHub Copilot CLI for full-stack developers",
+    "description": "VS Code vs GitHub Copilot CLI for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-05",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "code",
+      "comparison",
+      "copilot",
+      "developers",
+      "full",
+      "github",
+      "stack"
+    ]
+  },
+  {
+    "slug": "vs-code-vs-jetbrains-fleet-for-full-stack-developers",
+    "title": "VS Code vs JetBrains Fleet for full-stack developers",
+    "description": "VS Code vs JetBrains Fleet for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-05",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "fleet",
+      "full",
+      "jetbrains",
+      "stack"
+    ]
+  },
+  {
+    "slug": "vs-code-vs-neovim-for-full-stack-developers",
+    "title": "VS Code vs Neovim for full-stack developers",
+    "description": "VS Code vs Neovim for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-05",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "full",
+      "neovim",
+      "stack"
+    ]
+  },
+  {
+    "slug": "vs-code-vs-zed-editor-for-full-stack-developers",
+    "title": "VS Code vs Zed editor for full-stack developers",
+    "description": "VS Code vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-05",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "editor",
+      "full",
+      "stack",
+      "zed"
+    ]
+  },
+  {
     "slug": "alibaba-cloud-open-source-push-for-global-engineers-translated-summary",
     "title": "Alibaba Cloud open source push for global engineers (translated summary)",
     "description": "Alibaba Cloud open source push for global engineers (translated summary). Practical news covering implementation patterns, trade-offs, and recommendations for production engineers.",
