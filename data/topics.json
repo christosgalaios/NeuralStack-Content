@@ -57,7 +57,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-jetbrainsfleet-neovim",
@@ -67,7 +67,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-jetbrainsfleet-cursoride",
@@ -77,7 +77,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-jetbrainsfleet-zededitor",
@@ -87,7 +87,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-jetbrainsfleet-githubcopilotcli",
@@ -97,7 +97,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-10T16:04:11.601341Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-neovim-vscode",

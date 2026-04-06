@@ -1,5 +1,99 @@
 [
   {
+    "slug": "jetbrains-fleet-vs-cursor-ide-for-full-stack-developers",
+    "title": "JetBrains Fleet vs Cursor IDE for full-stack developers",
+    "description": "JetBrains Fleet vs Cursor IDE for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-06",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "fleet",
+      "full",
+      "ide",
+      "jetbrains",
+      "stack"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-github-copilot-cli-for-full-stack-developers",
+    "title": "JetBrains Fleet vs GitHub Copilot CLI for full-stack developers",
+    "description": "JetBrains Fleet vs GitHub Copilot CLI for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-06",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "fleet",
+      "full",
+      "github",
+      "jetbrains",
+      "stack"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-neovim-for-full-stack-developers",
+    "title": "JetBrains Fleet vs Neovim for full-stack developers",
+    "description": "JetBrains Fleet vs Neovim for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-06",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "full",
+      "jetbrains",
+      "neovim",
+      "stack"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-vs-code-for-full-stack-developers",
+    "title": "JetBrains Fleet vs VS Code for full-stack developers",
+    "description": "JetBrains Fleet vs VS Code for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-06",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "fleet",
+      "full",
+      "jetbrains",
+      "stack"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-zed-editor-for-full-stack-developers",
+    "title": "JetBrains Fleet vs Zed editor for full-stack developers",
+    "description": "JetBrains Fleet vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-06",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "fleet",
+      "full",
+      "jetbrains",
+      "stack",
+      "zed"
+    ]
+  },
+  {
     "slug": "vs-code-vs-cursor-ide-for-full-stack-developers",
     "title": "VS Code vs Cursor IDE for full-stack developers",
     "description": "VS Code vs Cursor IDE for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
