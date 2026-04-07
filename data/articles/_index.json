@@ -1,5 +1,95 @@
 [
   {
+    "slug": "neovim-vs-cursor-ide-for-full-stack-developers",
+    "title": "Neovim vs Cursor IDE for full-stack developers",
+    "description": "Neovim vs Cursor IDE for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-07",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "full",
+      "ide",
+      "neovim",
+      "stack"
+    ]
+  },
+  {
+    "slug": "neovim-vs-github-copilot-cli-for-full-stack-developers",
+    "title": "Neovim vs GitHub Copilot CLI for full-stack developers",
+    "description": "Neovim vs GitHub Copilot CLI for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-07",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "full",
+      "github",
+      "neovim",
+      "stack"
+    ]
+  },
+  {
+    "slug": "neovim-vs-jetbrains-fleet-for-full-stack-developers",
+    "title": "Neovim vs JetBrains Fleet for full-stack developers",
+    "description": "Neovim vs JetBrains Fleet for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-07",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "full",
+      "jetbrains",
+      "neovim",
+      "stack"
+    ]
+  },
+  {
+    "slug": "neovim-vs-vs-code-for-full-stack-developers",
+    "title": "Neovim vs VS Code for full-stack developers",
+    "description": "Neovim vs VS Code for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-07",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "full",
+      "neovim",
+      "stack"
+    ]
+  },
+  {
+    "slug": "neovim-vs-zed-editor-for-full-stack-developers",
+    "title": "Neovim vs Zed editor for full-stack developers",
+    "description": "Neovim vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-07",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "full",
+      "neovim",
+      "stack",
+      "zed"
+    ]
+  },
+  {
     "slug": "jetbrains-fleet-vs-cursor-ide-for-full-stack-developers",
     "title": "JetBrains Fleet vs Cursor IDE for full-stack developers",
     "description": "JetBrains Fleet vs Cursor IDE for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
