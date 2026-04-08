@@ -1,5 +1,99 @@
 [
   {
+    "slug": "cursor-ide-vs-github-copilot-cli-for-full-stack-developers",
+    "title": "Cursor IDE vs GitHub Copilot CLI for full-stack developers",
+    "description": "Cursor IDE vs GitHub Copilot CLI for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-08",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "cursor",
+      "developers",
+      "full",
+      "github",
+      "ide",
+      "stack"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-jetbrains-fleet-for-full-stack-developers",
+    "title": "Cursor IDE vs JetBrains Fleet for full-stack developers",
+    "description": "Cursor IDE vs JetBrains Fleet for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-08",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "fleet",
+      "full",
+      "ide",
+      "jetbrains",
+      "stack"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-neovim-for-full-stack-developers",
+    "title": "Cursor IDE vs Neovim for full-stack developers",
+    "description": "Cursor IDE vs Neovim for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-08",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "full",
+      "ide",
+      "neovim",
+      "stack"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-vs-code-for-full-stack-developers",
+    "title": "Cursor IDE vs VS Code for full-stack developers",
+    "description": "Cursor IDE vs VS Code for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-08",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "cursor",
+      "developers",
+      "full",
+      "ide",
+      "stack"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-zed-editor-for-full-stack-developers",
+    "title": "Cursor IDE vs Zed editor for full-stack developers",
+    "description": "Cursor IDE vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-08",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "editor",
+      "full",
+      "ide",
+      "stack",
+      "zed"
+    ]
+  },
+  {
     "slug": "neovim-vs-cursor-ide-for-full-stack-developers",
     "title": "Neovim vs Cursor IDE for full-stack developers",
     "description": "Neovim vs Cursor IDE for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
