@@ -1,5 +1,99 @@
 [
   {
+    "slug": "zed-editor-vs-cursor-ide-for-full-stack-developers",
+    "title": "Zed editor vs Cursor IDE for full-stack developers",
+    "description": "Zed editor vs Cursor IDE for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-09",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "editor",
+      "full",
+      "ide",
+      "stack",
+      "zed"
+    ]
+  },
+  {
+    "slug": "zed-editor-vs-github-copilot-cli-for-full-stack-developers",
+    "title": "Zed editor vs GitHub Copilot CLI for full-stack developers",
+    "description": "Zed editor vs GitHub Copilot CLI for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-09",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "editor",
+      "full",
+      "github",
+      "stack",
+      "zed"
+    ]
+  },
+  {
+    "slug": "zed-editor-vs-jetbrains-fleet-for-full-stack-developers",
+    "title": "Zed editor vs JetBrains Fleet for full-stack developers",
+    "description": "Zed editor vs JetBrains Fleet for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-09",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "fleet",
+      "full",
+      "jetbrains",
+      "stack",
+      "zed"
+    ]
+  },
+  {
+    "slug": "zed-editor-vs-neovim-for-full-stack-developers",
+    "title": "Zed editor vs Neovim for full-stack developers",
+    "description": "Zed editor vs Neovim for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-09",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "full",
+      "neovim",
+      "stack",
+      "zed"
+    ]
+  },
+  {
+    "slug": "zed-editor-vs-vs-code-for-full-stack-developers",
+    "title": "Zed editor vs VS Code for full-stack developers",
+    "description": "Zed editor vs VS Code for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-09",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "editor",
+      "full",
+      "stack",
+      "zed"
+    ]
+  },
+  {
     "slug": "cursor-ide-vs-github-copilot-cli-for-full-stack-developers",
     "title": "Cursor IDE vs GitHub Copilot CLI for full-stack developers",
     "description": "Cursor IDE vs GitHub Copilot CLI for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
