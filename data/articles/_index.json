@@ -1,5 +1,103 @@
 [
   {
+    "slug": "github-copilot-cli-vs-cursor-ide-for-full-stack-developers",
+    "title": "GitHub Copilot CLI vs Cursor IDE for full-stack developers",
+    "description": "GitHub Copilot CLI vs Cursor IDE for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-10",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "cursor",
+      "developers",
+      "full",
+      "github",
+      "ide",
+      "stack"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-jetbrains-fleet-for-full-stack-developers",
+    "title": "GitHub Copilot CLI vs JetBrains Fleet for full-stack developers",
+    "description": "GitHub Copilot CLI vs JetBrains Fleet for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-10",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "fleet",
+      "full",
+      "github",
+      "jetbrains",
+      "stack"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-neovim-for-full-stack-developers",
+    "title": "GitHub Copilot CLI vs Neovim for full-stack developers",
+    "description": "GitHub Copilot CLI vs Neovim for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-10",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "full",
+      "github",
+      "neovim",
+      "stack"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-vs-code-for-full-stack-developers",
+    "title": "GitHub Copilot CLI vs VS Code for full-stack developers",
+    "description": "GitHub Copilot CLI vs VS Code for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-10",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "code",
+      "comparison",
+      "copilot",
+      "developers",
+      "full",
+      "github",
+      "stack"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-zed-editor-for-full-stack-developers",
+    "title": "GitHub Copilot CLI vs Zed editor for full-stack developers",
+    "description": "GitHub Copilot CLI vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-10",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "editor",
+      "full",
+      "github",
+      "stack",
+      "zed"
+    ]
+  },
+  {
     "slug": "zed-editor-vs-cursor-ide-for-full-stack-developers",
     "title": "Zed editor vs Cursor IDE for full-stack developers",
     "description": "Zed editor vs Cursor IDE for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
