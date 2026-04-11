@@ -1,5 +1,92 @@
 [
   {
+    "slug": "vs-code-vs-zed-editor-for-data-scientists",
+    "title": "VS Code vs Zed editor for data scientists",
+    "description": "VS Code vs Zed editor for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-11",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "data",
+      "editor",
+      "scientists",
+      "zed"
+    ]
+  },
+  {
+    "slug": "vs-code-vs-zed-editor-for-devops-engineers",
+    "title": "VS Code vs Zed editor for DevOps engineers",
+    "description": "VS Code vs Zed editor for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-11",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "devops",
+      "editor",
+      "engineers",
+      "zed"
+    ]
+  },
+  {
+    "slug": "vs-code-vs-zed-editor-for-full-stack-developers",
+    "title": "VS Code vs Zed editor for full-stack developers",
+    "description": "VS Code vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-11",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "editor",
+      "full",
+      "stack",
+      "zed"
+    ]
+  },
+  {
+    "slug": "vs-code-vs-zed-editor-for-python-backend-engineers",
+    "title": "VS Code vs Zed editor for Python backend engineers",
+    "description": "VS Code vs Zed editor for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-11",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "code",
+      "comparison",
+      "editor",
+      "engineers",
+      "python",
+      "zed"
+    ]
+  },
+  {
+    "slug": "vs-code-vs-zed-editor-for-rust-developers",
+    "title": "VS Code vs Zed editor for Rust developers",
+    "description": "VS Code vs Zed editor for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-11",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "editor",
+      "rust",
+      "zed"
+    ]
+  },
+  {
     "slug": "github-copilot-cli-vs-cursor-ide-for-full-stack-developers",
     "title": "GitHub Copilot CLI vs Cursor IDE for full-stack developers",
     "description": "GitHub Copilot CLI vs Cursor IDE for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
@@ -539,24 +626,6 @@
       "full",
       "neovim",
       "stack"
-    ]
-  },
-  {
-    "slug": "vs-code-vs-zed-editor-for-full-stack-developers",
-    "title": "VS Code vs Zed editor for full-stack developers",
-    "description": "VS Code vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
-    "category": "comparison",
-    "category_display": "Comparison",
-    "date_published": "2026-04-05",
-    "reading_time_minutes": 8,
-    "tags": [
-      "code",
-      "comparison",
-      "developers",
-      "editor",
-      "full",
-      "stack",
-      "zed"
     ]
   },
   {
