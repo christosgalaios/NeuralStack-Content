@@ -1,5 +1,93 @@
 [
   {
+    "slug": "jetbrains-fleet-vs-vs-code-for-full-stack-developers",
+    "title": "JetBrains Fleet vs VS Code for full-stack developers",
+    "description": "JetBrains Fleet vs VS Code for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-12",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "fleet",
+      "full",
+      "jetbrains",
+      "stack"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-vs-code-for-python-backend-engineers",
+    "title": "JetBrains Fleet vs VS Code for Python backend engineers",
+    "description": "JetBrains Fleet vs VS Code for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-12",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "code",
+      "comparison",
+      "engineers",
+      "fleet",
+      "jetbrains",
+      "python"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-vs-code-for-rust-developers",
+    "title": "JetBrains Fleet vs VS Code for Rust developers",
+    "description": "JetBrains Fleet vs VS Code for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-12",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "fleet",
+      "jetbrains",
+      "rust"
+    ]
+  },
+  {
+    "slug": "vs-code-vs-zed-editor-for-frontend-react-developers",
+    "title": "VS Code vs Zed editor for frontend React developers",
+    "description": "VS Code vs Zed editor for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-12",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "editor",
+      "frontend",
+      "react",
+      "zed"
+    ]
+  },
+  {
+    "slug": "vs-code-vs-zed-editor-for-mobile-developers",
+    "title": "VS Code vs Zed editor for mobile developers",
+    "description": "VS Code vs Zed editor for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-12",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "editor",
+      "mobile",
+      "zed"
+    ]
+  },
+  {
     "slug": "vs-code-vs-zed-editor-for-data-scientists",
     "title": "VS Code vs Zed editor for data scientists",
     "description": "VS Code vs Zed editor for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
@@ -516,24 +604,6 @@
       "full",
       "jetbrains",
       "neovim",
-      "stack"
-    ]
-  },
-  {
-    "slug": "jetbrains-fleet-vs-vs-code-for-full-stack-developers",
-    "title": "JetBrains Fleet vs VS Code for full-stack developers",
-    "description": "JetBrains Fleet vs VS Code for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
-    "category": "comparison",
-    "category_display": "Comparison",
-    "date_published": "2026-04-06",
-    "reading_time_minutes": 8,
-    "tags": [
-      "code",
-      "comparison",
-      "developers",
-      "fleet",
-      "full",
-      "jetbrains",
       "stack"
     ]
   },
