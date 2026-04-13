@@ -1,5 +1,92 @@
 [
   {
+    "slug": "jetbrains-fleet-vs-neovim-for-full-stack-developers",
+    "title": "JetBrains Fleet vs Neovim for full-stack developers",
+    "description": "JetBrains Fleet vs Neovim for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-13",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "full",
+      "jetbrains",
+      "neovim",
+      "stack"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-vs-code-for-data-scientists",
+    "title": "JetBrains Fleet vs VS Code for data scientists",
+    "description": "JetBrains Fleet vs VS Code for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-13",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "data",
+      "fleet",
+      "jetbrains",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-vs-code-for-devops-engineers",
+    "title": "JetBrains Fleet vs VS Code for DevOps engineers",
+    "description": "JetBrains Fleet vs VS Code for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-13",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "devops",
+      "engineers",
+      "fleet",
+      "jetbrains"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-vs-code-for-frontend-react-developers",
+    "title": "JetBrains Fleet vs VS Code for frontend React developers",
+    "description": "JetBrains Fleet vs VS Code for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-13",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "fleet",
+      "frontend",
+      "jetbrains",
+      "react"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-vs-code-for-mobile-developers",
+    "title": "JetBrains Fleet vs VS Code for mobile developers",
+    "description": "JetBrains Fleet vs VS Code for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-13",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "fleet",
+      "jetbrains",
+      "mobile"
+    ]
+  },
+  {
     "slug": "jetbrains-fleet-vs-vs-code-for-full-stack-developers",
     "title": "JetBrains Fleet vs VS Code for full-stack developers",
     "description": "JetBrains Fleet vs VS Code for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
@@ -586,24 +673,6 @@
       "full",
       "github",
       "jetbrains",
-      "stack"
-    ]
-  },
-  {
-    "slug": "jetbrains-fleet-vs-neovim-for-full-stack-developers",
-    "title": "JetBrains Fleet vs Neovim for full-stack developers",
-    "description": "JetBrains Fleet vs Neovim for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
-    "category": "comparison",
-    "category_display": "Comparison",
-    "date_published": "2026-04-06",
-    "reading_time_minutes": 8,
-    "tags": [
-      "comparison",
-      "developers",
-      "fleet",
-      "full",
-      "jetbrains",
-      "neovim",
       "stack"
     ]
   },
