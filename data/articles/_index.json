@@ -1,5 +1,91 @@
 [
   {
+    "slug": "jetbrains-fleet-vs-neovim-for-data-scientists",
+    "title": "JetBrains Fleet vs Neovim for data scientists",
+    "description": "JetBrains Fleet vs Neovim for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-14",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "data",
+      "fleet",
+      "jetbrains",
+      "neovim",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-neovim-for-devops-engineers",
+    "title": "JetBrains Fleet vs Neovim for DevOps engineers",
+    "description": "JetBrains Fleet vs Neovim for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-14",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "devops",
+      "engineers",
+      "fleet",
+      "jetbrains",
+      "neovim"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-neovim-for-mobile-developers",
+    "title": "JetBrains Fleet vs Neovim for mobile developers",
+    "description": "JetBrains Fleet vs Neovim for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-14",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "jetbrains",
+      "mobile",
+      "neovim"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-neovim-for-python-backend-engineers",
+    "title": "JetBrains Fleet vs Neovim for Python backend engineers",
+    "description": "JetBrains Fleet vs Neovim for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-14",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "comparison",
+      "engineers",
+      "fleet",
+      "jetbrains",
+      "neovim",
+      "python"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-neovim-for-rust-developers",
+    "title": "JetBrains Fleet vs Neovim for Rust developers",
+    "description": "JetBrains Fleet vs Neovim for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-14",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "jetbrains",
+      "neovim",
+      "rust"
+    ]
+  },
+  {
     "slug": "jetbrains-fleet-vs-neovim-for-full-stack-developers",
     "title": "JetBrains Fleet vs Neovim for full-stack developers",
     "description": "JetBrains Fleet vs Neovim for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
