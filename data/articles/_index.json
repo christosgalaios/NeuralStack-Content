@@ -1,5 +1,97 @@
 [
   {
+    "slug": "jetbrains-fleet-vs-neovim-for-frontend-react-developers",
+    "title": "JetBrains Fleet vs Neovim for frontend React developers",
+    "description": "JetBrains Fleet vs Neovim for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-15",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "frontend",
+      "jetbrains",
+      "neovim",
+      "react"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-zed-editor-for-data-scientists",
+    "title": "JetBrains Fleet vs Zed editor for data scientists",
+    "description": "JetBrains Fleet vs Zed editor for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-15",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "data",
+      "editor",
+      "fleet",
+      "jetbrains",
+      "scientists",
+      "zed"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-zed-editor-for-full-stack-developers",
+    "title": "JetBrains Fleet vs Zed editor for full-stack developers",
+    "description": "JetBrains Fleet vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-15",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "fleet",
+      "full",
+      "jetbrains",
+      "stack",
+      "zed"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-zed-editor-for-python-backend-engineers",
+    "title": "JetBrains Fleet vs Zed editor for Python backend engineers",
+    "description": "JetBrains Fleet vs Zed editor for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-15",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "comparison",
+      "editor",
+      "engineers",
+      "fleet",
+      "jetbrains",
+      "python",
+      "zed"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-zed-editor-for-rust-developers",
+    "title": "JetBrains Fleet vs Zed editor for Rust developers",
+    "description": "JetBrains Fleet vs Zed editor for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-15",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "fleet",
+      "jetbrains",
+      "rust",
+      "zed"
+    ]
+  },
+  {
     "slug": "jetbrains-fleet-vs-neovim-for-data-scientists",
     "title": "JetBrains Fleet vs Neovim for data scientists",
     "description": "JetBrains Fleet vs Neovim for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
@@ -760,25 +852,6 @@
       "github",
       "jetbrains",
       "stack"
-    ]
-  },
-  {
-    "slug": "jetbrains-fleet-vs-zed-editor-for-full-stack-developers",
-    "title": "JetBrains Fleet vs Zed editor for full-stack developers",
-    "description": "JetBrains Fleet vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
-    "category": "comparison",
-    "category_display": "Comparison",
-    "date_published": "2026-04-06",
-    "reading_time_minutes": 8,
-    "tags": [
-      "comparison",
-      "developers",
-      "editor",
-      "fleet",
-      "full",
-      "jetbrains",
-      "stack",
-      "zed"
     ]
   },
   {
