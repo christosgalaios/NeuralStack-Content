@@ -1,5 +1,98 @@
 [
   {
+    "slug": "jetbrains-fleet-vs-sublime-text-for-full-stack-developers",
+    "title": "JetBrains Fleet vs Sublime Text for full-stack developers",
+    "description": "JetBrains Fleet vs Sublime Text for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-16",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "full",
+      "jetbrains",
+      "stack",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-sublime-text-for-python-backend-engineers",
+    "title": "JetBrains Fleet vs Sublime Text for Python backend engineers",
+    "description": "JetBrains Fleet vs Sublime Text for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-16",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "comparison",
+      "engineers",
+      "fleet",
+      "jetbrains",
+      "python",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-zed-editor-for-devops-engineers",
+    "title": "JetBrains Fleet vs Zed editor for DevOps engineers",
+    "description": "JetBrains Fleet vs Zed editor for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-16",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "devops",
+      "editor",
+      "engineers",
+      "fleet",
+      "jetbrains",
+      "zed"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-zed-editor-for-frontend-react-developers",
+    "title": "JetBrains Fleet vs Zed editor for frontend React developers",
+    "description": "JetBrains Fleet vs Zed editor for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-16",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "fleet",
+      "frontend",
+      "jetbrains",
+      "react",
+      "zed"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-zed-editor-for-mobile-developers",
+    "title": "JetBrains Fleet vs Zed editor for mobile developers",
+    "description": "JetBrains Fleet vs Zed editor for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-16",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "fleet",
+      "jetbrains",
+      "mobile",
+      "zed"
+    ]
+  },
+  {
     "slug": "jetbrains-fleet-vs-neovim-for-frontend-react-developers",
     "title": "JetBrains Fleet vs Neovim for frontend React developers",
     "description": "JetBrains Fleet vs Neovim for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
