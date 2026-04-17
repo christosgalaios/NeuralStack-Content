@@ -1,5 +1,96 @@
 [
   {
+    "slug": "jetbrains-fleet-vs-sublime-text-for-data-scientists",
+    "title": "JetBrains Fleet vs Sublime Text for data scientists",
+    "description": "JetBrains Fleet vs Sublime Text for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-17",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "data",
+      "fleet",
+      "jetbrains",
+      "scientists",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-sublime-text-for-devops-engineers",
+    "title": "JetBrains Fleet vs Sublime Text for DevOps engineers",
+    "description": "JetBrains Fleet vs Sublime Text for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-17",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "devops",
+      "engineers",
+      "fleet",
+      "jetbrains",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-sublime-text-for-frontend-react-developers",
+    "title": "JetBrains Fleet vs Sublime Text for frontend React developers",
+    "description": "JetBrains Fleet vs Sublime Text for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-17",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "frontend",
+      "jetbrains",
+      "react",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-sublime-text-for-mobile-developers",
+    "title": "JetBrains Fleet vs Sublime Text for mobile developers",
+    "description": "JetBrains Fleet vs Sublime Text for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-17",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "jetbrains",
+      "mobile",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-sublime-text-for-rust-developers",
+    "title": "JetBrains Fleet vs Sublime Text for Rust developers",
+    "description": "JetBrains Fleet vs Sublime Text for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-17",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "jetbrains",
+      "rust",
+      "sublime",
+      "text"
+    ]
+  },
+  {
     "slug": "jetbrains-fleet-vs-sublime-text-for-full-stack-developers",
     "title": "JetBrains Fleet vs Sublime Text for full-stack developers",
     "description": "JetBrains Fleet vs Sublime Text for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
