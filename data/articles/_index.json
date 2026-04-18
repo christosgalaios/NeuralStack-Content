@@ -1,5 +1,92 @@
 [
   {
+    "slug": "jetbrains-fleet-vs-lapce-for-data-scientists",
+    "title": "JetBrains Fleet vs Lapce for data scientists",
+    "description": "JetBrains Fleet vs Lapce for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-18",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "data",
+      "fleet",
+      "jetbrains",
+      "lapce",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-lapce-for-devops-engineers",
+    "title": "JetBrains Fleet vs Lapce for DevOps engineers",
+    "description": "JetBrains Fleet vs Lapce for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-18",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "devops",
+      "engineers",
+      "fleet",
+      "jetbrains",
+      "lapce"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-lapce-for-full-stack-developers",
+    "title": "JetBrains Fleet vs Lapce for full-stack developers",
+    "description": "JetBrains Fleet vs Lapce for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-18",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "full",
+      "jetbrains",
+      "lapce",
+      "stack"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-lapce-for-python-backend-engineers",
+    "title": "JetBrains Fleet vs Lapce for Python backend engineers",
+    "description": "JetBrains Fleet vs Lapce for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-18",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "comparison",
+      "engineers",
+      "fleet",
+      "jetbrains",
+      "lapce",
+      "python"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-lapce-for-rust-developers",
+    "title": "JetBrains Fleet vs Lapce for Rust developers",
+    "description": "JetBrains Fleet vs Lapce for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-18",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "jetbrains",
+      "lapce",
+      "rust"
+    ]
+  },
+  {
     "slug": "jetbrains-fleet-vs-sublime-text-for-data-scientists",
     "title": "JetBrains Fleet vs Sublime Text for data scientists",
     "description": "JetBrains Fleet vs Sublime Text for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
