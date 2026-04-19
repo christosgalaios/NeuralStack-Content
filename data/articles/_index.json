@@ -1,5 +1,96 @@
 [
   {
+    "slug": "jetbrains-fleet-vs-lapce-for-frontend-react-developers",
+    "title": "JetBrains Fleet vs Lapce for frontend React developers",
+    "description": "JetBrains Fleet vs Lapce for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-19",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "frontend",
+      "jetbrains",
+      "lapce",
+      "react"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-lapce-for-mobile-developers",
+    "title": "JetBrains Fleet vs Lapce for mobile developers",
+    "description": "JetBrains Fleet vs Lapce for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-19",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "jetbrains",
+      "lapce",
+      "mobile"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-nova-by-panic-for-full-stack-developers",
+    "title": "JetBrains Fleet vs Nova by Panic for full-stack developers",
+    "description": "JetBrains Fleet vs Nova by Panic for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-19",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "full",
+      "jetbrains",
+      "nova",
+      "panic",
+      "stack"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-nova-by-panic-for-python-backend-engineers",
+    "title": "JetBrains Fleet vs Nova by Panic for Python backend engineers",
+    "description": "JetBrains Fleet vs Nova by Panic for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-19",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "comparison",
+      "engineers",
+      "fleet",
+      "jetbrains",
+      "nova",
+      "panic",
+      "python"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-vs-nova-by-panic-for-rust-developers",
+    "title": "JetBrains Fleet vs Nova by Panic for Rust developers",
+    "description": "JetBrains Fleet vs Nova by Panic for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-19",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "fleet",
+      "jetbrains",
+      "nova",
+      "panic",
+      "rust"
+    ]
+  },
+  {
     "slug": "jetbrains-fleet-vs-lapce-for-data-scientists",
     "title": "JetBrains Fleet vs Lapce for data scientists",
     "description": "JetBrains Fleet vs Lapce for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
