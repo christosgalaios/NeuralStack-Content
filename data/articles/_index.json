@@ -1,5 +1,86 @@
 [
   {
+    "slug": "neovim-vs-vs-code-for-data-scientists",
+    "title": "Neovim vs VS Code for data scientists",
+    "description": "Neovim vs VS Code for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-21",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "data",
+      "neovim",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "neovim-vs-vs-code-for-devops-engineers",
+    "title": "Neovim vs VS Code for DevOps engineers",
+    "description": "Neovim vs VS Code for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-21",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "devops",
+      "engineers",
+      "neovim"
+    ]
+  },
+  {
+    "slug": "neovim-vs-vs-code-for-mobile-developers",
+    "title": "Neovim vs VS Code for mobile developers",
+    "description": "Neovim vs VS Code for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-21",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "mobile",
+      "neovim"
+    ]
+  },
+  {
+    "slug": "neovim-vs-vs-code-for-python-backend-engineers",
+    "title": "Neovim vs VS Code for Python backend engineers",
+    "description": "Neovim vs VS Code for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-21",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "code",
+      "comparison",
+      "engineers",
+      "neovim",
+      "python"
+    ]
+  },
+  {
+    "slug": "neovim-vs-vs-code-for-rust-developers",
+    "title": "Neovim vs VS Code for Rust developers",
+    "description": "Neovim vs VS Code for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-21",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "neovim",
+      "rust"
+    ]
+  },
+  {
     "slug": "jetbrains-fleet-vs-nova-by-panic-for-data-scientists",
     "title": "JetBrains Fleet vs Nova by Panic for data scientists",
     "description": "JetBrains Fleet vs Nova by Panic for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
