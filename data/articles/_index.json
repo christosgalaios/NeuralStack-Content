@@ -1,5 +1,92 @@
 [
   {
+    "slug": "neovim-vs-vs-code-for-frontend-react-developers",
+    "title": "Neovim vs VS Code for frontend React developers",
+    "description": "Neovim vs VS Code for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-22",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "frontend",
+      "neovim",
+      "react"
+    ]
+  },
+  {
+    "slug": "neovim-vs-zed-editor-for-data-scientists",
+    "title": "Neovim vs Zed editor for data scientists",
+    "description": "Neovim vs Zed editor for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-22",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "data",
+      "editor",
+      "neovim",
+      "scientists",
+      "zed"
+    ]
+  },
+  {
+    "slug": "neovim-vs-zed-editor-for-full-stack-developers",
+    "title": "Neovim vs Zed editor for full-stack developers",
+    "description": "Neovim vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-22",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "full",
+      "neovim",
+      "stack",
+      "zed"
+    ]
+  },
+  {
+    "slug": "neovim-vs-zed-editor-for-python-backend-engineers",
+    "title": "Neovim vs Zed editor for Python backend engineers",
+    "description": "Neovim vs Zed editor for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-22",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "comparison",
+      "editor",
+      "engineers",
+      "neovim",
+      "python",
+      "zed"
+    ]
+  },
+  {
+    "slug": "neovim-vs-zed-editor-for-rust-developers",
+    "title": "Neovim vs Zed editor for Rust developers",
+    "description": "Neovim vs Zed editor for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-22",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "neovim",
+      "rust",
+      "zed"
+    ]
+  },
+  {
     "slug": "neovim-vs-vs-code-for-data-scientists",
     "title": "Neovim vs VS Code for data scientists",
     "description": "Neovim vs VS Code for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
@@ -1311,24 +1398,6 @@
       "jetbrains",
       "neovim",
       "stack"
-    ]
-  },
-  {
-    "slug": "neovim-vs-zed-editor-for-full-stack-developers",
-    "title": "Neovim vs Zed editor for full-stack developers",
-    "description": "Neovim vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
-    "category": "comparison",
-    "category_display": "Comparison",
-    "date_published": "2026-04-07",
-    "reading_time_minutes": 8,
-    "tags": [
-      "comparison",
-      "developers",
-      "editor",
-      "full",
-      "neovim",
-      "stack",
-      "zed"
     ]
   },
   {
