@@ -1,5 +1,93 @@
 [
   {
+    "slug": "neovim-vs-sublime-text-for-full-stack-developers",
+    "title": "Neovim vs Sublime Text for full-stack developers",
+    "description": "Neovim vs Sublime Text for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-23",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "full",
+      "neovim",
+      "stack",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "neovim-vs-sublime-text-for-python-backend-engineers",
+    "title": "Neovim vs Sublime Text for Python backend engineers",
+    "description": "Neovim vs Sublime Text for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-23",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "comparison",
+      "engineers",
+      "neovim",
+      "python",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "neovim-vs-zed-editor-for-devops-engineers",
+    "title": "Neovim vs Zed editor for DevOps engineers",
+    "description": "Neovim vs Zed editor for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-23",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "devops",
+      "editor",
+      "engineers",
+      "neovim",
+      "zed"
+    ]
+  },
+  {
+    "slug": "neovim-vs-zed-editor-for-frontend-react-developers",
+    "title": "Neovim vs Zed editor for frontend React developers",
+    "description": "Neovim vs Zed editor for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-23",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "frontend",
+      "neovim",
+      "react",
+      "zed"
+    ]
+  },
+  {
+    "slug": "neovim-vs-zed-editor-for-mobile-developers",
+    "title": "Neovim vs Zed editor for mobile developers",
+    "description": "Neovim vs Zed editor for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-23",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "mobile",
+      "neovim",
+      "zed"
+    ]
+  },
+  {
     "slug": "neovim-vs-vs-code-for-frontend-react-developers",
     "title": "Neovim vs VS Code for frontend React developers",
     "description": "Neovim vs VS Code for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
