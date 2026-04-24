@@ -1,5 +1,91 @@
 [
   {
+    "slug": "neovim-vs-sublime-text-for-data-scientists",
+    "title": "Neovim vs Sublime Text for data scientists",
+    "description": "Neovim vs Sublime Text for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-24",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "data",
+      "neovim",
+      "scientists",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "neovim-vs-sublime-text-for-devops-engineers",
+    "title": "Neovim vs Sublime Text for DevOps engineers",
+    "description": "Neovim vs Sublime Text for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-24",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "devops",
+      "engineers",
+      "neovim",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "neovim-vs-sublime-text-for-frontend-react-developers",
+    "title": "Neovim vs Sublime Text for frontend React developers",
+    "description": "Neovim vs Sublime Text for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-24",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "frontend",
+      "neovim",
+      "react",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "neovim-vs-sublime-text-for-mobile-developers",
+    "title": "Neovim vs Sublime Text for mobile developers",
+    "description": "Neovim vs Sublime Text for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-24",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "mobile",
+      "neovim",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "neovim-vs-sublime-text-for-rust-developers",
+    "title": "Neovim vs Sublime Text for Rust developers",
+    "description": "Neovim vs Sublime Text for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-24",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "neovim",
+      "rust",
+      "sublime",
+      "text"
+    ]
+  },
+  {
     "slug": "neovim-vs-sublime-text-for-full-stack-developers",
     "title": "Neovim vs Sublime Text for full-stack developers",
     "description": "Neovim vs Sublime Text for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
