@@ -1,5 +1,92 @@
 [
   {
+    "slug": "neovim-vs-nova-by-panic-for-data-scientists",
+    "title": "Neovim vs Nova by Panic for data scientists",
+    "description": "Neovim vs Nova by Panic for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-25",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "data",
+      "neovim",
+      "nova",
+      "panic",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "neovim-vs-nova-by-panic-for-devops-engineers",
+    "title": "Neovim vs Nova by Panic for DevOps engineers",
+    "description": "Neovim vs Nova by Panic for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-25",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "devops",
+      "engineers",
+      "neovim",
+      "nova",
+      "panic"
+    ]
+  },
+  {
+    "slug": "neovim-vs-nova-by-panic-for-full-stack-developers",
+    "title": "Neovim vs Nova by Panic for full-stack developers",
+    "description": "Neovim vs Nova by Panic for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-25",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "full",
+      "neovim",
+      "nova",
+      "panic",
+      "stack"
+    ]
+  },
+  {
+    "slug": "neovim-vs-nova-by-panic-for-python-backend-engineers",
+    "title": "Neovim vs Nova by Panic for Python backend engineers",
+    "description": "Neovim vs Nova by Panic for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-25",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "comparison",
+      "engineers",
+      "neovim",
+      "nova",
+      "panic",
+      "python"
+    ]
+  },
+  {
+    "slug": "neovim-vs-nova-by-panic-for-rust-developers",
+    "title": "Neovim vs Nova by Panic for Rust developers",
+    "description": "Neovim vs Nova by Panic for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-25",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "developers",
+      "neovim",
+      "nova",
+      "panic",
+      "rust"
+    ]
+  },
+  {
     "slug": "neovim-vs-sublime-text-for-data-scientists",
     "title": "Neovim vs Sublime Text for data scientists",
     "description": "Neovim vs Sublime Text for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
