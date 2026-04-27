@@ -1,5 +1,93 @@
 [
   {
+    "slug": "cursor-ide-vs-jetbrains-fleet-for-full-stack-developers",
+    "title": "Cursor IDE vs JetBrains Fleet for full-stack developers",
+    "description": "Cursor IDE vs JetBrains Fleet for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-27",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "fleet",
+      "full",
+      "ide",
+      "jetbrains",
+      "stack"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-vs-code-for-data-scientists",
+    "title": "Cursor IDE vs VS Code for data scientists",
+    "description": "Cursor IDE vs VS Code for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-27",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "cursor",
+      "data",
+      "ide",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-vs-code-for-devops-engineers",
+    "title": "Cursor IDE vs VS Code for DevOps engineers",
+    "description": "Cursor IDE vs VS Code for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-27",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "cursor",
+      "devops",
+      "engineers",
+      "ide"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-vs-code-for-frontend-react-developers",
+    "title": "Cursor IDE vs VS Code for frontend React developers",
+    "description": "Cursor IDE vs VS Code for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-27",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "cursor",
+      "developers",
+      "frontend",
+      "ide",
+      "react"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-vs-code-for-mobile-developers",
+    "title": "Cursor IDE vs VS Code for mobile developers",
+    "description": "Cursor IDE vs VS Code for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-27",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "cursor",
+      "developers",
+      "ide",
+      "mobile"
+    ]
+  },
+  {
     "slug": "cursor-ide-vs-vs-code-for-full-stack-developers",
     "title": "Cursor IDE vs VS Code for full-stack developers",
     "description": "Cursor IDE vs VS Code for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
@@ -1617,25 +1705,6 @@
       "full",
       "github",
       "ide",
-      "stack"
-    ]
-  },
-  {
-    "slug": "cursor-ide-vs-jetbrains-fleet-for-full-stack-developers",
-    "title": "Cursor IDE vs JetBrains Fleet for full-stack developers",
-    "description": "Cursor IDE vs JetBrains Fleet for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
-    "category": "comparison",
-    "category_display": "Comparison",
-    "date_published": "2026-04-08",
-    "reading_time_minutes": 8,
-    "tags": [
-      "comparison",
-      "cursor",
-      "developers",
-      "fleet",
-      "full",
-      "ide",
-      "jetbrains",
       "stack"
     ]
   },
