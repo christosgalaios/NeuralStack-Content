@@ -1,5 +1,94 @@
 [
   {
+    "slug": "cursor-ide-vs-jetbrains-fleet-for-frontend-react-developers",
+    "title": "Cursor IDE vs JetBrains Fleet for frontend React developers",
+    "description": "Cursor IDE vs JetBrains Fleet for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-29",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "fleet",
+      "frontend",
+      "ide",
+      "jetbrains",
+      "react"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-neovim-for-data-scientists",
+    "title": "Cursor IDE vs Neovim for data scientists",
+    "description": "Cursor IDE vs Neovim for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-29",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "data",
+      "ide",
+      "neovim",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-neovim-for-full-stack-developers",
+    "title": "Cursor IDE vs Neovim for full-stack developers",
+    "description": "Cursor IDE vs Neovim for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-29",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "full",
+      "ide",
+      "neovim",
+      "stack"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-neovim-for-python-backend-engineers",
+    "title": "Cursor IDE vs Neovim for Python backend engineers",
+    "description": "Cursor IDE vs Neovim for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-29",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "comparison",
+      "cursor",
+      "engineers",
+      "ide",
+      "neovim",
+      "python"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-neovim-for-rust-developers",
+    "title": "Cursor IDE vs Neovim for Rust developers",
+    "description": "Cursor IDE vs Neovim for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-04-29",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "ide",
+      "neovim",
+      "rust"
+    ]
+  },
+  {
     "slug": "cursor-ide-vs-jetbrains-fleet-for-data-scientists",
     "title": "Cursor IDE vs JetBrains Fleet for data scientists",
     "description": "Cursor IDE vs JetBrains Fleet for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
@@ -1796,24 +1885,6 @@
       "full",
       "github",
       "ide",
-      "stack"
-    ]
-  },
-  {
-    "slug": "cursor-ide-vs-neovim-for-full-stack-developers",
-    "title": "Cursor IDE vs Neovim for full-stack developers",
-    "description": "Cursor IDE vs Neovim for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
-    "category": "comparison",
-    "category_display": "Comparison",
-    "date_published": "2026-04-08",
-    "reading_time_minutes": 8,
-    "tags": [
-      "comparison",
-      "cursor",
-      "developers",
-      "full",
-      "ide",
-      "neovim",
       "stack"
     ]
   },
