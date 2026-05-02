@@ -1,5 +1,102 @@
 [
   {
+    "slug": "cursor-ide-vs-github-copilot-cli-for-data-scientists",
+    "title": "Cursor IDE vs GitHub Copilot CLI for data scientists",
+    "description": "Cursor IDE vs GitHub Copilot CLI for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-02",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "cursor",
+      "data",
+      "github",
+      "ide",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-github-copilot-cli-for-devops-engineers",
+    "title": "Cursor IDE vs GitHub Copilot CLI for DevOps engineers",
+    "description": "Cursor IDE vs GitHub Copilot CLI for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-02",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "cursor",
+      "devops",
+      "engineers",
+      "github",
+      "ide"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-github-copilot-cli-for-full-stack-developers",
+    "title": "Cursor IDE vs GitHub Copilot CLI for full-stack developers",
+    "description": "Cursor IDE vs GitHub Copilot CLI for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-02",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "cursor",
+      "developers",
+      "full",
+      "github",
+      "ide",
+      "stack"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-github-copilot-cli-for-python-backend-engineers",
+    "title": "Cursor IDE vs GitHub Copilot CLI for Python backend engineers",
+    "description": "Cursor IDE vs GitHub Copilot CLI for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-02",
+    "reading_time_minutes": 9,
+    "tags": [
+      "backend",
+      "cli",
+      "comparison",
+      "copilot",
+      "cursor",
+      "engineers",
+      "github",
+      "ide",
+      "python"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-github-copilot-cli-for-rust-developers",
+    "title": "Cursor IDE vs GitHub Copilot CLI for Rust developers",
+    "description": "Cursor IDE vs GitHub Copilot CLI for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-02",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "cursor",
+      "developers",
+      "github",
+      "ide",
+      "rust"
+    ]
+  },
+  {
     "slug": "cursor-ide-vs-zed-editor-for-data-scientists",
     "title": "Cursor IDE vs Zed editor for data scientists",
     "description": "Cursor IDE vs Zed editor for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
@@ -2047,26 +2144,6 @@
       "full",
       "stack",
       "zed"
-    ]
-  },
-  {
-    "slug": "cursor-ide-vs-github-copilot-cli-for-full-stack-developers",
-    "title": "Cursor IDE vs GitHub Copilot CLI for full-stack developers",
-    "description": "Cursor IDE vs GitHub Copilot CLI for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
-    "category": "comparison",
-    "category_display": "Comparison",
-    "date_published": "2026-04-08",
-    "reading_time_minutes": 8,
-    "tags": [
-      "cli",
-      "comparison",
-      "copilot",
-      "cursor",
-      "developers",
-      "full",
-      "github",
-      "ide",
-      "stack"
     ]
   },
   {
