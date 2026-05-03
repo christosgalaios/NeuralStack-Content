@@ -1,5 +1,100 @@
 [
   {
+    "slug": "cursor-ide-vs-github-copilot-cli-for-frontend-react-developers",
+    "title": "Cursor IDE vs GitHub Copilot CLI for frontend React developers",
+    "description": "Cursor IDE vs GitHub Copilot CLI for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-03",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "cursor",
+      "developers",
+      "frontend",
+      "github",
+      "ide",
+      "react"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-github-copilot-cli-for-mobile-developers",
+    "title": "Cursor IDE vs GitHub Copilot CLI for mobile developers",
+    "description": "Cursor IDE vs GitHub Copilot CLI for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-03",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "cursor",
+      "developers",
+      "github",
+      "ide",
+      "mobile"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-sublime-text-for-full-stack-developers",
+    "title": "Cursor IDE vs Sublime Text for full-stack developers",
+    "description": "Cursor IDE vs Sublime Text for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-03",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "full",
+      "ide",
+      "stack",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-sublime-text-for-python-backend-engineers",
+    "title": "Cursor IDE vs Sublime Text for Python backend engineers",
+    "description": "Cursor IDE vs Sublime Text for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-03",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "comparison",
+      "cursor",
+      "engineers",
+      "ide",
+      "python",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-sublime-text-for-rust-developers",
+    "title": "Cursor IDE vs Sublime Text for Rust developers",
+    "description": "Cursor IDE vs Sublime Text for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-03",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "ide",
+      "rust",
+      "sublime",
+      "text"
+    ]
+  },
+  {
     "slug": "cursor-ide-vs-github-copilot-cli-for-data-scientists",
     "title": "Cursor IDE vs GitHub Copilot CLI for data scientists",
     "description": "Cursor IDE vs GitHub Copilot CLI for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
