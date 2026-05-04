@@ -1,5 +1,97 @@
 [
   {
+    "slug": "cursor-ide-vs-helix-editor-for-full-stack-developers",
+    "title": "Cursor IDE vs Helix editor for full-stack developers",
+    "description": "Cursor IDE vs Helix editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-04",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "editor",
+      "full",
+      "helix",
+      "ide",
+      "stack"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-sublime-text-for-data-scientists",
+    "title": "Cursor IDE vs Sublime Text for data scientists",
+    "description": "Cursor IDE vs Sublime Text for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-04",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "data",
+      "ide",
+      "scientists",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-sublime-text-for-devops-engineers",
+    "title": "Cursor IDE vs Sublime Text for DevOps engineers",
+    "description": "Cursor IDE vs Sublime Text for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-04",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "devops",
+      "engineers",
+      "ide",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-sublime-text-for-frontend-react-developers",
+    "title": "Cursor IDE vs Sublime Text for frontend React developers",
+    "description": "Cursor IDE vs Sublime Text for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-04",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "frontend",
+      "ide",
+      "react",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-sublime-text-for-mobile-developers",
+    "title": "Cursor IDE vs Sublime Text for mobile developers",
+    "description": "Cursor IDE vs Sublime Text for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-04",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "ide",
+      "mobile",
+      "sublime",
+      "text"
+    ]
+  },
+  {
     "slug": "cursor-ide-vs-github-copilot-cli-for-frontend-react-developers",
     "title": "Cursor IDE vs GitHub Copilot CLI for frontend React developers",
     "description": "Cursor IDE vs GitHub Copilot CLI for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
