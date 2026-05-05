@@ -1607,7 +1607,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-cursoride-helixeditor-rustdevelopers",
@@ -1617,7 +1617,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-cursoride-helixeditor-datascientists",
@@ -1627,7 +1627,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-cursoride-helixeditor-devopsengineers",
@@ -1637,7 +1637,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-cursoride-helixeditor-mobiledevelopers",
@@ -1647,7 +1647,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-cursoride-helixeditor-frontendreactdevelopers",
