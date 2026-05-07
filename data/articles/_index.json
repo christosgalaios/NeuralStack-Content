@@ -1,5 +1,95 @@
 [
   {
+    "slug": "cursor-ide-vs-lapce-for-devops-engineers",
+    "title": "Cursor IDE vs Lapce for DevOps engineers",
+    "description": "Cursor IDE vs Lapce for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-07",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "devops",
+      "engineers",
+      "ide",
+      "lapce"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-lapce-for-frontend-react-developers",
+    "title": "Cursor IDE vs Lapce for frontend React developers",
+    "description": "Cursor IDE vs Lapce for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-07",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "frontend",
+      "ide",
+      "lapce",
+      "react"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-lapce-for-mobile-developers",
+    "title": "Cursor IDE vs Lapce for mobile developers",
+    "description": "Cursor IDE vs Lapce for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-07",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "ide",
+      "lapce",
+      "mobile"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-nova-by-panic-for-full-stack-developers",
+    "title": "Cursor IDE vs Nova by Panic for full-stack developers",
+    "description": "Cursor IDE vs Nova by Panic for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-07",
+    "reading_time_minutes": 8,
+    "tags": [
+      "comparison",
+      "cursor",
+      "developers",
+      "full",
+      "ide",
+      "nova",
+      "panic",
+      "stack"
+    ]
+  },
+  {
+    "slug": "cursor-ide-vs-nova-by-panic-for-python-backend-engineers",
+    "title": "Cursor IDE vs Nova by Panic for Python backend engineers",
+    "description": "Cursor IDE vs Nova by Panic for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-07",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "comparison",
+      "cursor",
+      "engineers",
+      "ide",
+      "nova",
+      "panic",
+      "python"
+    ]
+  },
+  {
     "slug": "cursor-ide-vs-helix-editor-for-frontend-react-developers",
     "title": "Cursor IDE vs Helix editor for frontend React developers",
     "description": "Cursor IDE vs Helix editor for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
