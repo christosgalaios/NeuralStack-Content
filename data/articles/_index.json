@@ -1,5 +1,97 @@
 [
   {
+    "slug": "github-copilot-cli-vs-vs-code-for-data-scientists",
+    "title": "GitHub Copilot CLI vs VS Code for data scientists",
+    "description": "GitHub Copilot CLI vs VS Code for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-09",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "code",
+      "comparison",
+      "copilot",
+      "data",
+      "github",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-vs-code-for-devops-engineers",
+    "title": "GitHub Copilot CLI vs VS Code for DevOps engineers",
+    "description": "GitHub Copilot CLI vs VS Code for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-09",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "code",
+      "comparison",
+      "copilot",
+      "devops",
+      "engineers",
+      "github"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-vs-code-for-full-stack-developers",
+    "title": "GitHub Copilot CLI vs VS Code for full-stack developers",
+    "description": "GitHub Copilot CLI vs VS Code for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-09",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "code",
+      "comparison",
+      "copilot",
+      "developers",
+      "full",
+      "github",
+      "stack"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-vs-code-for-python-backend-engineers",
+    "title": "GitHub Copilot CLI vs VS Code for Python backend engineers",
+    "description": "GitHub Copilot CLI vs VS Code for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-09",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "cli",
+      "code",
+      "comparison",
+      "copilot",
+      "engineers",
+      "github",
+      "python"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-vs-code-for-rust-developers",
+    "title": "GitHub Copilot CLI vs VS Code for Rust developers",
+    "description": "GitHub Copilot CLI vs VS Code for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-09",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "code",
+      "comparison",
+      "copilot",
+      "developers",
+      "github",
+      "rust"
+    ]
+  },
+  {
     "slug": "cursor-ide-vs-nova-by-panic-for-data-scientists",
     "title": "Cursor IDE vs Nova by Panic for data scientists",
     "description": "Cursor IDE vs Nova by Panic for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
@@ -2558,25 +2650,6 @@
       "full",
       "github",
       "neovim",
-      "stack"
-    ]
-  },
-  {
-    "slug": "github-copilot-cli-vs-vs-code-for-full-stack-developers",
-    "title": "GitHub Copilot CLI vs VS Code for full-stack developers",
-    "description": "GitHub Copilot CLI vs VS Code for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
-    "category": "comparison",
-    "category_display": "Comparison",
-    "date_published": "2026-04-10",
-    "reading_time_minutes": 8,
-    "tags": [
-      "cli",
-      "code",
-      "comparison",
-      "copilot",
-      "developers",
-      "full",
-      "github",
       "stack"
     ]
   },
