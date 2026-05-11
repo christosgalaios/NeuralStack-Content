@@ -1,5 +1,101 @@
 [
   {
+    "slug": "github-copilot-cli-vs-jetbrains-fleet-for-data-scientists",
+    "title": "GitHub Copilot CLI vs JetBrains Fleet for data scientists",
+    "description": "GitHub Copilot CLI vs JetBrains Fleet for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-11",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "data",
+      "fleet",
+      "github",
+      "jetbrains",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-jetbrains-fleet-for-devops-engineers",
+    "title": "GitHub Copilot CLI vs JetBrains Fleet for DevOps engineers",
+    "description": "GitHub Copilot CLI vs JetBrains Fleet for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-11",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "devops",
+      "engineers",
+      "fleet",
+      "github",
+      "jetbrains"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-jetbrains-fleet-for-frontend-react-developers",
+    "title": "GitHub Copilot CLI vs JetBrains Fleet for frontend React developers",
+    "description": "GitHub Copilot CLI vs JetBrains Fleet for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-11",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "fleet",
+      "frontend",
+      "github",
+      "jetbrains",
+      "react"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-jetbrains-fleet-for-mobile-developers",
+    "title": "GitHub Copilot CLI vs JetBrains Fleet for mobile developers",
+    "description": "GitHub Copilot CLI vs JetBrains Fleet for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-11",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "fleet",
+      "github",
+      "jetbrains",
+      "mobile"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-neovim-for-full-stack-developers",
+    "title": "GitHub Copilot CLI vs Neovim for full-stack developers",
+    "description": "GitHub Copilot CLI vs Neovim for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-11",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "full",
+      "github",
+      "neovim",
+      "stack"
+    ]
+  },
+  {
     "slug": "github-copilot-cli-vs-jetbrains-fleet-for-full-stack-developers",
     "title": "GitHub Copilot CLI vs JetBrains Fleet for full-stack developers",
     "description": "GitHub Copilot CLI vs JetBrains Fleet for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
@@ -2707,25 +2803,6 @@
       "full",
       "github",
       "ide",
-      "stack"
-    ]
-  },
-  {
-    "slug": "github-copilot-cli-vs-neovim-for-full-stack-developers",
-    "title": "GitHub Copilot CLI vs Neovim for full-stack developers",
-    "description": "GitHub Copilot CLI vs Neovim for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
-    "category": "comparison",
-    "category_display": "Comparison",
-    "date_published": "2026-04-10",
-    "reading_time_minutes": 8,
-    "tags": [
-      "cli",
-      "comparison",
-      "copilot",
-      "developers",
-      "full",
-      "github",
-      "neovim",
       "stack"
     ]
   },
