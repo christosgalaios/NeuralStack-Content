@@ -1,5 +1,96 @@
 [
   {
+    "slug": "github-copilot-cli-vs-neovim-for-data-scientists",
+    "title": "GitHub Copilot CLI vs Neovim for data scientists",
+    "description": "GitHub Copilot CLI vs Neovim for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-12",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "data",
+      "github",
+      "neovim",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-neovim-for-devops-engineers",
+    "title": "GitHub Copilot CLI vs Neovim for DevOps engineers",
+    "description": "GitHub Copilot CLI vs Neovim for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-12",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "devops",
+      "engineers",
+      "github",
+      "neovim"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-neovim-for-mobile-developers",
+    "title": "GitHub Copilot CLI vs Neovim for mobile developers",
+    "description": "GitHub Copilot CLI vs Neovim for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-12",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "github",
+      "mobile",
+      "neovim"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-neovim-for-python-backend-engineers",
+    "title": "GitHub Copilot CLI vs Neovim for Python backend engineers",
+    "description": "GitHub Copilot CLI vs Neovim for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-12",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "cli",
+      "comparison",
+      "copilot",
+      "engineers",
+      "github",
+      "neovim",
+      "python"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-neovim-for-rust-developers",
+    "title": "GitHub Copilot CLI vs Neovim for Rust developers",
+    "description": "GitHub Copilot CLI vs Neovim for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-12",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "github",
+      "neovim",
+      "rust"
+    ]
+  },
+  {
     "slug": "github-copilot-cli-vs-jetbrains-fleet-for-data-scientists",
     "title": "GitHub Copilot CLI vs JetBrains Fleet for data scientists",
     "description": "GitHub Copilot CLI vs JetBrains Fleet for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
