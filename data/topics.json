@@ -2107,7 +2107,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-githubcopilotcli-sublimetext-datascientists",
@@ -2117,7 +2117,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-githubcopilotcli-sublimetext-devopsengineers",
@@ -2127,7 +2127,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-githubcopilotcli-sublimetext-mobiledevelopers",
@@ -2137,7 +2137,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-githubcopilotcli-sublimetext-frontendreactdevelopers",
@@ -2147,7 +2147,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-githubcopilotcli-helixeditor-full-stackdevelopers",

@@ -1,5 +1,101 @@
 [
   {
+    "slug": "github-copilot-cli-vs-sublime-text-for-data-scientists",
+    "title": "GitHub Copilot CLI vs Sublime Text for data scientists",
+    "description": "GitHub Copilot CLI vs Sublime Text for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-15",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "data",
+      "github",
+      "scientists",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-sublime-text-for-devops-engineers",
+    "title": "GitHub Copilot CLI vs Sublime Text for DevOps engineers",
+    "description": "GitHub Copilot CLI vs Sublime Text for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-15",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "devops",
+      "engineers",
+      "github",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-sublime-text-for-frontend-react-developers",
+    "title": "GitHub Copilot CLI vs Sublime Text for frontend React developers",
+    "description": "GitHub Copilot CLI vs Sublime Text for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-15",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "frontend",
+      "github",
+      "react",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-sublime-text-for-mobile-developers",
+    "title": "GitHub Copilot CLI vs Sublime Text for mobile developers",
+    "description": "GitHub Copilot CLI vs Sublime Text for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-15",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "github",
+      "mobile",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-sublime-text-for-rust-developers",
+    "title": "GitHub Copilot CLI vs Sublime Text for Rust developers",
+    "description": "GitHub Copilot CLI vs Sublime Text for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-15",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "github",
+      "rust",
+      "sublime",
+      "text"
+    ]
+  },
+  {
     "slug": "github-copilot-cli-vs-sublime-text-for-full-stack-developers",
     "title": "GitHub Copilot CLI vs Sublime Text for full-stack developers",
     "description": "GitHub Copilot CLI vs Sublime Text for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
