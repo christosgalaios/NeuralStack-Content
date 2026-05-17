@@ -1,5 +1,100 @@
 [
   {
+    "slug": "github-copilot-cli-vs-helix-editor-for-frontend-react-developers",
+    "title": "GitHub Copilot CLI vs Helix editor for frontend React developers",
+    "description": "GitHub Copilot CLI vs Helix editor for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-17",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "editor",
+      "frontend",
+      "github",
+      "helix",
+      "react"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-helix-editor-for-mobile-developers",
+    "title": "GitHub Copilot CLI vs Helix editor for mobile developers",
+    "description": "GitHub Copilot CLI vs Helix editor for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-17",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "editor",
+      "github",
+      "helix",
+      "mobile"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-lapce-for-full-stack-developers",
+    "title": "GitHub Copilot CLI vs Lapce for full-stack developers",
+    "description": "GitHub Copilot CLI vs Lapce for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-17",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "full",
+      "github",
+      "lapce",
+      "stack"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-lapce-for-python-backend-engineers",
+    "title": "GitHub Copilot CLI vs Lapce for Python backend engineers",
+    "description": "GitHub Copilot CLI vs Lapce for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-17",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "cli",
+      "comparison",
+      "copilot",
+      "engineers",
+      "github",
+      "lapce",
+      "python"
+    ]
+  },
+  {
+    "slug": "github-copilot-cli-vs-lapce-for-rust-developers",
+    "title": "GitHub Copilot CLI vs Lapce for Rust developers",
+    "description": "GitHub Copilot CLI vs Lapce for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-17",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "github",
+      "lapce",
+      "rust"
+    ]
+  },
+  {
     "slug": "github-copilot-cli-vs-helix-editor-for-data-scientists",
     "title": "GitHub Copilot CLI vs Helix editor for data scientists",
     "description": "GitHub Copilot CLI vs Helix editor for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",

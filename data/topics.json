@@ -2207,7 +2207,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-githubcopilotcli-helixeditor-frontendreactdevelopers",
@@ -2217,7 +2217,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-githubcopilotcli-lapce-full-stackdevelopers",
@@ -2227,7 +2227,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-githubcopilotcli-lapce-pythonbackendengineers",
@@ -2237,7 +2237,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-githubcopilotcli-lapce-rustdevelopers",
@@ -2247,7 +2247,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-githubcopilotcli-lapce-datascientists",
