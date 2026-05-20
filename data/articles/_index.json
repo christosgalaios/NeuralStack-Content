@@ -1,5 +1,95 @@
 [
   {
+    "slug": "github-copilot-cli-vs-nova-by-panic-for-frontend-react-developers",
+    "title": "GitHub Copilot CLI vs Nova by Panic for frontend React developers",
+    "description": "GitHub Copilot CLI vs Nova by Panic for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-20",
+    "reading_time_minutes": 8,
+    "tags": [
+      "cli",
+      "comparison",
+      "copilot",
+      "developers",
+      "frontend",
+      "github",
+      "nova",
+      "panic",
+      "react"
+    ]
+  },
+  {
+    "slug": "sublime-text-vs-vs-code-for-data-scientists",
+    "title": "Sublime Text vs VS Code for data scientists",
+    "description": "Sublime Text vs VS Code for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-20",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "comparison",
+      "data",
+      "scientists",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "sublime-text-vs-vs-code-for-full-stack-developers",
+    "title": "Sublime Text vs VS Code for full-stack developers",
+    "description": "Sublime Text vs VS Code for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-20",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "full",
+      "stack",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "sublime-text-vs-vs-code-for-python-backend-engineers",
+    "title": "Sublime Text vs VS Code for Python backend engineers",
+    "description": "Sublime Text vs VS Code for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-20",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "code",
+      "comparison",
+      "engineers",
+      "python",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "sublime-text-vs-vs-code-for-rust-developers",
+    "title": "Sublime Text vs VS Code for Rust developers",
+    "description": "Sublime Text vs VS Code for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-20",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "rust",
+      "sublime",
+      "text"
+    ]
+  },
+  {
     "slug": "github-copilot-cli-vs-nova-by-panic-for-data-scientists",
     "title": "GitHub Copilot CLI vs Nova by Panic for data scientists",
     "description": "GitHub Copilot CLI vs Nova by Panic for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
