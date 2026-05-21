@@ -1,5 +1,95 @@
 [
   {
+    "slug": "sublime-text-vs-vs-code-for-devops-engineers",
+    "title": "Sublime Text vs VS Code for DevOps engineers",
+    "description": "Sublime Text vs VS Code for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-21",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "comparison",
+      "devops",
+      "engineers",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "sublime-text-vs-vs-code-for-frontend-react-developers",
+    "title": "Sublime Text vs VS Code for frontend React developers",
+    "description": "Sublime Text vs VS Code for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-21",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "frontend",
+      "react",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "sublime-text-vs-vs-code-for-mobile-developers",
+    "title": "Sublime Text vs VS Code for mobile developers",
+    "description": "Sublime Text vs VS Code for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-21",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "mobile",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "sublime-text-vs-zed-editor-for-full-stack-developers",
+    "title": "Sublime Text vs Zed editor for full-stack developers",
+    "description": "Sublime Text vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-21",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "full",
+      "stack",
+      "sublime",
+      "text",
+      "zed"
+    ]
+  },
+  {
+    "slug": "sublime-text-vs-zed-editor-for-python-backend-engineers",
+    "title": "Sublime Text vs Zed editor for Python backend engineers",
+    "description": "Sublime Text vs Zed editor for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-21",
+    "reading_time_minutes": 7,
+    "tags": [
+      "backend",
+      "comparison",
+      "editor",
+      "engineers",
+      "python",
+      "sublime",
+      "text",
+      "zed"
+    ]
+  },
+  {
     "slug": "github-copilot-cli-vs-nova-by-panic-for-frontend-react-developers",
     "title": "GitHub Copilot CLI vs Nova by Panic for frontend React developers",
     "description": "GitHub Copilot CLI vs Nova by Panic for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",

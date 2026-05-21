@@ -2407,7 +2407,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-sublimetext-vscode-mobiledevelopers",
@@ -2417,7 +2417,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-sublimetext-vscode-frontendreactdevelopers",
@@ -2427,7 +2427,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-sublimetext-zededitor-full-stackdevelopers",
@@ -2437,7 +2437,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-sublimetext-zededitor-pythonbackendengineers",
@@ -2447,7 +2447,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-sublimetext-zededitor-rustdevelopers",
