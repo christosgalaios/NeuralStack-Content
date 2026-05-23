@@ -1,5 +1,92 @@
 [
   {
+    "slug": "helix-editor-vs-vs-code-for-data-scientists",
+    "title": "Helix editor vs VS Code for data scientists",
+    "description": "Helix editor vs VS Code for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-23",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "comparison",
+      "data",
+      "editor",
+      "helix",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-vs-code-for-devops-engineers",
+    "title": "Helix editor vs VS Code for DevOps engineers",
+    "description": "Helix editor vs VS Code for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-23",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "comparison",
+      "devops",
+      "editor",
+      "engineers",
+      "helix"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-vs-code-for-full-stack-developers",
+    "title": "Helix editor vs VS Code for full-stack developers",
+    "description": "Helix editor vs VS Code for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-23",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "editor",
+      "full",
+      "helix",
+      "stack"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-vs-code-for-python-backend-engineers",
+    "title": "Helix editor vs VS Code for Python backend engineers",
+    "description": "Helix editor vs VS Code for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-23",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "code",
+      "comparison",
+      "editor",
+      "engineers",
+      "helix",
+      "python"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-vs-code-for-rust-developers",
+    "title": "Helix editor vs VS Code for Rust developers",
+    "description": "Helix editor vs VS Code for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-23",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "editor",
+      "helix",
+      "rust"
+    ]
+  },
+  {
     "slug": "sublime-text-vs-zed-editor-for-data-scientists",
     "title": "Sublime Text vs Zed editor for data scientists",
     "description": "Sublime Text vs Zed editor for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
