@@ -2657,7 +2657,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-helixeditor-neovim-rustdevelopers",
@@ -2667,7 +2667,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-helixeditor-neovim-datascientists",
@@ -2677,7 +2677,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-helixeditor-neovim-devopsengineers",
@@ -2687,7 +2687,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-helixeditor-neovim-mobiledevelopers",
@@ -2697,7 +2697,7 @@
     "difficulty_score": 0.35,
     "source": "heuristic-devtools",
     "created_at": "2026-02-27T21:41:01.435369Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "devtools-helixeditor-neovim-frontendreactdevelopers",

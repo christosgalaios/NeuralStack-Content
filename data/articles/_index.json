@@ -1,5 +1,91 @@
 [
   {
+    "slug": "helix-editor-vs-neovim-for-data-scientists",
+    "title": "Helix editor vs Neovim for data scientists",
+    "description": "Helix editor vs Neovim for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "data",
+      "editor",
+      "helix",
+      "neovim",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-neovim-for-devops-engineers",
+    "title": "Helix editor vs Neovim for DevOps engineers",
+    "description": "Helix editor vs Neovim for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "devops",
+      "editor",
+      "engineers",
+      "helix",
+      "neovim"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-neovim-for-mobile-developers",
+    "title": "Helix editor vs Neovim for mobile developers",
+    "description": "Helix editor vs Neovim for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "helix",
+      "mobile",
+      "neovim"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-neovim-for-python-backend-engineers",
+    "title": "Helix editor vs Neovim for Python backend engineers",
+    "description": "Helix editor vs Neovim for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-26",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "comparison",
+      "editor",
+      "engineers",
+      "helix",
+      "neovim",
+      "python"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-neovim-for-rust-developers",
+    "title": "Helix editor vs Neovim for Rust developers",
+    "description": "Helix editor vs Neovim for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "helix",
+      "neovim",
+      "rust"
+    ]
+  },
+  {
     "slug": "helix-editor-vs-jetbrains-fleet-for-data-scientists",
     "title": "Helix editor vs JetBrains Fleet for data scientists",
     "description": "Helix editor vs JetBrains Fleet for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
