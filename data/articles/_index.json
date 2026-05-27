@@ -1,5 +1,93 @@
 [
   {
+    "slug": "helix-editor-vs-neovim-for-frontend-react-developers",
+    "title": "Helix editor vs Neovim for frontend React developers",
+    "description": "Helix editor vs Neovim for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-27",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "frontend",
+      "helix",
+      "neovim",
+      "react"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-zed-editor-for-data-scientists",
+    "title": "Helix editor vs Zed editor for data scientists",
+    "description": "Helix editor vs Zed editor for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-27",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "data",
+      "editor",
+      "helix",
+      "scientists",
+      "zed"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-zed-editor-for-full-stack-developers",
+    "title": "Helix editor vs Zed editor for full-stack developers",
+    "description": "Helix editor vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-27",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "full",
+      "helix",
+      "stack",
+      "zed"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-zed-editor-for-python-backend-engineers",
+    "title": "Helix editor vs Zed editor for Python backend engineers",
+    "description": "Helix editor vs Zed editor for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-27",
+    "reading_time_minutes": 7,
+    "tags": [
+      "backend",
+      "comparison",
+      "editor",
+      "engineers",
+      "helix",
+      "python",
+      "zed"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-zed-editor-for-rust-developers",
+    "title": "Helix editor vs Zed editor for Rust developers",
+    "description": "Helix editor vs Zed editor for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-27",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "helix",
+      "rust",
+      "zed"
+    ]
+  },
+  {
     "slug": "helix-editor-vs-neovim-for-data-scientists",
     "title": "Helix editor vs Neovim for data scientists",
     "description": "Helix editor vs Neovim for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
