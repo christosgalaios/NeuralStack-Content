@@ -1,5 +1,96 @@
 [
   {
+    "slug": "helix-editor-vs-lapce-for-frontend-react-developers",
+    "title": "Helix editor vs Lapce for frontend React developers",
+    "description": "Helix editor vs Lapce for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-31",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "frontend",
+      "helix",
+      "lapce",
+      "react"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-lapce-for-mobile-developers",
+    "title": "Helix editor vs Lapce for mobile developers",
+    "description": "Helix editor vs Lapce for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-31",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "helix",
+      "lapce",
+      "mobile"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-nova-by-panic-for-full-stack-developers",
+    "title": "Helix editor vs Nova by Panic for full-stack developers",
+    "description": "Helix editor vs Nova by Panic for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-31",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "full",
+      "helix",
+      "nova",
+      "panic",
+      "stack"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-nova-by-panic-for-python-backend-engineers",
+    "title": "Helix editor vs Nova by Panic for Python backend engineers",
+    "description": "Helix editor vs Nova by Panic for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-31",
+    "reading_time_minutes": 7,
+    "tags": [
+      "backend",
+      "comparison",
+      "editor",
+      "engineers",
+      "helix",
+      "nova",
+      "panic",
+      "python"
+    ]
+  },
+  {
+    "slug": "helix-editor-vs-nova-by-panic-for-rust-developers",
+    "title": "Helix editor vs Nova by Panic for Rust developers",
+    "description": "Helix editor vs Nova by Panic for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-05-31",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "helix",
+      "nova",
+      "panic",
+      "rust"
+    ]
+  },
+  {
     "slug": "helix-editor-vs-lapce-for-data-scientists",
     "title": "Helix editor vs Lapce for data scientists",
     "description": "Helix editor vs Lapce for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
