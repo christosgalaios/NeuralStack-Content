@@ -1,5 +1,88 @@
 [
   {
+    "slug": "lapce-vs-neovim-for-data-scientists",
+    "title": "Lapce vs Neovim for data scientists",
+    "description": "Lapce vs Neovim for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-03",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "data",
+      "lapce",
+      "neovim",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "lapce-vs-neovim-for-full-stack-developers",
+    "title": "Lapce vs Neovim for full-stack developers",
+    "description": "Lapce vs Neovim for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-03",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "full",
+      "lapce",
+      "neovim",
+      "stack"
+    ]
+  },
+  {
+    "slug": "lapce-vs-neovim-for-python-backend-engineers",
+    "title": "Lapce vs Neovim for Python backend engineers",
+    "description": "Lapce vs Neovim for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-03",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "comparison",
+      "engineers",
+      "lapce",
+      "neovim",
+      "python"
+    ]
+  },
+  {
+    "slug": "lapce-vs-neovim-for-rust-developers",
+    "title": "Lapce vs Neovim for Rust developers",
+    "description": "Lapce vs Neovim for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-03",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "lapce",
+      "neovim",
+      "rust"
+    ]
+  },
+  {
+    "slug": "lapce-vs-vs-code-for-frontend-react-developers",
+    "title": "Lapce vs VS Code for frontend React developers",
+    "description": "Lapce vs VS Code for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-03",
+    "reading_time_minutes": 7,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "frontend",
+      "lapce",
+      "react"
+    ]
+  },
+  {
     "slug": "lapce-vs-vs-code-for-data-scientists",
     "title": "Lapce vs VS Code for data scientists",
     "description": "Lapce vs VS Code for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
