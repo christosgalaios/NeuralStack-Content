@@ -1,5 +1,90 @@
 [
   {
+    "slug": "lapce-vs-neovim-for-devops-engineers",
+    "title": "Lapce vs Neovim for DevOps engineers",
+    "description": "Lapce vs Neovim for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-04",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "devops",
+      "engineers",
+      "lapce",
+      "neovim"
+    ]
+  },
+  {
+    "slug": "lapce-vs-neovim-for-frontend-react-developers",
+    "title": "Lapce vs Neovim for frontend React developers",
+    "description": "Lapce vs Neovim for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-04",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "frontend",
+      "lapce",
+      "neovim",
+      "react"
+    ]
+  },
+  {
+    "slug": "lapce-vs-neovim-for-mobile-developers",
+    "title": "Lapce vs Neovim for mobile developers",
+    "description": "Lapce vs Neovim for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-04",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "lapce",
+      "mobile",
+      "neovim"
+    ]
+  },
+  {
+    "slug": "lapce-vs-zed-editor-for-full-stack-developers",
+    "title": "Lapce vs Zed editor for full-stack developers",
+    "description": "Lapce vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-04",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "full",
+      "lapce",
+      "stack",
+      "zed"
+    ]
+  },
+  {
+    "slug": "lapce-vs-zed-editor-for-python-backend-engineers",
+    "title": "Lapce vs Zed editor for Python backend engineers",
+    "description": "Lapce vs Zed editor for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-04",
+    "reading_time_minutes": 7,
+    "tags": [
+      "backend",
+      "comparison",
+      "editor",
+      "engineers",
+      "lapce",
+      "python",
+      "zed"
+    ]
+  },
+  {
     "slug": "lapce-vs-neovim-for-data-scientists",
     "title": "Lapce vs Neovim for data scientists",
     "description": "Lapce vs Neovim for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
