@@ -1,5 +1,91 @@
 [
   {
+    "slug": "lapce-vs-zed-editor-for-data-scientists",
+    "title": "Lapce vs Zed editor for data scientists",
+    "description": "Lapce vs Zed editor for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-05",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "data",
+      "editor",
+      "lapce",
+      "scientists",
+      "zed"
+    ]
+  },
+  {
+    "slug": "lapce-vs-zed-editor-for-devops-engineers",
+    "title": "Lapce vs Zed editor for DevOps engineers",
+    "description": "Lapce vs Zed editor for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-05",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "devops",
+      "editor",
+      "engineers",
+      "lapce",
+      "zed"
+    ]
+  },
+  {
+    "slug": "lapce-vs-zed-editor-for-frontend-react-developers",
+    "title": "Lapce vs Zed editor for frontend React developers",
+    "description": "Lapce vs Zed editor for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-05",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "frontend",
+      "lapce",
+      "react",
+      "zed"
+    ]
+  },
+  {
+    "slug": "lapce-vs-zed-editor-for-mobile-developers",
+    "title": "Lapce vs Zed editor for mobile developers",
+    "description": "Lapce vs Zed editor for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-05",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "lapce",
+      "mobile",
+      "zed"
+    ]
+  },
+  {
+    "slug": "lapce-vs-zed-editor-for-rust-developers",
+    "title": "Lapce vs Zed editor for Rust developers",
+    "description": "Lapce vs Zed editor for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-05",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "lapce",
+      "rust",
+      "zed"
+    ]
+  },
+  {
     "slug": "lapce-vs-neovim-for-devops-engineers",
     "title": "Lapce vs Neovim for DevOps engineers",
     "description": "Lapce vs Neovim for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
