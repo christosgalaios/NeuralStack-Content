@@ -1,5 +1,92 @@
 [
   {
+    "slug": "lapce-vs-sublime-text-for-data-scientists",
+    "title": "Lapce vs Sublime Text for data scientists",
+    "description": "Lapce vs Sublime Text for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-06",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "data",
+      "lapce",
+      "scientists",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "lapce-vs-sublime-text-for-devops-engineers",
+    "title": "Lapce vs Sublime Text for DevOps engineers",
+    "description": "Lapce vs Sublime Text for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-06",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "devops",
+      "engineers",
+      "lapce",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "lapce-vs-sublime-text-for-full-stack-developers",
+    "title": "Lapce vs Sublime Text for full-stack developers",
+    "description": "Lapce vs Sublime Text for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-06",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "full",
+      "lapce",
+      "stack",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "lapce-vs-sublime-text-for-python-backend-engineers",
+    "title": "Lapce vs Sublime Text for Python backend engineers",
+    "description": "Lapce vs Sublime Text for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-06",
+    "reading_time_minutes": 7,
+    "tags": [
+      "backend",
+      "comparison",
+      "engineers",
+      "lapce",
+      "python",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "lapce-vs-sublime-text-for-rust-developers",
+    "title": "Lapce vs Sublime Text for Rust developers",
+    "description": "Lapce vs Sublime Text for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-06",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "lapce",
+      "rust",
+      "sublime",
+      "text"
+    ]
+  },
+  {
     "slug": "lapce-vs-zed-editor-for-data-scientists",
     "title": "Lapce vs Zed editor for data scientists",
     "description": "Lapce vs Zed editor for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
