@@ -1,5 +1,91 @@
 [
   {
+    "slug": "nova-by-panic-vs-vs-code-for-data-scientists",
+    "title": "Nova by Panic vs VS Code for data scientists",
+    "description": "Nova by Panic vs VS Code for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-09",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "data",
+      "nova",
+      "panic",
+      "scientists"
+    ]
+  },
+  {
+    "slug": "nova-by-panic-vs-vs-code-for-devops-engineers",
+    "title": "Nova by Panic vs VS Code for DevOps engineers",
+    "description": "Nova by Panic vs VS Code for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-09",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "devops",
+      "engineers",
+      "nova",
+      "panic"
+    ]
+  },
+  {
+    "slug": "nova-by-panic-vs-vs-code-for-mobile-developers",
+    "title": "Nova by Panic vs VS Code for mobile developers",
+    "description": "Nova by Panic vs VS Code for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-09",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "mobile",
+      "nova",
+      "panic"
+    ]
+  },
+  {
+    "slug": "nova-by-panic-vs-vs-code-for-python-backend-engineers",
+    "title": "Nova by Panic vs VS Code for Python backend engineers",
+    "description": "Nova by Panic vs VS Code for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-09",
+    "reading_time_minutes": 8,
+    "tags": [
+      "backend",
+      "code",
+      "comparison",
+      "engineers",
+      "nova",
+      "panic",
+      "python"
+    ]
+  },
+  {
+    "slug": "nova-by-panic-vs-vs-code-for-rust-developers",
+    "title": "Nova by Panic vs VS Code for Rust developers",
+    "description": "Nova by Panic vs VS Code for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-09",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "nova",
+      "panic",
+      "rust"
+    ]
+  },
+  {
     "slug": "lapce-vs-nova-by-panic-for-data-scientists",
     "title": "Lapce vs Nova by Panic for data scientists",
     "description": "Lapce vs Nova by Panic for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
