@@ -1,5 +1,97 @@
 [
   {
+    "slug": "nova-by-panic-vs-vs-code-for-frontend-react-developers",
+    "title": "Nova by Panic vs VS Code for frontend React developers",
+    "description": "Nova by Panic vs VS Code for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-10",
+    "reading_time_minutes": 8,
+    "tags": [
+      "code",
+      "comparison",
+      "developers",
+      "frontend",
+      "nova",
+      "panic",
+      "react"
+    ]
+  },
+  {
+    "slug": "nova-by-panic-vs-zed-editor-for-data-scientists",
+    "title": "Nova by Panic vs Zed editor for data scientists",
+    "description": "Nova by Panic vs Zed editor for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-10",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "data",
+      "editor",
+      "nova",
+      "panic",
+      "scientists",
+      "zed"
+    ]
+  },
+  {
+    "slug": "nova-by-panic-vs-zed-editor-for-full-stack-developers",
+    "title": "Nova by Panic vs Zed editor for full-stack developers",
+    "description": "Nova by Panic vs Zed editor for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-10",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "full",
+      "nova",
+      "panic",
+      "stack",
+      "zed"
+    ]
+  },
+  {
+    "slug": "nova-by-panic-vs-zed-editor-for-python-backend-engineers",
+    "title": "Nova by Panic vs Zed editor for Python backend engineers",
+    "description": "Nova by Panic vs Zed editor for Python backend engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-10",
+    "reading_time_minutes": 7,
+    "tags": [
+      "backend",
+      "comparison",
+      "editor",
+      "engineers",
+      "nova",
+      "panic",
+      "python",
+      "zed"
+    ]
+  },
+  {
+    "slug": "nova-by-panic-vs-zed-editor-for-rust-developers",
+    "title": "Nova by Panic vs Zed editor for Rust developers",
+    "description": "Nova by Panic vs Zed editor for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-10",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "editor",
+      "nova",
+      "panic",
+      "rust",
+      "zed"
+    ]
+  },
+  {
     "slug": "nova-by-panic-vs-vs-code-for-data-scientists",
     "title": "Nova by Panic vs VS Code for data scientists",
     "description": "Nova by Panic vs VS Code for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
