@@ -1,5 +1,96 @@
 [
   {
+    "slug": "nova-by-panic-vs-sublime-text-for-data-scientists",
+    "title": "Nova by Panic vs Sublime Text for data scientists",
+    "description": "Nova by Panic vs Sublime Text for data scientists. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-12",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "data",
+      "nova",
+      "panic",
+      "scientists",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "nova-by-panic-vs-sublime-text-for-devops-engineers",
+    "title": "Nova by Panic vs Sublime Text for DevOps engineers",
+    "description": "Nova by Panic vs Sublime Text for DevOps engineers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-12",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "devops",
+      "engineers",
+      "nova",
+      "panic",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "nova-by-panic-vs-sublime-text-for-frontend-react-developers",
+    "title": "Nova by Panic vs Sublime Text for frontend React developers",
+    "description": "Nova by Panic vs Sublime Text for frontend React developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-12",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "frontend",
+      "nova",
+      "panic",
+      "react",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "nova-by-panic-vs-sublime-text-for-mobile-developers",
+    "title": "Nova by Panic vs Sublime Text for mobile developers",
+    "description": "Nova by Panic vs Sublime Text for mobile developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-12",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "mobile",
+      "nova",
+      "panic",
+      "sublime",
+      "text"
+    ]
+  },
+  {
+    "slug": "nova-by-panic-vs-sublime-text-for-rust-developers",
+    "title": "Nova by Panic vs Sublime Text for Rust developers",
+    "description": "Nova by Panic vs Sublime Text for Rust developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-12",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "developers",
+      "nova",
+      "panic",
+      "rust",
+      "sublime",
+      "text"
+    ]
+  },
+  {
     "slug": "nova-by-panic-vs-sublime-text-for-full-stack-developers",
     "title": "Nova by Panic vs Sublime Text for full-stack developers",
     "description": "Nova by Panic vs Sublime Text for full-stack developers. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
