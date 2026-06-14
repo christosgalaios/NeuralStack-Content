@@ -1,5 +1,93 @@
 [
   {
+    "slug": "managing-complex-state-with-usereducer-in-react",
+    "title": "Managing Complex State with useReducer in React",
+    "description": "Managing Complex State with useReducer in React. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-14",
+    "reading_time_minutes": 7,
+    "tags": [
+      "complex",
+      "guide",
+      "managing",
+      "react",
+      "state",
+      "usereducer"
+    ]
+  },
+  {
+    "slug": "migrating-from-next-js-pages-router-to-app-router",
+    "title": "Migrating from Next.js Pages Router to App Router",
+    "description": "Migrating from Next.js Pages Router to App Router. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-14",
+    "reading_time_minutes": 7,
+    "tags": [
+      "app",
+      "guide",
+      "migrating",
+      "next",
+      "pages",
+      "router"
+    ]
+  },
+  {
+    "slug": "next-js-middleware-for-authentication-and-redirects",
+    "title": "Next.js Middleware for Authentication and Redirects",
+    "description": "Next.js Middleware for Authentication and Redirects. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-14",
+    "reading_time_minutes": 7,
+    "tags": [
+      "authentication",
+      "guide",
+      "middleware",
+      "next",
+      "redirects"
+    ]
+  },
+  {
+    "slug": "react-error-boundaries-catching-and-recovering-from-render-errors",
+    "title": "React Error Boundaries: Catching and Recovering from Render Errors",
+    "description": "React Error Boundaries: Catching and Recovering from Render Errors. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-14",
+    "reading_time_minutes": 7,
+    "tags": [
+      "boundaries",
+      "catching",
+      "error",
+      "errors",
+      "guide",
+      "react",
+      "recovering",
+      "render"
+    ]
+  },
+  {
+    "slug": "react-memo-usememo-and-usecallback-when-they-actually-help",
+    "title": "React.memo, useMemo, and useCallback: When They Actually Help",
+    "description": "React.memo, useMemo, and useCallback: When They Actually Help. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-14",
+    "reading_time_minutes": 7,
+    "tags": [
+      "actually",
+      "guide",
+      "help",
+      "memo",
+      "react",
+      "they",
+      "usecallback",
+      "usememo"
+    ]
+  },
+  {
     "slug": "building-reusable-custom-hooks-in-react",
     "title": "Building Reusable Custom Hooks in React",
     "description": "Building Reusable Custom Hooks in React. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
