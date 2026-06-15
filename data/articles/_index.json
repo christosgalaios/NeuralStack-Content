@@ -1,5 +1,95 @@
 [
   {
+    "slug": "adding-authentication-to-next-js-with-nextauth-js",
+    "title": "Adding Authentication to Next.js with NextAuth.js",
+    "description": "Adding Authentication to Next.js with NextAuth.js. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-15",
+    "reading_time_minutes": 7,
+    "tags": [
+      "adding",
+      "authentication",
+      "guide",
+      "next",
+      "nextauth"
+    ]
+  },
+  {
+    "slug": "building-rest-apis-with-next-js-route-handlers",
+    "title": "Building REST APIs with Next.js Route Handlers",
+    "description": "Building REST APIs with Next.js Route Handlers. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-15",
+    "reading_time_minutes": 7,
+    "tags": [
+      "apis",
+      "building",
+      "guide",
+      "handlers",
+      "next",
+      "rest",
+      "route"
+    ]
+  },
+  {
+    "slug": "incremental-static-regeneration-in-next-js-on-demand-revalidation",
+    "title": "Incremental Static Regeneration in Next.js: On-Demand Revalidation",
+    "description": "Incremental Static Regeneration in Next.js: On-Demand Revalidation. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-15",
+    "reading_time_minutes": 7,
+    "tags": [
+      "demand",
+      "guide",
+      "incremental",
+      "next",
+      "regeneration",
+      "revalidation",
+      "static"
+    ]
+  },
+  {
+    "slug": "next-js-server-actions-form-handling-without-api-routes",
+    "title": "Next.js Server Actions: Form Handling Without API Routes",
+    "description": "Next.js Server Actions: Form Handling Without API Routes. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-15",
+    "reading_time_minutes": 7,
+    "tags": [
+      "actions",
+      "api",
+      "form",
+      "guide",
+      "handling",
+      "next",
+      "routes",
+      "server",
+      "without"
+    ]
+  },
+  {
+    "slug": "typescript-generics-explained-with-real-world-examples",
+    "title": "TypeScript Generics Explained with Real-World Examples",
+    "description": "TypeScript Generics Explained with Real-World Examples. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-15",
+    "reading_time_minutes": 7,
+    "tags": [
+      "examples",
+      "explained",
+      "generics",
+      "guide",
+      "real",
+      "typescript",
+      "world"
+    ]
+  },
+  {
     "slug": "managing-complex-state-with-usereducer-in-react",
     "title": "Managing Complex State with useReducer in React",
     "description": "Managing Complex State with useReducer in React. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
