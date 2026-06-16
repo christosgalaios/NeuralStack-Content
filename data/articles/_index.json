@@ -1,5 +1,96 @@
 [
   {
+    "slug": "mastering-typescript-utility-types-partial-pick-omit-and-beyond",
+    "title": "Mastering TypeScript Utility Types: Partial, Pick, Omit, and Beyond",
+    "description": "Mastering TypeScript Utility Types: Partial, Pick, Omit, and Beyond. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-16",
+    "reading_time_minutes": 7,
+    "tags": [
+      "beyond",
+      "guide",
+      "mastering",
+      "omit",
+      "partial",
+      "pick",
+      "types",
+      "typescript",
+      "utility"
+    ]
+  },
+  {
+    "slug": "node-js-streams-reading-writing-and-transforming-data-efficiently",
+    "title": "Node.js Streams: Reading, Writing, and Transforming Data Efficiently",
+    "description": "Node.js Streams: Reading, Writing, and Transforming Data Efficiently. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-16",
+    "reading_time_minutes": 7,
+    "tags": [
+      "data",
+      "efficiently",
+      "guide",
+      "node",
+      "reading",
+      "streams",
+      "transforming",
+      "writing"
+    ]
+  },
+  {
+    "slug": "runtime-type-validation-in-typescript-with-zod",
+    "title": "Runtime Type Validation in TypeScript with Zod",
+    "description": "Runtime Type Validation in TypeScript with Zod. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-16",
+    "reading_time_minutes": 7,
+    "tags": [
+      "guide",
+      "runtime",
+      "type",
+      "typescript",
+      "validation",
+      "zod"
+    ]
+  },
+  {
+    "slug": "typescript-type-guards-and-narrowing-techniques",
+    "title": "TypeScript Type Guards and Narrowing Techniques",
+    "description": "TypeScript Type Guards and Narrowing Techniques. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-16",
+    "reading_time_minutes": 7,
+    "tags": [
+      "guards",
+      "guide",
+      "narrowing",
+      "techniques",
+      "type",
+      "typescript"
+    ]
+  },
+  {
+    "slug": "writing-typescript-declaration-files-for-javascript-libraries",
+    "title": "Writing TypeScript Declaration Files for JavaScript Libraries",
+    "description": "Writing TypeScript Declaration Files for JavaScript Libraries. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-16",
+    "reading_time_minutes": 7,
+    "tags": [
+      "declaration",
+      "files",
+      "guide",
+      "javascript",
+      "libraries",
+      "typescript",
+      "writing"
+    ]
+  },
+  {
     "slug": "adding-authentication-to-next-js-with-nextauth-js",
     "title": "Adding Authentication to Next.js with NextAuth.js",
     "description": "Adding Authentication to Next.js with NextAuth.js. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
