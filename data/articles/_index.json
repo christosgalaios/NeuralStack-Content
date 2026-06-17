@@ -1,5 +1,93 @@
 [
   {
+    "slug": "migrating-a-node-js-project-from-commonjs-to-es-modules",
+    "title": "Migrating a Node.js Project from CommonJS to ES Modules",
+    "description": "Migrating a Node.js Project from CommonJS to ES Modules. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-17",
+    "reading_time_minutes": 7,
+    "tags": [
+      "commonjs",
+      "guide",
+      "migrating",
+      "modules",
+      "node",
+      "project"
+    ]
+  },
+  {
+    "slug": "parallel-processing-in-node-js-with-worker-threads",
+    "title": "Parallel Processing in Node.js with Worker Threads",
+    "description": "Parallel Processing in Node.js with Worker Threads. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-17",
+    "reading_time_minutes": 7,
+    "tags": [
+      "guide",
+      "node",
+      "parallel",
+      "processing",
+      "threads",
+      "worker"
+    ]
+  },
+  {
+    "slug": "python-async-await-writing-concurrent-code-with-asyncio",
+    "title": "Python async/await: Writing Concurrent Code with asyncio",
+    "description": "Python async/await: Writing Concurrent Code with asyncio. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-17",
+    "reading_time_minutes": 7,
+    "tags": [
+      "async",
+      "asyncio",
+      "await",
+      "code",
+      "concurrent",
+      "guide",
+      "python",
+      "writing"
+    ]
+  },
+  {
+    "slug": "the-node-js-event-loop-explained-phases-microtasks-and-timers",
+    "title": "The Node.js Event Loop Explained: Phases, Microtasks, and Timers",
+    "description": "The Node.js Event Loop Explained: Phases, Microtasks, and Timers. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-17",
+    "reading_time_minutes": 7,
+    "tags": [
+      "event",
+      "explained",
+      "guide",
+      "loop",
+      "microtasks",
+      "node",
+      "phases",
+      "timers"
+    ]
+  },
+  {
+    "slug": "using-the-native-fetch-api-in-node-js-22",
+    "title": "Using the Native Fetch API in Node.js 22",
+    "description": "Using the Native Fetch API in Node.js 22. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-17",
+    "reading_time_minutes": 7,
+    "tags": [
+      "api",
+      "fetch",
+      "guide",
+      "native",
+      "node"
+    ]
+  },
+  {
     "slug": "mastering-typescript-utility-types-partial-pick-omit-and-beyond",
     "title": "Mastering TypeScript Utility Types: Partial, Pick, Omit, and Beyond",
     "description": "Mastering TypeScript Utility Types: Partial, Pick, Omit, and Beyond. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
