@@ -1,5 +1,93 @@
 [
   {
+    "slug": "advanced-python-decorators-closures-arguments-and-class-decorators",
+    "title": "Advanced Python Decorators: Closures, Arguments, and Class Decorators",
+    "description": "Advanced Python Decorators: Closures, Arguments, and Class Decorators. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-18",
+    "reading_time_minutes": 7,
+    "tags": [
+      "advanced",
+      "arguments",
+      "class",
+      "closures",
+      "decorators",
+      "guide",
+      "python"
+    ]
+  },
+  {
+    "slug": "data-validation-in-python-with-pydantic-v2",
+    "title": "Data Validation in Python with Pydantic v2",
+    "description": "Data Validation in Python with Pydantic v2. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-18",
+    "reading_time_minutes": 7,
+    "tags": [
+      "data",
+      "guide",
+      "pydantic",
+      "python",
+      "validation"
+    ]
+  },
+  {
+    "slug": "postgresql-indexing-strategies-for-faster-queries",
+    "title": "PostgreSQL Indexing Strategies for Faster Queries",
+    "description": "PostgreSQL Indexing Strategies for Faster Queries. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-18",
+    "reading_time_minutes": 7,
+    "tags": [
+      "faster",
+      "guide",
+      "indexing",
+      "postgresql",
+      "queries",
+      "strategies"
+    ]
+  },
+  {
+    "slug": "python-type-hints-and-mypy-a-practical-introduction",
+    "title": "Python Type Hints and mypy: A Practical Introduction",
+    "description": "Python Type Hints and mypy: A Practical Introduction. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-18",
+    "reading_time_minutes": 7,
+    "tags": [
+      "guide",
+      "hints",
+      "introduction",
+      "mypy",
+      "practical",
+      "python",
+      "type"
+    ]
+  },
+  {
+    "slug": "python-virtual-environments-demystified-venv-pip-and-poetry",
+    "title": "Python Virtual Environments Demystified: venv, pip, and Poetry",
+    "description": "Python Virtual Environments Demystified: venv, pip, and Poetry. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-18",
+    "reading_time_minutes": 7,
+    "tags": [
+      "demystified",
+      "environments",
+      "guide",
+      "pip",
+      "poetry",
+      "python",
+      "venv",
+      "virtual"
+    ]
+  },
+  {
     "slug": "migrating-a-node-js-project-from-commonjs-to-es-modules",
     "title": "Migrating a Node.js Project from CommonJS to ES Modules",
     "description": "Migrating a Node.js Project from CommonJS to ES Modules. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
