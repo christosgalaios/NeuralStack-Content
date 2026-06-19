@@ -1,5 +1,90 @@
 [
   {
+    "slug": "docker-compose-for-local-development-environments",
+    "title": "Docker Compose for Local Development Environments",
+    "description": "Docker Compose for Local Development Environments. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-19",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compose",
+      "development",
+      "docker",
+      "environments",
+      "guide",
+      "local"
+    ]
+  },
+  {
+    "slug": "docker-multi-stage-builds-for-smaller-production-images",
+    "title": "Docker Multi-Stage Builds for Smaller Production Images",
+    "description": "Docker Multi-Stage Builds for Smaller Production Images. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-19",
+    "reading_time_minutes": 7,
+    "tags": [
+      "builds",
+      "docker",
+      "guide",
+      "images",
+      "multi",
+      "production",
+      "smaller",
+      "stage"
+    ]
+  },
+  {
+    "slug": "mongodb-aggregation-pipeline-a-step-by-step-tutorial",
+    "title": "MongoDB Aggregation Pipeline: A Step-by-Step Tutorial",
+    "description": "MongoDB Aggregation Pipeline: A Step-by-Step Tutorial. Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-06-19",
+    "reading_time_minutes": 7,
+    "tags": [
+      "aggregation",
+      "mongodb",
+      "pipeline",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "redis-caching-patterns-for-web-applications",
+    "title": "Redis Caching Patterns for Web Applications",
+    "description": "Redis Caching Patterns for Web Applications. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-19",
+    "reading_time_minutes": 7,
+    "tags": [
+      "applications",
+      "caching",
+      "guide",
+      "patterns",
+      "redis",
+      "web"
+    ]
+  },
+  {
+    "slug": "sqlite-for-local-development-and-embedded-applications",
+    "title": "SQLite for Local Development and Embedded Applications",
+    "description": "SQLite for Local Development and Embedded Applications. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-19",
+    "reading_time_minutes": 7,
+    "tags": [
+      "applications",
+      "development",
+      "embedded",
+      "guide",
+      "local",
+      "sqlite"
+    ]
+  },
+  {
     "slug": "advanced-python-decorators-closures-arguments-and-class-decorators",
     "title": "Advanced Python Decorators: Closures, Arguments, and Class Decorators",
     "description": "Advanced Python Decorators: Closures, Arguments, and Class Decorators. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
