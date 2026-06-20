@@ -1,5 +1,93 @@
 [
   {
+    "slug": "docker-networking-bridges-overlays-and-service-discovery",
+    "title": "Docker Networking: Bridges, Overlays, and Service Discovery",
+    "description": "Docker Networking: Bridges, Overlays, and Service Discovery. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-20",
+    "reading_time_minutes": 7,
+    "tags": [
+      "bridges",
+      "discovery",
+      "docker",
+      "guide",
+      "networking",
+      "overlays",
+      "service"
+    ]
+  },
+  {
+    "slug": "docker-volumes-and-bind-mounts-persisting-data-correctly",
+    "title": "Docker Volumes and Bind Mounts: Persisting Data Correctly",
+    "description": "Docker Volumes and Bind Mounts: Persisting Data Correctly. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-20",
+    "reading_time_minutes": 7,
+    "tags": [
+      "bind",
+      "correctly",
+      "data",
+      "docker",
+      "guide",
+      "mounts",
+      "persisting",
+      "volumes"
+    ]
+  },
+  {
+    "slug": "end-to-end-testing-with-playwright-setup-to-ci-integration",
+    "title": "End-to-End Testing with Playwright: Setup to CI Integration",
+    "description": "End-to-End Testing with Playwright: Setup to CI Integration. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-20",
+    "reading_time_minutes": 7,
+    "tags": [
+      "end",
+      "guide",
+      "integration",
+      "playwright",
+      "setup",
+      "testing"
+    ]
+  },
+  {
+    "slug": "jest-mocking-strategies-modules-functions-and-timers",
+    "title": "Jest Mocking Strategies: Modules, Functions, and Timers",
+    "description": "Jest Mocking Strategies: Modules, Functions, and Timers. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-20",
+    "reading_time_minutes": 7,
+    "tags": [
+      "functions",
+      "guide",
+      "jest",
+      "mocking",
+      "modules",
+      "strategies",
+      "timers"
+    ]
+  },
+  {
+    "slug": "testing-react-components-with-react-testing-library",
+    "title": "Testing React Components with React Testing Library",
+    "description": "Testing React Components with React Testing Library. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-20",
+    "reading_time_minutes": 7,
+    "tags": [
+      "components",
+      "guide",
+      "library",
+      "react",
+      "testing"
+    ]
+  },
+  {
     "slug": "docker-compose-for-local-development-environments",
     "title": "Docker Compose for Local Development Environments",
     "description": "Docker Compose for Local Development Environments. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
