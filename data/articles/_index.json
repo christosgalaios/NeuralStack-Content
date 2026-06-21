@@ -1,5 +1,93 @@
 [
   {
+    "slug": "building-a-graphql-api-with-node-js-and-apollo-server",
+    "title": "Building a GraphQL API with Node.js and Apollo Server",
+    "description": "Building a GraphQL API with Node.js and Apollo Server. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-21",
+    "reading_time_minutes": 7,
+    "tags": [
+      "api",
+      "apollo",
+      "building",
+      "graphql",
+      "guide",
+      "node",
+      "server"
+    ]
+  },
+  {
+    "slug": "real-time-communication-with-websockets-in-node-js",
+    "title": "Real-Time Communication with WebSockets in Node.js",
+    "description": "Real-Time Communication with WebSockets in Node.js. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-21",
+    "reading_time_minutes": 7,
+    "tags": [
+      "communication",
+      "guide",
+      "node",
+      "real",
+      "time",
+      "websockets"
+    ]
+  },
+  {
+    "slug": "setting-up-vitest-for-a-modern-typescript-project",
+    "title": "Setting Up Vitest for a Modern TypeScript Project",
+    "description": "Setting Up Vitest for a Modern TypeScript Project. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-21",
+    "reading_time_minutes": 7,
+    "tags": [
+      "guide",
+      "modern",
+      "project",
+      "setting",
+      "typescript",
+      "vitest"
+    ]
+  },
+  {
+    "slug": "snapshot-testing-in-javascript-when-it-helps-and-when-it-hurts",
+    "title": "Snapshot Testing in JavaScript: When It Helps and When It Hurts",
+    "description": "Snapshot Testing in JavaScript: When It Helps and When It Hurts. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-21",
+    "reading_time_minutes": 7,
+    "tags": [
+      "guide",
+      "helps",
+      "hurts",
+      "javascript",
+      "snapshot",
+      "testing"
+    ]
+  },
+  {
+    "slug": "tailwind-css-component-patterns-cards-modals-and-navigation",
+    "title": "Tailwind CSS Component Patterns: Cards, Modals, and Navigation",
+    "description": "Tailwind CSS Component Patterns: Cards, Modals, and Navigation. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-21",
+    "reading_time_minutes": 7,
+    "tags": [
+      "cards",
+      "component",
+      "css",
+      "guide",
+      "modals",
+      "navigation",
+      "patterns",
+      "tailwind"
+    ]
+  },
+  {
     "slug": "docker-networking-bridges-overlays-and-service-discovery",
     "title": "Docker Networking: Bridges, Overlays, and Service Discovery",
     "description": "Docker Networking: Bridges, Overlays, and Service Discovery. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
