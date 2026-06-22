@@ -6237,7 +6237,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "tutorial-prisma-orm-getting-started",
@@ -6247,7 +6247,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-clean-architecture-nodejs",
@@ -6257,7 +6257,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-hexagonal-architecture-typescript",
@@ -6267,7 +6267,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-event-sourcing-fundamentals",
@@ -6277,7 +6277,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-cqrs-pattern-explained",

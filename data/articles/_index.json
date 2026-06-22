@@ -1,5 +1,94 @@
 [
   {
+    "slug": "clean-architecture-in-node-js-structuring-scalable-applications",
+    "title": "Clean Architecture in Node.js: Structuring Scalable Applications",
+    "description": "Clean Architecture in Node.js: Structuring Scalable Applications. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-22",
+    "reading_time_minutes": 7,
+    "tags": [
+      "applications",
+      "architecture",
+      "clean",
+      "guide",
+      "node",
+      "scalable",
+      "structuring"
+    ]
+  },
+  {
+    "slug": "event-sourcing-fundamentals-for-backend-developers",
+    "title": "Event Sourcing Fundamentals for Backend Developers",
+    "description": "Event Sourcing Fundamentals for Backend Developers. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-22",
+    "reading_time_minutes": 7,
+    "tags": [
+      "backend",
+      "developers",
+      "event",
+      "fundamentals",
+      "guide",
+      "sourcing"
+    ]
+  },
+  {
+    "slug": "getting-started-with-prisma-orm-schema-migrations-and-queries",
+    "title": "Getting Started with Prisma ORM: Schema, Migrations, and Queries",
+    "description": "Getting Started with Prisma ORM: Schema, Migrations, and Queries. Step-by-step tutorial with code examples, configuration snippets, and deployment patterns.",
+    "category": "tutorial",
+    "category_display": "Tutorial",
+    "date_published": "2026-06-22",
+    "reading_time_minutes": 7,
+    "tags": [
+      "getting",
+      "migrations",
+      "orm",
+      "prisma",
+      "queries",
+      "schema",
+      "started",
+      "tutorial"
+    ]
+  },
+  {
+    "slug": "hexagonal-architecture-with-typescript-ports-and-adapters-pattern",
+    "title": "Hexagonal Architecture with TypeScript: Ports and Adapters Pattern",
+    "description": "Hexagonal Architecture with TypeScript: Ports and Adapters Pattern. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-22",
+    "reading_time_minutes": 7,
+    "tags": [
+      "adapters",
+      "architecture",
+      "guide",
+      "hexagonal",
+      "pattern",
+      "ports",
+      "typescript"
+    ]
+  },
+  {
+    "slug": "writing-custom-github-actions-workflows-for-ci-cd",
+    "title": "Writing Custom GitHub Actions Workflows for CI/CD",
+    "description": "Writing Custom GitHub Actions Workflows for CI/CD. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-22",
+    "reading_time_minutes": 7,
+    "tags": [
+      "actions",
+      "custom",
+      "github",
+      "guide",
+      "workflows",
+      "writing"
+    ]
+  },
+  {
     "slug": "building-a-graphql-api-with-node-js-and-apollo-server",
     "title": "Building a GraphQL API with Node.js and Apollo Server",
     "description": "Building a GraphQL API with Node.js and Apollo Server. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
