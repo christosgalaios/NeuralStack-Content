@@ -1,5 +1,101 @@
 [
   {
+    "slug": "api-versioning-strategies-url-header-and-query-parameter-approaches",
+    "title": "API Versioning Strategies: URL, Header, and Query Parameter Approaches",
+    "description": "API Versioning Strategies: URL, Header, and Query Parameter Approaches. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-24",
+    "reading_time_minutes": 7,
+    "tags": [
+      "api",
+      "approaches",
+      "guide",
+      "header",
+      "parameter",
+      "query",
+      "strategies",
+      "url",
+      "versioning"
+    ]
+  },
+  {
+    "slug": "database-migration-best-practices-for-zero-downtime-deployments",
+    "title": "Database Migration Best Practices for Zero-Downtime Deployments",
+    "description": "Database Migration Best Practices for Zero-Downtime Deployments. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-24",
+    "reading_time_minutes": 7,
+    "tags": [
+      "database",
+      "deployments",
+      "downtime",
+      "guide",
+      "migration",
+      "practices",
+      "zero"
+    ]
+  },
+  {
+    "slug": "git-branching-strategies-compared-trunk-based-gitflow-and-github-flow",
+    "title": "Git Branching Strategies Compared: Trunk-Based, GitFlow, and GitHub Flow",
+    "description": "Git Branching Strategies Compared: Trunk-Based, GitFlow, and GitHub Flow. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-24",
+    "reading_time_minutes": 7,
+    "tags": [
+      "based",
+      "branching",
+      "compared",
+      "comparison",
+      "flow",
+      "git",
+      "gitflow",
+      "github",
+      "strategies",
+      "trunk"
+    ]
+  },
+  {
+    "slug": "managing-environment-variables-across-development-staging-and-production",
+    "title": "Managing Environment Variables Across Development, Staging, and Production",
+    "description": "Managing Environment Variables Across Development, Staging, and Production. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-24",
+    "reading_time_minutes": 7,
+    "tags": [
+      "across",
+      "development",
+      "environment",
+      "guide",
+      "managing",
+      "production",
+      "staging",
+      "variables"
+    ]
+  },
+  {
+    "slug": "owasp-top-10-for-web-developers-a-practical-walkthrough",
+    "title": "OWASP Top 10 for Web Developers: A Practical Walkthrough",
+    "description": "OWASP Top 10 for Web Developers: A Practical Walkthrough. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-24",
+    "reading_time_minutes": 7,
+    "tags": [
+      "developers",
+      "guide",
+      "owasp",
+      "practical",
+      "top",
+      "walkthrough",
+      "web"
+    ]
+  },
+  {
     "slug": "cqrs-pattern-explained-separating-reads-and-writes",
     "title": "CQRS Pattern Explained: Separating Reads and Writes",
     "description": "CQRS Pattern Explained: Separating Reads and Writes. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
