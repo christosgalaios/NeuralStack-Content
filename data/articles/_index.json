@@ -1,5 +1,102 @@
 [
   {
+    "slug": "content-security-policy-headers-protecting-against-xss-and-injection",
+    "title": "Content Security Policy Headers: Protecting Against XSS and Injection",
+    "description": "Content Security Policy Headers: Protecting Against XSS and Injection. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-25",
+    "reading_time_minutes": 7,
+    "tags": [
+      "against",
+      "content",
+      "guide",
+      "headers",
+      "injection",
+      "policy",
+      "protecting",
+      "security",
+      "xss"
+    ]
+  },
+  {
+    "slug": "cors-configuration-guide-understanding-and-fixing-cross-origin-errors",
+    "title": "CORS Configuration Guide: Understanding and Fixing Cross-Origin Errors",
+    "description": "CORS Configuration Guide: Understanding and Fixing Cross-Origin Errors. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-25",
+    "reading_time_minutes": 7,
+    "tags": [
+      "configuration",
+      "cors",
+      "cross",
+      "errors",
+      "fixing",
+      "guide",
+      "origin",
+      "understanding"
+    ]
+  },
+  {
+    "slug": "dependency-security-scanning-detecting-vulnerabilities-before-production",
+    "title": "Dependency Security Scanning: Detecting Vulnerabilities Before Production",
+    "description": "Dependency Security Scanning: Detecting Vulnerabilities Before Production. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-25",
+    "reading_time_minutes": 7,
+    "tags": [
+      "before",
+      "dependency",
+      "detecting",
+      "guide",
+      "production",
+      "scanning",
+      "security",
+      "vulnerabilities"
+    ]
+  },
+  {
+    "slug": "jwt-vs-session-based-authentication-trade-offs-and-implementation",
+    "title": "JWT vs Session-Based Authentication: Trade-offs and Implementation",
+    "description": "JWT vs Session-Based Authentication: Trade-offs and Implementation. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-25",
+    "reading_time_minutes": 7,
+    "tags": [
+      "authentication",
+      "based",
+      "comparison",
+      "implementation",
+      "jwt",
+      "offs",
+      "session",
+      "trade"
+    ]
+  },
+  {
+    "slug": "secure-api-design-rate-limiting-input-validation-and-authentication",
+    "title": "Secure API Design: Rate Limiting, Input Validation, and Authentication",
+    "description": "Secure API Design: Rate Limiting, Input Validation, and Authentication. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-25",
+    "reading_time_minutes": 7,
+    "tags": [
+      "api",
+      "authentication",
+      "design",
+      "guide",
+      "input",
+      "limiting",
+      "rate",
+      "secure",
+      "validation"
+    ]
+  },
+  {
     "slug": "api-versioning-strategies-url-header-and-query-parameter-approaches",
     "title": "API Versioning Strategies: URL, Header, and Query Parameter Approaches",
     "description": "API Versioning Strategies: URL, Header, and Query Parameter Approaches. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
