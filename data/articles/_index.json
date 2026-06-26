@@ -1,5 +1,97 @@
 [
   {
+    "slug": "core-web-vitals-optimization-lcp-fid-and-cls-fixes",
+    "title": "Core Web Vitals Optimization: LCP, FID, and CLS Fixes",
+    "description": "Core Web Vitals Optimization: LCP, FID, and CLS Fixes. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "cls",
+      "core",
+      "fid",
+      "fixes",
+      "guide",
+      "lcp",
+      "optimization",
+      "vitals",
+      "web"
+    ]
+  },
+  {
+    "slug": "docker-production-checklist-security-logging-and-health-checks",
+    "title": "Docker Production Checklist: Security, Logging, and Health Checks",
+    "description": "Docker Production Checklist: Security, Logging, and Health Checks. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "checklist",
+      "checks",
+      "docker",
+      "guide",
+      "health",
+      "logging",
+      "production",
+      "security"
+    ]
+  },
+  {
+    "slug": "github-actions-workflows-from-basic-ci-to-advanced-deployments",
+    "title": "GitHub Actions Workflows: From Basic CI to Advanced Deployments",
+    "description": "GitHub Actions Workflows: From Basic CI to Advanced Deployments. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "actions",
+      "advanced",
+      "basic",
+      "deployments",
+      "github",
+      "guide",
+      "workflows"
+    ]
+  },
+  {
+    "slug": "setting-up-production-monitoring-metrics-logs-and-alerts",
+    "title": "Setting Up Production Monitoring: Metrics, Logs, and Alerts",
+    "description": "Setting Up Production Monitoring: Metrics, Logs, and Alerts. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "alerts",
+      "guide",
+      "logs",
+      "metrics",
+      "monitoring",
+      "production",
+      "setting"
+    ]
+  },
+  {
+    "slug": "terraform-basics-managing-infrastructure-as-code",
+    "title": "Terraform Basics: Managing Infrastructure as Code",
+    "description": "Terraform Basics: Managing Infrastructure as Code. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-26",
+    "reading_time_minutes": 7,
+    "tags": [
+      "basics",
+      "code",
+      "guide",
+      "infrastructure",
+      "managing",
+      "terraform"
+    ]
+  },
+  {
     "slug": "content-security-policy-headers-protecting-against-xss-and-injection",
     "title": "Content Security Policy Headers: Protecting Against XSS and Injection",
     "description": "Content Security Policy Headers: Protecting Against XSS and Injection. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",

@@ -1212,9 +1212,17 @@
       "generated_articles": 5,
       "published_articles": 5,
       "errors": []
+    },
+    {
+      "timestamp": "2026-06-26T06:59:52.048539Z",
+      "status": "success",
+      "generated_topics": 5,
+      "generated_articles": 5,
+      "published_articles": 5,
+      "errors": []
     }
   ],
-  "articles_published": 728,
-  "last_run": "2026-06-25T06:53:38.560461Z",
+  "articles_published": 733,
+  "last_run": "2026-06-26T06:59:52.048539Z",
   "errors": []
 }

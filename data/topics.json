@@ -6437,7 +6437,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-terraform-infrastructure-basics",
@@ -6447,7 +6447,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-monitoring-setup-production",
@@ -6457,7 +6457,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-docker-production-checklist",
@@ -6467,7 +6467,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-core-web-vitals-optimization",
@@ -6477,7 +6477,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-database-query-tuning",
