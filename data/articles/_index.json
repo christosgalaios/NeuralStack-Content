@@ -1,5 +1,100 @@
 [
   {
+    "slug": "caching-strategies-for-web-applications-browser-cdn-and-server",
+    "title": "Caching Strategies for Web Applications: Browser, CDN, and Server",
+    "description": "Caching Strategies for Web Applications: Browser, CDN, and Server. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-27",
+    "reading_time_minutes": 7,
+    "tags": [
+      "applications",
+      "browser",
+      "caching",
+      "cdn",
+      "guide",
+      "server",
+      "strategies",
+      "web"
+    ]
+  },
+  {
+    "slug": "database-query-tuning-explain-plans-indexes-and-n-1-prevention",
+    "title": "Database Query Tuning: EXPLAIN Plans, Indexes, and N+1 Prevention",
+    "description": "Database Query Tuning: EXPLAIN Plans, Indexes, and N+1 Prevention. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-27",
+    "reading_time_minutes": 7,
+    "tags": [
+      "database",
+      "explain",
+      "guide",
+      "indexes",
+      "plans",
+      "prevention",
+      "query",
+      "tuning"
+    ]
+  },
+  {
+    "slug": "image-optimization-for-the-web-formats-lazy-loading-and-cdns",
+    "title": "Image Optimization for the Web: Formats, Lazy Loading, and CDNs",
+    "description": "Image Optimization for the Web: Formats, Lazy Loading, and CDNs. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-27",
+    "reading_time_minutes": 7,
+    "tags": [
+      "cdns",
+      "formats",
+      "guide",
+      "image",
+      "lazy",
+      "loading",
+      "optimization",
+      "web"
+    ]
+  },
+  {
+    "slug": "javascript-bundle-optimization-code-splitting-tree-shaking-and-lazy-imports",
+    "title": "JavaScript Bundle Optimization: Code Splitting, Tree Shaking, and Lazy Imports",
+    "description": "JavaScript Bundle Optimization: Code Splitting, Tree Shaking, and Lazy Imports. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-27",
+    "reading_time_minutes": 7,
+    "tags": [
+      "bundle",
+      "code",
+      "guide",
+      "imports",
+      "javascript",
+      "lazy",
+      "optimization",
+      "shaking",
+      "splitting",
+      "tree"
+    ]
+  },
+  {
+    "slug": "monorepo-management-with-turborepo-setup-and-best-practices",
+    "title": "Monorepo Management with Turborepo: Setup and Best Practices",
+    "description": "Monorepo Management with Turborepo: Setup and Best Practices. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-27",
+    "reading_time_minutes": 7,
+    "tags": [
+      "guide",
+      "management",
+      "monorepo",
+      "practices",
+      "setup",
+      "turborepo"
+    ]
+  },
+  {
     "slug": "core-web-vitals-optimization-lcp-fid-and-cls-fixes",
     "title": "Core Web Vitals Optimization: LCP, FID, and CLS Fixes",
     "description": "Core Web Vitals Optimization: LCP, FID, and CLS Fixes. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",

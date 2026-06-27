@@ -6487,7 +6487,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-caching-strategies-web-apps",
@@ -6497,7 +6497,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-image-optimization-web",
@@ -6507,7 +6507,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-javascript-bundle-optimization",
@@ -6517,7 +6517,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-monorepo-management-turborepo",
@@ -6527,7 +6527,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "guide-code-review-practices",
