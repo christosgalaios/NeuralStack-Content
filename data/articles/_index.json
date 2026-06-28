@@ -1,5 +1,97 @@
 [
   {
+    "slug": "code-review-practices-that-actually-improve-code-quality",
+    "title": "Code Review Practices That Actually Improve Code Quality",
+    "description": "Code Review Practices That Actually Improve Code Quality. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-06-28",
+    "reading_time_minutes": 6,
+    "tags": [
+      "actually",
+      "code",
+      "improve",
+      "practices",
+      "quality",
+      "review",
+      "that"
+    ]
+  },
+  {
+    "slug": "containerized-development-workflow-dev-containers-and-docker-compose",
+    "title": "Containerized Development Workflow: Dev Containers and Docker Compose",
+    "description": "Containerized Development Workflow: Dev Containers and Docker Compose. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-28",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compose",
+      "containerized",
+      "containers",
+      "dev",
+      "development",
+      "docker",
+      "guide",
+      "workflow"
+    ]
+  },
+  {
+    "slug": "documentation-standards-for-development-teams",
+    "title": "Documentation Standards for Development Teams",
+    "description": "Documentation Standards for Development Teams. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-28",
+    "reading_time_minutes": 7,
+    "tags": [
+      "development",
+      "documentation",
+      "guide",
+      "standards",
+      "teams"
+    ]
+  },
+  {
+    "slug": "managing-technical-debt-tracking-prioritizing-and-paying-it-down",
+    "title": "Managing Technical Debt: Tracking, Prioritizing, and Paying It Down",
+    "description": "Managing Technical Debt: Tracking, Prioritizing, and Paying It Down. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-28",
+    "reading_time_minutes": 7,
+    "tags": [
+      "debt",
+      "down",
+      "guide",
+      "managing",
+      "paying",
+      "prioritizing",
+      "technical",
+      "tracking"
+    ]
+  },
+  {
+    "slug": "rest-api-design-conventions-naming-pagination-and-error-responses",
+    "title": "REST API Design Conventions: Naming, Pagination, and Error Responses",
+    "description": "REST API Design Conventions: Naming, Pagination, and Error Responses. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-28",
+    "reading_time_minutes": 7,
+    "tags": [
+      "api",
+      "conventions",
+      "design",
+      "error",
+      "guide",
+      "naming",
+      "pagination",
+      "responses",
+      "rest"
+    ]
+  },
+  {
     "slug": "caching-strategies-for-web-applications-browser-cdn-and-server",
     "title": "Caching Strategies for Web Applications: Browser, CDN, and Server",
     "description": "Caching Strategies for Web Applications: Browser, CDN, and Server. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
