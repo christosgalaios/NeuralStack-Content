@@ -1,5 +1,101 @@
 [
   {
+    "slug": "ci-cd-pipeline-design-stages-caching-and-deployment-strategies",
+    "title": "CI/CD Pipeline Design: Stages, Caching, and Deployment Strategies",
+    "description": "CI/CD Pipeline Design: Stages, Caching, and Deployment Strategies. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-29",
+    "reading_time_minutes": 7,
+    "tags": [
+      "caching",
+      "deployment",
+      "design",
+      "guide",
+      "pipeline",
+      "stages",
+      "strategies"
+    ]
+  },
+  {
+    "slug": "feature-flags-implementation-rolling-out-changes-safely",
+    "title": "Feature Flags Implementation: Rolling Out Changes Safely",
+    "description": "Feature Flags Implementation: Rolling Out Changes Safely. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-29",
+    "reading_time_minutes": 7,
+    "tags": [
+      "changes",
+      "feature",
+      "flags",
+      "guide",
+      "implementation",
+      "out",
+      "rolling",
+      "safely"
+    ]
+  },
+  {
+    "slug": "observability-for-developers-logs-metrics-and-traces-explained",
+    "title": "Observability for Developers: Logs, Metrics, and Traces Explained",
+    "description": "Observability for Developers: Logs, Metrics, and Traces Explained. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-29",
+    "reading_time_minutes": 7,
+    "tags": [
+      "developers",
+      "explained",
+      "guide",
+      "logs",
+      "metrics",
+      "observability",
+      "traces"
+    ]
+  },
+  {
+    "slug": "rate-limiting-strategies-for-apis-token-bucket-sliding-window-and-leaky-bucket",
+    "title": "Rate Limiting Strategies for APIs: Token Bucket, Sliding Window, and Leaky Bucket",
+    "description": "Rate Limiting Strategies for APIs: Token Bucket, Sliding Window, and Leaky Bucket. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-29",
+    "reading_time_minutes": 7,
+    "tags": [
+      "apis",
+      "bucket",
+      "guide",
+      "leaky",
+      "limiting",
+      "rate",
+      "sliding",
+      "strategies",
+      "token",
+      "window"
+    ]
+  },
+  {
+    "slug": "serverless-architecture-patterns-functions-queues-and-event-driven-design",
+    "title": "Serverless Architecture Patterns: Functions, Queues, and Event-Driven Design",
+    "description": "Serverless Architecture Patterns: Functions, Queues, and Event-Driven Design. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-29",
+    "reading_time_minutes": 7,
+    "tags": [
+      "architecture",
+      "design",
+      "driven",
+      "event",
+      "functions",
+      "guide",
+      "patterns",
+      "queues",
+      "serverless"
+    ]
+  },
+  {
     "slug": "code-review-practices-that-actually-improve-code-quality",
     "title": "Code Review Practices That Actually Improve Code Quality",
     "description": "Code Review Practices That Actually Improve Code Quality. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
