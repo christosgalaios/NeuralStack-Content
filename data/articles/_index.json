@@ -1,5 +1,97 @@
 [
   {
+    "slug": "django-vs-fastapi-choosing-a-python-web-framework",
+    "title": "Django vs FastAPI: Choosing a Python Web Framework",
+    "description": "Django vs FastAPI: Choosing a Python Web Framework. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-30",
+    "reading_time_minutes": 7,
+    "tags": [
+      "choosing",
+      "comparison",
+      "django",
+      "fastapi",
+      "framework",
+      "python",
+      "web"
+    ]
+  },
+  {
+    "slug": "express-vs-fastify-node-js-http-framework-performance-and-dx-compared",
+    "title": "Express vs Fastify: Node.js HTTP Framework Performance and DX Compared",
+    "description": "Express vs Fastify: Node.js HTTP Framework Performance and DX Compared. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-30",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compared",
+      "comparison",
+      "express",
+      "fastify",
+      "framework",
+      "http",
+      "node",
+      "performance"
+    ]
+  },
+  {
+    "slug": "nestjs-vs-express-when-to-use-a-full-framework-vs-a-minimal-one",
+    "title": "NestJS vs Express: When to Use a Full Framework vs a Minimal One",
+    "description": "NestJS vs Express: When to Use a Full Framework vs a Minimal One. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-30",
+    "reading_time_minutes": 7,
+    "tags": [
+      "comparison",
+      "express",
+      "framework",
+      "full",
+      "minimal",
+      "nestjs",
+      "one"
+    ]
+  },
+  {
+    "slug": "next-js-vs-remix-which-react-framework-should-you-choose",
+    "title": "Next.js vs Remix: Which React Framework Should You Choose",
+    "description": "Next.js vs Remix: Which React Framework Should You Choose. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-06-30",
+    "reading_time_minutes": 7,
+    "tags": [
+      "choose",
+      "comparison",
+      "framework",
+      "next",
+      "react",
+      "remix"
+    ]
+  },
+  {
+    "slug": "typescript-project-setup-tsconfig-path-aliases-and-build-configuration",
+    "title": "TypeScript Project Setup: tsconfig, Path Aliases, and Build Configuration",
+    "description": "TypeScript Project Setup: tsconfig, Path Aliases, and Build Configuration. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-06-30",
+    "reading_time_minutes": 7,
+    "tags": [
+      "aliases",
+      "build",
+      "configuration",
+      "guide",
+      "path",
+      "project",
+      "setup",
+      "tsconfig",
+      "typescript"
+    ]
+  },
+  {
     "slug": "ci-cd-pipeline-design-stages-caching-and-deployment-strategies",
     "title": "CI/CD Pipeline Design: Stages, Caching, and Deployment Strategies",
     "description": "CI/CD Pipeline Design: Stages, Caching, and Deployment Strategies. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
