@@ -1,5 +1,93 @@
 [
   {
+    "slug": "biome-vs-eslint-prettier-linting-and-formatting-tool-comparison",
+    "title": "Biome vs ESLint + Prettier: Linting and Formatting Tool Comparison",
+    "description": "Biome vs ESLint + Prettier: Linting and Formatting Tool Comparison. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-07-04",
+    "reading_time_minutes": 7,
+    "tags": [
+      "biome",
+      "comparison",
+      "eslint",
+      "formatting",
+      "linting",
+      "prettier",
+      "tool"
+    ]
+  },
+  {
+    "slug": "bun-vs-node-js-javascript-runtime-comparison",
+    "title": "Bun vs Node.js: JavaScript Runtime Comparison",
+    "description": "Bun vs Node.js: JavaScript Runtime Comparison. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-07-04",
+    "reading_time_minutes": 7,
+    "tags": [
+      "bun",
+      "comparison",
+      "javascript",
+      "node",
+      "runtime"
+    ]
+  },
+  {
+    "slug": "python-vs-go-for-building-apis-performance-dx-and-ecosystem",
+    "title": "Python vs Go for Building APIs: Performance, DX, and Ecosystem",
+    "description": "Python vs Go for Building APIs: Performance, DX, and Ecosystem. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-07-04",
+    "reading_time_minutes": 8,
+    "tags": [
+      "apis",
+      "building",
+      "comparison",
+      "ecosystem",
+      "performance",
+      "python"
+    ]
+  },
+  {
+    "slug": "rust-vs-go-for-backend-services-performance-and-productivity-trade-offs",
+    "title": "Rust vs Go for Backend Services: Performance and Productivity Trade-offs",
+    "description": "Rust vs Go for Backend Services: Performance and Productivity Trade-offs. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-07-04",
+    "reading_time_minutes": 7,
+    "tags": [
+      "backend",
+      "comparison",
+      "offs",
+      "performance",
+      "productivity",
+      "rust",
+      "services",
+      "trade"
+    ]
+  },
+  {
+    "slug": "typescript-vs-javascript-when-types-are-worth-the-overhead",
+    "title": "TypeScript vs JavaScript: When Types Are Worth the Overhead",
+    "description": "TypeScript vs JavaScript: When Types Are Worth the Overhead. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-07-04",
+    "reading_time_minutes": 7,
+    "tags": [
+      "are",
+      "comparison",
+      "javascript",
+      "overhead",
+      "types",
+      "typescript",
+      "worth"
+    ]
+  },
+  {
     "slug": "esbuild-vs-swc-javascript-compiler-and-bundler-speed-comparison",
     "title": "esbuild vs SWC: JavaScript Compiler and Bundler Speed Comparison",
     "description": "esbuild vs SWC: JavaScript Compiler and Bundler Speed Comparison. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
