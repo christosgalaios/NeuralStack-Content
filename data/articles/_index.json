@@ -1,5 +1,95 @@
 [
   {
+    "slug": "node-js-22-and-esm-only-packages-compatibility-guide",
+    "title": "Node.js 22 and ESM-Only Packages: Compatibility Guide",
+    "description": "Node.js 22 and ESM-Only Packages: Compatibility Guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-07-06",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "esm",
+      "node",
+      "only",
+      "packages"
+    ]
+  },
+  {
+    "slug": "node-js-22-native-test-runner-replacing-jest-for-simple-projects",
+    "title": "Node.js 22 Native Test Runner: Replacing Jest for Simple Projects",
+    "description": "Node.js 22 Native Test Runner: Replacing Jest for Simple Projects. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-07-06",
+    "reading_time_minutes": 7,
+    "tags": [
+      "guide",
+      "jest",
+      "native",
+      "node",
+      "projects",
+      "replacing",
+      "runner",
+      "simple",
+      "test"
+    ]
+  },
+  {
+    "slug": "python-3-13-breaking-changes-what-you-need-to-update",
+    "title": "Python 3.13 Breaking Changes: What You Need to Update",
+    "description": "Python 3.13 Breaking Changes: What You Need to Update. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-07-06",
+    "reading_time_minutes": 7,
+    "tags": [
+      "breaking",
+      "changes",
+      "guide",
+      "need",
+      "python",
+      "update"
+    ]
+  },
+  {
+    "slug": "running-typescript-directly-in-node-js-22-with-experimental-strip-types",
+    "title": "Running TypeScript Directly in Node.js 22 with --experimental-strip-types",
+    "description": "Running TypeScript Directly in Node.js 22 with --experimental-strip-types. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-07-06",
+    "reading_time_minutes": 6,
+    "tags": [
+      "directly",
+      "experimental",
+      "guide",
+      "node",
+      "running",
+      "strip",
+      "types",
+      "typescript"
+    ]
+  },
+  {
+    "slug": "tailwind-css-vs-vanilla-extract-styling-approach-comparison",
+    "title": "Tailwind CSS vs vanilla-extract: Styling Approach Comparison",
+    "description": "Tailwind CSS vs vanilla-extract: Styling Approach Comparison. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-07-06",
+    "reading_time_minutes": 7,
+    "tags": [
+      "approach",
+      "comparison",
+      "css",
+      "extract",
+      "styling",
+      "tailwind",
+      "vanilla"
+    ]
+  },
+  {
     "slug": "cloudflare-workers-vs-aws-lambda-serverless-edge-comparison",
     "title": "Cloudflare Workers vs AWS Lambda: Serverless Edge Comparison",
     "description": "Cloudflare Workers vs AWS Lambda: Serverless Edge Comparison. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
