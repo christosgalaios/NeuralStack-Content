@@ -1,5 +1,92 @@
 [
   {
+    "slug": "esm-vs-commonjs-interoperability-resolving-module-format-conflicts",
+    "title": "ESM vs CommonJS Interoperability: Resolving Module Format Conflicts",
+    "description": "ESM vs CommonJS Interoperability: Resolving Module Format Conflicts. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-07-07",
+    "reading_time_minutes": 6,
+    "tags": [
+      "commonjs",
+      "comparison",
+      "conflicts",
+      "esm",
+      "format",
+      "interoperability",
+      "module",
+      "resolving"
+    ]
+  },
+  {
+    "slug": "python-3-13-free-threading-gil-free-mode-compatibility-guide",
+    "title": "Python 3.13 Free Threading: GIL-Free Mode Compatibility Guide",
+    "description": "Python 3.13 Free Threading: GIL-Free Mode Compatibility Guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-07-07",
+    "reading_time_minutes": 7,
+    "tags": [
+      "compatibility",
+      "free",
+      "gil",
+      "mode",
+      "python",
+      "threading"
+    ]
+  },
+  {
+    "slug": "python-3-13-type-system-improvements-and-backward-compatibility",
+    "title": "Python 3.13 Type System Improvements and Backward Compatibility",
+    "description": "Python 3.13 Type System Improvements and Backward Compatibility. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-07-07",
+    "reading_time_minutes": 7,
+    "tags": [
+      "backward",
+      "compatibility",
+      "improvements",
+      "python",
+      "system",
+      "type"
+    ]
+  },
+  {
+    "slug": "typescript-5-x-decorators-vs-legacy-decorators-migration-path",
+    "title": "TypeScript 5.x Decorators vs Legacy Decorators: Migration Path",
+    "description": "TypeScript 5.x Decorators vs Legacy Decorators: Migration Path. Side-by-side comparison covering pricing, features, performance, and real-world trade-offs for production engineers.",
+    "category": "comparison",
+    "category_display": "Comparison",
+    "date_published": "2026-07-07",
+    "reading_time_minutes": 6,
+    "tags": [
+      "comparison",
+      "decorators",
+      "legacy",
+      "migration",
+      "path",
+      "typescript"
+    ]
+  },
+  {
+    "slug": "typescript-5-x-with-react-19-resolving-type-conflicts",
+    "title": "TypeScript 5.x with React 19: Resolving Type Conflicts",
+    "description": "TypeScript 5.x with React 19: Resolving Type Conflicts. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-07-07",
+    "reading_time_minutes": 6,
+    "tags": [
+      "conflicts",
+      "guide",
+      "react",
+      "resolving",
+      "type",
+      "typescript"
+    ]
+  },
+  {
     "slug": "node-js-22-and-esm-only-packages-compatibility-guide",
     "title": "Node.js 22 and ESM-Only Packages: Compatibility Guide",
     "description": "Node.js 22 and ESM-Only Packages: Compatibility Guide. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
