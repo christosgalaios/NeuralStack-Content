@@ -1,5 +1,97 @@
 [
   {
+    "slug": "eslint-9-flat-config-migration-replacing-eslintrc-with-eslint-config-js",
+    "title": "ESLint 9 Flat Config Migration: Replacing .eslintrc with eslint.config.js",
+    "description": "ESLint 9 Flat Config Migration: Replacing .eslintrc with eslint.config.js. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-07-09",
+    "reading_time_minutes": 6,
+    "tags": [
+      "config",
+      "eslint",
+      "eslintrc",
+      "flat",
+      "guide",
+      "migration",
+      "replacing"
+    ]
+  },
+  {
+    "slug": "migrating-from-jest-to-vitest-api-differences-and-configuration",
+    "title": "Migrating from Jest to Vitest: API Differences and Configuration",
+    "description": "Migrating from Jest to Vitest: API Differences and Configuration. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-07-09",
+    "reading_time_minutes": 6,
+    "tags": [
+      "api",
+      "configuration",
+      "differences",
+      "guide",
+      "jest",
+      "migrating",
+      "vitest"
+    ]
+  },
+  {
+    "slug": "next-js-15-upgrade-guide-app-router-changes-and-migration-steps",
+    "title": "Next.js 15 Upgrade Guide: App Router Changes and Migration Steps",
+    "description": "Next.js 15 Upgrade Guide: App Router Changes and Migration Steps. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-07-09",
+    "reading_time_minutes": 6,
+    "tags": [
+      "app",
+      "changes",
+      "guide",
+      "migration",
+      "next",
+      "router",
+      "steps",
+      "upgrade"
+    ]
+  },
+  {
+    "slug": "prisma-6-migration-guide-breaking-changes-and-new-query-engine",
+    "title": "Prisma 6 Migration Guide: Breaking Changes and New Query Engine",
+    "description": "Prisma 6 Migration Guide: Breaking Changes and New Query Engine. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-07-09",
+    "reading_time_minutes": 7,
+    "tags": [
+      "breaking",
+      "changes",
+      "engine",
+      "guide",
+      "migration",
+      "new",
+      "prisma",
+      "query"
+    ]
+  },
+  {
+    "slug": "react-19-upgrade-guide-new-features-and-breaking-changes",
+    "title": "React 19 Upgrade Guide: New Features and Breaking Changes",
+    "description": "React 19 Upgrade Guide: New Features and Breaking Changes. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-07-09",
+    "reading_time_minutes": 6,
+    "tags": [
+      "breaking",
+      "changes",
+      "features",
+      "guide",
+      "new",
+      "react",
+      "upgrade"
+    ]
+  },
+  {
     "slug": "docker-on-apple-silicon-performance-tuning-and-image-compatibility",
     "title": "Docker on Apple Silicon: Performance Tuning and Image Compatibility",
     "description": "Docker on Apple Silicon: Performance Tuning and Image Compatibility. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
