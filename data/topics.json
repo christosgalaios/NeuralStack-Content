@@ -7137,7 +7137,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compatibility-drizzle-prisma-migration",
@@ -7147,7 +7147,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "compatibility-bun-node-modules",
@@ -7157,7 +7157,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "review-bun-runtime-2026",
@@ -7167,7 +7167,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "review-deno2-runtime",
@@ -7177,7 +7177,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "review-turborepo-monorepo",

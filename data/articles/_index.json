@@ -1,5 +1,94 @@
 [
   {
+    "slug": "bun-compatibility-with-node-js-npm-packages-what-works-and-what-breaks",
+    "title": "Bun Compatibility with Node.js npm Packages: What Works and What Breaks",
+    "description": "Bun Compatibility with Node.js npm Packages: What Works and What Breaks. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-07-10",
+    "reading_time_minutes": 7,
+    "tags": [
+      "breaks",
+      "bun",
+      "compatibility",
+      "node",
+      "npm",
+      "packages",
+      "works"
+    ]
+  },
+  {
+    "slug": "bun-runtime-review-performance-compatibility-and-production-readiness",
+    "title": "Bun Runtime Review: Performance, Compatibility, and Production Readiness",
+    "description": "Bun Runtime Review: Performance, Compatibility, and Production Readiness. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-07-10",
+    "reading_time_minutes": 6,
+    "tags": [
+      "bun",
+      "compatibility",
+      "performance",
+      "production",
+      "readiness",
+      "runtime"
+    ]
+  },
+  {
+    "slug": "deno-2-review-npm-compatibility-permissions-and-developer-experience",
+    "title": "Deno 2 Review: npm Compatibility, Permissions, and Developer Experience",
+    "description": "Deno 2 Review: npm Compatibility, Permissions, and Developer Experience. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "compatibility",
+    "category_display": "Compatibility",
+    "date_published": "2026-07-10",
+    "reading_time_minutes": 6,
+    "tags": [
+      "compatibility",
+      "deno",
+      "developer",
+      "experience",
+      "npm",
+      "permissions"
+    ]
+  },
+  {
+    "slug": "migrating-from-prisma-to-drizzle-orm-schema-and-query-translation",
+    "title": "Migrating from Prisma to Drizzle ORM: Schema and Query Translation",
+    "description": "Migrating from Prisma to Drizzle ORM: Schema and Query Translation. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-07-10",
+    "reading_time_minutes": 6,
+    "tags": [
+      "drizzle",
+      "guide",
+      "migrating",
+      "orm",
+      "prisma",
+      "query",
+      "schema",
+      "translation"
+    ]
+  },
+  {
+    "slug": "migrating-from-webpack-to-vite-configuration-and-plugin-translation",
+    "title": "Migrating from webpack to Vite: Configuration and Plugin Translation",
+    "description": "Migrating from webpack to Vite: Configuration and Plugin Translation. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
+    "category": "guide",
+    "category_display": "Guide",
+    "date_published": "2026-07-10",
+    "reading_time_minutes": 6,
+    "tags": [
+      "configuration",
+      "guide",
+      "migrating",
+      "plugin",
+      "translation",
+      "vite",
+      "webpack"
+    ]
+  },
+  {
     "slug": "eslint-9-flat-config-migration-replacing-eslintrc-with-eslint-config-js",
     "title": "ESLint 9 Flat Config Migration: Replacing .eslintrc with eslint.config.js",
     "description": "ESLint 9 Flat Config Migration: Replacing .eslintrc with eslint.config.js. Practical guide covering implementation patterns, trade-offs, and recommendations for production engineers.",
