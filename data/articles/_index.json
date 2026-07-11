@@ -1,5 +1,96 @@
 [
   {
+    "slug": "biome-linter-and-formatter-review-replacing-eslint-and-prettier",
+    "title": "Biome Linter and Formatter Review: Replacing ESLint and Prettier",
+    "description": "Biome Linter and Formatter Review: Replacing ESLint and Prettier. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-07-11",
+    "reading_time_minutes": 6,
+    "tags": [
+      "biome",
+      "eslint",
+      "formatter",
+      "linter",
+      "prettier",
+      "replacing",
+      "review"
+    ]
+  },
+  {
+    "slug": "cloudflare-workers-review-edge-computing-for-full-stack-applications",
+    "title": "Cloudflare Workers Review: Edge Computing for Full-Stack Applications",
+    "description": "Cloudflare Workers Review: Edge Computing for Full-Stack Applications. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-07-11",
+    "reading_time_minutes": 6,
+    "tags": [
+      "applications",
+      "cloudflare",
+      "computing",
+      "edge",
+      "full",
+      "review",
+      "stack",
+      "workers"
+    ]
+  },
+  {
+    "slug": "netlify-platform-review-build-deploy-and-serverless-features",
+    "title": "Netlify Platform Review: Build, Deploy, and Serverless Features",
+    "description": "Netlify Platform Review: Build, Deploy, and Serverless Features. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-07-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "build",
+      "deploy",
+      "features",
+      "netlify",
+      "platform",
+      "review",
+      "serverless"
+    ]
+  },
+  {
+    "slug": "turborepo-review-monorepo-build-caching-and-task-orchestration",
+    "title": "Turborepo Review: Monorepo Build Caching and Task Orchestration",
+    "description": "Turborepo Review: Monorepo Build Caching and Task Orchestration. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-07-11",
+    "reading_time_minutes": 6,
+    "tags": [
+      "build",
+      "caching",
+      "monorepo",
+      "orchestration",
+      "review",
+      "task",
+      "turborepo"
+    ]
+  },
+  {
+    "slug": "vercel-platform-review-pricing-performance-and-dx-for-frontend-teams",
+    "title": "Vercel Platform Review: Pricing, Performance, and DX for Frontend Teams",
+    "description": "Vercel Platform Review: Pricing, Performance, and DX for Frontend Teams. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-07-11",
+    "reading_time_minutes": 7,
+    "tags": [
+      "frontend",
+      "performance",
+      "platform",
+      "pricing",
+      "review",
+      "teams",
+      "vercel"
+    ]
+  },
+  {
     "slug": "bun-compatibility-with-node-js-npm-packages-what-works-and-what-breaks",
     "title": "Bun Compatibility with Node.js npm Packages: What Works and What Breaks",
     "description": "Bun Compatibility with Node.js npm Packages: What Works and What Breaks. Practical compatibility covering implementation patterns, trade-offs, and recommendations for production engineers.",

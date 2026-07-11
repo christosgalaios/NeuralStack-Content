@@ -7187,7 +7187,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "review-biome-linter-formatter",
@@ -7197,7 +7197,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "review-vercel-platform-2026",
@@ -7207,7 +7207,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "review-netlify-platform-2026",
@@ -7217,7 +7217,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "review-cloudflare-workers-platform",
@@ -7227,7 +7227,7 @@
     "difficulty_score": 0.35,
     "source": "seed-fullstack-broadening",
     "created_at": "2026-03-11T00:00:00Z",
-    "status": "new"
+    "status": "published"
   },
   {
     "id": "review-planetscale-database",
