@@ -1,5 +1,96 @@
 [
   {
+    "slug": "modern-neovim-setup-review-lsp-treesitter-and-plugin-ecosystem",
+    "title": "Modern Neovim Setup Review: LSP, Treesitter, and Plugin Ecosystem",
+    "description": "Modern Neovim Setup Review: LSP, Treesitter, and Plugin Ecosystem. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-07-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "ecosystem",
+      "lsp",
+      "modern",
+      "neovim",
+      "plugin",
+      "review",
+      "setup",
+      "treesitter"
+    ]
+  },
+  {
+    "slug": "neon-serverless-postgres-review-branching-scaling-and-cold-starts",
+    "title": "Neon Serverless Postgres Review: Branching, Scaling, and Cold Starts",
+    "description": "Neon Serverless Postgres Review: Branching, Scaling, and Cold Starts. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-07-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "branching",
+      "cold",
+      "neon",
+      "postgres",
+      "review",
+      "scaling",
+      "serverless",
+      "starts"
+    ]
+  },
+  {
+    "slug": "planetscale-review-serverless-mysql-with-git-like-branching",
+    "title": "PlanetScale Review: Serverless MySQL with Git-Like Branching",
+    "description": "PlanetScale Review: Serverless MySQL with Git-Like Branching. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-07-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "branching",
+      "git",
+      "like",
+      "mysql",
+      "planetscale",
+      "review",
+      "serverless"
+    ]
+  },
+  {
+    "slug": "supabase-platform-review-open-source-firebase-alternative",
+    "title": "Supabase Platform Review: Open-Source Firebase Alternative",
+    "description": "Supabase Platform Review: Open-Source Firebase Alternative. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-07-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "alternative",
+      "firebase",
+      "open",
+      "platform",
+      "review",
+      "source",
+      "supabase"
+    ]
+  },
+  {
+    "slug": "zed-editor-review-speed-collaboration-and-ai-integration",
+    "title": "Zed Editor Review: Speed, Collaboration, and AI Integration",
+    "description": "Zed Editor Review: Speed, Collaboration, and AI Integration. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-07-12",
+    "reading_time_minutes": 6,
+    "tags": [
+      "collaboration",
+      "editor",
+      "integration",
+      "review",
+      "speed",
+      "zed"
+    ]
+  },
+  {
     "slug": "biome-linter-and-formatter-review-replacing-eslint-and-prettier",
     "title": "Biome Linter and Formatter Review: Replacing ESLint and Prettier",
     "description": "Biome Linter and Formatter Review: Replacing ESLint and Prettier. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
