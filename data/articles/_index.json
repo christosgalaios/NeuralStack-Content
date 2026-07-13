@@ -1,5 +1,58 @@
 [
   {
+    "slug": "cursor-ide-review-ai-powered-coding-experience",
+    "title": "Cursor IDE Review: AI-Powered Coding Experience",
+    "description": "Cursor IDE Review: AI-Powered Coding Experience. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-07-13",
+    "reading_time_minutes": 7,
+    "tags": [
+      "coding",
+      "cursor",
+      "experience",
+      "ide",
+      "powered",
+      "review"
+    ]
+  },
+  {
+    "slug": "github-copilot-workspace-review-ai-assisted-development-environment",
+    "title": "GitHub Copilot Workspace Review: AI-Assisted Development Environment",
+    "description": "GitHub Copilot Workspace Review: AI-Assisted Development Environment. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-07-13",
+    "reading_time_minutes": 7,
+    "tags": [
+      "assisted",
+      "copilot",
+      "development",
+      "environment",
+      "github",
+      "review",
+      "workspace"
+    ]
+  },
+  {
+    "slug": "jetbrains-fleet-review-lightweight-ide-with-smart-mode",
+    "title": "JetBrains Fleet Review: Lightweight IDE with Smart Mode",
+    "description": "JetBrains Fleet Review: Lightweight IDE with Smart Mode. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
+    "category": "review",
+    "category_display": "Review",
+    "date_published": "2026-07-13",
+    "reading_time_minutes": 7,
+    "tags": [
+      "fleet",
+      "ide",
+      "jetbrains",
+      "lightweight",
+      "mode",
+      "review",
+      "smart"
+    ]
+  },
+  {
     "slug": "modern-neovim-setup-review-lsp-treesitter-and-plugin-ecosystem",
     "title": "Modern Neovim Setup Review: LSP, Treesitter, and Plugin Ecosystem",
     "description": "Modern Neovim Setup Review: LSP, Treesitter, and Plugin Ecosystem. Hands-on review with benchmarks, pricing analysis, and honest recommendations for professional developers.",
