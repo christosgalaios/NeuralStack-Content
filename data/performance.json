@@ -1444,9 +1444,17 @@
       "generated_articles": 0,
       "published_articles": 0,
       "errors": []
+    },
+    {
+      "timestamp": "2026-07-25T05:48:11.214953Z",
+      "status": "success",
+      "generated_topics": 0,
+      "generated_articles": 0,
+      "published_articles": 0,
+      "errors": []
     }
   ],
   "articles_published": 816,
-  "last_run": "2026-07-24T05:55:12.184278Z",
+  "last_run": "2026-07-25T05:48:11.214953Z",
   "errors": []
 }
