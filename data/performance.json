@@ -1732,9 +1732,17 @@
       "generated_articles": 0,
       "published_articles": 0,
       "errors": []
+    },
+    {
+      "timestamp": "2026-08-30T09:07:07.008606Z",
+      "status": "success",
+      "generated_topics": 0,
+      "generated_articles": 0,
+      "published_articles": 0,
+      "errors": []
     }
   ],
   "articles_published": 816,
-  "last_run": "2026-08-29T09:55:51.041398Z",
+  "last_run": "2026-08-30T09:07:07.008606Z",
   "errors": []
 }
