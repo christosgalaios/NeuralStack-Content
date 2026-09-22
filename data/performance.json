@@ -1916,9 +1916,17 @@
       "generated_articles": 0,
       "published_articles": 0,
       "errors": []
+    },
+    {
+      "timestamp": "2026-09-22T08:25:41.535852Z",
+      "status": "success",
+      "generated_topics": 0,
+      "generated_articles": 0,
+      "published_articles": 0,
+      "errors": []
     }
   ],
   "articles_published": 816,
-  "last_run": "2026-09-21T08:48:00.022112Z",
+  "last_run": "2026-09-22T08:25:41.535852Z",
   "errors": []
 }
