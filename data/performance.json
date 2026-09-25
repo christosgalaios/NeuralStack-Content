@@ -1940,9 +1940,17 @@
       "generated_articles": 0,
       "published_articles": 0,
       "errors": []
+    },
+    {
+      "timestamp": "2026-09-25T08:42:45.296509Z",
+      "status": "success",
+      "generated_topics": 0,
+      "generated_articles": 0,
+      "published_articles": 0,
+      "errors": []
     }
   ],
   "articles_published": 816,
-  "last_run": "2026-09-24T08:20:05.553082Z",
+  "last_run": "2026-09-25T08:42:45.296509Z",
   "errors": []
 }
