@@ -1980,9 +1980,17 @@
       "generated_articles": 0,
       "published_articles": 0,
       "errors": []
+    },
+    {
+      "timestamp": "2026-09-30T09:33:27.655396Z",
+      "status": "success",
+      "generated_topics": 0,
+      "generated_articles": 0,
+      "published_articles": 0,
+      "errors": []
     }
   ],
   "articles_published": 816,
-  "last_run": "2026-09-29T09:41:12.122802Z",
+  "last_run": "2026-09-30T09:33:27.655396Z",
   "errors": []
 }
