@@ -2404,9 +2404,17 @@
       "generated_articles": 0,
       "published_articles": 0,
       "errors": []
+    },
+    {
+      "timestamp": "2026-11-22T10:59:26.334301Z",
+      "status": "success",
+      "generated_topics": 0,
+      "generated_articles": 0,
+      "published_articles": 0,
+      "errors": []
     }
   ],
   "articles_published": 816,
-  "last_run": "2026-11-21T10:51:33.768381Z",
+  "last_run": "2026-11-22T10:59:26.334301Z",
   "errors": []
 }
